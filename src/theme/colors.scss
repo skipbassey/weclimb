@@ -1,0 +1,13 @@
+
+@function color($key) {
+    @if map-has-key($palette, $key) {
+        @return map-get($palette, $key);
+    }
+}
+
+$palette: (
+    primary: white,
+    secondary: rgb(190, 252, 190),
+    light: rgb(168, 168, 168),
+    dark: rgb(105, 103, 103) 
+)

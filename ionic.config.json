@@ -1,0 +1,7 @@
+{
+  "name": "weclimb",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,25 @@
+@import '../../theme/colors.scss';
+
+.text {
+    color: color(dark);
+}
+
+ion-item.menu-text.text.background.item.md.in-list.ion-activatable.ion-focusable.hydrated {
+    background-color: color(dark); 
+}
+
+.background {
+    background-color: color(dark);
+}
+
+ion-toolbar {
+    background-color: color(secondary);
+}
+
+ion-menu-button {
+    color: color(dark);
+}
+
+ion-content {
+    background-color: color(dark);
+}

@@ -1,0 +1,32 @@
+@import '../../theme/colors.scss';
+
+img {
+    width: 200px;
+    height: 250px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    margin: 10px;
+    padding: 5px
+}
+.span {
+    display: inline;
+}
+
+.img-title {
+    text-align: center;
+}
+
+ion-card{
+    margin: 15px;
+    background-color: color(primary)
+}
+
+ion-back-button {
+    color: color(dark);
+}

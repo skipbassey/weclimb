@@ -1,0 +1,29 @@
+
+  <ion-menu color="primary" side="start">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title class="menu-text text">We Climb</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list *ngFor="let option of options">
+        <ion-item class="menu-text" (click)="navigate(option.route)" button>{{option.title}}</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" main>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title class="title-text text">Home</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <app-home></app-home>
+     </ion-content>
+  </div>
+
+

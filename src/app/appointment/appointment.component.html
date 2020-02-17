@@ -1,0 +1,53 @@
+<ion-header translucent>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="title-text">Appointments</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <p class="text">
+    If you are going through your insurance company for services, please provide
+    the client's name, date of birth and member ID number in the "Add Your Message"
+    section once you have selected your appointment. You will receive an email confirming
+    your appointment.
+  </p>
+
+  <ion-list>
+    <ion-item button (click)="presentActionSheet()">
+      <img src="assets/photo1.jpeg" alt="">
+      <p><b>Licensed Level Clinician: </b>1hr</p>
+      <p><b>Intake Session: </b>$125</p>
+    </ion-item>
+    <ion-item button (click)="presentActionSheet()">
+      <img src="assets/photo1.jpeg" alt="">
+      <p><b>Licensed Level Clinician: </b>45min</p>
+      <p><b>Insurance: </b>$110</p>
+    </ion-item>
+    <ion-item button (click)="presentActionSheet()">
+      <img src="assets/photo1.jpeg" alt="">
+      <p><b>Licensed Level Clinician: </b>45min</p>
+      <p><b>Self Pay: </b>$80</p>
+    </ion-item>
+    <ion-item button (click)="presentActionSheet()">
+      <img src="assets/photo2.jpeg" alt="">
+      <p><b>Masters Level Clinician: </b>1hr</p>
+      <p><b>Intake Session: </b>$100</p>
+    </ion-item>
+    <ion-item button (click)="presentActionSheet()">
+      <img src="assets/photo2.jpeg" alt="">
+      <p><b>Masters Level Clinician: </b>45min</p>
+      <p><b>Self Pay: </b>$65</p>
+    </ion-item>
+    <ion-item button (click)="presentActionSheet()">
+      <img src="assets/photo1.jpeg" alt="">
+      <p><b>Adolescent Group Counseling: </b>1hr</p>
+      <p><b>Self Pay: </b>$$35</p>
+      <p>Apollo Sports Counseling Inc.</p>
+    </ion-item>
+  </ion-list>
+
+  <!-- <ionic-calendar-date-picker (onSelect)="dateSelected($event)"></ionic-calendar-date-picker>	 -->
+
+</ion-content>

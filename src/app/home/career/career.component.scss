@@ -1,0 +1,14 @@
+@import '../../../theme/colors.scss';
+
+.header-text{
+    text-align: center;
+}
+
+.content-text {
+    padding: 10px;
+    text-align: center;
+}
+
+ion-back-button {
+    color: color(dark);
+}
