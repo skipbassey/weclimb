@@ -61,7 +61,15 @@ export class AppointmentService {
     }
 
     getMastersLevelSelfPay(): Observable<any> {
-        return null;
+        const url = "https://qrydefjkte.execute-api.us-east-1.amazonaws.com/default/getMastersLevelSelfPaySchedule";
+
+        const httpOptions = {
+            headers: new HttpHeaders({
+              'Content-Type':  'application/json',
+            })
+          };
+
+        return this.http.get(url, httpOptions);
     }
 
     getAdolescentGroupSelfPay(): Observable<any> {
