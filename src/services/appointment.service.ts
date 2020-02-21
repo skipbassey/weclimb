@@ -49,7 +49,15 @@ export class AppointmentService {
     }
 
     getMastersLevelIntake(): Observable<any> {
-        return null;
+        const url = "https://hcarij2xh8.execute-api.us-east-1.amazonaws.com/default/getMastersLevelIntakeSchedule";
+
+        const httpOptions = {
+            headers: new HttpHeaders({
+              'Content-Type':  'application/json',
+            })
+          };
+
+        return this.http.get(url, httpOptions);
     }
 
     getMastersLevelSelfPay(): Observable<any> {
