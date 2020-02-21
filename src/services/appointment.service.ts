@@ -8,10 +8,6 @@ export class AppointmentService {
 
     constructor(private http: HttpClient) { }
 
-    appointments: Appointment[] = [
-
-    ]
-
     getLicensedLevelFirstSession(): Observable<any> {
         const url = "https://gg11vbof64.execute-api.us-east-1.amazonaws.com/default/getLicenseLevelFirstSessionSchedule";
 
