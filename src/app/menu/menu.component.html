@@ -6,9 +6,11 @@
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <ion-list *ngFor="let option of options">
-        <ion-item class="menu-text" (click)="navigate(option.route)" button>{{option.title}}</ion-item>
-      </ion-list>
+      <ion-nav>
+        <ion-list *ngFor="let option of options">
+          <ion-item class="menu-text" (click)="navigate(option.route)" button>{{option.title}}</ion-item>
+        </ion-list>
+      </ion-nav>
     </ion-content>
   </ion-menu>
 

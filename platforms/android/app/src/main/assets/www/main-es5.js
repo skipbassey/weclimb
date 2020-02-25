@@ -557,7 +557,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n  <ion-menu color=\"primary\" side=\"start\">\n    <ion-header>\n      <ion-toolbar color=\"primary\">\n        <ion-title class=\"menu-text text\">We Climb</ion-title>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <ion-list *ngFor=\"let option of options\">\n        <ion-item class=\"menu-text\" (click)=\"navigate(option.route)\" button>{{option.title}}</ion-item>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n\n  <div class=\"ion-page\" main>\n    <ion-header>\n      <ion-toolbar color=\"primary\">\n        <ion-buttons slot=\"start\">\n          <ion-menu-button></ion-menu-button>\n        </ion-buttons>\n        <ion-title class=\"title-text text\">Home</ion-title>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <app-home></app-home>\n     </ion-content>\n  </div>\n\n\n"
+module.exports = "\n  <ion-menu color=\"primary\" side=\"start\">\n    <ion-header>\n      <ion-toolbar color=\"primary\">\n        <ion-title class=\"menu-text text\">We Climb</ion-title>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <ion-nav>\n        <ion-list *ngFor=\"let option of options\">\n          <ion-item class=\"menu-text\" (click)=\"navigate(option.route)\" button>{{option.title}}</ion-item>\n        </ion-list>\n      </ion-nav>\n    </ion-content>\n  </ion-menu>\n\n  <div class=\"ion-page\" main>\n    <ion-header>\n      <ion-toolbar color=\"primary\">\n        <ion-buttons slot=\"start\">\n          <ion-menu-button></ion-menu-button>\n        </ion-buttons>\n        <ion-title class=\"title-text text\">Home</ion-title>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <app-home></app-home>\n     </ion-content>\n  </div>\n\n\n"
 
 /***/ }),
 
@@ -590,7 +590,7 @@ module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-back-button defaultHref=\"home\"></ion-back-button>\n      </ion-buttons>\n      <ion-title class=\"title-text\">Team</ion-title>\n    </ion-toolbar>\n  </ion-header>\n<ion-content>\n  <ion-card >\n    <div class=\"img-container\">\n        <img src=\"/assets/photo1.jpeg\" alt=\"\">\n    </div>\n    <ion-card-header>\n        <ion-card-title class=\"img-title\">Avery Rosser, LPC</ion-card-title>\n      </ion-card-header>\n      <ion-card-content color=\"primary\">\n        <p>\n            Founder, We Climb Counseling and Consulting LLC. Avery earned a Master of \n            Science degree in Community Counseling as well as a Post Masters of School \n            Counseling from Columbus State University. He has completed advanced \n            training in Collaborative Couples Training, Eye Movement Desensitization and \n            Reprocessing (EMDR), Motivational Interviewing (MI), and Parent Management \n            Training (PMT). Avery is a Licensed Professional Counselor, Board Certified \n            Counselor and Certified School Counselor in the State of Georgia. \n        </p>\n        <p>\n            Avery has over six years of counseling experience with a wide range of clients \n            in a variety of treatment settings. These have included providing counseling in \n            a psychiatric hospital, public education system K-12, inpatient, and partial \n            hospital settings, and currently with the US Department of Veterans Affairs as \n            well as his own outpatient practice. He also is a part of his church counseling \n            department.\n        </p>\n        <p>\n            Avery has a broad and unique base of experience counseling children and adolescents. \n            Areas of emphasis with children include mood disorders, posttraumatic stress disorder, \n            conduct disorder, and attention deficit hyperactive disorder. Avery also has significant\n             experience working with children and adolescents who have experienced developmental \n             delays, varying degrees of trauma, various types of physical and/or sexual abuse, \n             abandonment and/or neglect, as well as dysfunctional family systems.\n        </p>\n      </ion-card-content>\n  </ion-card>\n\n  <ion-card>\n    <div class=\"img-container\">\n        <img src=\"/assets/photo2.jpeg\" alt=\"\">\n    </div>\n      <ion-card-header class=\"span\">\n          <ion-card-title class=\"img-title\">Keshara Rosser, MSW</ion-card-title>\n        </ion-card-header>\n        <ion-card-content>\n          <p>\n              Co-Founder, We Climb Counseling & Consulting LLC. Keshara earned a Master of \n              Social Work from the University of Alabama. Keshara completed her internship \n              experience  at Georgia Center for Child Advocacy where she served as forensic \n              intern and family advocate to ensure that a child's non-offending caregivers \n              feel supported during the investigation process. Keshara completed her practicum \n              experience with Pathways Transition Program where she conducted outpatient \n              school-based counseling.  Keshara's area of focus is working with adolescents, \n              teens, young adults, and families that struggle with anxiety, depression and trauma.                \n          </p>\n        </ion-card-content>\n    </ion-card>\n\n    <ion-card>\n      <div class=\"img-container\">\n          <img src=\"/assets/photo1.jpeg\" alt=\"\">\n      </div>\n        <ion-card-header class=\"span\">\n            <ion-card-title class=\"img-title\">Bryan Armstead Jr., BA </ion-card-title>\n          </ion-card-header>\n          <ion-card-content>\n            <p>\n                Intern, We Climb Counseling & Consulting LLC. Bryan earned a Bachelor of Art \n                in Spanish from Morehouse College and is currently pursing a Master of Social \n                Worker from the University of Georgia. Bryan is the founder of Apollo Sports \n                Counseling, Inc., a nonprofit organizations that aims to equip high school and \n                legiate student-athletes with mental health knowledge from the area of sports.  \n                Bryan's focus is geared towards completing intake assessments and working with \n                student-athletes in a individual and group capacity. \n            </p>\n          </ion-card-content>\n      </ion-card>\n  \n</ion-content>"
+module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <!-- <ion-back-button defaultHref=\"home\"></ion-back-button> -->\n        <button (click)=\"back()\">back</button>\n      </ion-buttons>\n      <ion-title class=\"title-text\">Team</ion-title>\n    </ion-toolbar>\n  </ion-header>\n<ion-content>\n  <ion-card >\n    <div class=\"img-container\">\n        <img src=\"/assets/photo1.jpeg\" alt=\"\">\n    </div>\n    <ion-card-header>\n        <ion-card-title class=\"img-title\">Avery Rosser, LPC</ion-card-title>\n      </ion-card-header>\n      <ion-card-content color=\"primary\">\n        <p>\n            Founder, We Climb Counseling and Consulting LLC. Avery earned a Master of \n            Science degree in Community Counseling as well as a Post Masters of School \n            Counseling from Columbus State University. He has completed advanced \n            training in Collaborative Couples Training, Eye Movement Desensitization and \n            Reprocessing (EMDR), Motivational Interviewing (MI), and Parent Management \n            Training (PMT). Avery is a Licensed Professional Counselor, Board Certified \n            Counselor and Certified School Counselor in the State of Georgia. \n        </p>\n        <p>\n            Avery has over six years of counseling experience with a wide range of clients \n            in a variety of treatment settings. These have included providing counseling in \n            a psychiatric hospital, public education system K-12, inpatient, and partial \n            hospital settings, and currently with the US Department of Veterans Affairs as \n            well as his own outpatient practice. He also is a part of his church counseling \n            department.\n        </p>\n        <p>\n            Avery has a broad and unique base of experience counseling children and adolescents. \n            Areas of emphasis with children include mood disorders, posttraumatic stress disorder, \n            conduct disorder, and attention deficit hyperactive disorder. Avery also has significant\n             experience working with children and adolescents who have experienced developmental \n             delays, varying degrees of trauma, various types of physical and/or sexual abuse, \n             abandonment and/or neglect, as well as dysfunctional family systems.\n        </p>\n      </ion-card-content>\n  </ion-card>\n\n  <ion-card>\n    <div class=\"img-container\">\n        <img src=\"/assets/photo2.jpeg\" alt=\"\">\n    </div>\n      <ion-card-header class=\"span\">\n          <ion-card-title class=\"img-title\">Keshara Rosser, MSW</ion-card-title>\n        </ion-card-header>\n        <ion-card-content>\n          <p>\n              Co-Founder, We Climb Counseling & Consulting LLC. Keshara earned a Master of \n              Social Work from the University of Alabama. Keshara completed her internship \n              experience  at Georgia Center for Child Advocacy where she served as forensic \n              intern and family advocate to ensure that a child's non-offending caregivers \n              feel supported during the investigation process. Keshara completed her practicum \n              experience with Pathways Transition Program where she conducted outpatient \n              school-based counseling.  Keshara's area of focus is working with adolescents, \n              teens, young adults, and families that struggle with anxiety, depression and trauma.                \n          </p>\n        </ion-card-content>\n    </ion-card>\n\n    <ion-card>\n      <div class=\"img-container\">\n          <img src=\"/assets/photo1.jpeg\" alt=\"\">\n      </div>\n        <ion-card-header class=\"span\">\n            <ion-card-title class=\"img-title\">Bryan Armstead Jr., BA </ion-card-title>\n          </ion-card-header>\n          <ion-card-content>\n            <p>\n                Intern, We Climb Counseling & Consulting LLC. Bryan earned a Bachelor of Art \n                in Spanish from Morehouse College and is currently pursing a Master of Social \n                Worker from the University of Georgia. Bryan is the founder of Apollo Sports \n                Counseling, Inc., a nonprofit organizations that aims to equip high school and \n                legiate student-athletes with mental health knowledge from the area of sports.  \n                Bryan's focus is geared towards completing intake assessments and working with \n                student-athletes in a individual and group capacity. \n            </p>\n          </ion-card-content>\n      </ion-card>\n  \n</ion-content>"
 
 /***/ }),
 
@@ -1606,25 +1606,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_menu_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/menu.service */ "./src/services/menu.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+
 
 
 
 
 var MenuComponent = /** @class */ (function () {
-    function MenuComponent(menuService, router) {
+    function MenuComponent(menuService, router, navController) {
         this.menuService = menuService;
         this.router = router;
+        this.navController = navController;
         this.title = '';
     }
     MenuComponent.prototype.ngOnInit = function () {
         this.options = this.menuService.getOptions();
     };
     MenuComponent.prototype.navigate = function (route) {
-        this.router.navigateByUrl(route);
+        // this.router.navigateByUrl(route);
+        this.navController.navigateForward(route);
     };
     MenuComponent.ctorParameters = function () { return [
         { type: _services_menu_service__WEBPACK_IMPORTED_MODULE_2__["MenuService"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["NavController"] }
     ]; };
     MenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1634,7 +1639,8 @@ var MenuComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./menu.component.scss */ "./src/app/menu/menu.component.scss"), __webpack_require__(/*! ../../theme/font.scss */ "./src/theme/font.scss"), __webpack_require__(/*! ../../theme/colors.scss */ "./src/theme/colors.scss")]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_menu_service__WEBPACK_IMPORTED_MODULE_2__["MenuService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["NavController"]])
     ], MenuComponent);
     return MenuComponent;
 }());
@@ -1784,19 +1790,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TeamComponent", function() { return TeamComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+
 
 
 var TeamComponent = /** @class */ (function () {
-    function TeamComponent() {
+    function TeamComponent(navController) {
+        this.navController = navController;
     }
     TeamComponent.prototype.ngOnInit = function () { };
+    TeamComponent.prototype.back = function () {
+        this.navController.pop();
+        this.navController.navigateBack('home');
+    };
+    TeamComponent.ctorParameters = function () { return [
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"] }
+    ]; };
     TeamComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-team',
             template: __webpack_require__(/*! raw-loader!./team.component.html */ "./node_modules/raw-loader/index.js!./src/app/team/team.component.html"),
             styles: [__webpack_require__(/*! ./team.component.scss */ "./src/app/team/team.component.scss"), __webpack_require__(/*! ../../theme/font.scss */ "./src/theme/font.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"]])
     ], TeamComponent);
     return TeamComponent;
 }());
