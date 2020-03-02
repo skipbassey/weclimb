@@ -25,6 +25,7 @@ import { AppointmentComponent } from './appointment/appointment.component';
 import { FormsComponent } from './forms/forms.component';
 import { File } from '@ionic-native/file';
 import { FileTransfer } from '@ionic-native/file-transfer';
+import { ApptModalComponent } from './appt-modal/appt-modal.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { FileTransfer } from '@ionic-native/file-transfer';
     CareerModule,
     AdolescentModule,
     IndividualModule,
+    ApptModalComponent
   ],
   providers: [
     StatusBar,
