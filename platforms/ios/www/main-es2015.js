@@ -1329,6 +1329,12 @@ let HomePage = class HomePage {
             }
         ];
     }
+    ionViewWillEnter() {
+        console.log("Will enter");
+    }
+    ionViewDidEnter() {
+        console.log("ionViewDidEnter");
+    }
     navigate(service) {
         this.router.navigateByUrl(service.route);
     }

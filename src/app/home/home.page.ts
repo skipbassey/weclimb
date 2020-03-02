@@ -39,6 +39,14 @@ export class HomePage {
     private router: Router
   ) {}
 
+  ionViewWillEnter() {
+    console.log("Will enter");
+  }
+
+  ionViewDidEnter(){
+    console.log("ionViewDidEnter")
+}
+
   navigate(service: Option) {
     this.router.navigateByUrl(service.route)
     

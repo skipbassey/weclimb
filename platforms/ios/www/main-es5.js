@@ -1382,6 +1382,12 @@ var HomePage = /** @class */ (function () {
             }
         ];
     }
+    HomePage.prototype.ionViewWillEnter = function () {
+        console.log("Will enter");
+    };
+    HomePage.prototype.ionViewDidEnter = function () {
+        console.log("ionViewDidEnter");
+    };
     HomePage.prototype.navigate = function (service) {
         this.router.navigateByUrl(service.route);
     };
