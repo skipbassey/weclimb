@@ -13,6 +13,6 @@
     </ion-item>
   </ion-list>
   <div class="btn-container">
-    <ion-button fill="solid" shape="round" (click)="dismiss()">Return to Appointments</ion-button>
+    <ion-button *ngIf="!noData" fill="solid" shape="round" (click)="dismiss()">Return to Appointments</ion-button>
   </div>
 </ion-content>

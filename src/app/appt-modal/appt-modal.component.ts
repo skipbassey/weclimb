@@ -66,5 +66,6 @@ export class ApptModalComponent implements OnInit {
       duration: 2000
     });
     toast.present();
+    this.modalController.dismiss();
   }
 }
