@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ActionSheetController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
-import { isObject } from 'util';
 import { AppointmentService } from 'src/services/appointment.service';
 import { Appointment } from 'src/models/Appointment';
 import { HttpErrorResponse } from '@angular/common/http';
+import { ApptModalComponent } from '../appt-modal/appt-modal.component';
 
 @Component({
   selector: 'app-appointment',
@@ -21,43 +20,21 @@ export class AppointmentComponent implements OnInit {
   appointments: Appointment[] = [];
 
   constructor(
-    public actionSheetController: ActionSheetController,
     private modalController: ModalController,
     private appointmentService: AppointmentService) { }
 
   ngOnInit() { }
 
-  async presentActionSheet() {
-    const actionSheet = await this.actionSheetController.create({
-      header: 'Booking',
-      buttons: [{
-        text: 'Book',
-        role: 'destructive',
-        icon: 'checkmark',
-        handler: () => {
-          console.log('Appointment booked');
-        }
-      },
-      {
-        text: 'Cancel',
-        icon: 'close',
-        role: 'cancel',
-        handler: () => {
-          console.log('Appointment canceled');
-        }
-      }]
-    });
-    await actionSheet.present();
-  }
-
-  async presentModal() {
+  async presentModal(data: any) {
     this.modal = await this.modalController.create({
       showBackdrop: true,
-      component: ModalPage,
+      component: ApptModalComponent,
       mode: 'ios',
       backdropDismiss: true,
-      componentProps: null
-
+      componentProps: {
+        data: data.Items,
+        count: data.Count
+      }
     });
     return await this.modal.present();
   }
@@ -68,7 +45,7 @@ export class AppointmentComponent implements OnInit {
       case 'll-intake':
         this.appointmentService.getLicensedLevelFirstSession()
           .subscribe(res => {
-            this.modal.componentProps = res;
+            this.presentModal(res);
           },
             err => {
               this.handleError(err, 'Error retrieving schedule');
@@ -77,7 +54,7 @@ export class AppointmentComponent implements OnInit {
       case 'll-insurance':
         this.appointmentService.getLicensedLevelInsurance()
           .subscribe(res => {
-            this.modal.componentProps = res;
+            this.presentModal(res);
           },
             err => {
               this.handleError(err, 'Error retrieving schedule')
@@ -86,7 +63,7 @@ export class AppointmentComponent implements OnInit {
       case 'll-selfpay':
         this.appointmentService.getLicensedLevelSelfPay()
           .subscribe(res => {
-            this.modal.componentProps = res;
+            this.presentModal(res);
           },
             err => {
               this.handleError(err, 'Error retrieving schedule');
@@ -95,7 +72,7 @@ export class AppointmentComponent implements OnInit {
       case 'ml-intake':
         this.appointmentService.getMastersLevelIntake()
           .subscribe(res => {
-            this.modal.componentProps = res;
+            this.presentModal(res);
           },
             err => {
               this.handleError(err, 'Error retrieving schedule');
@@ -104,7 +81,7 @@ export class AppointmentComponent implements OnInit {
       case 'ml-selfpay':
         this.appointmentService.getMastersLevelSelfPay()
           .subscribe(res => {
-            this.modal.componentProps = res;
+            this.presentModal(res);
           },
             err => {
               this.handleError(err, 'Error retrieving schedule')
@@ -113,16 +90,13 @@ export class AppointmentComponent implements OnInit {
       case 'youth':
         this.appointmentService.getAdolescentGroupSelfPay()
           .subscribe(res => {
-            this.modal.componentProps = res;
+            this.presentModal(res);
           },
             err => {
               this.handleError(err, 'Error retrieving schedule')
             })
         break;
-
     }
-
-    this.presentModal()
   }
 
   private handleError(err: HttpErrorResponse, errMessage) {

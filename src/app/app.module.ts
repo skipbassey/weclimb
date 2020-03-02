@@ -26,6 +26,8 @@ import { FormsComponent } from './forms/forms.component';
 import { File } from '@ionic-native/file';
 import { FileTransfer } from '@ionic-native/file-transfer';
 import { ApptModalComponent } from './appt-modal/appt-modal.component';
+import { AppointmentService } from 'src/services/appointment.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -37,9 +39,12 @@ import { ApptModalComponent } from './appt-modal/appt-modal.component';
     OutreachComponent,
     FeesComponent,
     AppointmentComponent,
-    FormsComponent
+    FormsComponent,
+    ApptModalComponent
   ],
-  entryComponents: [],
+  entryComponents: [
+    ApptModalComponent
+  ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
@@ -49,12 +54,14 @@ import { ApptModalComponent } from './appt-modal/appt-modal.component';
     CareerModule,
     AdolescentModule,
     IndividualModule,
-    ApptModalComponent
+    HttpClientModule
+    
   ],
   providers: [
     StatusBar,
     SplashScreen,
     MenuService,
+    AppointmentService,
     // File,
     // FileTransfer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }

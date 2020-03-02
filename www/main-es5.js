@@ -458,7 +458,18 @@ module.exports = "\n<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Appointments</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content fullscreen>\n  <p class=\"text\">\n    If you are going through your insurance company for services, please provide\n    the client's name, date of birth and member ID number in the \"Add Your Message\"\n    section once you have selected your appointment. You will receive an email confirming\n    your appointment.\n  </p>\n\n  <ion-list>\n    <ion-item button (click)=\"presentActionSheet()\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$125</p>\n    </ion-item>\n    <ion-item button (click)=\"presentActionSheet()\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Insurance: </b>$110</p>\n    </ion-item>\n    <ion-item button (click)=\"presentActionSheet()\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$80</p>\n    </ion-item>\n    <ion-item button (click)=\"presentActionSheet()\">\n      <img src=\"assets/photo2.jpeg\" alt=\"\">\n      <p><b>Masters Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$100</p>\n    </ion-item>\n    <ion-item button (click)=\"presentActionSheet()\">\n      <img src=\"assets/photo2.jpeg\" alt=\"\">\n      <p><b>Masters Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$65</p>\n    </ion-item>\n    <ion-item button (click)=\"presentActionSheet()\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Adolescent Group Counseling: </b>1hr</p>\n      <p><b>Self Pay: </b>$$35</p>\n      <p>Apollo Sports Counseling Inc.</p>\n    </ion-item>\n  </ion-list>\n\n  <!-- <ionic-calendar-date-picker (onSelect)=\"dateSelected($event)\"></ionic-calendar-date-picker>\t -->\n\n</ion-content>"
+module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Appointments</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content fullscreen>\n  <p class=\"text\">\n    If you are going through your insurance company for services, please provide\n    the client's name, date of birth and member ID number in the \"Add Your Message\"\n    section once you have selected your appointment. You will receive an email confirming\n    your appointment.\n  </p>\n\n  <ion-list>\n    <ion-item button (click)=\"bookAppointment('ll-intake')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$125</p>\n    </ion-item>\n    <ion-item button (click)=\"bookAppointment('ll-insurance')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Insurance: </b>$110</p>\n    </ion-item>\n    <ion-item button (click)=\"bookAppointment('ll-selfpay')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$80</p>\n    </ion-item>\n    <ion-item button (click)=\"bookAppointment('ml-intake')\">\n      <img src=\"assets/photo2.jpeg\" alt=\"\">\n      <p><b>Masters Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$100</p>\n    </ion-item>\n    <ion-item button (click)=\"bookAppointment('ml-selfpay')\">\n      <img src=\"assets/photo2.jpeg\" alt=\"\">\n      <p><b>Masters Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$65</p>\n    </ion-item>\n    <ion-item button (click)=\"bookAppointment('youth')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Adolescent Group Counseling: </b>1hr</p>\n      <p><b>Self Pay: </b>$$35</p>\n      <p>Apollo Sports Counseling Inc.</p>\n    </ion-item>\n  </ion-list>\n\n  <!-- <ionic-calendar-date-picker (onSelect)=\"dateSelected($event)\"></ionic-calendar-date-picker>\t -->\n\n</ion-content>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/appt-modal/appt-modal.component.html":
+/*!********************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/appt-modal/appt-modal.component.html ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-content>\n  <!-- no schedule -->\n  <div class=\"err-content\" *ngIf=\"noData\">\n    <p>No schedule available at this time.</p>\n    <ion-button fill=\"solid\" shape=\"round\" (click)=\"dismiss()\">Return to Appointments</ion-button>\n  </div>\n  <ion-list *ngFor=\"let item of data\">\n    <ion-item button (click)=\"book()\">\n      <div class=\"list-item\">\n        <p>{{item.Date.S}}</p>\n        <p>{{item.Location.S}}</p>\n      </div>\n    </ion-item>\n  </ion-list>\n  <div class=\"btn-container\">\n    <ion-button fill=\"solid\" shape=\"round\" (click)=\"dismiss()\">Return to Appointments</ion-button>\n  </div>\n</ion-content>"
 
 /***/ }),
 
@@ -827,6 +838,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fees_fees_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./fees/fees.component */ "./src/app/fees/fees.component.ts");
 /* harmony import */ var _appointment_appointment_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./appointment/appointment.component */ "./src/app/appointment/appointment.component.ts");
 /* harmony import */ var _forms_forms_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./forms/forms.component */ "./src/app/forms/forms.component.ts");
+/* harmony import */ var _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./appt-modal/appt-modal.component */ "./src/app/appt-modal/appt-modal.component.ts");
+/* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+
+
+
 
 
 
@@ -864,9 +881,12 @@ var AppModule = /** @class */ (function () {
                 _outreach_outreach_component__WEBPACK_IMPORTED_MODULE_19__["OutreachComponent"],
                 _fees_fees_component__WEBPACK_IMPORTED_MODULE_20__["FeesComponent"],
                 _appointment_appointment_component__WEBPACK_IMPORTED_MODULE_21__["AppointmentComponent"],
-                _forms_forms_component__WEBPACK_IMPORTED_MODULE_22__["FormsComponent"]
+                _forms_forms_component__WEBPACK_IMPORTED_MODULE_22__["FormsComponent"],
+                _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"]
             ],
-            entryComponents: [],
+            entryComponents: [
+                _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"]
+            ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
                 _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(),
@@ -876,11 +896,13 @@ var AppModule = /** @class */ (function () {
                 _home_career_career_module__WEBPACK_IMPORTED_MODULE_11__["CareerModule"],
                 _home_adolescent_adolescent_module__WEBPACK_IMPORTED_MODULE_15__["AdolescentModule"],
                 _home_individual_indivudal_module__WEBPACK_IMPORTED_MODULE_16__["IndividualModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_25__["HttpClientModule"]
             ],
             providers: [
                 _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"],
                 _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["SplashScreen"],
                 _services_menu_service__WEBPACK_IMPORTED_MODULE_12__["MenuService"],
+                src_services_appointment_service__WEBPACK_IMPORTED_MODULE_24__["AppointmentService"],
                 // File,
                 // FileTransfer,
                 { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }
@@ -919,27 +941,184 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
+/* harmony import */ var _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../appt-modal/appt-modal.component */ "./src/app/appt-modal/appt-modal.component.ts");
+
+
 
 
 
 var AppointmentComponent = /** @class */ (function () {
-    function AppointmentComponent(actionSheetController) {
-        this.actionSheetController = actionSheetController;
+    function AppointmentComponent(modalController, appointmentService) {
+        this.modalController = modalController;
+        this.appointmentService = appointmentService;
+        this.appointments = [];
     }
     AppointmentComponent.prototype.ngOnInit = function () { };
-    AppointmentComponent.prototype.presentActionSheet = function () {
+    AppointmentComponent.prototype.presentModal = function (data) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var _a;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        _a = this;
+                        return [4 /*yield*/, this.modalController.create({
+                                showBackdrop: true,
+                                component: _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_4__["ApptModalComponent"],
+                                mode: 'ios',
+                                backdropDismiss: true,
+                                componentProps: {
+                                    data: data.Items,
+                                    count: data.Count
+                                }
+                            })];
+                    case 1:
+                        _a.modal = _b.sent();
+                        return [4 /*yield*/, this.modal.present()];
+                    case 2: return [2 /*return*/, _b.sent()];
+                }
+            });
+        });
+    };
+    AppointmentComponent.prototype.bookAppointment = function (appointment) {
+        var _this = this;
+        //gets schedule and opend modal
+        switch (appointment) {
+            case 'll-intake':
+                this.appointmentService.getLicensedLevelFirstSession()
+                    .subscribe(function (res) {
+                    _this.presentModal(res);
+                }, function (err) {
+                    _this.handleError(err, 'Error retrieving schedule');
+                });
+                break;
+            case 'll-insurance':
+                this.appointmentService.getLicensedLevelInsurance()
+                    .subscribe(function (res) {
+                    _this.presentModal(res);
+                }, function (err) {
+                    _this.handleError(err, 'Error retrieving schedule');
+                });
+                break;
+            case 'll-selfpay':
+                this.appointmentService.getLicensedLevelSelfPay()
+                    .subscribe(function (res) {
+                    _this.presentModal(res);
+                }, function (err) {
+                    _this.handleError(err, 'Error retrieving schedule');
+                });
+                break;
+            case 'ml-intake':
+                this.appointmentService.getMastersLevelIntake()
+                    .subscribe(function (res) {
+                    _this.presentModal(res);
+                }, function (err) {
+                    _this.handleError(err, 'Error retrieving schedule');
+                });
+                break;
+            case 'ml-selfpay':
+                this.appointmentService.getMastersLevelSelfPay()
+                    .subscribe(function (res) {
+                    _this.presentModal(res);
+                }, function (err) {
+                    _this.handleError(err, 'Error retrieving schedule');
+                });
+                break;
+            case 'youth':
+                this.appointmentService.getAdolescentGroupSelfPay()
+                    .subscribe(function (res) {
+                    _this.presentModal(res);
+                }, function (err) {
+                    _this.handleError(err, 'Error retrieving schedule');
+                });
+                break;
+        }
+    };
+    AppointmentComponent.prototype.handleError = function (err, errMessage) {
+        console.log(err + err.message);
+        alert(errMessage);
+    };
+    AppointmentComponent.ctorParameters = function () { return [
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"] },
+        { type: src_services_appointment_service__WEBPACK_IMPORTED_MODULE_3__["AppointmentService"] }
+    ]; };
+    AppointmentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-appointment',
+            template: __webpack_require__(/*! raw-loader!./appointment.component.html */ "./node_modules/raw-loader/index.js!./src/app/appointment/appointment.component.html"),
+            styles: [__webpack_require__(/*! ./appointment.component.scss */ "./src/app/appointment/appointment.component.scss"), __webpack_require__(/*! ../../theme/font.scss */ "./src/theme/font.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"],
+            src_services_appointment_service__WEBPACK_IMPORTED_MODULE_3__["AppointmentService"]])
+    ], AppointmentComponent);
+    return AppointmentComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/appt-modal/appt-modal.component.scss":
+/*!******************************************************!*\
+  !*** ./src/app/appt-modal/appt-modal.component.scss ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".err-content {\n  text-align: center;\n  padding: 5px;\n}\n\n.btn-container {\n  text-align: center;\n}\n\nion-button {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvYXBwdC1tb2RhbC9hcHB0LW1vZGFsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hcHB0LW1vZGFsL2FwcHQtbW9kYWwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxrQkFBQTtFQUNBLFlBQUE7QUNESjs7QURJQTtFQUNJLGtCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9hcHB0LW1vZGFsL2FwcHQtbW9kYWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcblxuLmVyci1jb250ZW50IHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgcGFkZGluZzogNXB4O1xufVxuXG4uYnRuLWNvbnRhaW5lciB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyOztcbn1cblxuaW9uLWJ1dHRvbiB7XG4gICAgY29sb3I6IGJsYWNrO1xufSIsIi5lcnItY29udGVudCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcGFkZGluZzogNXB4O1xufVxuXG4uYnRuLWNvbnRhaW5lciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuaW9uLWJ1dHRvbiB7XG4gIGNvbG9yOiBibGFjaztcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/appt-modal/appt-modal.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/appt-modal/appt-modal.component.ts ***!
+  \****************************************************/
+/*! exports provided: ApptModalComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ApptModalComponent", function() { return ApptModalComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+
+
+
+
+
+var ApptModalComponent = /** @class */ (function () {
+    function ApptModalComponent(modalController, actionSheetController, toastController) {
+        this.modalController = modalController;
+        this.actionSheetController = actionSheetController;
+        this.toastController = toastController;
+        this.noData = false;
+        this.errMessage = "No schedule available";
+    }
+    ApptModalComponent.prototype.ngOnInit = function () {
+        if (this.count == 0) {
+            this.noData = true;
+        }
+        console.log(this.data);
+    };
+    ApptModalComponent.prototype.dismiss = function () {
+        this.modalController.dismiss();
+    };
+    ApptModalComponent.prototype.book = function () {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
             var actionSheet;
+            var _this = this;
             return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.actionSheetController.create({
-                            header: 'Booking',
+                            header: 'Are you sure you want to book this appointment?',
                             buttons: [{
-                                    text: 'Book',
+                                    text: 'Yes',
                                     role: 'destructive',
                                     icon: 'checkmark',
                                     handler: function () {
                                         console.log('Appointment booked');
+                                        _this.presentToast();
                                     }
                                 },
                                 {
@@ -961,18 +1140,47 @@ var AppointmentComponent = /** @class */ (function () {
             });
         });
     };
-    AppointmentComponent.ctorParameters = function () { return [
-        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ActionSheetController"] }
+    ApptModalComponent.prototype.presentToast = function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var toast;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.toastController.create({
+                            message: 'Your appointment has been booked.',
+                            duration: 2000
+                        })];
+                    case 1:
+                        toast = _a.sent();
+                        toast.present();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    ApptModalComponent.ctorParameters = function () { return [
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"] },
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ActionSheetController"] },
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"] }
     ]; };
-    AppointmentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Array)
+    ], ApptModalComponent.prototype, "data", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
+    ], ApptModalComponent.prototype, "count", void 0);
+    ApptModalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-appointment',
-            template: __webpack_require__(/*! raw-loader!./appointment.component.html */ "./node_modules/raw-loader/index.js!./src/app/appointment/appointment.component.html"),
-            styles: [__webpack_require__(/*! ./appointment.component.scss */ "./src/app/appointment/appointment.component.scss"), __webpack_require__(/*! ../../theme/font.scss */ "./src/theme/font.scss")]
+            selector: 'app-appt-modal',
+            template: __webpack_require__(/*! raw-loader!./appt-modal.component.html */ "./node_modules/raw-loader/index.js!./src/app/appt-modal/appt-modal.component.html"),
+            styles: [__webpack_require__(/*! ./appt-modal.component.scss */ "./src/app/appt-modal/appt-modal.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ActionSheetController"]])
-    ], AppointmentComponent);
-    return AppointmentComponent;
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ActionSheetController"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"]])
+    ], ApptModalComponent);
+    return ApptModalComponent;
 }());
 
 
@@ -1877,6 +2085,101 @@ if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].produc
 }
 Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
     .catch(function (err) { return console.log(err); });
+
+
+/***/ }),
+
+/***/ "./src/services/appointment.service.ts":
+/*!*********************************************!*\
+  !*** ./src/services/appointment.service.ts ***!
+  \*********************************************/
+/*! exports provided: AppointmentService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppointmentService", function() { return AppointmentService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+
+
+Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])();
+var AppointmentService = /** @class */ (function () {
+    function AppointmentService(http) {
+        this.http = http;
+    }
+    AppointmentService.prototype.getLicensedLevelFirstSession = function () {
+        var url = "https://gg11vbof64.execute-api.us-east-1.amazonaws.com/default/getLicenseLevelFirstSessionSchedule";
+        var httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.get(url, httpOptions);
+    };
+    AppointmentService.prototype.getLicensedLevelInsurance = function () {
+        var url = "https://wk1co93jva.execute-api.us-east-1.amazonaws.com/default/getLicenseLevelInsuranceSchedule";
+        var httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.get(url, httpOptions);
+    };
+    AppointmentService.prototype.getLicensedLevelSelfPay = function () {
+        var url = "https://17emam9dlh.execute-api.us-east-1.amazonaws.com/default/getLicenseLevelSelfPaySchedule";
+        var httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.get(url, httpOptions);
+    };
+    AppointmentService.prototype.getMastersLevelIntake = function () {
+        var url = "https://hcarij2xh8.execute-api.us-east-1.amazonaws.com/default/getMastersLevelIntakeSchedule";
+        var httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.get(url, httpOptions);
+    };
+    AppointmentService.prototype.getMastersLevelSelfPay = function () {
+        var url = "https://qrydefjkte.execute-api.us-east-1.amazonaws.com/default/getMastersLevelSelfPaySchedule";
+        var httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.get(url, httpOptions);
+    };
+    AppointmentService.prototype.getAdolescentGroupSelfPay = function () {
+        return null;
+    };
+    AppointmentService.prototype.setLicensedLevelFirstSession = function (appointments) {
+        var url = "https://o18ov9ki32.execute-api.us-east-1.amazonaws.com/default/setLicenseLevelSchedule";
+        var httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.post(url, appointments, httpOptions);
+    };
+    AppointmentService.prototype.setMastersLevelSchedule = function (appointments) {
+        var url = "https://w4hvl0lqll.execute-api.us-east-1.amazonaws.com/default/setMastersLevelSchedule";
+        var httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.post(url, appointments, httpOptions);
+    };
+    AppointmentService.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }
+    ]; };
+    return AppointmentService;
+}());
+
 
 
 /***/ }),
