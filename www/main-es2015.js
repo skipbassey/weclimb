@@ -496,7 +496,7 @@ module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-back-button defaultHref=\"menu\"></ion-back-button>\n      </ion-buttons>\n      <ion-title class=\"title-text\">Adolescent Counseling</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <h1 class=\"header-text\">Growing Pains</h1>\n    <p class=\"content-text\">Adolescents are constantly in the process of developing the social and emotional \n      skills necessary to lead them to healthy and happy lives. When adolescents experience \n      emotions or engage in behaviors that interfere with their happiness and ability to grow, \n      they may benefit from meeting with a therapist.\n    </p>\n    <ul>\n      <li>Anger Management</li>\n      <li>Self-Harming & Suicidal Behaviors</li>\n      <li>Oppositional Defiant Behaviors</li>\n      <li>ADD & ADHD</li>\n      <li>Bullying</li>\n      <li>Individualized Educational Plan (IEP)</li>\n      <li>504 Plan</li>\n      <li>Trauma</li>\n      <li>Coping Skills</li>\n    </ul>\n  </ion-content>"
+module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-back-button class=\"back-btn\" defaultHref=\"menu\"></ion-back-button>\n      </ion-buttons>\n      <ion-title class=\"title-text\">Adolescent Counseling</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <h1 class=\"header-text\">Growing Pains</h1>\n    <p class=\"content-text\">Adolescents are constantly in the process of developing the social and emotional \n      skills necessary to lead them to healthy and happy lives. When adolescents experience \n      emotions or engage in behaviors that interfere with their happiness and ability to grow, \n      they may benefit from meeting with a therapist.\n    </p>\n    <ul>\n      <li>Anger Management</li>\n      <li>Self-Harming & Suicidal Behaviors</li>\n      <li>Oppositional Defiant Behaviors</li>\n      <li>ADD & ADHD</li>\n      <li>Bullying</li>\n      <li>Individualized Educational Plan (IEP)</li>\n      <li>504 Plan</li>\n      <li>Trauma</li>\n      <li>Coping Skills</li>\n    </ul>\n  </ion-content>"
 
 /***/ }),
 
@@ -507,7 +507,7 @@ module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"menu\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Career Counseling</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1 class=\"header-text\">Guidance & Inspiration</h1>\n  <p class=\"content-text\">Do you feel like you are always adding new tasks to your to-do list but never \n    crossing anything out? My specialization in Career Counseling will help guide \n    and inspire you to achieve more of your personal and professional goals. \n    Get in touch today and start taking control of your life with my Career \n    Counseling tools and techniques.\n  </p>\n  <ul>\n    <li>Career Counseling & Guidance</li>\n    <li>Career Interest Assessment</li>\n    <li>Choosing/Changing Majors</li>\n    <li>Changing Career Paths</li>\n    <li>Resume & Cover Letter Writing</li>\n  </ul>\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"menu\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Career Counseling</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1 class=\"header-text\">Guidance & Inspiration</h1>\n  <p class=\"content-text\">Do you feel like you are always adding new tasks to your to-do list but never \n    crossing anything out? My specialization in Career Counseling will help guide \n    and inspire you to achieve more of your personal and professional goals. \n    Get in touch today and start taking control of your life with my Career \n    Counseling tools and techniques.\n  </p>\n  <ul>\n    <li>Career Counseling & Guidance</li>\n    <li>Career Interest Assessment</li>\n    <li>Choosing/Changing Majors</li>\n    <li>Changing Career Paths</li>\n    <li>Resume & Cover Letter Writing</li>\n  </ul>\n</ion-content>"
 
 /***/ }),
 
@@ -518,7 +518,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"menu\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Family Counseling</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1 class=\"header-text\">Get the Most out of Life</h1>\n  <p class=\"content-text\">Feeling like everyone in the house is at each other’s throat and there is little\n    respect for anyone. It can be very helpful to seek guidance from a therapist who\n    can be objective and not take sides. I help families learn to work together and\n    communicate how they are feeling. I work with the very fluid dynamic of families\n    and how they ebb and flow. In some cases clash and help everyone have a voice.\n  </p>\n  <ul>\n    <li>Blending Family Adjustments</li>\n    <li>Behavioral Issues</li>\n    <li>Academic Concerns in Children</li>\n    <li>Divorce & Divorce Adjustments</li>\n    <li>Grief Counseling</li>\n  </ul>\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"menu\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Family Counseling</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1 class=\"header-text\">Get the Most out of Life</h1>\n  <p class=\"content-text\">Feeling like everyone in the house is at each other’s throat and there is little\n    respect for anyone. It can be very helpful to seek guidance from a therapist who\n    can be objective and not take sides. I help families learn to work together and\n    communicate how they are feeling. I work with the very fluid dynamic of families\n    and how they ebb and flow. In some cases clash and help everyone have a voice.\n  </p>\n  <ul>\n    <li>Blending Family Adjustments</li>\n    <li>Behavioral Issues</li>\n    <li>Academic Concerns in Children</li>\n    <li>Divorce & Divorce Adjustments</li>\n    <li>Grief Counseling</li>\n  </ul>\n</ion-content>"
 
 /***/ }),
 
@@ -540,7 +540,7 @@ module.exports = "    <ion-card>\n        <ion-card-header>\n          <ion-card
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"menu\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Individual Counseling</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1 class=\"header-text\">Self Exploration</h1>\n  <p class=\"content-text\">Individual counseling involves talking about your feelings, thoughts, and \n    behaviors and the things that are troubling you. I will work with you to set\n     goals or identify the things you would like to accomplish by working \n     together. My counseling model attempts to empower you with the resources \n     needed to make positive changes in your life. The counselor and client work \n     together to define and discuss personal issues and reach mutually agreed upon goals.\n  </p>\n  <ul>\n    <li>Depression</li>\n    <li>Anxiety & Stress Management</li>\n    <li>Self-Esteem Issues</li>\n    <li>Underachievement</li>\n    <li>Anger Management</li>\n    <li>Spiritual Issues</li>\n    <li>Crisis Intervention</li>\n    <li>Trauma/PTSD</li>\n    <li>Grief</li>\n    <li>Divorce Adjustment</li>\n    <li>Coping Skills</li>\n  </ul>\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"menu\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Individual Counseling</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1 class=\"header-text\">Self Exploration</h1>\n  <p class=\"content-text\">Individual counseling involves talking about your feelings, thoughts, and \n    behaviors and the things that are troubling you. I will work with you to set\n     goals or identify the things you would like to accomplish by working \n     together. My counseling model attempts to empower you with the resources \n     needed to make positive changes in your life. The counselor and client work \n     together to define and discuss personal issues and reach mutually agreed upon goals.\n  </p>\n  <ul>\n    <li>Depression</li>\n    <li>Anxiety & Stress Management</li>\n    <li>Self-Esteem Issues</li>\n    <li>Underachievement</li>\n    <li>Anger Management</li>\n    <li>Spiritual Issues</li>\n    <li>Crisis Intervention</li>\n    <li>Trauma/PTSD</li>\n    <li>Grief</li>\n    <li>Divorce Adjustment</li>\n    <li>Coping Skills</li>\n  </ul>\n</ion-content>"
 
 /***/ }),
 
@@ -551,7 +551,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"menu\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title menu-text\">Relationship Counseling</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1 class=\"header-text ion-color-primary\">Embrace Life’s Challenges</h1>\n  <p class=\"content-text\">Sometimes, it seems as if life just has it in for us and we can never catch a break.\n    In reality, there will always be moments we have little to no control over but, what\n    we can always control is how we react to those moments. With my Relationship Counseling\n    sessions, you’ll learn about acceptance and how to exert your power of choice over whatever\n    life may throw at you.\n  </p>\n  <ion-list>\n    <ul>\n      <li>Blending Family Adjustments</li>\n      <li>Behavioral Issues</li>\n      <li>Academic Concerns in Children</li>\n      <li>Divorce & Divorce Adjustments</li>\n      <li>Grief Counseling</li>\n    </ul>\n  </ion-list>\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"menu\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Relationship Counseling</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1 class=\"header-text ion-color-primary\">Embrace Life’s Challenges</h1>\n  <p class=\"content-text\">Sometimes, it seems as if life just has it in for us and we can never catch a break.\n    In reality, there will always be moments we have little to no control over but, what\n    we can always control is how we react to those moments. With my Relationship Counseling\n    sessions, you’ll learn about acceptance and how to exert your power of choice over whatever\n    life may throw at you.\n  </p>\n  <ion-list>\n    <ul>\n      <li>Blending Family Adjustments</li>\n      <li>Behavioral Issues</li>\n      <li>Academic Concerns in Children</li>\n      <li>Divorce & Divorce Adjustments</li>\n      <li>Grief Counseling</li>\n    </ul>\n  </ion-list>\n</ion-content>"
 
 /***/ }),
 
@@ -573,7 +573,7 @@ module.exports = "\n  <ion-menu color=\"primary\" side=\"start\">\n    <ion-head
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-back-button defaultHref=\"home\"></ion-back-button>\n      </ion-buttons>\n      <ion-title class=\"title-text\">Outreach</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <p>\n        Here at We Climb Counseling & Consulting, we are dedicated to serving\n         the community through various community outreach initiatives. We Climb \n         Counseling & Consulting would love to work with your organization on its \n         next event. For information on how to reach us, please click on the contact tab. \n    </p>\n    <ul>\n      <li>Motivational Speaking</li>\n      <li>Career Day</li>\n      <li>Community Partnerships</li>\n      <li>Public and Private Schools Partnerships</li>\n      <li>Mental Health Awareness Seminars</li>\n      <li>Mental Health Training & Workshops</li>\n      <li>Community & School Suicide Prevention Training</li>\n      <li>Community & School Crisis Intervention Training</li>\n    </ul>\n    <ion-slides pager=\"true\" [options]=\"slideOpts\">\n      <ion-slide>\n        <img src=\"/assets/outreach1.jpeg\" alt=\"\">\n      </ion-slide>\n      <ion-slide>\n        <img src=\"/assets/outreach2.jpeg\" alt=\"\">\n      </ion-slide>\n    </ion-slides>\n  </ion-content>"
+module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-back-button defaultHref=\"home\"></ion-back-button>\n      </ion-buttons>\n      <ion-title class=\"title-text\">Outreach</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <p>\n        Here at We Climb Counseling & Consulting, we are dedicated to serving\n         the community through various community outreach initiatives. We Climb \n         Counseling & Consulting would love to work with your organization on its \n         next event. For information on how to reach us, please click on the contact tab. \n    </p>\n    <ul>\n      <li>Motivational Speaking</li>\n      <li>Career Day</li>\n      <li>Community Partnerships</li>\n      <li>Public and Private Schools Partnerships</li>\n      <li>Mental Health Awareness Seminars</li>\n      <li>Mental Health Training & Workshops</li>\n      <li>Community & School Suicide Prevention Training</li>\n      <li>Community & School Crisis Intervention Training</li>\n    </ul>\n    <ion-slides [options]=\"slideOpts\">\n      <ion-slide>\n        <img src=\"/assets/outreach1.jpeg\" alt=\"\">\n      </ion-slide>\n      <ion-slide>\n        <img src=\"/assets/outreach2.jpeg\" alt=\"\">\n      </ion-slide>\n    </ion-slides>\n  </ion-content>"
 
 /***/ }),
 
@@ -1251,7 +1251,7 @@ AdolescentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-adolescent',
         template: __webpack_require__(/*! raw-loader!./adolescent.component.html */ "./node_modules/raw-loader/index.js!./src/app/home/adolescent/adolescent.component.html"),
-        styles: [__webpack_require__(/*! ./adolescent.component.scss */ "./src/app/home/adolescent/adolescent.component.scss"), __webpack_require__(/*! ../../../theme/font.scss */ "./src/theme/font.scss")]
+        styles: [__webpack_require__(/*! ./adolescent.component.scss */ "./src/app/home/adolescent/adolescent.component.scss"), __webpack_require__(/*! ../../../theme/font.scss */ "./src/theme/font.scss"), __webpack_require__(/*! ../../../theme/button.scss */ "./src/theme/button.scss")]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], AdolescentComponent);
@@ -1332,7 +1332,7 @@ CareerComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-career',
         template: __webpack_require__(/*! raw-loader!./career.component.html */ "./node_modules/raw-loader/index.js!./src/app/home/career/career.component.html"),
-        styles: [__webpack_require__(/*! ./career.component.scss */ "./src/app/home/career/career.component.scss"), __webpack_require__(/*! ../../../theme/font.scss */ "./src/theme/font.scss")]
+        styles: [__webpack_require__(/*! ./career.component.scss */ "./src/app/home/career/career.component.scss"), __webpack_require__(/*! ../../../theme/font.scss */ "./src/theme/font.scss"), __webpack_require__(/*! ../../../theme/button.scss */ "./src/theme/button.scss")]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], CareerComponent);
@@ -1413,7 +1413,7 @@ FamilyComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-family',
         template: __webpack_require__(/*! raw-loader!./family.component.html */ "./node_modules/raw-loader/index.js!./src/app/home/family/family.component.html"),
-        styles: [__webpack_require__(/*! ./family.component.scss */ "./src/app/home/family/family.component.scss"), __webpack_require__(/*! ../../../theme/font.scss */ "./src/theme/font.scss")]
+        styles: [__webpack_require__(/*! ./family.component.scss */ "./src/app/home/family/family.component.scss"), __webpack_require__(/*! ../../../theme/font.scss */ "./src/theme/font.scss"), __webpack_require__(/*! ../../../theme/button.scss */ "./src/theme/button.scss")]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], FamilyComponent);
@@ -1576,7 +1576,7 @@ IndividualComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-individual',
         template: __webpack_require__(/*! raw-loader!./individual.component.html */ "./node_modules/raw-loader/index.js!./src/app/home/individual/individual.component.html"),
-        styles: [__webpack_require__(/*! ./individual.component.scss */ "./src/app/home/individual/individual.component.scss"), __webpack_require__(/*! ../../../theme/font.scss */ "./src/theme/font.scss")]
+        styles: [__webpack_require__(/*! ./individual.component.scss */ "./src/app/home/individual/individual.component.scss"), __webpack_require__(/*! ../../../theme/font.scss */ "./src/theme/font.scss"), __webpack_require__(/*! ../../../theme/button.scss */ "./src/theme/button.scss")]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], IndividualComponent);
@@ -1660,7 +1660,7 @@ RelationshipComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-relationship',
         template: __webpack_require__(/*! raw-loader!./relationship.component.html */ "./node_modules/raw-loader/index.js!./src/app/home/relationship/relationship.component.html"),
-        styles: [__webpack_require__(/*! ./relationship.component.scss */ "./src/app/home/relationship/relationship.component.scss"), __webpack_require__(/*! ../../../theme/font.scss */ "./src/theme/font.scss")]
+        styles: [__webpack_require__(/*! ./relationship.component.scss */ "./src/app/home/relationship/relationship.component.scss"), __webpack_require__(/*! ../../../theme/font.scss */ "./src/theme/font.scss"), __webpack_require__(/*! ../../../theme/button.scss */ "./src/theme/button.scss")]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], RelationshipComponent);
@@ -1817,12 +1817,7 @@ let OutreachComponent = class OutreachComponent {
             preloadImages: true
         });
         this.slideOpts = {
-            initialSlide: 2,
-            speed: 400,
-            spaceBetween: 100,
-            grabCursor: true,
-            iOSEdgeSwipeDetection: true,
-            preloadImages: true
+            pager: true,
         };
     }
     ngOnInit() {
@@ -2173,6 +2168,17 @@ MenuService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 ], MenuService);
 
 
+
+/***/ }),
+
+/***/ "./src/theme/button.scss":
+/*!*******************************!*\
+  !*** ./src/theme/button.scss ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "ion-back-button {\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy90aGVtZS9idXR0b24uc2NzcyIsInNyYy90aGVtZS9idXR0b24uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHQTtFQUNJLFlBQUE7QUNGSiIsImZpbGUiOiJzcmMvdGhlbWUvYnV0dG9uLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuL2NvbG9ycy5zY3NzJztcblxuXG5pb24tYmFjay1idXR0b24ge1xuICAgIGNvbG9yOiBjb2xvcihwcmltYXJ5KVxufSIsImlvbi1iYWNrLWJ1dHRvbiB7XG4gIGNvbG9yOiB3aGl0ZTtcbn0iXX0= */"
 
 /***/ }),
 
