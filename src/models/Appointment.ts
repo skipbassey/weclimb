@@ -1,7 +1,22 @@
 export class Appointment {
-    name: string;
-    date: Date; // might make a string
-    duration: string;
-    price: string;
-    location: string;
+    name: {
+        type: string;
+        value: string;
+    }
+    date: {
+        type: string;
+        value: string;
+    }
+    duration: {
+        type: string;
+        value: string;
+    }
+    price: {
+        type: string;
+        value: string;
+    }
+    location: {
+        type: string;
+        value: string;
+    }
 }
