@@ -24,12 +24,7 @@ export class OutreachComponent implements OnInit {
     });
 
   slideOpts = {
-    initialSlide: 2,
-    speed: 400,
-    spaceBetween: 100,
-    grabCursor: true,
-    iOSEdgeSwipeDetection: true,
-    preloadImages: true
+    pager: true,
   };
 
   constructor() { }

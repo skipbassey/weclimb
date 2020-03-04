@@ -5,7 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './family.component.html',
   styleUrls: [
     './family.component.scss',
-    '../../../theme/font.scss'
+    '../../../theme/font.scss',
+    '../../../theme/button.scss'
   ],
 })
 export class FamilyComponent implements OnInit {

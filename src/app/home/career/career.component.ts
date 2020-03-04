@@ -5,7 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './career.component.html',
   styleUrls: [
     './career.component.scss',
-    '../../../theme/font.scss'
+    '../../../theme/font.scss',
+    '../../../theme/button.scss'
   ],
 })
 export class CareerComponent implements OnInit {

@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MenuService } from '../../services/menu.service';
 import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -18,7 +20,8 @@ export class MenuComponent implements OnInit {
 
   constructor(
     private menuService: MenuService,
-    private router: Router
+    private router: Router,
+    private navController: NavController
     ) { }
 
   ngOnInit() {
@@ -26,7 +29,8 @@ export class MenuComponent implements OnInit {
   }
 
   navigate(route: string): void {
-    this.router.navigateByUrl(route);
+    // this.router.navigateByUrl(route);
+    this.navController.navigateForward(route)
   }
 
 }
