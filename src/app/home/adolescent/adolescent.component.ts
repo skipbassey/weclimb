@@ -5,7 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './adolescent.component.html',
   styleUrls: [
     './adolescent.component.scss',
-    '../../../theme/font.scss'
+    '../../../theme/font.scss',
+    '../../../theme/button.scss'
   ],
 })
 export class AdolescentComponent implements OnInit {

@@ -1,0 +1,18 @@
+<ion-content>
+  <!-- no schedule -->
+  <div class="err-content" *ngIf="noData">
+    <p>No schedule available at this time.</p>
+    <ion-button fill="solid" shape="round" (click)="dismiss()">Return to Appointments</ion-button>
+  </div>
+  <ion-list *ngFor="let item of data">
+    <ion-item button (click)="book()">
+      <div class="list-item">
+        <p>{{item.Date.S}}</p>
+        <p>{{item.Location.S}}</p>
+      </div>
+    </ion-item>
+  </ion-list>
+  <div class="btn-container">
+    <ion-button *ngIf="!noData" fill="solid" shape="round" (click)="dismiss()">Return to Appointments</ion-button>
+  </div>
+</ion-content>

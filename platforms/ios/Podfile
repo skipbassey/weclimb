@@ -2,7 +2,7 @@
 
 platform :ios, '10.0'
 
-target 'MyApp' do
-	project 'MyApp.xcodeproj'
+target 'WeClimb' do
+	project 'WeClimb.xcodeproj'
 
 end

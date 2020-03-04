@@ -5,7 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './relationship.component.html',
   styleUrls: [
     './relationship.component.scss',
-    '../../../theme/font.scss'],
+    '../../../theme/font.scss',
+    '../../../theme/button.scss'
+  ],
 })
 export class RelationshipComponent implements OnInit {
 
