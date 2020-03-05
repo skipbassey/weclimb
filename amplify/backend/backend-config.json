@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"weclimb840a1783": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}

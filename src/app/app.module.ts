@@ -29,6 +29,9 @@ import { ApptModalComponent } from './appt-modal/appt-modal.component';
 import { AppointmentService } from 'src/services/appointment.service';
 import { HttpClientModule } from '@angular/common/http';
 
+import { AmplifyAngularModule, AmplifyIonicModule, AmplifyService } from 'aws-amplify-angular'
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +57,9 @@ import { HttpClientModule } from '@angular/common/http';
     CareerModule,
     AdolescentModule,
     IndividualModule,
-    HttpClientModule
+    HttpClientModule,
+    AmplifyAngularModule,
+    AmplifyIonicModule
     
   ],
   providers: [
@@ -62,6 +67,7 @@ import { HttpClientModule } from '@angular/common/http';
     SplashScreen,
     MenuService,
     AppointmentService,
+    AmplifyService,
     // File,
     // FileTransfer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
