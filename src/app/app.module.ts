@@ -28,9 +28,9 @@ import { FileTransfer } from '@ionic-native/file-transfer';
 import { ApptModalComponent } from './appt-modal/appt-modal.component';
 import { AppointmentService } from 'src/services/appointment.service';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
 
 import { AmplifyAngularModule, AmplifyIonicModule, AmplifyService } from 'aws-amplify-angular'
-
 
 @NgModule({
   declarations: [
@@ -43,7 +43,8 @@ import { AmplifyAngularModule, AmplifyIonicModule, AmplifyService } from 'aws-am
     FeesComponent,
     AppointmentComponent,
     FormsComponent,
-    ApptModalComponent
+    ApptModalComponent,
+    LoginComponent
   ],
   entryComponents: [
     ApptModalComponent
@@ -59,8 +60,7 @@ import { AmplifyAngularModule, AmplifyIonicModule, AmplifyService } from 'aws-am
     IndividualModule,
     HttpClientModule,
     AmplifyAngularModule,
-    AmplifyIonicModule
-    
+    AmplifyIonicModule,    
   ],
   providers: [
     StatusBar,

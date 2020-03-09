@@ -1,0 +1,14 @@
+@import '../../theme/colors.scss';
+
+img {
+    width: 70%;
+}
+
+.logo-container {
+    padding: 15px;
+    text-align: center;
+}
+
+.amplify-form-button {
+    background-color: color(secondary);
+}

@@ -555,6 +555,17 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/login/login.component.html":
+/*!**********************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/login/login.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-content padding>\n\t<amplify-authenticator framework=\"ionic\"></amplify-authenticator>\n</ion-content>"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/menu/menu.component.html":
 /*!********************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/menu/menu.component.html ***!
@@ -620,6 +631,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fees_fees_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./fees/fees.component */ "./src/app/fees/fees.component.ts");
 /* harmony import */ var _appointment_appointment_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./appointment/appointment.component */ "./src/app/appointment/appointment.component.ts");
 /* harmony import */ var _forms_forms_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./forms/forms.component */ "./src/app/forms/forms.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+
 
 
 
@@ -635,6 +648,10 @@ const routes = [
     {
         path: 'home',
         component: _menu_menu_component__WEBPACK_IMPORTED_MODULE_4__["MenuComponent"]
+    },
+    {
+        path: 'login',
+        component: _login_login_component__WEBPACK_IMPORTED_MODULE_11__["LoginComponent"]
     },
     {
         path: 'services',
@@ -688,7 +705,7 @@ const routes = [
     },
     {
         path: '',
-        redirectTo: 'home',
+        redirectTo: 'login',
         pathMatch: 'full'
     }
 ];
@@ -820,6 +837,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./appt-modal/appt-modal.component */ "./src/app/appt-modal/appt-modal.component.ts");
 /* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var aws_amplify_angular__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! aws-amplify-angular */ "./node_modules/aws-amplify-angular/dist/index.js");
+
+
 
 
 
@@ -860,7 +881,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _fees_fees_component__WEBPACK_IMPORTED_MODULE_20__["FeesComponent"],
             _appointment_appointment_component__WEBPACK_IMPORTED_MODULE_21__["AppointmentComponent"],
             _forms_forms_component__WEBPACK_IMPORTED_MODULE_22__["FormsComponent"],
-            _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"]
+            _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"],
+            _login_login_component__WEBPACK_IMPORTED_MODULE_26__["LoginComponent"]
         ],
         entryComponents: [
             _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"]
@@ -874,13 +896,16 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _home_career_career_module__WEBPACK_IMPORTED_MODULE_11__["CareerModule"],
             _home_adolescent_adolescent_module__WEBPACK_IMPORTED_MODULE_15__["AdolescentModule"],
             _home_individual_indivudal_module__WEBPACK_IMPORTED_MODULE_16__["IndividualModule"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_25__["HttpClientModule"]
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_25__["HttpClientModule"],
+            aws_amplify_angular__WEBPACK_IMPORTED_MODULE_27__["AmplifyAngularModule"],
+            aws_amplify_angular__WEBPACK_IMPORTED_MODULE_27__["AmplifyIonicModule"]
         ],
         providers: [
             _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"],
             _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["SplashScreen"],
             _services_menu_service__WEBPACK_IMPORTED_MODULE_12__["MenuService"],
             src_services_appointment_service__WEBPACK_IMPORTED_MODULE_24__["AppointmentService"],
+            aws_amplify_angular__WEBPACK_IMPORTED_MODULE_27__["AmplifyService"],
             // File,
             // FileTransfer,
             { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }
@@ -1711,6 +1736,48 @@ RelationshipModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/login/login.component.scss":
+/*!********************************************!*\
+  !*** ./src/app/login/login.component.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xvZ2luL2xvZ2luLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/login/login.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/login/login.component.ts ***!
+  \******************************************/
+/*! exports provided: LoginComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let LoginComponent = class LoginComponent {
+    constructor() { }
+    ngOnInit() { }
+};
+LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-login',
+        template: __webpack_require__(/*! raw-loader!./login.component.html */ "./node_modules/raw-loader/index.js!./src/app/login/login.component.html"),
+        styles: [__webpack_require__(/*! ./login.component.scss */ "./src/app/login/login.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+], LoginComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/menu/menu.component.scss":
 /*!******************************************!*\
   !*** ./src/app/menu/menu.component.scss ***!
@@ -1941,6 +2008,32 @@ TeamComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/aws-exports.js":
+/*!****************************!*\
+  !*** ./src/aws-exports.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// WARNING: DO NOT EDIT. This file is automatically generated by AWS Amplify. It will be overwritten.
+
+const awsmobile = {
+    "aws_project_region": "us-east-1",
+    "aws_cognito_identity_pool_id": "us-east-1:f25f4324-135a-43aa-97a4-dd174ec67b6b",
+    "aws_cognito_region": "us-east-1",
+    "aws_user_pools_id": "us-east-1_xbNj7KYCb",
+    "aws_user_pools_web_client_id": "2mi2o6qk1kd65c45t1m8tjf1o4",
+    "oauth": {}
+};
+
+
+/* harmony default export */ __webpack_exports__["default"] = (awsmobile);
+
+
+/***/ }),
+
 /***/ "./src/environments/environment.ts":
 /*!*****************************************!*\
   !*** ./src/environments/environment.ts ***!
@@ -1982,10 +2075,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
 /* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var aws_amplify__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! aws-amplify */ "./node_modules/aws-amplify/lib-esm/index.js");
+/* harmony import */ var _aws_exports__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./aws-exports */ "./src/aws-exports.js");
 
 
 
 
+
+
+aws_amplify__WEBPACK_IMPORTED_MODULE_4__["default"].configure(_aws_exports__WEBPACK_IMPORTED_MODULE_5__["default"]);
 if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].production) {
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
 }
@@ -2213,6 +2311,17 @@ module.exports = ".title-text {\n  font-style: italic;\n  font-family: Apple Cha
 
 module.exports = __webpack_require__(/*! /Users/okwongbassey/Desktop/weclimb/src/main.ts */"./src/main.ts");
 
+
+/***/ }),
+
+/***/ 1:
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
 
 /***/ })
 

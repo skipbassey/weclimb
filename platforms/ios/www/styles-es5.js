@@ -591,7 +591,7 @@ if(false) {}
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!**********************************************************!*\
   !*** multi ./src/theme/variables.scss ./src/global.scss ***!
   \**********************************************************/
@@ -604,5 +604,5 @@ module.exports = __webpack_require__(/*! /Users/okwongbassey/Desktop/weclimb/src
 
 /***/ })
 
-},[[2,"runtime"]]]);
+},[[3,"runtime"]]]);
 //# sourceMappingURL=styles-es5.js.map

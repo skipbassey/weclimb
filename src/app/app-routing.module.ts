@@ -10,11 +10,16 @@ import { OutreachComponent } from './outreach/outreach.component';
 import { FeesComponent } from './fees/fees.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { FormsComponent } from './forms/forms.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
     path: 'home',
     component: MenuComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
   {
     path: 'services',
@@ -73,7 +78,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   }
 ];
