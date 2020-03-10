@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
 
 
   signUpConfig = {
-    header: 'My Customized Sign Up',
+    header: 'Sign Up',
     hideAllDefaults: true,
     defaultCountryCode: '1',
     signUpFields: [
