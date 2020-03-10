@@ -1,7 +1,6 @@
 import { Component, OnInit, AfterContentInit } from '@angular/core';
 import { AmplifyService } from 'aws-amplify-angular';
 import { Events } from '@ionic/angular';
-import { ViewEncapsulation } from '@angular/compiler/src/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -85,6 +84,9 @@ export class LoginComponent implements OnInit {
     redirectSignIn() {
       if(this.authState.signedIn) {
         this.router.navigateByUrl('home');
+      }
+      else {
+        this.router.navigateByUrl('login');
       }
     }
 }

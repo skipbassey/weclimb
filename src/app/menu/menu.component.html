@@ -21,7 +21,7 @@
       <ion-list>
         <ion-item class="menu-text" button>Profile</ion-item>
         <ion-item class="menu-text" button>My Appointments</ion-item>
-        <ion-item class="menu-text" button>Sign Off</ion-item>
+        <ion-item class="menu-text" button (click)="signOut()">Sign Off</ion-item>
       </ion-list>
     </ion-content>
   </ion-menu>
@@ -48,5 +48,9 @@
       <app-home></app-home>
      </ion-content>
   </div>
+
+	<!-- <amplify-authenticator [hide]="['signIn']" framework="ionic"></amplify-authenticator> -->
+
+
 
 
