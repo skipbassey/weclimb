@@ -23,14 +23,13 @@ import { OutreachComponent } from './outreach/outreach.component';
 import { FeesComponent } from './fees/fees.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { FormsComponent } from './forms/forms.component';
-import { File } from '@ionic-native/file';
-import { FileTransfer } from '@ionic-native/file-transfer';
 import { ApptModalComponent } from './appt-modal/appt-modal.component';
 import { AppointmentService } from 'src/services/appointment.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
+import { AuthGuardService } from '../services/auth-guard.service';
 
-import { AmplifyAngularModule, AmplifyIonicModule, AmplifyService } from 'aws-amplify-angular'
+import { AmplifyAngularModule, AmplifyIonicModule, AmplifyService } from 'aws-amplify-angular';
 
 @NgModule({
   declarations: [
@@ -68,6 +67,7 @@ import { AmplifyAngularModule, AmplifyIonicModule, AmplifyService } from 'aws-am
     MenuService,
     AppointmentService,
     AmplifyService,
+    AuthGuardService,
     // File,
     // FileTransfer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }

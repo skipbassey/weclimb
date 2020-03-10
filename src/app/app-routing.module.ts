@@ -11,11 +11,12 @@ import { FeesComponent } from './fees/fees.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { FormsComponent } from './forms/forms.component';
 import { LoginComponent } from './login/login.component';
+import { AuthGuardService } from 'src/services/auth-guard.service';
 
 const routes: Routes = [
   {
     path: 'home',
-    component: MenuComponent
+    component: MenuComponent,
   },
   {
     path: 'login',

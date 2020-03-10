@@ -24,13 +24,14 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import '../node_modules/aws-amplify-angular/theme.css';
 @import './theme/colors.scss';
 
 
-// @import './node_modules/@aws-amplify/ui/dist/style.css';
-// @import '~/node_modules/@aws-amplify/ui/dist/style.css'
 
-@import '../node_modules/aws-amplify-angular/theme.css';
+.ion-color-primary {
+    --ion-color-base: color(secondary);
+}
 
 .amplify-form-link {
     color: color(secondary);

@@ -2,6 +2,7 @@ import { Component, OnInit, AfterContentInit } from '@angular/core';
 import { AmplifyService } from 'aws-amplify-angular';
 import { Events } from '@ionic/angular';
 import { ViewEncapsulation } from '@angular/compiler/src/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,33 +10,8 @@ import { ViewEncapsulation } from '@angular/compiler/src/core';
   styleUrls: ['./login.component.scss'],
   // encapsulation: ViewEncapsulation.None
 })
-export class LoginComponent implements OnInit, AfterContentInit {
+export class LoginComponent implements OnInit {
 
-  authState: any;
-  // including AuthGuardService here so that it's available to listen to auth events
-  amplifyService: AmplifyService
-
-  constructor(
-    public events: Events,
-    // public guard: AuthGuardService,
-    public amplify: AmplifyService
-  ) {
-    this.authState = {loggedIn: false};
-    // this.authService = guard;
-    this.amplifyService = amplify;
-    this.amplifyService.authStateChange$
-    .subscribe(authState => {
-      this.authState.loggedIn = authState.state === 'signedIn';
-      this.events.publish('data:AuthState', this.authState)
-    });
-  }
-
-  ngOnInit() {
-  }
-
-  ngAfterContentInit(){
-    this.events.publish('data:AuthState', this.authState)
-  }
 
   signUpConfig = {
     header: 'My Customized Sign Up',
@@ -87,4 +63,28 @@ export class LoginComponent implements OnInit, AfterContentInit {
     ]
   }
 
+  authState: any;
+
+  constructor(
+    public events: Events,
+    public amplifyService: AmplifyService,
+    public router: Router
+  ) {
+    this.authState = { signedIn: false };
+
+    this.amplifyService.authStateChange$
+      .subscribe(authState => {
+        this.authState.signedIn = authState.state === 'signedIn';
+        this.events.publish('data:AuthState', this.authState);
+        this.redirectSignIn();
+      });
+    }
+
+    ngOnInit() { }
+
+    redirectSignIn() {
+      if(this.authState.signedIn) {
+        this.router.navigateByUrl('home');
+      }
+    }
 }

@@ -1,9 +1,10 @@
 
-  <ion-menu color="primary" side="start">
+<!-- option menu -->
+  <ion-menu color="primary" side="end" (click)="openMenu('end')">
     <ion-header>
-      <ion-toolbar color="secondary">
+      <!-- <ion-toolbar color="secondary">
         <ion-title class="menu-header-text text">We Climb</ion-title>
-      </ion-toolbar>
+      </ion-toolbar> -->
     </ion-header>
     <ion-content>
       <ion-nav>
@@ -14,13 +15,33 @@
     </ion-content>
   </ion-menu>
 
+  <!-- profile menu -->
+  <ion-menu side="start" >
+    <ion-content>
+      <ion-list>
+        <ion-item class="menu-text" button>Profile</ion-item>
+        <ion-item class="menu-text" button>My Appointments</ion-item>
+        <ion-item class="menu-text" button>Sign Off</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
   <div class="ion-page" main>
     <ion-header>
-      <ion-toolbar color="secondary">
-        <ion-buttons slot="start">
-          <ion-menu-button></ion-menu-button>
+      <ion-toolbar mode="ios" color="secondary">
+        <ion-buttons slot="end">
+          <ion-menu-button (click)="openMenu('end')"></ion-menu-button>
         </ion-buttons>
-        <ion-title class="title-text text">Home</ion-title>
+        <ion-buttons slot="start">
+          <ion-menu-button (click)="openMenu('start')">
+            <ion-icon name="person"></ion-icon>
+          </ion-menu-button>
+        </ion-buttons>
+        <ion-title class="title-text text">
+          <div class="logo-container">
+            <img src="/assets/logo.png" class="logo-header" alt="">
+          </div>
+        </ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>

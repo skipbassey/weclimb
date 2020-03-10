@@ -14,12 +14,6 @@ export class MenuService {
 
   options: Option[] = [
     {
-      title: 'Home',
-      icon: 'person',
-      description: "Home Page",
-      route: 'home'
-    },
-    {
       title: 'Team',
       icon: 'person',
       description: "Team Page",
