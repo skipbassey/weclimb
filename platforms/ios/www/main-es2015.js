@@ -1770,7 +1770,7 @@ let LoginComponent = class LoginComponent {
         this.amplifyService = amplifyService;
         this.router = router;
         this.signUpConfig = {
-            header: 'My Customized Sign Up',
+            header: 'Sign Up',
             hideAllDefaults: true,
             defaultCountryCode: '1',
             signUpFields: [
