@@ -42,7 +42,8 @@ export class MenuComponent implements OnInit {
   }
 
   openMenu(side: string) {
-    this.menuController.open(side);
+    this.menuController.open(side)
+      .then(res => console.log(res));
   }
 
   signOut() {
