@@ -1,55 +1,62 @@
 
-<!-- option menu -->
-  <ion-menu color="primary" side="end" swipeGesture="true" contentId="option" menuId="option">
-    <ion-header>
-      <!-- <ion-toolbar color="secondary">
-        <ion-title class="menu-header-text text">We Climb</ion-title>
-      </ion-toolbar> -->
-    </ion-header>
-    <ion-content id="option">
-      <ion-nav>
-        <ion-list *ngFor="let option of options">
-          <ion-item class="menu-text" (click)="navigate(option.route)" button>{{option.title}}</ion-item>
-        </ion-list>
-      </ion-nav>
-    </ion-content>
-  </ion-menu>
+  <ion-app>
+
+    <!-- option menu -->
+    <ion-menu side="end" contentId="main-content" menuId="option">
+      <ion-content>
+        <ion-nav>
+          <ion-list *ngFor="let option of options">
+            <ion-item  (click)="navigate(option.route)" button>
+              <ion-label class="menu-text">{{option.title}}</ion-label>
+              <ion-icon [name]="option.icon"></ion-icon>
+            </ion-item>
+          </ion-list>
+        </ion-nav>
+      </ion-content>
+    </ion-menu>
 
   <!-- profile menu -->
-  <ion-menu side="start" contentId="profile" menuId="profile">
-    <ion-content id="profile">
-      <ion-list>
-        <ion-item class="menu-text" button>Profile</ion-item>
-        <ion-item class="menu-text" button>My Appointments</ion-item>
-        <ion-item class="menu-text" button (click)="signOut()">Sign Off</ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
+    <!-- <ion-menu side="start" contentId="main-content" menuId="profile">
+      <ion-header>
+        <ion-toolbar translucent>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item class="menu-text" button>Profile</ion-item>
+          <ion-item class="menu-text" button>My Appointments</ion-item>
+          <ion-item class="menu-text" button (click)="signOut()">Sign Off</ion-item>
+        </ion-list>     
+      </ion-content>
+    </ion-menu> -->
 
-  <div class="ion-page">
-    <ion-header>
-      <ion-toolbar mode="ios" color="secondary">
-        <ion-buttons slot="end">
-          <ion-menu-button type="button" menu="option"></ion-menu-button>
-        </ion-buttons>
-        <ion-buttons slot="start">
-          <ion-menu-button type="button" menu="profile">
-            <ion-icon name="person"></ion-icon>
-          </ion-menu-button>
-        </ion-buttons>
-        <ion-title class="title-text text">
-          <div class="logo-container">
-            <img src="/assets/logo.png" class="logo-header" alt="">
-          </div>
-        </ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <app-home></app-home>
-     </ion-content>
-  </div>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar mode="ios" color="secondary">
+          <ion-buttons slot="end">
+            <ion-menu-button ></ion-menu-button>
+          </ion-buttons>
+          <!-- <ion-buttons slot="start">
+            <ion-menu-button (click)="signOut()">
+              Log Out
+            </ion-menu-button>
+          </ion-buttons> -->
+          <ion-title>
+            <div class="logo-container">
+              <img class="logo-header" src="/assets/logo.png" alt="">
+            </div>
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <app-home></app-home>
+      </ion-content>
+    </div>
+  </ion-app>
 
-	<!-- <amplify-authenticator [hide]="['signIn']" framework="ionic"></amplify-authenticator> -->
+
+ 
 
 
 

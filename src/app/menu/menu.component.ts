@@ -41,9 +41,30 @@ export class MenuComponent implements OnInit {
     this.navController.navigateForward(route)
   }
 
-  openMenu(side: string) {
-    this.menuController.open(side)
+  async openMenu() {
+    await this.menuController.open("start")
       .then(res => console.log(res));
+  }
+
+  async openProfileMenu() {
+    this.menuController.enable(true, "profile")
+      .then(res => console.log(res))
+    await this.menuController.open("profile");
+
+    this.menuController.isOpen("option")
+      .then(res => console.log("option menu is open: " + res))
+
+    console.log("profile opened")
+  }
+
+  async openOptionMenu() {
+    this.menuController.enable(true, 'option');
+    await this.menuController.open('option');
+
+    this.menuController.isOpen("profile")
+      .then(res => console.log("profile menu is open: " + res))
+
+    console.log("Option opened")
   }
 
   signOut() {

@@ -15,39 +15,45 @@ export class MenuService {
   options: Option[] = [
     {
       title: 'Team',
-      icon: 'person',
+      icon: 'people',
       description: "Team Page",
       route: 'team'
     },
     {
       title: 'School Services',
-      icon: 'person',
+      icon: 'school',
       description: "School Page",
       route: 'school-based-services'
     },
     {
       title: 'Outreach',
-      icon: 'person',
+      icon: 'earth',
       description: "Outreach Page",
       route: 'outreach'
     },
     {
       title: 'Forms',
-      icon: 'person',
+      icon: 'document',
       description: "Forms Page",
       route: 'forms'
     },
     {
       title: 'Fees',
-      icon: 'person',
+      icon: 'card',
       description: "Fees Page",
       route: 'fees'
     },
     {
       title: 'Appointments',
-      icon: 'person',
+      icon: 'calendar',
       description: "Appointment Page",
       route: 'appointments'
+    }, 
+    {
+      title: 'Profile',
+      icon: 'person',
+      description: "Profile",
+      route: 'profile'
     }
   ];
 

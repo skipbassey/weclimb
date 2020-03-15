@@ -573,7 +573,7 @@ module.exports = "<ion-content padding>\n\t<div class=\"logo-container\">\n\t\t<
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<!-- option menu -->\n  <ion-menu color=\"primary\" side=\"end\" (click)=\"openMenu('end')\">\n    <ion-header>\n      <!-- <ion-toolbar color=\"secondary\">\n        <ion-title class=\"menu-header-text text\">We Climb</ion-title>\n      </ion-toolbar> -->\n    </ion-header>\n    <ion-content>\n      <ion-nav>\n        <ion-list *ngFor=\"let option of options\">\n          <ion-item class=\"menu-text\" (click)=\"navigate(option.route)\" button>{{option.title}}</ion-item>\n        </ion-list>\n      </ion-nav>\n    </ion-content>\n  </ion-menu>\n\n  <!-- profile menu -->\n  <ion-menu side=\"start\" >\n    <ion-content>\n      <ion-list>\n        <ion-item class=\"menu-text\" button>Profile</ion-item>\n        <ion-item class=\"menu-text\" button>My Appointments</ion-item>\n        <ion-item class=\"menu-text\" button (click)=\"signOut()\">Sign Off</ion-item>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n\n  <div class=\"ion-page\" main>\n    <ion-header>\n      <ion-toolbar mode=\"ios\" color=\"secondary\">\n        <ion-buttons slot=\"end\">\n          <ion-menu-button (click)=\"openMenu('end')\"></ion-menu-button>\n        </ion-buttons>\n        <ion-buttons slot=\"start\">\n          <ion-menu-button (click)=\"openMenu('start')\">\n            <ion-icon name=\"person\"></ion-icon>\n          </ion-menu-button>\n        </ion-buttons>\n        <ion-title class=\"title-text text\">\n          <div class=\"logo-container\">\n            <img src=\"/assets/logo.png\" class=\"logo-header\" alt=\"\">\n          </div>\n        </ion-title>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <app-home></app-home>\n     </ion-content>\n  </div>\n\n\t<!-- <amplify-authenticator [hide]=\"['signIn']\" framework=\"ionic\"></amplify-authenticator> -->\n\n\n\n\n"
+module.exports = "\n  <ion-app>\n\n    <!-- option menu -->\n    <ion-menu side=\"end\" contentId=\"main-content\" menuId=\"option\">\n      <ion-content>\n        <ion-nav>\n          <ion-list *ngFor=\"let option of options\">\n            <ion-item class=\"menu-text\" (click)=\"navigate(option.route)\" button>{{option.title}}</ion-item>\n          </ion-list>\n        </ion-nav>\n      </ion-content>\n    </ion-menu>\n\n  <!-- profile menu -->\n    <ion-menu side=\"start\" contentId=\"main-content\" menuId=\"profile\">\n      <ion-header>\n        <ion-toolbar translucent>\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-list>\n          <ion-item class=\"menu-text\" button>Profile</ion-item>\n          <ion-item class=\"menu-text\" button>My Appointments</ion-item>\n          <ion-item class=\"menu-text\" button (click)=\"signOut()\">Sign Off</ion-item>\n        </ion-list>     \n      </ion-content>\n    </ion-menu>\n\n    <div class=\"ion-page\" id=\"main-content\">\n      <ion-header>\n        <ion-toolbar mode=\"ios\" color=\"secondary\">\n          <ion-buttons slot=\"end\">\n            <ion-menu-button (click)=\"openOptioneMenu()\" menu=\"option\"></ion-menu-button>\n          </ion-buttons>\n          <ion-buttons slot=\"start\">\n            <ion-menu-button (click)=\"openProfileMenu()\" menu=\"profile\">\n              <ion-icon name=\"person\"></ion-icon>\n            </ion-menu-button>\n          </ion-buttons>\n          <ion-title>Inbox</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content class=\"ion-padding\">\n        <app-home></app-home>\n      </ion-content>\n    </div>\n  </ion-app>\n\n\n \n\n\n\n\n"
 
 /***/ }),
 
@@ -1863,7 +1863,7 @@ LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".text {\n  color: black;\n}\n\nion-item.menu-text.text.background.item.md.in-list.ion-activatable.ion-focusable.hydrated {\n  background-color: black;\n}\n\n.background {\n  background-color: black;\n}\n\nion-toolbar {\n  background-color: #449e44;\n}\n\nion-menu-button {\n  color: white;\n}\n\nion-content {\n  background-color: black;\n}\n\n.logo-header {\n  height: 40px;\n  width: 150px;\n}\n\n.logo-container {\n  margin-top: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvbWVudS9tZW51LmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9tZW51L21lbnUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSx1QkFBQTtBQ0RKOztBRElBO0VBQ0ksdUJBQUE7QUNESjs7QURJQTtFQUNJLHlCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSx1QkFBQTtBQ0RKOztBRElBO0VBQ0ksWUFBQTtFQUNBLFlBQUE7QUNESjs7QURJQTtFQUNJLGdCQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9tZW51L21lbnUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cbi50ZXh0IHtcbiAgICBjb2xvcjogY29sb3IoZGFyayk7XG59XG5cbmlvbi1pdGVtLm1lbnUtdGV4dC50ZXh0LmJhY2tncm91bmQuaXRlbS5tZC5pbi1saXN0Lmlvbi1hY3RpdmF0YWJsZS5pb24tZm9jdXNhYmxlLmh5ZHJhdGVkIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTsgXG59XG5cbi5iYWNrZ3JvdW5kIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTtcbn1cblxuaW9uLXRvb2xiYXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKHNlY29uZGFyeSk7XG59XG5cbmlvbi1tZW51LWJ1dHRvbiB7XG4gICAgY29sb3I6IGNvbG9yKHByaW1hcnkpO1xufVxuXG5pb24tY29udGVudCB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyayk7XG59XG5cbi5sb2dvLWhlYWRlciB7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIHdpZHRoOiAxNTBweDtcbn1cblxuLmxvZ28tY29udGFpbmVyIHtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xufSIsIi50ZXh0IHtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG5pb24taXRlbS5tZW51LXRleHQudGV4dC5iYWNrZ3JvdW5kLml0ZW0ubWQuaW4tbGlzdC5pb24tYWN0aXZhdGFibGUuaW9uLWZvY3VzYWJsZS5oeWRyYXRlZCB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG4uYmFja2dyb3VuZCB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG5pb24tdG9vbGJhciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICM0NDllNDQ7XG59XG5cbmlvbi1tZW51LWJ1dHRvbiB7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuaW9uLWNvbnRlbnQge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbn1cblxuLmxvZ28taGVhZGVyIHtcbiAgaGVpZ2h0OiA0MHB4O1xuICB3aWR0aDogMTUwcHg7XG59XG5cbi5sb2dvLWNvbnRhaW5lciB7XG4gIG1hcmdpbi10b3A6IDEwcHg7XG59Il19 */"
+module.exports = ".text {\n  color: black;\n}\n\nion-item.menu-text.text.background.item.md.in-list.ion-activatable.ion-focusable.hydrated {\n  background-color: black;\n}\n\n.background {\n  background-color: black;\n}\n\nion-toolbar {\n  background-color: #449e44;\n}\n\nion-menu-button {\n  color: white;\n}\n\nion-content {\n  background-color: black;\n}\n\n.logo-header {\n  height: 40px;\n  width: 150px;\n}\n\n.logo-container {\n  margin-top: 20px;\n  margin-bottom: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvbWVudS9tZW51LmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9tZW51L21lbnUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSx1QkFBQTtBQ0RKOztBRElBO0VBQ0ksdUJBQUE7QUNESjs7QURJQTtFQUNJLHlCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSx1QkFBQTtBQ0RKOztBRElBO0VBQ0ksWUFBQTtFQUNBLFlBQUE7QUNESjs7QURJQTtFQUNJLGdCQUFBO0VBQ0EsbUJBQUE7QUNESiIsImZpbGUiOiJzcmMvYXBwL21lbnUvbWVudS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuLnRleHQge1xuICAgIGNvbG9yOiBjb2xvcihkYXJrKTtcbn1cblxuaW9uLWl0ZW0ubWVudS10ZXh0LnRleHQuYmFja2dyb3VuZC5pdGVtLm1kLmluLWxpc3QuaW9uLWFjdGl2YXRhYmxlLmlvbi1mb2N1c2FibGUuaHlkcmF0ZWQge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspOyBcbn1cblxuLmJhY2tncm91bmQge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspO1xufVxuXG5pb24tdG9vbGJhciB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3Ioc2Vjb25kYXJ5KTtcbn1cblxuaW9uLW1lbnUtYnV0dG9uIHtcbiAgICBjb2xvcjogY29sb3IocHJpbWFyeSk7XG59XG5cbmlvbi1jb250ZW50IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTtcbn1cblxuLmxvZ28taGVhZGVyIHtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgd2lkdGg6IDE1MHB4O1xufVxuXG4ubG9nby1jb250YWluZXIge1xuICAgIG1hcmdpbi10b3A6IDIwcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMTBweDtcbn0iLCIudGV4dCB7XG4gIGNvbG9yOiBibGFjaztcbn1cblxuaW9uLWl0ZW0ubWVudS10ZXh0LnRleHQuYmFja2dyb3VuZC5pdGVtLm1kLmluLWxpc3QuaW9uLWFjdGl2YXRhYmxlLmlvbi1mb2N1c2FibGUuaHlkcmF0ZWQge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbn1cblxuLmJhY2tncm91bmQge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbn1cblxuaW9uLXRvb2xiYXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNDQ5ZTQ0O1xufVxuXG5pb24tbWVudS1idXR0b24ge1xuICBjb2xvcjogd2hpdGU7XG59XG5cbmlvbi1jb250ZW50IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG59XG5cbi5sb2dvLWhlYWRlciB7XG4gIGhlaWdodDogNDBweDtcbiAgd2lkdGg6IDE1MHB4O1xufVxuXG4ubG9nby1jb250YWluZXIge1xuICBtYXJnaW4tdG9wOiAyMHB4O1xuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -1905,8 +1905,30 @@ let MenuComponent = class MenuComponent {
     navigate(route) {
         this.navController.navigateForward(route);
     }
-    openMenu(side) {
-        this.menuController.open(side);
+    openMenu() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            yield this.menuController.open("start")
+                .then(res => console.log(res));
+        });
+    }
+    openProfileMenu() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.menuController.enable(true, "profile")
+                .then(res => console.log(res));
+            yield this.menuController.open("profile");
+            this.menuController.isOpen("option")
+                .then(res => console.log("option menu is open: " + res));
+            console.log("profile opened");
+        });
+    }
+    openOptionMenu() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.menuController.enable(true, 'option');
+            yield this.menuController.open('option');
+            this.menuController.isOpen("profile")
+                .then(res => console.log("profile menu is open: " + res));
+            console.log("Option opened");
+        });
     }
     signOut() {
         this.authState = { state: "signedOut" };
