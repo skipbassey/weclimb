@@ -28,6 +28,7 @@ import { AppointmentService } from 'src/services/appointment.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { AuthGuardService } from '../services/auth-guard.service';
+import { ProfileComponent } from './profile/profile.component';
 
 import { AmplifyAngularModule, AmplifyIonicModule, AmplifyService } from 'aws-amplify-angular';
 
@@ -43,7 +44,8 @@ import { AmplifyAngularModule, AmplifyIonicModule, AmplifyService } from 'aws-am
     AppointmentComponent,
     FormsComponent,
     ApptModalComponent,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent
   ],
   entryComponents: [
     ApptModalComponent

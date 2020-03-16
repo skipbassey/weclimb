@@ -12,6 +12,7 @@ import { AppointmentComponent } from './appointment/appointment.component';
 import { FormsComponent } from './forms/forms.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuardService } from 'src/services/auth-guard.service';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
@@ -76,6 +77,10 @@ const routes: Routes = [
   {
     path: 'forms',
     component: FormsComponent
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent
   },
   {
     path: '',
