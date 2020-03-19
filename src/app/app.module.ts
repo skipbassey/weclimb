@@ -31,6 +31,7 @@ import { AuthGuardService } from '../services/auth-guard.service';
 import { ProfileComponent } from './profile/profile.component';
 
 import { AmplifyAngularModule, AmplifyIonicModule, AmplifyService } from 'aws-amplify-angular';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,9 @@ import { AmplifyAngularModule, AmplifyIonicModule, AmplifyService } from 'aws-am
     IndividualModule,
     HttpClientModule,
     AmplifyAngularModule,
-    AmplifyIonicModule,    
+    AmplifyIonicModule,
+    FormsModule,
+    ReactiveFormsModule    
   ],
   providers: [
     StatusBar,

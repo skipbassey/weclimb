@@ -2,6 +2,9 @@ import { Component, OnInit, AfterContentInit } from '@angular/core';
 import { AmplifyService } from 'aws-amplify-angular';
 import { Events } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { FormBuilder } from '@angular/forms';
+import { UserService } from 'src/services/user.service';
+
 
 @Component({
   selector: 'app-login',
@@ -64,29 +67,33 @@ export class LoginComponent implements OnInit {
 
   authState: any;
 
+  loginForm: any;
+
   constructor(
     public events: Events,
     public amplifyService: AmplifyService,
-    public router: Router
+    private formBuilder: FormBuilder,
+    public router: Router,
+    private userService: UserService
   ) {
     this.authState = { signedIn: false };
 
-    this.amplifyService.authStateChange$
-      .subscribe(authState => {
-        this.authState.signedIn = authState.state === 'signedIn';
-        this.events.publish('data:AuthState', this.authState);
-        this.redirectSignIn();
+    // this.amplifyService.authStateChange$
+    //   .subscribe(authState => {
+    //     this.authState.signedIn = authState.state === 'signedIn';
+    //     this.events.publish('data:AuthState', this.authState);
+    //     this.redirectSignIn();
+    //   });
+    }
+
+    ngOnInit() { 
+      this.loginForm = this.formBuilder.group({
+        email: '',
+        password: ''
       });
     }
 
-    ngOnInit() { }
-
     redirectSignIn() {
-      if(this.authState.signedIn) {
-        this.router.navigateByUrl('home');
-      }
-      else {
-        this.router.navigateByUrl('login');
-      }
+      this.router.navigateByUrl('home');
     }
 }
