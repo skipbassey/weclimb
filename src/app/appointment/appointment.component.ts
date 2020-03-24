@@ -32,8 +32,8 @@ export class AppointmentComponent implements OnInit {
       mode: 'ios',
       backdropDismiss: true,
       componentProps: {
-        data: data.Items,
-        count: data.Count
+        data: data,
+        // count: data.Count
       }
     });
     return await this.modal.present();
@@ -45,7 +45,7 @@ export class AppointmentComponent implements OnInit {
       case 'll-intake':
         this.appointmentService.getLicensedLevelFirstSession()
           .subscribe(res => {
-            this.presentModal(res);
+            this.presentModal(this.parseAppointments(res));
           },
             err => {
               this.handleError(err, 'Error retrieving schedule');
@@ -102,6 +102,28 @@ export class AppointmentComponent implements OnInit {
   private handleError(err: HttpErrorResponse, errMessage) {
     console.log(err + err.message)
     alert(errMessage);
+  }
+
+  parseAppointments(res: any) : Appointment[] {
+    var appts: Appointment[] = [];
+
+    res.Items.forEach(x => {
+      // create appt obj
+      var appt: Appointment = {
+        name: x.Name.S,
+        date: x.Date.S,
+        duration: x.Duration.S,
+        price: x.Price.S,
+        location: x.Location.S,
+        counselor: x.Counselor.S,
+        type: x.Type.S
+      };
+
+      //add to array
+      appts.push(appt)
+    })
+
+    return appts;
   }
 
 }

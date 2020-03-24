@@ -1,22 +1,12 @@
 export class Appointment {
-    name: {
-        type: string;
-        value: string;
-    }
-    date: {
-        type: string;
-        value: string;
-    }
-    duration: {
-        type: string;
-        value: string;
-    }
-    price: {
-        type: string;
-        value: string;
-    }
-    location: {
-        type: string;
-        value: string;
-    }
+    name?: string;
+    date?: string;
+    duration?: string;
+    price?: string;
+    location?: string;
+    counselor?: string;
+    candidateFirstName?: string;
+    candidateLastName?: string;
+    candidateEmail?: string;
+    type?: string;
 }
