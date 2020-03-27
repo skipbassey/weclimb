@@ -4,6 +4,7 @@ import { Events } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { FormBuilder } from '@angular/forms';
 import { UserService } from 'src/services/user.service';
+import { LoginService } from 'src/services/login.service';
 
 
 @Component({
@@ -74,7 +75,8 @@ export class LoginComponent implements OnInit {
     public amplifyService: AmplifyService,
     private formBuilder: FormBuilder,
     public router: Router,
-    private userService: UserService
+    private userService: UserService,
+    private loginService: LoginService
   ) {
     this.authState = { signedIn: false };
 
@@ -95,5 +97,15 @@ export class LoginComponent implements OnInit {
 
     redirectSignIn() {
       this.router.navigateByUrl('home');
+    }
+
+    login() {
+      var email = this.loginForm.get('email').value;
+      var password = this.loginForm.get('password').value;
+      
+      this.loginService.login(email, password)
+        .subscribe(res => {
+          console.log(res)
+        })
     }
 }

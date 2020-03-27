@@ -33,6 +33,7 @@ import { LoginService } from '../services/login.service';
 
 import { AmplifyAngularModule, AmplifyIonicModule, AmplifyService } from 'aws-amplify-angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AuthService } from 'src/services/auth.service';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppointmentService,
     AmplifyService,
     AuthGuardService,
-    LoginService
+    LoginService,
+    AuthService,
     // File,
     // FileTransfer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
