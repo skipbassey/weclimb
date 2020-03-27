@@ -29,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { AuthGuardService } from '../services/auth-guard.service';
 import { ProfileComponent } from './profile/profile.component';
+import { LoginService } from '../services/login.service';
 
 import { AmplifyAngularModule, AmplifyIonicModule, AmplifyService } from 'aws-amplify-angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -73,6 +74,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppointmentService,
     AmplifyService,
     AuthGuardService,
+    LoginService
     // File,
     // FileTransfer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
