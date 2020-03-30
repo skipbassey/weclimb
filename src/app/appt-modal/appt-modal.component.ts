@@ -3,6 +3,8 @@ import { Appointment } from 'src/models/Appointment';
 import { ModalController }  from '@ionic/angular';
 import { ActionSheetController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
+import { UserService } from 'src/services/user.service';
+import { User } from 'src/models/user';
 
 
 @Component({
@@ -17,26 +19,46 @@ export class ApptModalComponent implements OnInit {
 
   noData = false;
 
-  errMessage = "No schedule available"
+  errMessage = "No schedule available";
+
+  user: User;
 
   constructor(
     private modalController: ModalController,
     private actionSheetController: ActionSheetController,
-    private toastController: ToastController
+    private toastController: ToastController,
+    private userService: UserService
   ) { }
 
   ngOnInit() {
     if(this.count == 0) {
       this.noData = true;
     }
-    // console.log(this.data)
+
+    this.user = this.userService.getUserInfo();
   }
 
   dismiss() {
     this.modalController.dismiss();
   }
 
-  async book(appt: any) {
+  bookAppointment(appt: Appointment) {
+    var booking: Appointment = {
+      name: appt.name,
+      date: appt.date,
+      duration: appt.duration,
+      price: appt.price,
+      location: appt.location,
+      counselor: appt.counselor,
+      candidateFirstName: this.user.firstName,
+      candidateLastName: this.user.lastName,
+      candidateEmail: this.user.email,
+      type: appt.type
+    };
+    
+  }
+
+  async confirm(appt: any) {
     const actionSheet = await this.actionSheetController.create({
       header: 'Are you sure you want to book this appointment?',
       buttons: [{

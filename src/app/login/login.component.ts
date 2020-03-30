@@ -107,7 +107,6 @@ export class LoginComponent implements OnInit {
       this.loginService.login(email, password)
         .pipe(
           tap(data => {
-            console.log("tap: " + data)
             this.authService.setAuthorization(data.token);
           }),
           switchMap( () => {
@@ -118,6 +117,6 @@ export class LoginComponent implements OnInit {
             this.navigate()
           })
         )
-        .subscribe(res => console.log("res: " + res))
+        .subscribe()
     }
 }

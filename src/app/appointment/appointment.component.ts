@@ -39,7 +39,7 @@ export class AppointmentComponent implements OnInit {
     return await this.modal.present();
   }
 
-  bookAppointment(appointment: string): void {
+  selectAppointment(appointment: string): void {
     //gets schedule and opend modal
     switch (appointment) {
       case 'll-intake':
