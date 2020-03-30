@@ -5,13 +5,13 @@ import { Router } from '@angular/router';
 import { FormBuilder } from '@angular/forms';
 import { UserService } from 'src/services/user.service';
 import { LoginService } from 'src/services/login.service';
-
+import { AuthService } from '../../services/auth.service';
+import { mergeMap, tap, switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
-  // encapsulation: ViewEncapsulation.None
 })
 export class LoginComponent implements OnInit {
 
@@ -76,7 +76,8 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder,
     public router: Router,
     private userService: UserService,
-    private loginService: LoginService
+    private loginService: LoginService,
+    private authService: AuthService
   ) {
     this.authState = { signedIn: false };
 
@@ -95,7 +96,7 @@ export class LoginComponent implements OnInit {
       });
     }
 
-    redirectSignIn() {
+    navigate() {
       this.router.navigateByUrl('home');
     }
 
@@ -104,8 +105,19 @@ export class LoginComponent implements OnInit {
       var password = this.loginForm.get('password').value;
       
       this.loginService.login(email, password)
-        .subscribe(res => {
-          console.log(res)
-        })
+        .pipe(
+          tap(data => {
+            console.log("tap: " + data)
+            this.authService.setAuthorization(data.token);
+          }),
+          switchMap( () => {
+            return this.userService.getUser(email)
+          }),
+          tap(data => {
+            this.userService.setUserInfo(data);
+            this.navigate()
+          })
+        )
+        .subscribe(res => console.log("res: " + res))
     }
 }

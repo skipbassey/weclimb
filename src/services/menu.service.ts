@@ -27,7 +27,7 @@ export class MenuService {
     },
     {
       title: 'Outreach',
-      icon: 'earth',
+      icon: 'globe',
       description: "Outreach Page",
       route: 'outreach'
     },

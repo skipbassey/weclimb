@@ -17,5 +17,13 @@ export class AuthService {
         return sessionStorage.getItem('token')
     }
 
-    
+    setAuthorization(token: any) {
+        this.setToken(token);
+        this.authenticated = true
+    }
+
+    logOut() {
+        sessionStorage.removeItem("token");
+        this.authenticated = false;
+    }
 }

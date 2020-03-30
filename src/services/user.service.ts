@@ -8,12 +8,18 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
-  user: User
+  user: User = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    role: ""
+  }
 
   constructor(private http: HttpClient) { }
 
-  getUser(body: any) :Observable<any> {
-    const url = "https://ueu0miiuo5.execute-api.us-east-1.amazonaws.com/default/getUserInfo";
+  getUser(email: string) :Observable<any> {
+    const url = "https://au8x6x3ue1.execute-api.us-east-1.amazonaws.com/default/getUserInfo?email=" + email;
 
     const httpOptions = {
       headers: new HttpHeaders({
@@ -28,7 +34,14 @@ export class UserService {
     return this.user;
   }
 
-  setUserInfo(user: User) {
+  setUserInfo(userInfo: any) {
+    var user: User = {
+      firstName: userInfo.Items[0].first_name.S,
+      lastName: userInfo.Items[0].last_name.S,
+      email: userInfo.Items[0].email.S,
+      phone: userInfo.Items[0].phone.S,
+      role: userInfo.Items[0].role.S
+    }
     this.user = user;
   }
 }
