@@ -529,7 +529,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "    <ion-card>\n        <ion-card-header>\n          <ion-card-header class=\"menu-text text\">\n            Services Provided\n          </ion-card-header>\n        </ion-card-header>\n        <ion-card-content>\n            <p>\n                We offer services that equip our clients with tools for success. During your counseling sessions, \n                no matter if it’s Relationship Counseling, Family/Individual Counseling, Group Counseling, Anger \n                Management Classes, Adolescent Counseling or Career Coaching, we  always provide personalized \n                attention to help each client identify their personal values, strengths, and abilities in support \n                of their personal and professional goals. The goal of We Climb Counseling and Consulting, is to \n                create a supportive environment in which clients can explore their own emotional needs and overcome \n                barriers that limit their full potential by meeting each client where they are. \n            </p>\n        </ion-card-content>\n      </ion-card>\n      <ion-list *ngFor=\"let service of services\">\n        <ion-item button (click)=\"navigate(service)\">{{service.title}}</ion-item>\n      </ion-list>\n"
+module.exports = "    <ion-card class=\"card\">\n        <ion-card-header>\n          <ion-card-header class=\"menu-text text\">\n            Services Provided\n          </ion-card-header>\n        </ion-card-header>\n        <ion-card-content>\n            <p>\n                We offer services that equip our clients with tools for success. During your counseling sessions, \n                no matter if it’s Relationship Counseling, Family/Individual Counseling, Group Counseling, Anger \n                Management Classes, Adolescent Counseling or Career Coaching, we  always provide personalized \n                attention to help each client identify their personal values, strengths, and abilities in support \n                of their personal and professional goals. The goal of We Climb Counseling and Consulting, is to \n                create a supportive environment in which clients can explore their own emotional needs and overcome \n                barriers that limit their full potential by meeting each client where they are. \n            </p>\n        </ion-card-content>\n      </ion-card>\n      <ion-list *ngFor=\"let service of services\">\n        <ion-item button (click)=\"navigate(service)\">{{service.title}}</ion-item>\n      </ion-list>"
 
 /***/ }),
 
@@ -551,7 +551,18 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"menu\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Relationship Counseling</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1 class=\"header-text ion-color-primary\">Embrace Life’s Challenges</h1>\n  <p class=\"content-text\">Sometimes, it seems as if life just has it in for us and we can never catch a break.\n    In reality, there will always be moments we have little to no control over but, what\n    we can always control is how we react to those moments. With my Relationship Counseling\n    sessions, you’ll learn about acceptance and how to exert your power of choice over whatever\n    life may throw at you.\n  </p>\n  <ion-list>\n    <ul>\n      <li>Blending Family Adjustments</li>\n      <li>Behavioral Issues</li>\n      <li>Academic Concerns in Children</li>\n      <li>Divorce & Divorce Adjustments</li>\n      <li>Grief Counseling</li>\n    </ul>\n  </ion-list>\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"secondary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"menu\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Relationship Counseling</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1 class=\"header-text ion-color-primary\">Embrace Life’s Challenges</h1>\n  <p class=\"content-text\">Sometimes, it seems as if life just has it in for us and we can never catch a break.\n    In reality, there will always be moments we have little to no control over but, what\n    we can always control is how we react to those moments. With my Relationship Counseling\n    sessions, you’ll learn about acceptance and how to exert your power of choice over whatever\n    life may throw at you.\n  </p>\n  <ion-list>\n    <ul>\n      <li>Blending Family Adjustments</li>\n      <li>Behavioral Issues</li>\n      <li>Academic Concerns in Children</li>\n      <li>Divorce & Divorce Adjustments</li>\n      <li>Grief Counseling</li>\n    </ul>\n  </ion-list>\n</ion-content>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/login/login.component.html":
+/*!**********************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/login/login.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-content padding>\n\t<div class=\"logo-container\">\n\t\t<img src=\"/assets/logo.png\" alt=\"\">\n\t</div>\n\n\t<amplify-authenticator [signUpConfig]=\"signUpConfig\" framework=\"ionic\"></amplify-authenticator>\n\n</ion-content>"
 
 /***/ }),
 
@@ -562,7 +573,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n  <ion-menu color=\"primary\" side=\"start\">\n    <ion-header>\n      <ion-toolbar color=\"primary\">\n        <ion-title class=\"menu-header-text text\">We Climb</ion-title>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <ion-nav>\n        <ion-list *ngFor=\"let option of options\">\n          <ion-item class=\"menu-text\" (click)=\"navigate(option.route)\" button>{{option.title}}</ion-item>\n        </ion-list>\n      </ion-nav>\n    </ion-content>\n  </ion-menu>\n\n  <div class=\"ion-page\" main>\n    <ion-header>\n      <ion-toolbar color=\"primary\">\n        <ion-buttons slot=\"start\">\n          <ion-menu-button></ion-menu-button>\n        </ion-buttons>\n        <ion-title class=\"title-text text\">Home</ion-title>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <app-home></app-home>\n     </ion-content>\n  </div>\n\n\n"
+module.exports = "\n<!-- option menu -->\n  <ion-menu color=\"primary\" side=\"end\" (click)=\"openMenu('end')\">\n    <ion-header>\n      <!-- <ion-toolbar color=\"secondary\">\n        <ion-title class=\"menu-header-text text\">We Climb</ion-title>\n      </ion-toolbar> -->\n    </ion-header>\n    <ion-content>\n      <ion-nav>\n        <ion-list *ngFor=\"let option of options\">\n          <ion-item class=\"menu-text\" (click)=\"navigate(option.route)\" button>{{option.title}}</ion-item>\n        </ion-list>\n      </ion-nav>\n    </ion-content>\n  </ion-menu>\n\n  <!-- profile menu -->\n  <ion-menu side=\"start\" >\n    <ion-content>\n      <ion-list>\n        <ion-item class=\"menu-text\" button>Profile</ion-item>\n        <ion-item class=\"menu-text\" button>My Appointments</ion-item>\n        <ion-item class=\"menu-text\" button (click)=\"signOut()\">Sign Off</ion-item>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n\n  <div class=\"ion-page\" main>\n    <ion-header>\n      <ion-toolbar mode=\"ios\" color=\"secondary\">\n        <ion-buttons slot=\"end\">\n          <ion-menu-button (click)=\"openMenu('end')\"></ion-menu-button>\n        </ion-buttons>\n        <ion-buttons slot=\"start\">\n          <ion-menu-button (click)=\"openMenu('start')\">\n            <ion-icon name=\"person\"></ion-icon>\n          </ion-menu-button>\n        </ion-buttons>\n        <ion-title class=\"title-text text\">\n          <div class=\"logo-container\">\n            <img src=\"/assets/logo.png\" class=\"logo-header\" alt=\"\">\n          </div>\n        </ion-title>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <app-home></app-home>\n     </ion-content>\n  </div>\n\n\t<!-- <amplify-authenticator [hide]=\"['signIn']\" framework=\"ionic\"></amplify-authenticator> -->\n\n\n\n\n"
 
 /***/ }),
 
@@ -620,6 +631,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fees_fees_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./fees/fees.component */ "./src/app/fees/fees.component.ts");
 /* harmony import */ var _appointment_appointment_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./appointment/appointment.component */ "./src/app/appointment/appointment.component.ts");
 /* harmony import */ var _forms_forms_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./forms/forms.component */ "./src/app/forms/forms.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+
 
 
 
@@ -634,7 +647,11 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: 'home',
-        component: _menu_menu_component__WEBPACK_IMPORTED_MODULE_4__["MenuComponent"]
+        component: _menu_menu_component__WEBPACK_IMPORTED_MODULE_4__["MenuComponent"],
+    },
+    {
+        path: 'login',
+        component: _login_login_component__WEBPACK_IMPORTED_MODULE_11__["LoginComponent"]
     },
     {
         path: 'services',
@@ -688,7 +705,7 @@ const routes = [
     },
     {
         path: '',
-        redirectTo: 'home',
+        redirectTo: 'login',
         pathMatch: 'full'
     }
 ];
@@ -820,6 +837,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./appt-modal/appt-modal.component */ "./src/app/appt-modal/appt-modal.component.ts");
 /* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../services/auth-guard.service */ "./src/services/auth-guard.service.ts");
+/* harmony import */ var aws_amplify_angular__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! aws-amplify-angular */ "./node_modules/aws-amplify-angular/dist/index.js");
+
+
+
 
 
 
@@ -860,7 +883,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _fees_fees_component__WEBPACK_IMPORTED_MODULE_20__["FeesComponent"],
             _appointment_appointment_component__WEBPACK_IMPORTED_MODULE_21__["AppointmentComponent"],
             _forms_forms_component__WEBPACK_IMPORTED_MODULE_22__["FormsComponent"],
-            _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"]
+            _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"],
+            _login_login_component__WEBPACK_IMPORTED_MODULE_26__["LoginComponent"]
         ],
         entryComponents: [
             _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"]
@@ -874,13 +898,17 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _home_career_career_module__WEBPACK_IMPORTED_MODULE_11__["CareerModule"],
             _home_adolescent_adolescent_module__WEBPACK_IMPORTED_MODULE_15__["AdolescentModule"],
             _home_individual_indivudal_module__WEBPACK_IMPORTED_MODULE_16__["IndividualModule"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_25__["HttpClientModule"]
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_25__["HttpClientModule"],
+            aws_amplify_angular__WEBPACK_IMPORTED_MODULE_28__["AmplifyAngularModule"],
+            aws_amplify_angular__WEBPACK_IMPORTED_MODULE_28__["AmplifyIonicModule"],
         ],
         providers: [
             _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"],
             _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["SplashScreen"],
             _services_menu_service__WEBPACK_IMPORTED_MODULE_12__["MenuService"],
             src_services_appointment_service__WEBPACK_IMPORTED_MODULE_24__["AppointmentService"],
+            aws_amplify_angular__WEBPACK_IMPORTED_MODULE_28__["AmplifyService"],
+            _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_27__["AuthGuardService"],
             // File,
             // FileTransfer,
             { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }
@@ -1471,7 +1499,7 @@ FamilyModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".welcome-card img {\n  max-height: 35vh;\n  overflow: hidden;\n}\n\n.card {\n  background-color: black;\n}\n\n.primary {\n  background-color: black;\n}\n\n.text {\n  text-align: center;\n  color: black;\n}\n\n.title {\n  text-align: center;\n  font-weight: bold;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyIsInNyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNFLGdCQUFBO0VBQ0EsZ0JBQUE7QUNERjs7QURJQTtFQUNFLHVCQUFBO0FDREY7O0FESUE7RUFDRSx1QkFBQTtBQ0RGOztBRE1BO0VBQ0Usa0JBQUE7RUFDQSxZQUFBO0FDSEY7O0FETUE7RUFDRSxrQkFBQTtFQUNBLGlCQUFBO0FDSEYiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vLi4vdGhlbWUvL2NvbG9ycy5zY3NzJztcblxuLndlbGNvbWUtY2FyZCBpbWcge1xuICBtYXgtaGVpZ2h0OiAzNXZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xufVxuXG4uY2FyZCB7XG4gIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspO1xufVxuXG4ucHJpbWFyeSB7XG4gIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspXG59XG5cblxuXG4udGV4dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG4udGl0bGV7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG5cbi8vIGlvbi1jYXJkLWNvbnRlbnQge1xuLy8gICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTtcbi8vIH1cblxuLy8gaW9uLWl0ZW0ge1xuLy8gICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKVxuLy8gfVxuXG4vLyBpb24tbGlzdHtcbi8vICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyayk7XG4vLyB9XG5cbiIsIi53ZWxjb21lLWNhcmQgaW1nIHtcbiAgbWF4LWhlaWdodDogMzV2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuLmNhcmQge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbn1cblxuLnByaW1hcnkge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbn1cblxuLnRleHQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiBibGFjaztcbn1cblxuLnRpdGxlIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXdlaWdodDogYm9sZDtcbn0iXX0= */"
+module.exports = ".welcome-card img {\n  max-height: 35vh;\n  overflow: hidden;\n}\n\n.card {\n  height: 75%;\n}\n\n.primary {\n  background-color: black;\n}\n\n.text {\n  text-align: center;\n  color: black;\n}\n\n.title {\n  text-align: center;\n  font-weight: bold;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyIsInNyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNFLGdCQUFBO0VBQ0EsZ0JBQUE7QUNERjs7QURJQTtFQUNFLFdBQUE7QUNERjs7QURJQTtFQUNFLHVCQUFBO0FDREY7O0FETUE7RUFDRSxrQkFBQTtFQUNBLFlBQUE7QUNIRjs7QURNQTtFQUNFLGtCQUFBO0VBQ0EsaUJBQUE7QUNIRiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS8vY29sb3JzLnNjc3MnO1xuXG4ud2VsY29tZS1jYXJkIGltZyB7XG4gIG1heC1oZWlnaHQ6IDM1dmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG59XG5cbi5jYXJkIHtcbiAgaGVpZ2h0OiA3NSU7XG59XG5cbi5wcmltYXJ5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyaylcbn1cblxuXG5cbi50ZXh0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBjb2xvcjogYmxhY2s7XG59XG5cbi50aXRsZXtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXdlaWdodDogYm9sZDtcbn1cblxuLy8gaW9uLWNhcmQtY29udGVudCB7XG4vLyAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspO1xuLy8gfVxuXG4vLyBpb24taXRlbSB7XG4vLyAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspXG4vLyB9XG5cbi8vIGlvbi1saXN0e1xuLy8gICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTtcbi8vIH1cblxuIiwiLndlbGNvbWUtY2FyZCBpbWcge1xuICBtYXgtaGVpZ2h0OiAzNXZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xufVxuXG4uY2FyZCB7XG4gIGhlaWdodDogNzUlO1xufVxuXG4ucHJpbWFyeSB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG4udGV4dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG4udGl0bGUge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -1516,12 +1544,6 @@ let HomePage = class HomePage {
                 route: 'counseling/career'
             }
         ];
-    }
-    ionViewWillEnter() {
-        console.log("Will enter");
-    }
-    ionViewDidEnter() {
-        console.log("ionViewDidEnter");
     }
     navigate(service) {
         this.router.navigateByUrl(service.route);
@@ -1634,7 +1656,7 @@ IndividualModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header-text {\n  text-align: center;\n}\n\n.content-text {\n  padding: 10px;\n  text-align: center;\n}\n\n.title {\n  color: black;\n}\n\nion-back-button {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvaG9tZS9yZWxhdGlvbnNoaXAvcmVsYXRpb25zaGlwLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9ob21lL3JlbGF0aW9uc2hpcC9yZWxhdGlvbnNoaXAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxrQkFBQTtBQ0RKOztBRElBO0VBQ0ksYUFBQTtFQUNBLGtCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9ob21lL3JlbGF0aW9uc2hpcC9yZWxhdGlvbnNoaXAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi8uLi90aGVtZS8vY29sb3JzLnNjc3MnO1xuXG4uaGVhZGVyLXRleHR7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uY29udGVudC10ZXh0IHtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLnRpdGxlIHtcbiAgICBjb2xvcjogY29sb3IoZGFyaylcbn1cblxuaW9uLWJhY2stYnV0dG9uIHtcbiAgICBjb2xvcjogY29sb3IoZGFyaylcbn0iLCIuaGVhZGVyLXRleHQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5jb250ZW50LXRleHQge1xuICBwYWRkaW5nOiAxMHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi50aXRsZSB7XG4gIGNvbG9yOiBibGFjaztcbn1cblxuaW9uLWJhY2stYnV0dG9uIHtcbiAgY29sb3I6IGJsYWNrO1xufSJdfQ== */"
+module.exports = ".header-text {\n  text-align: center;\n}\n\n.content-text {\n  padding: 10px;\n  text-align: center;\n}\n\n.title {\n  color: black;\n}\n\nion-back-button {\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvaG9tZS9yZWxhdGlvbnNoaXAvcmVsYXRpb25zaGlwLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9ob21lL3JlbGF0aW9uc2hpcC9yZWxhdGlvbnNoaXAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxrQkFBQTtBQ0RKOztBRElBO0VBQ0ksYUFBQTtFQUNBLGtCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9ob21lL3JlbGF0aW9uc2hpcC9yZWxhdGlvbnNoaXAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi8uLi90aGVtZS8vY29sb3JzLnNjc3MnO1xuXG4uaGVhZGVyLXRleHR7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uY29udGVudC10ZXh0IHtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLnRpdGxlIHtcbiAgICBjb2xvcjogY29sb3IoZGFyaylcbn1cblxuaW9uLWJhY2stYnV0dG9uIHtcbiAgICBjb2xvcjogY29sb3Iod2hpdGUpXG59IiwiLmhlYWRlci10ZXh0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uY29udGVudC10ZXh0IHtcbiAgcGFkZGluZzogMTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4udGl0bGUge1xuICBjb2xvcjogYmxhY2s7XG59XG5cbmlvbi1iYWNrLWJ1dHRvbiB7XG4gIGNvbG9yOiB3aGl0ZTtcbn0iXX0= */"
 
 /***/ }),
 
@@ -1711,6 +1733,129 @@ RelationshipModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/login/login.component.scss":
+/*!********************************************!*\
+  !*** ./src/app/login/login.component.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "img {\n  width: 70%;\n}\n\n.logo-container {\n  padding: 15px;\n  text-align: center;\n}\n\n.amplify-form-button {\n  background-color: #449e44;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2xvZ2luL2xvZ2luLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0ksVUFBQTtBQ0RKOztBRElBO0VBQ0ksYUFBQTtFQUNBLGtCQUFBO0FDREo7O0FESUE7RUFDSSx5QkFBQTtBQ0RKIiwiZmlsZSI6InNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cbmltZyB7XG4gICAgd2lkdGg6IDcwJTtcbn1cblxuLmxvZ28tY29udGFpbmVyIHtcbiAgICBwYWRkaW5nOiAxNXB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmFtcGxpZnktZm9ybS1idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKHNlY29uZGFyeSk7XG59IiwiaW1nIHtcbiAgd2lkdGg6IDcwJTtcbn1cblxuLmxvZ28tY29udGFpbmVyIHtcbiAgcGFkZGluZzogMTVweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uYW1wbGlmeS1mb3JtLWJ1dHRvbiB7XG4gIGJhY2tncm91bmQtY29sb3I6ICM0NDllNDQ7XG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/login/login.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/login/login.component.ts ***!
+  \******************************************/
+/*! exports provided: LoginComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var aws_amplify_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! aws-amplify-angular */ "./node_modules/aws-amplify-angular/dist/index.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
+
+
+
+let LoginComponent = class LoginComponent {
+    constructor(events, amplifyService, router) {
+        this.events = events;
+        this.amplifyService = amplifyService;
+        this.router = router;
+        this.signUpConfig = {
+            header: 'My Customized Sign Up',
+            hideAllDefaults: true,
+            defaultCountryCode: '1',
+            signUpFields: [
+                {
+                    label: 'Username',
+                    key: 'username',
+                    required: true,
+                    displayOrder: 1,
+                    type: 'string',
+                },
+                {
+                    label: 'Email',
+                    key: 'email',
+                    required: true,
+                    displayOrder: 2,
+                    type: 'string',
+                },
+                {
+                    label: 'Password',
+                    key: 'password',
+                    required: true,
+                    displayOrder: 3,
+                    type: 'password'
+                },
+                {
+                    label: 'Phone Number',
+                    key: 'phone_number',
+                    required: true,
+                    displayOrder: 4,
+                    type: 'string'
+                },
+                {
+                    label: 'First Name',
+                    key: 'name',
+                    required: true,
+                    displayOrder: 5,
+                    type: 'string',
+                },
+                {
+                    label: 'Last Name',
+                    key: 'family_name',
+                    required: true,
+                    displayOrder: 6,
+                    type: 'string',
+                }
+            ]
+        };
+        this.authState = { signedIn: false };
+        this.amplifyService.authStateChange$
+            .subscribe(authState => {
+            this.authState.signedIn = authState.state === 'signedIn';
+            this.events.publish('data:AuthState', this.authState);
+            this.redirectSignIn();
+        });
+    }
+    ngOnInit() { }
+    redirectSignIn() {
+        if (this.authState.signedIn) {
+            this.router.navigateByUrl('home');
+        }
+        else {
+            this.router.navigateByUrl('login');
+        }
+    }
+};
+LoginComponent.ctorParameters = () => [
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Events"] },
+    { type: aws_amplify_angular__WEBPACK_IMPORTED_MODULE_2__["AmplifyService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] }
+];
+LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-login',
+        template: __webpack_require__(/*! raw-loader!./login.component.html */ "./node_modules/raw-loader/index.js!./src/app/login/login.component.html"),
+        styles: [__webpack_require__(/*! ./login.component.scss */ "./src/app/login/login.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Events"],
+        aws_amplify_angular__WEBPACK_IMPORTED_MODULE_2__["AmplifyService"],
+        _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
+], LoginComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/menu/menu.component.scss":
 /*!******************************************!*\
   !*** ./src/app/menu/menu.component.scss ***!
@@ -1718,7 +1863,7 @@ RelationshipModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".text {\n  color: black;\n}\n\nion-item.menu-text.text.background.item.md.in-list.ion-activatable.ion-focusable.hydrated {\n  background-color: black;\n}\n\n.background {\n  background-color: black;\n}\n\nion-toolbar {\n  background-color: #449e44;\n}\n\nion-menu-button {\n  color: white;\n}\n\nion-content {\n  background-color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvbWVudS9tZW51LmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9tZW51L21lbnUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSx1QkFBQTtBQ0RKOztBRElBO0VBQ0ksdUJBQUE7QUNESjs7QURJQTtFQUNJLHlCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSx1QkFBQTtBQ0RKIiwiZmlsZSI6InNyYy9hcHAvbWVudS9tZW51LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vLi4vdGhlbWUvY29sb3JzLnNjc3MnO1xuXG4udGV4dCB7XG4gICAgY29sb3I6IGNvbG9yKGRhcmspO1xufVxuXG5pb24taXRlbS5tZW51LXRleHQudGV4dC5iYWNrZ3JvdW5kLml0ZW0ubWQuaW4tbGlzdC5pb24tYWN0aXZhdGFibGUuaW9uLWZvY3VzYWJsZS5oeWRyYXRlZCB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyayk7IFxufVxuXG4uYmFja2dyb3VuZCB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyayk7XG59XG5cbmlvbi10b29sYmFyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihzZWNvbmRhcnkpO1xufVxuXG5pb24tbWVudS1idXR0b24ge1xuICAgIGNvbG9yOiBjb2xvcihwcmltYXJ5KTtcbn1cblxuaW9uLWNvbnRlbnQge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspO1xufSIsIi50ZXh0IHtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG5pb24taXRlbS5tZW51LXRleHQudGV4dC5iYWNrZ3JvdW5kLml0ZW0ubWQuaW4tbGlzdC5pb24tYWN0aXZhdGFibGUuaW9uLWZvY3VzYWJsZS5oeWRyYXRlZCB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG4uYmFja2dyb3VuZCB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG5pb24tdG9vbGJhciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICM0NDllNDQ7XG59XG5cbmlvbi1tZW51LWJ1dHRvbiB7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuaW9uLWNvbnRlbnQge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbn0iXX0= */"
+module.exports = ".text {\n  color: black;\n}\n\nion-item.menu-text.text.background.item.md.in-list.ion-activatable.ion-focusable.hydrated {\n  background-color: black;\n}\n\n.background {\n  background-color: black;\n}\n\nion-toolbar {\n  background-color: #449e44;\n}\n\nion-menu-button {\n  color: white;\n}\n\nion-content {\n  background-color: black;\n}\n\n.logo-header {\n  height: 40px;\n  width: 150px;\n}\n\n.logo-container {\n  margin-top: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvbWVudS9tZW51LmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9tZW51L21lbnUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSx1QkFBQTtBQ0RKOztBRElBO0VBQ0ksdUJBQUE7QUNESjs7QURJQTtFQUNJLHlCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSx1QkFBQTtBQ0RKOztBRElBO0VBQ0ksWUFBQTtFQUNBLFlBQUE7QUNESjs7QURJQTtFQUNJLGdCQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9tZW51L21lbnUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cbi50ZXh0IHtcbiAgICBjb2xvcjogY29sb3IoZGFyayk7XG59XG5cbmlvbi1pdGVtLm1lbnUtdGV4dC50ZXh0LmJhY2tncm91bmQuaXRlbS5tZC5pbi1saXN0Lmlvbi1hY3RpdmF0YWJsZS5pb24tZm9jdXNhYmxlLmh5ZHJhdGVkIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTsgXG59XG5cbi5iYWNrZ3JvdW5kIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTtcbn1cblxuaW9uLXRvb2xiYXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKHNlY29uZGFyeSk7XG59XG5cbmlvbi1tZW51LWJ1dHRvbiB7XG4gICAgY29sb3I6IGNvbG9yKHByaW1hcnkpO1xufVxuXG5pb24tY29udGVudCB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyayk7XG59XG5cbi5sb2dvLWhlYWRlciB7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIHdpZHRoOiAxNTBweDtcbn1cblxuLmxvZ28tY29udGFpbmVyIHtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xufSIsIi50ZXh0IHtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG5pb24taXRlbS5tZW51LXRleHQudGV4dC5iYWNrZ3JvdW5kLml0ZW0ubWQuaW4tbGlzdC5pb24tYWN0aXZhdGFibGUuaW9uLWZvY3VzYWJsZS5oeWRyYXRlZCB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG4uYmFja2dyb3VuZCB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG5pb24tdG9vbGJhciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICM0NDllNDQ7XG59XG5cbmlvbi1tZW51LWJ1dHRvbiB7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuaW9uLWNvbnRlbnQge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbn1cblxuLmxvZ28taGVhZGVyIHtcbiAgaGVpZ2h0OiA0MHB4O1xuICB3aWR0aDogMTUwcHg7XG59XG5cbi5sb2dvLWNvbnRhaW5lciB7XG4gIG1hcmdpbi10b3A6IDEwcHg7XG59Il19 */"
 
 /***/ }),
 
@@ -1737,30 +1882,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_menu_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/menu.service */ "./src/services/menu.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var aws_amplify_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! aws-amplify-angular */ "./node_modules/aws-amplify-angular/dist/index.js");
+
+
 
 
 
 
 
 let MenuComponent = class MenuComponent {
-    constructor(menuService, router, navController) {
+    constructor(menuService, router, navController, menuController, amplifyService) {
         this.menuService = menuService;
         this.router = router;
         this.navController = navController;
+        this.menuController = menuController;
+        this.amplifyService = amplifyService;
         this.title = '';
     }
     ngOnInit() {
         this.options = this.menuService.getOptions();
     }
     navigate(route) {
-        // this.router.navigateByUrl(route);
         this.navController.navigateForward(route);
+    }
+    openMenu(side) {
+        this.menuController.open(side);
+    }
+    signOut() {
+        this.authState = { state: "signedOut" };
+        this.amplifyService.setAuthState(this.authState);
+        // this.router.navigateByUrl('login');
     }
 };
 MenuComponent.ctorParameters = () => [
     { type: _services_menu_service__WEBPACK_IMPORTED_MODULE_2__["MenuService"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
-    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["NavController"] }
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["NavController"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["MenuController"] },
+    { type: aws_amplify_angular__WEBPACK_IMPORTED_MODULE_5__["AmplifyService"] }
 ];
 MenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1771,7 +1930,9 @@ MenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_menu_service__WEBPACK_IMPORTED_MODULE_2__["MenuService"],
         _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
-        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["NavController"]])
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["NavController"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["MenuController"],
+        aws_amplify_angular__WEBPACK_IMPORTED_MODULE_5__["AmplifyService"]])
 ], MenuComponent);
 
 
@@ -1941,6 +2102,36 @@ TeamComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/aws-exports.js":
+/*!****************************!*\
+  !*** ./src/aws-exports.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// WARNING: DO NOT EDIT. This file is automatically generated by AWS Amplify. It will be overwritten.
+
+const awsmobile = {
+    "aws_project_region": "us-east-1",
+    "aws_cognito_identity_pool_id": "us-east-1:f25f4324-135a-43aa-97a4-dd174ec67b6b",
+    "aws_cognito_region": "us-east-1",
+    "aws_user_pools_id": "us-east-1_xbNj7KYCb",
+    "aws_user_pools_web_client_id": "2mi2o6qk1kd65c45t1m8tjf1o4",
+    "oauth": {
+        "redirectSignIn": "http://localhost:8100/home",
+        "redirectSignOut": "http://localhost:8100/login",
+        "responseType": "code"
+    }
+};
+
+
+/* harmony default export */ __webpack_exports__["default"] = (awsmobile);
+
+
+/***/ }),
+
 /***/ "./src/environments/environment.ts":
 /*!*****************************************!*\
   !*** ./src/environments/environment.ts ***!
@@ -1982,10 +2173,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
 /* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var aws_amplify__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! aws-amplify */ "./node_modules/aws-amplify/lib-esm/index.js");
+/* harmony import */ var _aws_exports__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./aws-exports */ "./src/aws-exports.js");
 
 
 
 
+
+
+aws_amplify__WEBPACK_IMPORTED_MODULE_4__["default"].configure(_aws_exports__WEBPACK_IMPORTED_MODULE_5__["default"]);
 if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].production) {
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
 }
@@ -2088,6 +2284,56 @@ AppointmentService.ctorParameters = () => [
 
 /***/ }),
 
+/***/ "./src/services/auth-guard.service.ts":
+/*!********************************************!*\
+  !*** ./src/services/auth-guard.service.ts ***!
+  \********************************************/
+/*! exports provided: AuthGuardService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthGuardService", function() { return AuthGuardService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+
+
+
+
+let AuthGuardService = class AuthGuardService {
+    constructor(router, events) {
+        this.router = router;
+        this.events = events;
+        this.signedIn = false;
+        this.events.subscribe('data:AuthState', (data) => tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.signedIn = data.signedIn;
+        }));
+    }
+    canActivate() {
+        if (!this.signedIn) {
+            this.router.navigateByUrl('login');
+        }
+        return this.signedIn;
+    }
+};
+AuthGuardService.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Events"] }
+];
+AuthGuardService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Events"]])
+], AuthGuardService);
+
+
+
+/***/ }),
+
 /***/ "./src/services/menu.service.ts":
 /*!**************************************!*\
   !*** ./src/services/menu.service.ts ***!
@@ -2105,12 +2351,6 @@ __webpack_require__.r(__webpack_exports__);
 let MenuService = class MenuService {
     constructor() {
         this.options = [
-            {
-                title: 'Home',
-                icon: 'person',
-                description: "Home Page",
-                route: 'home'
-            },
             {
                 title: 'Team',
                 icon: 'person',
@@ -2178,7 +2418,7 @@ MenuService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "ion-back-button {\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy90aGVtZS9idXR0b24uc2NzcyIsInNyYy90aGVtZS9idXR0b24uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHQTtFQUNJLFlBQUE7QUNGSiIsImZpbGUiOiJzcmMvdGhlbWUvYnV0dG9uLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuL2NvbG9ycy5zY3NzJztcblxuXG5pb24tYmFjay1idXR0b24ge1xuICAgIGNvbG9yOiBjb2xvcihwcmltYXJ5KVxufSIsImlvbi1iYWNrLWJ1dHRvbiB7XG4gIGNvbG9yOiB3aGl0ZTtcbn0iXX0= */"
+module.exports = "ion-back-button {\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy90aGVtZS9idXR0b24uc2NzcyIsInNyYy90aGVtZS9idXR0b24uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHQTtFQUNJLFlBQUE7QUNGSiIsImZpbGUiOiJzcmMvdGhlbWUvYnV0dG9uLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuL2NvbG9ycy5zY3NzJztcblxuXG5pb24tYmFjay1idXR0b24ge1xuICAgIGNvbG9yOiBjb2xvcih3aGl0ZSlcbn0iLCJpb24tYmFjay1idXR0b24ge1xuICBjb2xvcjogd2hpdGU7XG59Il19 */"
 
 /***/ }),
 
@@ -2213,6 +2453,17 @@ module.exports = ".title-text {\n  font-style: italic;\n  font-family: Apple Cha
 
 module.exports = __webpack_require__(/*! /Users/okwongbassey/Desktop/weclimb/src/main.ts */"./src/main.ts");
 
+
+/***/ }),
+
+/***/ 1:
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
 
 /***/ })
 

@@ -1,0 +1,23 @@
+
+<ion-header translucent>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button class="back-btn" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="title-text">Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="personal-info-container">
+    <h1>Personal Information</h1>
+    <p>Name: {{user.firstName}} {{user.lastName}}</p>
+    <p>Phone Number: {{user.phone}}</p>
+    <p>Email: {{user.email}}</p>
+    <p>Role: {{user.role}}</p>
+  </div>
+ <div class="appointment-container">
+   <h1>My Appointments</h1>
+   
+ </div>
+
+</ion-content>

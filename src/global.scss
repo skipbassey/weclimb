@@ -24,3 +24,27 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+// @import '../node_modules/aws-amplify-angular/theme.css';
+@import './theme/colors.scss';
+
+
+
+.ion-color-primary {
+    --ion-color-base: color(secondary);
+}
+
+.amplify-form-link {
+    color: color(secondary);
+}
+
+.amplify-form-cell-right {
+    text-align: center;
+}
+
+.amplify-form-button {
+    background-color: color(secondary);
+}
+
+.amplify-form-button:hover {
+    background-color: color(secondary);
+}

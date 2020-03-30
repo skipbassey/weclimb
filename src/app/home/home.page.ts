@@ -36,16 +36,8 @@ export class HomePage {
   ]
 
   constructor(
-    private router: Router
+    private router: Router,
   ) {}
-
-  ionViewWillEnter() {
-    console.log("Will enter");
-  }
-
-  ionViewDidEnter(){
-    console.log("ionViewDidEnter")
-}
 
   navigate(service: Option) {
     this.router.navigateByUrl(service.route)
