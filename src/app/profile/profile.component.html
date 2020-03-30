@@ -10,9 +10,10 @@
 <ion-content>
   <div class="personal-info-container">
     <h1>Personal Information</h1>
-    <p>Name: Skip Bassey</p>
-    <p>Phone Number: 770-757-0481</p>
-    <p>Email: skipbassey@gmail.com</p>
+    <p>Name: {{user.firstName}} {{user.lastName}}</p>
+    <p>Phone Number: {{user.phone}}</p>
+    <p>Email: {{user.email}}</p>
+    <p>Role: {{user.role}}</p>
   </div>
  <div class="appointment-container">
    <h1>My Appointments</h1>
