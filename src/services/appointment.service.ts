@@ -107,4 +107,16 @@ export class AppointmentService {
 
       return this.http.post(url, appt, httpOptions)
     }
+
+    getMyAppointments(email: string): Observable<any> {
+      const url = "https://5for6fp862.execute-api.us-east-1.amazonaws.com/default/getMyAppointments?email=" + email;
+
+      const httpOptions = {
+        headers: new HttpHeaders({
+          'Content-Type':  'application/json',
+        })
+      };
+
+      return this.http.get(url, httpOptions)
+    }
 }

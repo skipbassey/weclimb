@@ -5,6 +5,7 @@ import { ActionSheetController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
 import { UserService } from 'src/services/user.service';
 import { User } from 'src/models/user';
+import { AppointmentService } from 'src/services/appointment.service';
 
 
 @Component({
@@ -27,7 +28,8 @@ export class ApptModalComponent implements OnInit {
     private modalController: ModalController,
     private actionSheetController: ActionSheetController,
     private toastController: ToastController,
-    private userService: UserService
+    private userService: UserService,
+    private apptService: AppointmentService
   ) { }
 
   ngOnInit() {
@@ -53,9 +55,17 @@ export class ApptModalComponent implements OnInit {
       candidateFirstName: this.user.firstName,
       candidateLastName: this.user.lastName,
       candidateEmail: this.user.email,
-      type: appt.type
+      type: appt.type,
+      table: this.determineTable(appt)
     };
-    
+
+    this.apptService.bookAppointment(booking)
+      .subscribe(res => {
+
+      },
+      err => {
+        console.log("Error booking appointment")
+      })
   }
 
   async confirm(appt: any) {
@@ -67,6 +77,7 @@ export class ApptModalComponent implements OnInit {
         icon: 'checkmark',
         handler: () => {
           console.log('Appointment booked');
+          this.bookAppointment(appt);
           console.log(appt);
           this.presentToast();
         }
@@ -90,5 +101,22 @@ export class ApptModalComponent implements OnInit {
     });
     toast.present();
     this.modalController.dismiss();
+  }
+
+  determineTable(appt: Appointment): string {
+    var tableName = "";
+
+    switch(appt.name) {
+      case "Licensed Level Clinician": 
+        tableName = "Licensed_Appointments";
+        break;
+      case "Masters Level Clinician":
+        tableName = "Masters_Appointments";
+        break;
+      case "Adolescent Group Counseling":
+        tableName = "Adolescent";
+        break;
+    }
+    return tableName;
   }
 }
