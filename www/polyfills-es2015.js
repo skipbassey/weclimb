@@ -6131,6 +6131,7 @@ __webpack_require__.r(__webpack_exports__);
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+window.global = window;
 
 
 /***/ }),
@@ -6151,7 +6152,7 @@ window.__Zone_disable_customElements = true;
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!***************************************************************************************************************************!*\
   !*** multi ./src/polyfills.ts ./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js ***!
   \***************************************************************************************************************************/
@@ -6164,5 +6165,5 @@ module.exports = __webpack_require__(/*! /Users/okwongbassey/Desktop/weclimb/nod
 
 /***/ })
 
-},[[1,"runtime"]]]);
+},[[2,"runtime"]]]);
 //# sourceMappingURL=polyfills-es2015.js.map
