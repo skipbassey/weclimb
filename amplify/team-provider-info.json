@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-weclimb-dev-94121-authRole",
+            "UnauthRoleArn": "arn:aws:iam::695738586291:role/amplify-weclimb-dev-94121-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::695738586291:role/amplify-weclimb-dev-94121-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-weclimb-dev-94121-deployment",
+            "UnauthRoleName": "amplify-weclimb-dev-94121-unauthRole",
+            "StackName": "amplify-weclimb-dev-94121",
+            "StackId": "arn:aws:cloudformation:us-east-1:695738586291:stack/amplify-weclimb-dev-94121/661fb490-5eef-11ea-aff4-0ef7f3f34731",
+            "AmplifyAppId": "dvxowi5pbcgol"
+        },
+        "categories": {
+            "auth": {
+                "weclimb840a1783": {}
+            }
+        }
+    }
+}

@@ -1,18 +1,20 @@
 <ion-content>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button class="back-btn" (click)="dismiss()" defaultHref="/appointments"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="title-text">Booking</ion-title>
+  </ion-toolbar>
   <!-- no schedule -->
   <div class="err-content" *ngIf="noData">
     <p>No schedule available at this time.</p>
-    <ion-button fill="solid" shape="round" (click)="dismiss()">Return to Appointments</ion-button>
   </div>
   <ion-list *ngFor="let item of data">
-    <ion-item button (click)="book()">
+    <ion-item button (click)="book(item)">
       <div class="list-item">
-        <p>{{item.Date.S}}</p>
-        <p>{{item.Location.S}}</p>
+        <p>{{item.date}}</p>
+        <p>{{item.location}}</p>
       </div>
     </ion-item>
   </ion-list>
-  <div class="btn-container">
-    <ion-button *ngIf="!noData" fill="solid" shape="round" (click)="dismiss()">Return to Appointments</ion-button>
-  </div>
 </ion-content>

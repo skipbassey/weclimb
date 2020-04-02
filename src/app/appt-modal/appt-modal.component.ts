@@ -29,14 +29,14 @@ export class ApptModalComponent implements OnInit {
     if(this.count == 0) {
       this.noData = true;
     }
-    console.log(this.data)
+    // console.log(this.data)
   }
 
   dismiss() {
     this.modalController.dismiss();
   }
 
-  async book() {
+  async book(appt: any) {
     const actionSheet = await this.actionSheetController.create({
       header: 'Are you sure you want to book this appointment?',
       buttons: [{
@@ -45,6 +45,7 @@ export class ApptModalComponent implements OnInit {
         icon: 'checkmark',
         handler: () => {
           console.log('Appointment booked');
+          console.log(appt);
           this.presentToast();
         }
       },
