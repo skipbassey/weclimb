@@ -2120,6 +2120,7 @@ var MenuComponent = /** @class */ (function () {
         this.options = this.menuService.getOptions();
     };
     MenuComponent.prototype.navigate = function (route) {
+        this.menuController.close("option");
         this.navController.navigateForward(route);
     };
     MenuComponent.prototype.openMenu = function () {

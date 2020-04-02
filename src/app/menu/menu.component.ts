@@ -38,6 +38,7 @@ export class MenuComponent implements OnInit {
   }
 
   navigate(route: string): void {
+    this.menuController.close("option");
     this.navController.navigateForward(route)
   }
 

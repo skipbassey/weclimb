@@ -2033,6 +2033,7 @@ let MenuComponent = class MenuComponent {
         this.options = this.menuService.getOptions();
     }
     navigate(route) {
+        this.menuController.close("option");
         this.navController.navigateForward(route);
     }
     openMenu() {

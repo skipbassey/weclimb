@@ -7,22 +7,29 @@
     <ion-title class="title-text">Profile</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content>
-  <div class="personal-info-container">
-    <h1>Personal Information</h1>
-    <p>Name: {{user?.firstName}} {{user?.lastName}}</p>
-    <p>Phone Number: {{user?.phone}}</p>
-    <p>Email: {{user?.email}}</p>
-    <p>Role: {{user?.role}}</p>
-  </div>
- <div class="appointment-container">
-   <h1>My Appointments</h1>
-   <p>Name: {{appt?.name}}</p>
-   <p>Date: {{appt?.date}}</p>
-   <p>Duration: {{appt?.duration}}</p>
-   <p>Counselor: {{appt?.counselor}}</p>
-   <p>Price: {{appt?.price}}</p>
-   <p>Location: {{appt?.location}}</p>
- </div>
+  <ion-content>
+    <div *ngIf="dataLoaded()">
 
-</ion-content>
+    <div class="personal-info-container">
+      <h1>Personal Information</h1>
+      <p>Name: {{user?.firstName}} {{user?.lastName}}</p>
+      <p>Phone Number: {{user?.phone}}</p>
+      <p>Email: {{user?.email}}</p>
+      <p>Role: {{user?.role}}</p>
+    </div>
+   <div class="appointment-container">
+     <h1>My Appointments</h1>
+     <p>Name: {{appt?.name}}</p>
+     <p>Date: {{appt?.date}}</p>
+     <p>Duration: {{appt?.duration}}</p>
+     <p>Counselor: {{appt?.counselor}}</p>
+     <p>Price: {{appt?.price}}</p>
+     <p>Location: {{appt?.location}}</p>
+   </div>
+  </div>
+
+   <div class="loading-container" *ngIf="!dataLoaded()">
+    <ion-progress-bar type="indeterminate"></ion-progress-bar>
+   </div>
+  </ion-content>
+

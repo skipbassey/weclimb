@@ -13,6 +13,9 @@ export class ProfileComponent implements OnInit {
 
   user: User;
 
+  userInfoLoaded = false;
+  apptInfoLoaded = false;
+
   appt: Appointment
 
   constructor(
@@ -22,9 +25,11 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
     this.user = this.userService.getUserInfo();
+    this.isUserInfoLoaded(this.user);
     this.apptService.getMyAppointments(this.user.email)
       .subscribe(res => {
         this.appt = this.transformData(res.Items[0])
+        this.isApptInfoLoaded(this.appt)
       })
   }
 
@@ -43,5 +48,28 @@ export class ProfileComponent implements OnInit {
     }
 
     return appointment
+  }
+
+  isUserInfoLoaded(user: User): boolean {
+    if(user) {
+      this.userInfoLoaded = true;
+      return true;
+    }
+  }
+
+  isApptInfoLoaded(appt: Appointment): boolean {
+    if(this.appt) {
+      this.apptInfoLoaded = true;
+      return true;
+    }
+  }
+
+  dataLoaded(): boolean {
+    if(this.userInfoLoaded && this.apptInfoLoaded){
+      return true;
+    }
+    else {
+      return false;
+    }
   }
 }
