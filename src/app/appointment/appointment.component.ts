@@ -54,7 +54,7 @@ export class AppointmentComponent implements OnInit {
       case 'll-insurance':
         this.appointmentService.getLicensedLevelInsurance()
           .subscribe(res => {
-            this.presentModal(res);
+            this.presentModal(this.parseAppointments(res));
           },
             err => {
               this.handleError(err, 'Error retrieving schedule')
@@ -63,7 +63,7 @@ export class AppointmentComponent implements OnInit {
       case 'll-selfpay':
         this.appointmentService.getLicensedLevelSelfPay()
           .subscribe(res => {
-            this.presentModal(res);
+            this.presentModal(this.parseAppointments(res));
           },
             err => {
               this.handleError(err, 'Error retrieving schedule');
@@ -72,7 +72,7 @@ export class AppointmentComponent implements OnInit {
       case 'ml-intake':
         this.appointmentService.getMastersLevelIntake()
           .subscribe(res => {
-            this.presentModal(res);
+            this.presentModal(this.parseAppointments(res));
           },
             err => {
               this.handleError(err, 'Error retrieving schedule');
@@ -81,7 +81,7 @@ export class AppointmentComponent implements OnInit {
       case 'ml-selfpay':
         this.appointmentService.getMastersLevelSelfPay()
           .subscribe(res => {
-            this.presentModal(res);
+            this.presentModal(this.parseAppointments(res));
           },
             err => {
               this.handleError(err, 'Error retrieving schedule')
@@ -90,7 +90,7 @@ export class AppointmentComponent implements OnInit {
       case 'youth':
         this.appointmentService.getAdolescentGroupSelfPay()
           .subscribe(res => {
-            this.presentModal(res);
+            this.presentModal(this.parseAppointments(res));
           },
             err => {
               this.handleError(err, 'Error retrieving schedule')

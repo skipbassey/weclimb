@@ -16,7 +16,8 @@ export class ProfileComponent implements OnInit {
   userInfoLoaded = false;
   apptInfoLoaded = false;
 
-  appt: Appointment
+  appts: Appointment[]
+  
 
   constructor(
     private userService: UserService,
@@ -28,12 +29,13 @@ export class ProfileComponent implements OnInit {
     this.isUserInfoLoaded(this.user);
     this.apptService.getMyAppointments(this.user.email)
       .subscribe(res => {
-        this.appt = this.transformData(res.Items[0])
-        this.isApptInfoLoaded(this.appt)
+        this.appts = this.transformData(res.Items[0])
+        this.isApptInfoLoaded(this.appts)
       })
   }
 
-  transformData(res: any): Appointment {
+  transformData(res: any): Appointment[] {
+    var appts = []
     var appointment: Appointment = {
       name: res.Name.S,
       date: res.Date.S,
@@ -46,8 +48,8 @@ export class ProfileComponent implements OnInit {
       candidateEmail: res.CandidateEmail.S,
       type: res.Type.S
     }
-
-    return appointment
+    appts.push(appointment);
+    return appts;
   }
 
   isUserInfoLoaded(user: User): boolean {
@@ -57,8 +59,8 @@ export class ProfileComponent implements OnInit {
     }
   }
 
-  isApptInfoLoaded(appt: Appointment): boolean {
-    if(this.appt) {
+  isApptInfoLoaded(appt: Appointment[]): boolean {
+    if(this.appts) {
       this.apptInfoLoaded = true;
       return true;
     }
