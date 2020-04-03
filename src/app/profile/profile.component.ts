@@ -13,6 +13,8 @@ export class ProfileComponent implements OnInit {
 
   user: User;
 
+  role = ""
+
   userInfoLoaded = false;
   apptInfoLoaded = false;
 
@@ -26,29 +28,45 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
     this.user = this.userService.getUserInfo();
+    this.role = this.user.role.toLowerCase();
     this.isUserInfoLoaded(this.user);
-    this.apptService.getMyAppointments(this.user.email)
+
+    if(this.user.role.toLowerCase() == "admin") {
+      this.apptService.getAppointmentsByCounselor(this.user.firstName + " " + this.user.lastName)
+        .subscribe(res => {
+          this.appts = this.transformData(res.Items);
+          this.isApptInfoLoaded(this.appts);
+        })
+    }
+    else if (this.user.role.toLowerCase() == "user") {
+      this.apptService.getMyAppointments(this.user.email)
       .subscribe(res => {
-        this.appts = this.transformData(res.Items[0])
+        this.appts = this.transformData(res.Items)
         this.isApptInfoLoaded(this.appts)
       })
+    }
+   
   }
 
   transformData(res: any): Appointment[] {
     var appts = []
-    var appointment: Appointment = {
-      name: res.Name.S,
-      date: res.Date.S,
-      duration: res.Duration.S,
-      price: res.Price.S,
-      location: res.Location.S,
-      counselor: res.Counselor.S,
-      candidateFirstName: res.CandidateFirstName.S,
-      candidateLastName: res.CandidateLastName.S,
-      candidateEmail: res.CandidateEmail.S,
-      type: res.Type.S
-    }
-    appts.push(appointment);
+    res.forEach(item => {
+      var appointment: Appointment = {
+        name: item.Name.S,
+        date: item.Date.S,
+        duration: item.Duration.S,
+        price: item.Price.S,
+        location: item.Location.S,
+        counselor: item.Counselor.S,
+        candidateFirstName: item.CandidateFirstName.S,
+        candidateLastName: item.CandidateLastName.S,
+        candidateEmail: item.CandidateEmail.S,
+        type: item.Type.S
+      };
+      appts.push(appointment);
+
+    })
+    
     return appts;
   }
 

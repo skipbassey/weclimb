@@ -120,7 +120,7 @@ export class AppointmentService {
       return this.http.get(url, httpOptions)
     }
 
-    getAppointmentsByCounselor(name: string) {
+    getAppointmentsByCounselor(name: string): Observable<any> {
       const url = " https://6559d4fmz9.execute-api.us-east-1.amazonaws.com/default/getAppointmentsByCounselor?counselor=" + name;
 
       const httpOptions = {

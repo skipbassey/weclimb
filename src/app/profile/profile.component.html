@@ -15,24 +15,32 @@
       <p>Email: {{user?.email}}</p>
       <p>Role: {{user?.role}}</p>
     </div>
-    <div *ngFor="let appt of appts" class="appointment-container">
-      <div class="user-container" *ngIf="user.role == 'user'">
-        <h1>My Appointments</h1>
-        <p>Name: {{appt?.name}}</p>
-        <p>Date: {{appt?.date}}</p>
-        <p>Duration: {{appt?.duration}}</p>
-        <p>Counselor: {{appt?.counselor}}</p>
-        <p>Price: {{appt?.price}}</p>
-        <p>Location: {{appt?.location}}</p>
+    <div  class="appointment-container">
+      <div class="user-container" *ngIf="role == 'user'">
+        <h1>My Appointment</h1>
+        <div *ngFor="let appt of appts">
+          <p>Name: {{appt?.name}}</p>
+          <p>Date: {{appt?.date}}</p>
+          <p>Duration: {{appt?.duration}}</p>
+          <p>Counselor: {{appt?.counselor}}</p>
+          <p>Price: {{appt?.price}}</p>
+          <p>Location: {{appt?.location}}</p>
+        </div>
       </div>
 
       <!-- admin -->
-      <div class="admin-container" *ngIf="user.role == 'admin'">
-        <p>Date: {{appt.date}}</p>
-        <p>Canidate Name: {{appt?.candidateFirstName}} {{appt?.candidateLastName}}</p>
-        <p>Candidate Phone: {{appt?.candidatePhone}}</p>
+      <div class="admin-container" *ngIf="role == 'admin'">
+        <h1>My Schedule</h1>
+        <ion-list >
+          <ion-item *ngFor="let appt of appts">
+            <div class="candidate-info-container">
+              <p>Date: {{appt.date}}</p>
+              <p>Client Name: {{appt?.candidateFirstName}} {{appt?.candidateLastName}}</p>
+              <p>Phone: 666-666-6666</p>
+            </div>
+          </ion-item>
+        </ion-list>
       </div>
-
     </div>
   </div>
 
