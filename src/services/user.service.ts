@@ -27,7 +27,20 @@ export class UserService {
       })
     };
 
-  return this.http.get(url, httpOptions);
+    return this.http.get(url, httpOptions);
+  }
+
+  addUser(user: User): Observable<any> {
+    const url = "https://a62hdz3sfj.execute-api.us-east-1.amazonaws.com/default/addUser";
+
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json',
+      })
+    };
+
+    return this.http.post(url, user, httpOptions);
+
   }
 
   getUserInfo(): User {

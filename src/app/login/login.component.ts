@@ -119,4 +119,8 @@ export class LoginComponent implements OnInit {
         )
         .subscribe()
     }
+
+  register() {
+    this.router.navigateByUrl('register');
+  }
 }

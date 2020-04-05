@@ -13,6 +13,7 @@ import { FormsComponent } from './forms/forms.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuardService } from 'src/services/auth-guard.service';
 import { ProfileComponent } from './profile/profile.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
   },
   {
     path: 'services',

@@ -34,6 +34,7 @@ import { LoginService } from '../services/login.service';
 import { AmplifyAngularModule, AmplifyIonicModule, AmplifyService } from 'aws-amplify-angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from 'src/services/auth.service';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { AuthService } from 'src/services/auth.service';
     FormsComponent,
     ApptModalComponent,
     LoginComponent,
-    ProfileComponent
+    ProfileComponent,
+    RegisterComponent
   ],
   entryComponents: [
     ApptModalComponent
