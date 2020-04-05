@@ -3,6 +3,9 @@ import { User } from 'src/models/user';
 import { UserService } from 'src/services/user.service';
 import { Appointment } from 'src/models/Appointment';
 import { AppointmentService } from 'src/services/appointment.service';
+import { LoadingController } from '@ionic/angular';
+import { AuthService } from 'src/services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -23,26 +26,37 @@ export class ProfileComponent implements OnInit {
 
   constructor(
     private userService: UserService,
-    private apptService: AppointmentService
+    private apptService: AppointmentService,
+    private loadingController: LoadingController,
+    private authService: AuthService,
+    private router: Router
   ) { }
 
   ngOnInit() {
+    this.presentLoading();
     this.user = this.userService.getUserInfo();
     this.role = this.user.role.toLowerCase();
-    this.isUserInfoLoaded(this.user);
 
     if(this.user.role.toLowerCase() == "admin") {
       this.apptService.getAppointmentsByCounselor(this.user.firstName + " " + this.user.lastName)
         .subscribe(res => {
           this.appts = this.transformData(res.Items);
-          this.isApptInfoLoaded(this.appts);
+          this.loadingController.dismiss()
+        },
+        err => {
+          console.log(err, err.message);
+          alert("Error getting user info");
         })
     }
     else if (this.user.role.toLowerCase() == "user") {
       this.apptService.getMyAppointments(this.user.email)
       .subscribe(res => {
         this.appts = this.transformData(res.Items)
-        this.isApptInfoLoaded(this.appts)
+        this.loadingController.dismiss();
+      },
+      err => {
+        console.log(err, err.message);
+          alert("Error getting user info");
       })
     }
    
@@ -70,26 +84,20 @@ export class ProfileComponent implements OnInit {
     return appts;
   }
 
-  isUserInfoLoaded(user: User): boolean {
-    if(user) {
-      this.userInfoLoaded = true;
-      return true;
-    }
+  private logOut() {
+    this.authService.logOut();
+    this.router.navigateByUrl("login");
   }
 
-  isApptInfoLoaded(appt: Appointment[]): boolean {
-    if(this.appts) {
-      this.apptInfoLoaded = true;
-      return true;
-    }
-  }
+  async presentLoading() {
+    const loading = await this.loadingController.create({
+      message: 'Please wait...',
+      mode: "ios",
+      duration: 2000
+    });
+    await loading.present();
 
-  dataLoaded(): boolean {
-    if(this.userInfoLoaded && this.apptInfoLoaded){
-      return true;
-    }
-    else {
-      return false;
-    }
+    const { role, data } = await loading.onDidDismiss();
+    console.log('Loading dismissed!');
   }
 }

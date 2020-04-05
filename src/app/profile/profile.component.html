@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <div *ngIf="dataLoaded()">
+  <div>
     <div class="personal-info-container">
       <h1>Personal Information</h1>
       <p>Name: {{user?.firstName}} {{user?.lastName}}</p>
@@ -44,7 +44,9 @@
     </div>
   </div>
 
-  <div class="loading-container" *ngIf="!dataLoaded()">
-    <ion-progress-bar type="indeterminate"></ion-progress-bar>
+  <div class="button-container">
+    <ion-button *ngIf="role == 'admin'" shape="round" fill="outline" (click)="logOut()">Set Calendar</ion-button>
+    <ion-button *ngIf="role == 'admin'" shape="round" fill="outline" (click)="logOut()">Add Admin</ion-button>
+    <ion-button shape="round" fill="outline" (click)="logOut()">Signout</ion-button>
   </div>
 </ion-content>

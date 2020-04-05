@@ -6,7 +6,8 @@ import { FormBuilder } from '@angular/forms';
 import { UserService } from 'src/services/user.service';
 import { LoginService } from 'src/services/login.service';
 import { AuthService } from '../../services/auth.service';
-import { mergeMap, tap, switchMap } from 'rxjs/operators';
+import { tap, switchMap } from 'rxjs/operators';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -77,7 +78,8 @@ export class LoginComponent implements OnInit {
     public router: Router,
     private userService: UserService,
     private loginService: LoginService,
-    private authService: AuthService
+    private authService: AuthService,
+    private loadingController: LoadingController
   ) {
     this.authState = { signedIn: false };
 
@@ -101,6 +103,7 @@ export class LoginComponent implements OnInit {
     }
 
     login() {
+      this.presentLoading();
       var email = this.loginForm.get('email').value;
       var password = this.loginForm.get('password').value;
       
@@ -113,8 +116,9 @@ export class LoginComponent implements OnInit {
             return this.userService.getUser(email)
           }),
           tap(data => {
+            this.loadingController.dismiss();
             this.userService.setUserInfo(data);
-            this.navigate()
+            this.navigate();
           })
         )
         .subscribe()
@@ -122,5 +126,17 @@ export class LoginComponent implements OnInit {
 
   register() {
     this.router.navigateByUrl('register');
+  }
+
+  async presentLoading() {
+    const loading = await this.loadingController.create({
+      message: 'Please wait...',
+      mode: "ios",
+      duration: 2000
+    });
+    await loading.present();
+
+    const { role, data } = await loading.onDidDismiss();
+    console.log('Loading dismissed!');
   }
 }
