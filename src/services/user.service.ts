@@ -43,6 +43,30 @@ export class UserService {
 
   }
 
+  forgotUserName(lastName: string, phone: string): Observable<any> {
+    const url = "https://20xl1yz5a7.execute-api.us-east-1.amazonaws.com/default/forgotUserName?phone=" + phone + "&lastName=" + lastName;
+  
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json',
+      })
+    };
+
+    return this.http.get(url, httpOptions)
+  }
+
+  forgotPassword(body: any): Observable<any> {
+    const url = "https://jwigmpiobg.execute-api.us-east-1.amazonaws.com/default/forgotPassword";
+
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json',
+      })
+    };
+
+    return this.http.post(url, body, httpOptions);
+  }
+
   getUserInfo(): User {
     return this.user;
   }

@@ -1,0 +1,41 @@
+<ion-content fullscreen>
+  <form [formGroup]="calendarForm" (ngSubmit)="addToCalendar()">
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Title</ion-label>
+        <ion-input formControlName="name" placeholder="Masters Level Clinician"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Type</ion-label>
+        <ion-select formControlName="type" placeholder="Select One">
+          <ion-select-option value="First Session">First Session</ion-select-option>
+          <ion-select-option value="Insurance">Insurance</ion-select-option>
+          <ion-select-option value="Self Pay">Self Pay</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Duration</ion-label>
+        <ion-input formControlName="duration" placeholder="1 hr"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Price</ion-label>
+        <ion-input formControlName="price" placeholder="$100"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Location</ion-label>
+        <ion-input formControlName="location" [placeholder]="location"></ion-input>
+      </ion-item>
+      <ion-item-divider></ion-item-divider>
+      <ion-item>
+        <ion-label>Start Date</ion-label>
+        <ion-datetime formControlName="date" mode="ios" displayFormat="MMM DD, YYYY HH:mm" placeholder="Select Date"></ion-datetime>
+      </ion-item>
+     
+      <ion-item-divider></ion-item-divider>
+      <ion-button type="submit" expand="block" fill="solid">Add To Calendar</ion-button>
+      <ion-button type="button" expand="block" fill="solid" (click)="cancel()">Cancel</ion-button>
+  
+    </ion-list>
+  </form>
+  
+</ion-content>

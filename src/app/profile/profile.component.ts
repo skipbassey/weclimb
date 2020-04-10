@@ -62,6 +62,10 @@ export class ProfileComponent implements OnInit {
    
   }
 
+  setCalendar() {
+    this.router.navigateByUrl("calendar");
+  }
+
   transformData(res: any): Appointment[] {
     var appts = []
     res.forEach(item => {

@@ -35,6 +35,9 @@ import { AmplifyAngularModule, AmplifyIonicModule, AmplifyService } from 'aws-am
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from 'src/services/auth.service';
 import { RegisterComponent } from './register/register.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ForgotUsernameComponent } from './forgot-username/forgot-username.component';
 
 @NgModule({
   declarations: [
@@ -50,10 +53,15 @@ import { RegisterComponent } from './register/register.component';
     ApptModalComponent,
     LoginComponent,
     ProfileComponent,
-    RegisterComponent
+    RegisterComponent,
+    CalendarComponent,
+    ForgotPasswordComponent,
+    ForgotUsernameComponent
   ],
   entryComponents: [
-    ApptModalComponent
+    ApptModalComponent,
+    ForgotPasswordComponent,
+    ForgotUsernameComponent
   ],
   imports: [
     BrowserModule,

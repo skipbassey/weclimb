@@ -84,6 +84,18 @@ export class AppointmentService {
         return this.http.post(url, appointments, httpOptions);
     }
 
+    setLicenseLevelSchedule(appointments: Appointment[]): Observable<any> {
+      const url = "https://o18ov9ki32.execute-api.us-east-1.amazonaws.com/default/setLicenseLevelSchedule";
+
+      const httpOptions = {
+        headers: new HttpHeaders({
+          'Content-Type':  'application/json',
+        })
+      };
+
+      return this.http.post(url, appointments, httpOptions)
+    }
+
     setMastersLevelSchedule(appointments: Appointment[]) : Observable<any> {
         const url = "https://w4hvl0lqll.execute-api.us-east-1.amazonaws.com/default/setMastersLevelSchedule";
 

@@ -8,6 +8,9 @@ import { LoginService } from 'src/services/login.service';
 import { AuthService } from '../../services/auth.service';
 import { tap, switchMap } from 'rxjs/operators';
 import { LoadingController } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
+import { ForgotPasswordComponent } from '../forgot-password/forgot-password.component';
+import { ForgotUsernameComponent } from '../forgot-username/forgot-username.component';
 
 @Component({
   selector: 'app-login',
@@ -79,7 +82,8 @@ export class LoginComponent implements OnInit {
     private userService: UserService,
     private loginService: LoginService,
     private authService: AuthService,
-    private loadingController: LoadingController
+    private loadingController: LoadingController,
+    private modalController: ModalController
   ) {
     this.authState = { signedIn: false };
 
@@ -116,12 +120,13 @@ export class LoginComponent implements OnInit {
             return this.userService.getUser(email)
           }),
           tap(data => {
-            this.loadingController.dismiss();
             this.userService.setUserInfo(data);
             this.navigate();
           })
         )
-        .subscribe()
+        .subscribe(res => {
+          this.loadingController.dismiss();
+        })
     }
 
   register() {
@@ -139,4 +144,20 @@ export class LoginComponent implements OnInit {
     const { role, data } = await loading.onDidDismiss();
     console.log('Loading dismissed!');
   }
+
+  async presentForgotPasswordModal() {
+    const modal = await this.modalController.create({
+      component: ForgotPasswordComponent
+    });
+    return await modal.present();
+  }
+
+  async presentForgotUsernameModal() {
+    const modal = await this.modalController.create({
+      component: ForgotUsernameComponent
+    });
+    return await modal.present();
+  }
+
+  
 }

@@ -551,7 +551,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"secondary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"menu\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Relationship Counseling</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1 class=\"header-text ion-color-primary\">Embrace Life’s Challenges</h1>\n  <p class=\"content-text\">Sometimes, it seems as if life just has it in for us and we can never catch a break.\n    In reality, there will always be moments we have little to no control over but, what\n    we can always control is how we react to those moments. With my Relationship Counseling\n    sessions, you’ll learn about acceptance and how to exert your power of choice over whatever\n    life may throw at you.\n  </p>\n  <ion-list>\n    <ul>\n      <li>Blending Family Adjustments</li>\n      <li>Behavioral Issues</li>\n      <li>Academic Concerns in Children</li>\n      <li>Divorce & Divorce Adjustments</li>\n      <li>Grief Counseling</li>\n    </ul>\n  </ion-list>\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"menu\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Relationship Counseling</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1 class=\"header-text ion-color-primary\">Embrace Life’s Challenges</h1>\n  <p class=\"content-text\">Sometimes, it seems as if life just has it in for us and we can never catch a break.\n    In reality, there will always be moments we have little to no control over but, what\n    we can always control is how we react to those moments. With my Relationship Counseling\n    sessions, you’ll learn about acceptance and how to exert your power of choice over whatever\n    life may throw at you.\n  </p>\n  <ion-list>\n    <ul>\n      <li>Blending Family Adjustments</li>\n      <li>Behavioral Issues</li>\n      <li>Academic Concerns in Children</li>\n      <li>Divorce & Divorce Adjustments</li>\n      <li>Grief Counseling</li>\n    </ul>\n  </ion-list>\n</ion-content>"
 
 /***/ }),
 
@@ -562,7 +562,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"secondary\">\n    <ion-bu
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content>\n\t<div class=\"logo-container\">\n\t\t<img src=\"/assets/logo.png\" alt=\"\">\n\t</div>\n\n\t<!-- <amplify-authenticator [signUpConfig]=\"signUpConfig\" framework=\"ionic\"></amplify-authenticator> -->\n\n\t<form [formGroup]=\"loginForm\">\n\t\t<ion-item>\n\t\t\t<ion-label position=\"floating\">Username</ion-label>\n\t\t\t<ion-input formControlName=\"email\" placeholder=\"example@gmail.com\" type=\"email\"></ion-input>\n\t\t  </ion-item>\n\t\t  <ion-item>\n\t\t\t<ion-label position=\"floating\">Password</ion-label>\n\t\t\t<ion-input formControlName=\"password\" placeholder=\"password\" type=\"password\"></ion-input>\n\t\t  </ion-item>\n\t\t  <div class=\"button-container\">\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"login()\">Login</ion-button>\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Register</ion-button>\n\t\t\t<a href=\"\">Forgot Username?</a>\n\t\t\t<a href=\"\">Forgot Password?</a>\n\t\t  </div>\n\t</form>\n</ion-content>"
+module.exports = "<ion-content>\n\t<div class=\"logo-container\">\n\t\t<img src=\"/assets/logo.png\" alt=\"\">\n\t</div>\n\n\t<!-- <amplify-authenticator [signUpConfig]=\"signUpConfig\" framework=\"ionic\"></amplify-authenticator> -->\n\n\t<form [formGroup]=\"loginForm\">\n\t\t<ion-item>\n\t\t\t<ion-label position=\"floating\">Username</ion-label>\n\t\t\t<ion-input formControlName=\"email\" placeholder=\"example@gmail.com\" type=\"email\"></ion-input>\n\t\t  </ion-item>\n\t\t  <ion-item>\n\t\t\t<ion-label position=\"floating\">Password</ion-label>\n\t\t\t<ion-input formControlName=\"password\" placeholder=\"password\" type=\"password\"></ion-input>\n\t\t  </ion-item>\n\t\t  <div class=\"button-container\">\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"login()\">Login</ion-button>\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"register()\">Register</ion-button>\n\t\t\t<a href=\"\">Forgot Username?</a>\n\t\t\t<a href=\"\">Forgot Password?</a>\n\t\t  </div>\n\t</form>\n</ion-content>"
 
 /***/ }),
 
@@ -573,7 +573,7 @@ module.exports = "<ion-content>\n\t<div class=\"logo-container\">\n\t\t<img src=
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n  <ion-app>\n\n    <!-- option menu -->\n    <ion-menu side=\"end\" contentId=\"main-content\" menuId=\"option\">\n      <ion-content>\n        <ion-nav>\n          <ion-list *ngFor=\"let option of options\">\n            <ion-item  (click)=\"navigate(option.route)\" button>\n              <ion-label class=\"menu-text\">{{option.title}}</ion-label>\n              <ion-icon [name]=\"option.icon\"></ion-icon>\n            </ion-item>\n          </ion-list>\n        </ion-nav>\n      </ion-content>\n    </ion-menu>\n\n  <!-- profile menu -->\n    <!-- <ion-menu side=\"start\" contentId=\"main-content\" menuId=\"profile\">\n      <ion-header>\n        <ion-toolbar translucent>\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-list>\n          <ion-item class=\"menu-text\" button>Profile</ion-item>\n          <ion-item class=\"menu-text\" button>My Appointments</ion-item>\n          <ion-item class=\"menu-text\" button (click)=\"signOut()\">Sign Off</ion-item>\n        </ion-list>     \n      </ion-content>\n    </ion-menu> -->\n\n    <div class=\"ion-page\" id=\"main-content\">\n      <ion-header>\n        <ion-toolbar mode=\"ios\" color=\"primary\">\n          <ion-buttons slot=\"end\">\n            <ion-menu-button ></ion-menu-button>\n          </ion-buttons>\n          <!-- <ion-buttons slot=\"start\">\n            <ion-menu-button (click)=\"signOut()\">\n              Log Out\n            </ion-menu-button>\n          </ion-buttons> -->\n          <ion-title>\n            <div class=\"logo-container\">\n              <img class=\"logo-header\" src=\"/assets/logo.png\" alt=\"\">\n            </div>\n          </ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content class=\"ion-padding\">\n        <app-home></app-home>\n      </ion-content>\n    </div>\n  </ion-app>\n\n\n \n\n\n\n\n"
+module.exports = "\n  <ion-app>\n\n    <!-- option menu -->\n    <ion-menu side=\"end\" contentId=\"main-content\" menuId=\"option\">\n      <ion-content>\n        <ion-nav>\n          <ion-list *ngFor=\"let option of options\">\n            <ion-item  (click)=\"navigate(option.route)\" button>\n              <ion-label class=\"menu-text\">{{option.title}}</ion-label>\n              <ion-icon [name]=\"option.icon\"></ion-icon>\n            </ion-item>\n          </ion-list>\n        </ion-nav>\n      </ion-content>\n    </ion-menu>\n\n  <!-- profile menu -->\n    <!-- <ion-menu side=\"start\" contentId=\"main-content\" menuId=\"profile\">\n      <ion-header>\n        <ion-toolbar translucent>\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-list>\n          <ion-item class=\"menu-text\" button>Profile</ion-item>\n          <ion-item class=\"menu-text\" button>My Appointments</ion-item>\n          <ion-item class=\"menu-text\" button (click)=\"signOut()\">Sign Off</ion-item>\n        </ion-list>     \n      </ion-content>\n    </ion-menu> -->\n\n    <div class=\"ion-page\" id=\"main-content\">\n      <ion-header>\n        <ion-toolbar mode=\"ios\" color=\"primary\">\n          <ion-buttons slot=\"end\">\n            <ion-menu-button></ion-menu-button>\n          </ion-buttons>\n          <!-- <ion-buttons slot=\"start\">\n            <ion-menu-button (click)=\"signOut()\">\n              Log Out\n            </ion-menu-button>\n          </ion-buttons> -->\n          <ion-title>\n            <div class=\"logo-container\">\n              <img class=\"logo-header\" src=\"/assets/logo.png\" alt=\"\">\n            </div>\n          </ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content class=\"ion-padding\">\n        <app-home></app-home>\n      </ion-content>\n    </div>\n  </ion-app>\n\n\n \n\n\n\n\n"
 
 /***/ }),
 
@@ -595,7 +595,18 @@ module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Profile</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <div class=\"personal-info-container\">\n    <h1>Personal Information</h1>\n    <p>Name: {{user?.firstName}} {{user?.lastName}}</p>\n    <p>Phone Number: {{user?.phone}}</p>\n    <p>Email: {{user?.email}}</p>\n    <p>Role: {{user?.role}}</p>\n  </div>\n <div class=\"appointment-container\">\n   <h1>My Appointments</h1>\n   <p>Name: {{appt?.name}}</p>\n   <p>Date: {{appt?.date}}</p>\n   <p>Duration: {{appt?.duration}}</p>\n   <p>Counselor: {{appt?.counselor}}</p>\n   <p>Price: {{appt?.price}}</p>\n   <p>Location: {{appt?.location}}</p>\n </div>\n\n</ion-content>\n"
+module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Profile</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <div>\n    <div class=\"personal-info-container\">\n      <h1>Personal Information</h1>\n      <p>Name: {{user?.firstName}} {{user?.lastName}}</p>\n      <p>Phone Number: {{user?.phone}}</p>\n      <p>Email: {{user?.email}}</p>\n      <p>Role: {{user?.role}}</p>\n    </div>\n    <div  class=\"appointment-container\">\n      <div class=\"user-container\" *ngIf=\"role == 'user'\">\n        <h1>My Appointment</h1>\n        <div *ngFor=\"let appt of appts\">\n          <p>Name: {{appt?.name}}</p>\n          <p>Date: {{appt?.date}}</p>\n          <p>Duration: {{appt?.duration}}</p>\n          <p>Counselor: {{appt?.counselor}}</p>\n          <p>Price: {{appt?.price}}</p>\n          <p>Location: {{appt?.location}}</p>\n        </div>\n      </div>\n\n      <!-- admin -->\n      <div class=\"admin-container\" *ngIf=\"role == 'admin'\">\n        <h1>My Schedule</h1>\n        <ion-list >\n          <ion-item *ngFor=\"let appt of appts\">\n            <div class=\"candidate-info-container\">\n              <p>Date: {{appt.date}}</p>\n              <p>Client Name: {{appt?.candidateFirstName}} {{appt?.candidateLastName}}</p>\n              <p>Phone: 666-666-6666</p>\n            </div>\n          </ion-item>\n        </ion-list>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"button-container\">\n    <ion-button *ngIf=\"role == 'admin'\" shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Set Calendar</ion-button>\n    <ion-button *ngIf=\"role == 'admin'\" shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Add Admin</ion-button>\n    <ion-button shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Signout</ion-button>\n  </div>\n</ion-content>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/register/register.component.html":
+/*!****************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/register/register.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"header-container\">\n    <h1>Registration</h1>\n  </div>\n\n  <form [formGroup]=\"registerForm\">\n    <ion-item>\n      <ion-label position=\"floating\">First Name</ion-label>\n      <ion-input type=\"string\" placeholder=\"John\" formControlName=\"firstName\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"string\" placeholder=\"Doe\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Email</ion-label>\n      <ion-input type=\"email\" placeholder=\"example@gmail.com\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Phone</ion-label>\n      <ion-input type=\"tel\" placeholder=\"xxx-xxx-xxxx\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Confirm Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"confirmPassword\"></ion-input>\n    </ion-item>\n    <ion-button type=\"submit\" expand=\"block\" fill=\"solid\" [disabled]=\"!passwordMatch()\" (click)=\"registerUser()\">Submit</ion-button>\n    <ion-button type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n  </form>\n</div>\n"
 
 /***/ }),
 
@@ -644,6 +655,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _forms_forms_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./forms/forms.component */ "./src/app/forms/forms.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
 /* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/profile/profile.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+
 
 
 
@@ -665,6 +678,10 @@ const routes = [
     {
         path: 'login',
         component: _login_login_component__WEBPACK_IMPORTED_MODULE_11__["LoginComponent"]
+    },
+    {
+        path: 'register',
+        component: _register_register_component__WEBPACK_IMPORTED_MODULE_13__["RegisterComponent"]
     },
     {
         path: 'services',
@@ -861,6 +878,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var aws_amplify_angular__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! aws-amplify-angular */ "./node_modules/aws-amplify-angular/dist/index.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var src_services_auth_service__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! src/services/auth.service */ "./src/services/auth.service.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+
 
 
 
@@ -910,7 +929,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _forms_forms_component__WEBPACK_IMPORTED_MODULE_22__["FormsComponent"],
             _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"],
             _login_login_component__WEBPACK_IMPORTED_MODULE_26__["LoginComponent"],
-            _profile_profile_component__WEBPACK_IMPORTED_MODULE_28__["ProfileComponent"]
+            _profile_profile_component__WEBPACK_IMPORTED_MODULE_28__["ProfileComponent"],
+            _register_register_component__WEBPACK_IMPORTED_MODULE_33__["RegisterComponent"]
         ],
         entryComponents: [
             _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"]
@@ -1017,7 +1037,7 @@ let AppointmentComponent = class AppointmentComponent {
             case 'll-insurance':
                 this.appointmentService.getLicensedLevelInsurance()
                     .subscribe(res => {
-                    this.presentModal(res);
+                    this.presentModal(this.parseAppointments(res));
                 }, err => {
                     this.handleError(err, 'Error retrieving schedule');
                 });
@@ -1025,7 +1045,7 @@ let AppointmentComponent = class AppointmentComponent {
             case 'll-selfpay':
                 this.appointmentService.getLicensedLevelSelfPay()
                     .subscribe(res => {
-                    this.presentModal(res);
+                    this.presentModal(this.parseAppointments(res));
                 }, err => {
                     this.handleError(err, 'Error retrieving schedule');
                 });
@@ -1033,7 +1053,7 @@ let AppointmentComponent = class AppointmentComponent {
             case 'ml-intake':
                 this.appointmentService.getMastersLevelIntake()
                     .subscribe(res => {
-                    this.presentModal(res);
+                    this.presentModal(this.parseAppointments(res));
                 }, err => {
                     this.handleError(err, 'Error retrieving schedule');
                 });
@@ -1041,7 +1061,7 @@ let AppointmentComponent = class AppointmentComponent {
             case 'ml-selfpay':
                 this.appointmentService.getMastersLevelSelfPay()
                     .subscribe(res => {
-                    this.presentModal(res);
+                    this.presentModal(this.parseAppointments(res));
                 }, err => {
                     this.handleError(err, 'Error retrieving schedule');
                 });
@@ -1049,7 +1069,7 @@ let AppointmentComponent = class AppointmentComponent {
             case 'youth':
                 this.appointmentService.getAdolescentGroupSelfPay()
                     .subscribe(res => {
-                    this.presentModal(res);
+                    this.presentModal(this.parseAppointments(res));
                 }, err => {
                     this.handleError(err, 'Error retrieving schedule');
                 });
@@ -1868,8 +1888,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 let LoginComponent = class LoginComponent {
-    constructor(events, amplifyService, formBuilder, router, userService, loginService, authService) {
+    constructor(events, amplifyService, formBuilder, router, userService, loginService, authService, loadingController) {
         this.events = events;
         this.amplifyService = amplifyService;
         this.formBuilder = formBuilder;
@@ -1877,6 +1898,7 @@ let LoginComponent = class LoginComponent {
         this.userService = userService;
         this.loginService = loginService;
         this.authService = authService;
+        this.loadingController = loadingController;
         this.signUpConfig = {
             header: 'Sign Up',
             hideAllDefaults: true,
@@ -1944,6 +1966,7 @@ let LoginComponent = class LoginComponent {
         this.router.navigateByUrl('home');
     }
     login() {
+        this.presentLoading();
         var email = this.loginForm.get('email').value;
         var password = this.loginForm.get('password').value;
         this.loginService.login(email, password)
@@ -1952,10 +1975,26 @@ let LoginComponent = class LoginComponent {
         }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["switchMap"])(() => {
             return this.userService.getUser(email);
         }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["tap"])(data => {
+            this.loadingController.dismiss();
             this.userService.setUserInfo(data);
             this.navigate();
         }))
             .subscribe();
+    }
+    register() {
+        this.router.navigateByUrl('register');
+    }
+    presentLoading() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const loading = yield this.loadingController.create({
+                message: 'Please wait...',
+                mode: "ios",
+                duration: 2000
+            });
+            yield loading.present();
+            const { role, data } = yield loading.onDidDismiss();
+            console.log('Loading dismissed!');
+        });
     }
 };
 LoginComponent.ctorParameters = () => [
@@ -1965,7 +2004,8 @@ LoginComponent.ctorParameters = () => [
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
     { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_6__["UserService"] },
     { type: src_services_login_service__WEBPACK_IMPORTED_MODULE_7__["LoginService"] },
-    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_8__["AuthService"] }
+    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_8__["AuthService"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["LoadingController"] }
 ];
 LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1979,7 +2019,8 @@ LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"],
         src_services_user_service__WEBPACK_IMPORTED_MODULE_6__["UserService"],
         src_services_login_service__WEBPACK_IMPORTED_MODULE_7__["LoginService"],
-        _services_auth_service__WEBPACK_IMPORTED_MODULE_8__["AuthService"]])
+        _services_auth_service__WEBPACK_IMPORTED_MODULE_8__["AuthService"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["LoadingController"]])
 ], LoginComponent);
 
 
@@ -1993,7 +2034,7 @@ LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".text {\n  color: black;\n}\n\nion-item.menu-text.text.background.item.md.in-list.ion-activatable.ion-focusable.hydrated {\n  background-color: black;\n}\n\n.background {\n  background-color: black;\n}\n\nion-toolbar {\n  background-color: #449e44;\n}\n\nion-menu-button {\n  color: white;\n}\n\nion-content {\n  background-color: black;\n}\n\n.logo-header {\n  height: 40px;\n  width: 150px;\n}\n\n.logo-container {\n  margin-top: 20px;\n  margin-bottom: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9tZW51L21lbnUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL21lbnUvbWVudS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLFlBQUE7QUNESjs7QURJQTtFQUNJLHVCQUFBO0FDREo7O0FESUE7RUFDSSx1QkFBQTtBQ0RKOztBRElBO0VBQ0kseUJBQUE7QUNESjs7QURJQTtFQUNJLFlBQUE7QUNESjs7QURJQTtFQUNJLHVCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0VBQ0EsWUFBQTtBQ0RKOztBRElBO0VBQ0ksZ0JBQUE7RUFDQSxtQkFBQTtBQ0RKIiwiZmlsZSI6InNyYy9hcHAvbWVudS9tZW51LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vLi4vdGhlbWUvY29sb3JzLnNjc3MnO1xuXG4udGV4dCB7XG4gICAgY29sb3I6IGNvbG9yKGRhcmspO1xufVxuXG5pb24taXRlbS5tZW51LXRleHQudGV4dC5iYWNrZ3JvdW5kLml0ZW0ubWQuaW4tbGlzdC5pb24tYWN0aXZhdGFibGUuaW9uLWZvY3VzYWJsZS5oeWRyYXRlZCB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyayk7IFxufVxuXG4uYmFja2dyb3VuZCB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyayk7XG59XG5cbmlvbi10b29sYmFyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihzZWNvbmRhcnkpO1xufVxuXG5pb24tbWVudS1idXR0b24ge1xuICAgIGNvbG9yOiBjb2xvcihwcmltYXJ5KTtcbn1cblxuaW9uLWNvbnRlbnQge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspO1xufVxuXG4ubG9nby1oZWFkZXIge1xuICAgIGhlaWdodDogNDBweDtcbiAgICB3aWR0aDogMTUwcHg7XG59XG5cbi5sb2dvLWNvbnRhaW5lciB7XG4gICAgbWFyZ2luLXRvcDogMjBweDtcbiAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xufSIsIi50ZXh0IHtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG5pb24taXRlbS5tZW51LXRleHQudGV4dC5iYWNrZ3JvdW5kLml0ZW0ubWQuaW4tbGlzdC5pb24tYWN0aXZhdGFibGUuaW9uLWZvY3VzYWJsZS5oeWRyYXRlZCB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG4uYmFja2dyb3VuZCB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG5pb24tdG9vbGJhciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICM0NDllNDQ7XG59XG5cbmlvbi1tZW51LWJ1dHRvbiB7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuaW9uLWNvbnRlbnQge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbn1cblxuLmxvZ28taGVhZGVyIHtcbiAgaGVpZ2h0OiA0MHB4O1xuICB3aWR0aDogMTUwcHg7XG59XG5cbi5sb2dvLWNvbnRhaW5lciB7XG4gIG1hcmdpbi10b3A6IDIwcHg7XG4gIG1hcmdpbi1ib3R0b206IDEwcHg7XG59Il19 */"
+module.exports = ".text {\n  color: black;\n}\n\nion-item.menu-text.text.background.item.md.in-list.ion-activatable.ion-focusable.hydrated {\n  background-color: black;\n}\n\n.background {\n  background-color: black;\n}\n\nion-toolbar {\n  background-color: #449e44;\n}\n\nion-menu-button {\n  color: white;\n}\n\nion-content {\n  background-color: black;\n}\n\n.logo-header {\n  height: 40px;\n  width: 150px;\n  margin-top: 10px;\n  margin-bottom: 15px;\n}\n\n.logo-container {\n  margin-top: 20px;\n  margin-bottom: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9tZW51L21lbnUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL21lbnUvbWVudS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLFlBQUE7QUNESjs7QURJQTtFQUNJLHVCQUFBO0FDREo7O0FESUE7RUFDSSx1QkFBQTtBQ0RKOztBRElBO0VBQ0kseUJBQUE7QUNESjs7QURJQTtFQUNJLFlBQUE7QUNESjs7QURJQTtFQUNJLHVCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0VBQ0EsWUFBQTtFQUNBLGdCQUFBO0VBQ0EsbUJBQUE7QUNESjs7QURJQTtFQUNJLGdCQUFBO0VBQ0EsbUJBQUE7QUNESiIsImZpbGUiOiJzcmMvYXBwL21lbnUvbWVudS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuLnRleHQge1xuICAgIGNvbG9yOiBjb2xvcihkYXJrKTtcbn1cblxuaW9uLWl0ZW0ubWVudS10ZXh0LnRleHQuYmFja2dyb3VuZC5pdGVtLm1kLmluLWxpc3QuaW9uLWFjdGl2YXRhYmxlLmlvbi1mb2N1c2FibGUuaHlkcmF0ZWQge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspOyBcbn1cblxuLmJhY2tncm91bmQge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspO1xufVxuXG5pb24tdG9vbGJhciB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3Ioc2Vjb25kYXJ5KTtcbn1cblxuaW9uLW1lbnUtYnV0dG9uIHtcbiAgICBjb2xvcjogY29sb3IocHJpbWFyeSk7XG59XG5cbmlvbi1jb250ZW50IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTtcbn1cblxuLmxvZ28taGVhZGVyIHtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgd2lkdGg6IDE1MHB4O1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cblxuLmxvZ28tY29udGFpbmVyIHtcbiAgICBtYXJnaW4tdG9wOiAyMHB4O1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG59IiwiLnRleHQge1xuICBjb2xvcjogYmxhY2s7XG59XG5cbmlvbi1pdGVtLm1lbnUtdGV4dC50ZXh0LmJhY2tncm91bmQuaXRlbS5tZC5pbi1saXN0Lmlvbi1hY3RpdmF0YWJsZS5pb24tZm9jdXNhYmxlLmh5ZHJhdGVkIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG59XG5cbi5iYWNrZ3JvdW5kIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG59XG5cbmlvbi10b29sYmFyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzQ0OWU0NDtcbn1cblxuaW9uLW1lbnUtYnV0dG9uIHtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG5pb24tY29udGVudCB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG4ubG9nby1oZWFkZXIge1xuICBoZWlnaHQ6IDQwcHg7XG4gIHdpZHRoOiAxNTBweDtcbiAgbWFyZ2luLXRvcDogMTBweDtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cblxuLmxvZ28tY29udGFpbmVyIHtcbiAgbWFyZ2luLXRvcDogMjBweDtcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -2013,6 +2054,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
 /* harmony import */ var aws_amplify_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! aws-amplify-angular */ "./node_modules/aws-amplify-angular/dist/index.js");
+/* harmony import */ var src_services_auth_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/services/auth.service */ "./src/services/auth.service.ts");
+
 
 
 
@@ -2021,18 +2064,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let MenuComponent = class MenuComponent {
-    constructor(menuService, router, navController, menuController, amplifyService) {
+    constructor(menuService, router, navController, menuController, amplifyService, authService) {
         this.menuService = menuService;
         this.router = router;
         this.navController = navController;
         this.menuController = menuController;
         this.amplifyService = amplifyService;
+        this.authService = authService;
         this.title = '';
     }
     ngOnInit() {
         this.options = this.menuService.getOptions();
     }
     navigate(route) {
+        this.menuController.close("option");
         this.navController.navigateForward(route);
     }
     openMenu() {
@@ -2061,9 +2106,8 @@ let MenuComponent = class MenuComponent {
         });
     }
     signOut() {
-        this.authState = { state: "signedOut" };
-        this.amplifyService.setAuthState(this.authState);
-        // this.router.navigateByUrl('login');
+        this.authService.logOut();
+        this.router.navigateByUrl('login');
     }
 };
 MenuComponent.ctorParameters = () => [
@@ -2071,7 +2115,8 @@ MenuComponent.ctorParameters = () => [
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["NavController"] },
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["MenuController"] },
-    { type: aws_amplify_angular__WEBPACK_IMPORTED_MODULE_5__["AmplifyService"] }
+    { type: aws_amplify_angular__WEBPACK_IMPORTED_MODULE_5__["AmplifyService"] },
+    { type: src_services_auth_service__WEBPACK_IMPORTED_MODULE_6__["AuthService"] }
 ];
 MenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -2084,7 +2129,8 @@ MenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
         _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["NavController"],
         _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["MenuController"],
-        aws_amplify_angular__WEBPACK_IMPORTED_MODULE_5__["AmplifyService"]])
+        aws_amplify_angular__WEBPACK_IMPORTED_MODULE_5__["AmplifyService"],
+        src_services_auth_service__WEBPACK_IMPORTED_MODULE_6__["AuthService"]])
 ], MenuComponent);
 
 
@@ -2166,7 +2212,7 @@ OutreachComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".personal-info-container {\n  margin: 10px;\n}\n\n.appointment-container {\n  margin: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9wcm9maWxlL3Byb2ZpbGUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3Byb2ZpbGUvcHJvZmlsZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFlBQUE7QUNDSjs7QURFQTtFQUNJLFlBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL3Byb2ZpbGUvcHJvZmlsZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wZXJzb25hbC1pbmZvLWNvbnRhaW5lciB7XG4gICAgbWFyZ2luOiAxMHB4O1xufVxuXG4uYXBwb2ludG1lbnQtY29udGFpbmVyIHtcbiAgICBtYXJnaW46IDEwcHg7XG59IiwiLnBlcnNvbmFsLWluZm8tY29udGFpbmVyIHtcbiAgbWFyZ2luOiAxMHB4O1xufVxuXG4uYXBwb2ludG1lbnQtY29udGFpbmVyIHtcbiAgbWFyZ2luOiAxMHB4O1xufSJdfQ== */"
+module.exports = ".personal-info-container {\n  margin: 10px;\n}\n\n.appointment-container {\n  margin: 10px;\n}\n\n.loading-container {\n  margin-top: 50%;\n}\n\n.button-container {\n  text-align: center;\n  margin: 15px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9wcm9maWxlL3Byb2ZpbGUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3Byb2ZpbGUvcHJvZmlsZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFlBQUE7QUNDSjs7QURFQTtFQUNJLFlBQUE7QUNDSjs7QURFQTtFQUNJLGVBQUE7QUNDSjs7QURFQTtFQUNJLGtCQUFBO0VBQ0EsWUFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvcHJvZmlsZS9wcm9maWxlLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBlcnNvbmFsLWluZm8tY29udGFpbmVyIHtcbiAgICBtYXJnaW46IDEwcHg7XG59XG5cbi5hcHBvaW50bWVudC1jb250YWluZXIge1xuICAgIG1hcmdpbjogMTBweDtcbn1cblxuLmxvYWRpbmctY29udGFpbmVyIHtcbiAgICBtYXJnaW4tdG9wOiA1MCU7XG59XG5cbi5idXR0b24tY29udGFpbmVyIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgbWFyZ2luOiAxNXB4O1xufSIsIi5wZXJzb25hbC1pbmZvLWNvbnRhaW5lciB7XG4gIG1hcmdpbjogMTBweDtcbn1cblxuLmFwcG9pbnRtZW50LWNvbnRhaW5lciB7XG4gIG1hcmdpbjogMTBweDtcbn1cblxuLmxvYWRpbmctY29udGFpbmVyIHtcbiAgbWFyZ2luLXRvcDogNTAlO1xufVxuXG4uYnV0dG9uLWNvbnRhaW5lciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luOiAxNXB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -2184,41 +2230,94 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
 /* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var src_services_auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/services/auth.service */ "./src/services/auth.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
+
 
 
 
 
 let ProfileComponent = class ProfileComponent {
-    constructor(userService, apptService) {
+    constructor(userService, apptService, loadingController, authService, router) {
         this.userService = userService;
         this.apptService = apptService;
+        this.loadingController = loadingController;
+        this.authService = authService;
+        this.router = router;
+        this.role = "";
+        this.userInfoLoaded = false;
+        this.apptInfoLoaded = false;
     }
     ngOnInit() {
+        this.presentLoading();
         this.user = this.userService.getUserInfo();
-        this.apptService.getMyAppointments(this.user.email)
-            .subscribe(res => {
-            this.appt = this.transformData(res.Items[0]);
-        });
+        this.role = this.user.role.toLowerCase();
+        if (this.user.role.toLowerCase() == "admin") {
+            this.apptService.getAppointmentsByCounselor(this.user.firstName + " " + this.user.lastName)
+                .subscribe(res => {
+                this.appts = this.transformData(res.Items);
+                this.loadingController.dismiss();
+            }, err => {
+                console.log(err, err.message);
+                alert("Error getting user info");
+            });
+        }
+        else if (this.user.role.toLowerCase() == "user") {
+            this.apptService.getMyAppointments(this.user.email)
+                .subscribe(res => {
+                this.appts = this.transformData(res.Items);
+                this.loadingController.dismiss();
+            }, err => {
+                console.log(err, err.message);
+                alert("Error getting user info");
+            });
+        }
     }
     transformData(res) {
-        var appointment = {
-            name: res.Name.S,
-            date: res.Date.S,
-            duration: res.Duration.S,
-            price: res.Price.S,
-            location: res.Location.S,
-            counselor: res.Counselor.S,
-            candidateFirstName: res.CandidateFirstName.S,
-            candidateLastName: res.CandidateLastName.S,
-            candidateEmail: res.CandidateEmail.S,
-            type: res.Type.S
-        };
-        return appointment;
+        var appts = [];
+        res.forEach(item => {
+            var appointment = {
+                name: item.Name.S,
+                date: item.Date.S,
+                duration: item.Duration.S,
+                price: item.Price.S,
+                location: item.Location.S,
+                counselor: item.Counselor.S,
+                candidateFirstName: item.CandidateFirstName.S,
+                candidateLastName: item.CandidateLastName.S,
+                candidateEmail: item.CandidateEmail.S,
+                type: item.Type.S
+            };
+            appts.push(appointment);
+        });
+        return appts;
+    }
+    logOut() {
+        this.authService.logOut();
+        this.router.navigateByUrl("login");
+    }
+    presentLoading() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const loading = yield this.loadingController.create({
+                message: 'Please wait...',
+                mode: "ios",
+                duration: 2000
+            });
+            yield loading.present();
+            const { role, data } = yield loading.onDidDismiss();
+            console.log('Loading dismissed!');
+        });
     }
 };
 ProfileComponent.ctorParameters = () => [
     { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_2__["UserService"] },
-    { type: src_services_appointment_service__WEBPACK_IMPORTED_MODULE_3__["AppointmentService"] }
+    { type: src_services_appointment_service__WEBPACK_IMPORTED_MODULE_3__["AppointmentService"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"] },
+    { type: src_services_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] }
 ];
 ProfileComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -2227,8 +2326,144 @@ ProfileComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [__webpack_require__(/*! ./profile.component.scss */ "./src/app/profile/profile.component.scss")]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_services_user_service__WEBPACK_IMPORTED_MODULE_2__["UserService"],
-        src_services_appointment_service__WEBPACK_IMPORTED_MODULE_3__["AppointmentService"]])
+        src_services_appointment_service__WEBPACK_IMPORTED_MODULE_3__["AppointmentService"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"],
+        src_services_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"],
+        _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]])
 ], ProfileComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/register/register.component.scss":
+/*!**************************************************!*\
+  !*** ./src/app/register/register.component.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".header-container {\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9yZWdpc3Rlci9yZWdpc3Rlci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxrQkFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaGVhZGVyLWNvbnRhaW5lciB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufSIsIi5oZWFkZXItY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/register/register.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/register/register.component.ts ***!
+  \************************************************/
+/*! exports provided: RegisterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterComponent", function() { return RegisterComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
+
+
+
+
+
+let RegisterComponent = class RegisterComponent {
+    constructor(formBuilder, userService, toastController, loadingController, router) {
+        this.formBuilder = formBuilder;
+        this.userService = userService;
+        this.toastController = toastController;
+        this.loadingController = loadingController;
+        this.router = router;
+    }
+    ngOnInit() {
+        this.registerForm = this.formBuilder.group({
+            firstName: '',
+            lastName: '',
+            email: '',
+            password: '',
+            confirmPassword: '',
+            phone: ''
+        });
+    }
+    registerUser() {
+        this.presentLoading();
+        var user = {
+            firstName: this.registerForm.get('firstName').value,
+            lastName: this.registerForm.get('lastName').value,
+            email: this.registerForm.get('email').value,
+            password: this.registerForm.get('password').value,
+            phone: this.registerForm.get('phone').value,
+            role: "User"
+        };
+        this.userService.addUser(user)
+            .subscribe(res => {
+            this.loadingController.dismiss();
+            this.router.navigateByUrl("home");
+        }, err => {
+            this.handleError(err, err.message);
+        });
+    }
+    cancel() {
+        this.router.navigateByUrl('login');
+    }
+    passwordMatch() {
+        var password = this.registerForm.get('password').value;
+        var confirmPassword = this.registerForm.get('confirmPassword').value;
+        if (password === confirmPassword) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    presentLoading() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const loading = yield this.loadingController.create({
+                message: 'Please wait...',
+                mode: "ios",
+                duration: 2000
+            });
+            yield loading.present();
+            const { role, data } = yield loading.onDidDismiss();
+            console.log('Loading dismissed!');
+        });
+    }
+    handleError(err, errMessage) {
+        console.log(err + err.message);
+        alert(errMessage);
+    }
+    presentToast() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const toast = yield this.toastController.create({
+                message: 'Your profile has been created.',
+                duration: 2000
+            });
+            toast.present();
+        });
+    }
+};
+RegisterComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+    { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"] }
+];
+RegisterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-register',
+        template: __webpack_require__(/*! raw-loader!./register.component.html */ "./node_modules/raw-loader/index.js!./src/app/register/register.component.html"),
+        styles: [__webpack_require__(/*! ./register.component.scss */ "./src/app/register/register.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
+        src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"],
+        _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]])
+], RegisterComponent);
 
 
 
@@ -2521,6 +2756,15 @@ class AppointmentService {
         };
         return this.http.get(url, httpOptions);
     }
+    getAppointmentsByCounselor(name) {
+        const url = " https://6559d4fmz9.execute-api.us-east-1.amazonaws.com/default/getAppointmentsByCounselor?counselor=" + name;
+        const httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.get(url, httpOptions);
+    }
 }
 AppointmentService.ctorParameters = () => [
     { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }
@@ -2788,6 +3032,15 @@ let UserService = class UserService {
             })
         };
         return this.http.get(url, httpOptions);
+    }
+    addUser(user) {
+        const url = "https://a62hdz3sfj.execute-api.us-east-1.amazonaws.com/default/addUser";
+        const httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.post(url, user, httpOptions);
     }
     getUserInfo() {
         return this.user;
