@@ -33,10 +33,7 @@ export class ApptModalComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    if(this.count == 0) {
-      this.noData = true;
-    }
-
+    this.noAppointments(this.data)    
     this.user = this.userService.getUserInfo();
   }
 
@@ -118,5 +115,11 @@ export class ApptModalComponent implements OnInit {
         break;
     }
     return tableName;
+  }
+
+  noAppointments(data: Appointment[]) {
+    if(data.length == 0) {
+      this.noData = true;
+    }
   }
 }

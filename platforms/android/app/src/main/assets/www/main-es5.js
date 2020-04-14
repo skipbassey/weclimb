@@ -440,6 +440,292 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
+/***/ "./node_modules/moment/locale sync recursive ^\\.\\/.*$":
+/*!**************************************************!*\
+  !*** ./node_modules/moment/locale sync ^\.\/.*$ ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./af": "./node_modules/moment/locale/af.js",
+	"./af.js": "./node_modules/moment/locale/af.js",
+	"./ar": "./node_modules/moment/locale/ar.js",
+	"./ar-dz": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-dz.js": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-kw": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-kw.js": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-ly": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ly.js": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ma": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-ma.js": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-sa": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-sa.js": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-tn": "./node_modules/moment/locale/ar-tn.js",
+	"./ar-tn.js": "./node_modules/moment/locale/ar-tn.js",
+	"./ar.js": "./node_modules/moment/locale/ar.js",
+	"./az": "./node_modules/moment/locale/az.js",
+	"./az.js": "./node_modules/moment/locale/az.js",
+	"./be": "./node_modules/moment/locale/be.js",
+	"./be.js": "./node_modules/moment/locale/be.js",
+	"./bg": "./node_modules/moment/locale/bg.js",
+	"./bg.js": "./node_modules/moment/locale/bg.js",
+	"./bm": "./node_modules/moment/locale/bm.js",
+	"./bm.js": "./node_modules/moment/locale/bm.js",
+	"./bn": "./node_modules/moment/locale/bn.js",
+	"./bn.js": "./node_modules/moment/locale/bn.js",
+	"./bo": "./node_modules/moment/locale/bo.js",
+	"./bo.js": "./node_modules/moment/locale/bo.js",
+	"./br": "./node_modules/moment/locale/br.js",
+	"./br.js": "./node_modules/moment/locale/br.js",
+	"./bs": "./node_modules/moment/locale/bs.js",
+	"./bs.js": "./node_modules/moment/locale/bs.js",
+	"./ca": "./node_modules/moment/locale/ca.js",
+	"./ca.js": "./node_modules/moment/locale/ca.js",
+	"./cs": "./node_modules/moment/locale/cs.js",
+	"./cs.js": "./node_modules/moment/locale/cs.js",
+	"./cv": "./node_modules/moment/locale/cv.js",
+	"./cv.js": "./node_modules/moment/locale/cv.js",
+	"./cy": "./node_modules/moment/locale/cy.js",
+	"./cy.js": "./node_modules/moment/locale/cy.js",
+	"./da": "./node_modules/moment/locale/da.js",
+	"./da.js": "./node_modules/moment/locale/da.js",
+	"./de": "./node_modules/moment/locale/de.js",
+	"./de-at": "./node_modules/moment/locale/de-at.js",
+	"./de-at.js": "./node_modules/moment/locale/de-at.js",
+	"./de-ch": "./node_modules/moment/locale/de-ch.js",
+	"./de-ch.js": "./node_modules/moment/locale/de-ch.js",
+	"./de.js": "./node_modules/moment/locale/de.js",
+	"./dv": "./node_modules/moment/locale/dv.js",
+	"./dv.js": "./node_modules/moment/locale/dv.js",
+	"./el": "./node_modules/moment/locale/el.js",
+	"./el.js": "./node_modules/moment/locale/el.js",
+	"./en-SG": "./node_modules/moment/locale/en-SG.js",
+	"./en-SG.js": "./node_modules/moment/locale/en-SG.js",
+	"./en-au": "./node_modules/moment/locale/en-au.js",
+	"./en-au.js": "./node_modules/moment/locale/en-au.js",
+	"./en-ca": "./node_modules/moment/locale/en-ca.js",
+	"./en-ca.js": "./node_modules/moment/locale/en-ca.js",
+	"./en-gb": "./node_modules/moment/locale/en-gb.js",
+	"./en-gb.js": "./node_modules/moment/locale/en-gb.js",
+	"./en-ie": "./node_modules/moment/locale/en-ie.js",
+	"./en-ie.js": "./node_modules/moment/locale/en-ie.js",
+	"./en-il": "./node_modules/moment/locale/en-il.js",
+	"./en-il.js": "./node_modules/moment/locale/en-il.js",
+	"./en-nz": "./node_modules/moment/locale/en-nz.js",
+	"./en-nz.js": "./node_modules/moment/locale/en-nz.js",
+	"./eo": "./node_modules/moment/locale/eo.js",
+	"./eo.js": "./node_modules/moment/locale/eo.js",
+	"./es": "./node_modules/moment/locale/es.js",
+	"./es-do": "./node_modules/moment/locale/es-do.js",
+	"./es-do.js": "./node_modules/moment/locale/es-do.js",
+	"./es-us": "./node_modules/moment/locale/es-us.js",
+	"./es-us.js": "./node_modules/moment/locale/es-us.js",
+	"./es.js": "./node_modules/moment/locale/es.js",
+	"./et": "./node_modules/moment/locale/et.js",
+	"./et.js": "./node_modules/moment/locale/et.js",
+	"./eu": "./node_modules/moment/locale/eu.js",
+	"./eu.js": "./node_modules/moment/locale/eu.js",
+	"./fa": "./node_modules/moment/locale/fa.js",
+	"./fa.js": "./node_modules/moment/locale/fa.js",
+	"./fi": "./node_modules/moment/locale/fi.js",
+	"./fi.js": "./node_modules/moment/locale/fi.js",
+	"./fo": "./node_modules/moment/locale/fo.js",
+	"./fo.js": "./node_modules/moment/locale/fo.js",
+	"./fr": "./node_modules/moment/locale/fr.js",
+	"./fr-ca": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ca.js": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ch": "./node_modules/moment/locale/fr-ch.js",
+	"./fr-ch.js": "./node_modules/moment/locale/fr-ch.js",
+	"./fr.js": "./node_modules/moment/locale/fr.js",
+	"./fy": "./node_modules/moment/locale/fy.js",
+	"./fy.js": "./node_modules/moment/locale/fy.js",
+	"./ga": "./node_modules/moment/locale/ga.js",
+	"./ga.js": "./node_modules/moment/locale/ga.js",
+	"./gd": "./node_modules/moment/locale/gd.js",
+	"./gd.js": "./node_modules/moment/locale/gd.js",
+	"./gl": "./node_modules/moment/locale/gl.js",
+	"./gl.js": "./node_modules/moment/locale/gl.js",
+	"./gom-latn": "./node_modules/moment/locale/gom-latn.js",
+	"./gom-latn.js": "./node_modules/moment/locale/gom-latn.js",
+	"./gu": "./node_modules/moment/locale/gu.js",
+	"./gu.js": "./node_modules/moment/locale/gu.js",
+	"./he": "./node_modules/moment/locale/he.js",
+	"./he.js": "./node_modules/moment/locale/he.js",
+	"./hi": "./node_modules/moment/locale/hi.js",
+	"./hi.js": "./node_modules/moment/locale/hi.js",
+	"./hr": "./node_modules/moment/locale/hr.js",
+	"./hr.js": "./node_modules/moment/locale/hr.js",
+	"./hu": "./node_modules/moment/locale/hu.js",
+	"./hu.js": "./node_modules/moment/locale/hu.js",
+	"./hy-am": "./node_modules/moment/locale/hy-am.js",
+	"./hy-am.js": "./node_modules/moment/locale/hy-am.js",
+	"./id": "./node_modules/moment/locale/id.js",
+	"./id.js": "./node_modules/moment/locale/id.js",
+	"./is": "./node_modules/moment/locale/is.js",
+	"./is.js": "./node_modules/moment/locale/is.js",
+	"./it": "./node_modules/moment/locale/it.js",
+	"./it-ch": "./node_modules/moment/locale/it-ch.js",
+	"./it-ch.js": "./node_modules/moment/locale/it-ch.js",
+	"./it.js": "./node_modules/moment/locale/it.js",
+	"./ja": "./node_modules/moment/locale/ja.js",
+	"./ja.js": "./node_modules/moment/locale/ja.js",
+	"./jv": "./node_modules/moment/locale/jv.js",
+	"./jv.js": "./node_modules/moment/locale/jv.js",
+	"./ka": "./node_modules/moment/locale/ka.js",
+	"./ka.js": "./node_modules/moment/locale/ka.js",
+	"./kk": "./node_modules/moment/locale/kk.js",
+	"./kk.js": "./node_modules/moment/locale/kk.js",
+	"./km": "./node_modules/moment/locale/km.js",
+	"./km.js": "./node_modules/moment/locale/km.js",
+	"./kn": "./node_modules/moment/locale/kn.js",
+	"./kn.js": "./node_modules/moment/locale/kn.js",
+	"./ko": "./node_modules/moment/locale/ko.js",
+	"./ko.js": "./node_modules/moment/locale/ko.js",
+	"./ku": "./node_modules/moment/locale/ku.js",
+	"./ku.js": "./node_modules/moment/locale/ku.js",
+	"./ky": "./node_modules/moment/locale/ky.js",
+	"./ky.js": "./node_modules/moment/locale/ky.js",
+	"./lb": "./node_modules/moment/locale/lb.js",
+	"./lb.js": "./node_modules/moment/locale/lb.js",
+	"./lo": "./node_modules/moment/locale/lo.js",
+	"./lo.js": "./node_modules/moment/locale/lo.js",
+	"./lt": "./node_modules/moment/locale/lt.js",
+	"./lt.js": "./node_modules/moment/locale/lt.js",
+	"./lv": "./node_modules/moment/locale/lv.js",
+	"./lv.js": "./node_modules/moment/locale/lv.js",
+	"./me": "./node_modules/moment/locale/me.js",
+	"./me.js": "./node_modules/moment/locale/me.js",
+	"./mi": "./node_modules/moment/locale/mi.js",
+	"./mi.js": "./node_modules/moment/locale/mi.js",
+	"./mk": "./node_modules/moment/locale/mk.js",
+	"./mk.js": "./node_modules/moment/locale/mk.js",
+	"./ml": "./node_modules/moment/locale/ml.js",
+	"./ml.js": "./node_modules/moment/locale/ml.js",
+	"./mn": "./node_modules/moment/locale/mn.js",
+	"./mn.js": "./node_modules/moment/locale/mn.js",
+	"./mr": "./node_modules/moment/locale/mr.js",
+	"./mr.js": "./node_modules/moment/locale/mr.js",
+	"./ms": "./node_modules/moment/locale/ms.js",
+	"./ms-my": "./node_modules/moment/locale/ms-my.js",
+	"./ms-my.js": "./node_modules/moment/locale/ms-my.js",
+	"./ms.js": "./node_modules/moment/locale/ms.js",
+	"./mt": "./node_modules/moment/locale/mt.js",
+	"./mt.js": "./node_modules/moment/locale/mt.js",
+	"./my": "./node_modules/moment/locale/my.js",
+	"./my.js": "./node_modules/moment/locale/my.js",
+	"./nb": "./node_modules/moment/locale/nb.js",
+	"./nb.js": "./node_modules/moment/locale/nb.js",
+	"./ne": "./node_modules/moment/locale/ne.js",
+	"./ne.js": "./node_modules/moment/locale/ne.js",
+	"./nl": "./node_modules/moment/locale/nl.js",
+	"./nl-be": "./node_modules/moment/locale/nl-be.js",
+	"./nl-be.js": "./node_modules/moment/locale/nl-be.js",
+	"./nl.js": "./node_modules/moment/locale/nl.js",
+	"./nn": "./node_modules/moment/locale/nn.js",
+	"./nn.js": "./node_modules/moment/locale/nn.js",
+	"./pa-in": "./node_modules/moment/locale/pa-in.js",
+	"./pa-in.js": "./node_modules/moment/locale/pa-in.js",
+	"./pl": "./node_modules/moment/locale/pl.js",
+	"./pl.js": "./node_modules/moment/locale/pl.js",
+	"./pt": "./node_modules/moment/locale/pt.js",
+	"./pt-br": "./node_modules/moment/locale/pt-br.js",
+	"./pt-br.js": "./node_modules/moment/locale/pt-br.js",
+	"./pt.js": "./node_modules/moment/locale/pt.js",
+	"./ro": "./node_modules/moment/locale/ro.js",
+	"./ro.js": "./node_modules/moment/locale/ro.js",
+	"./ru": "./node_modules/moment/locale/ru.js",
+	"./ru.js": "./node_modules/moment/locale/ru.js",
+	"./sd": "./node_modules/moment/locale/sd.js",
+	"./sd.js": "./node_modules/moment/locale/sd.js",
+	"./se": "./node_modules/moment/locale/se.js",
+	"./se.js": "./node_modules/moment/locale/se.js",
+	"./si": "./node_modules/moment/locale/si.js",
+	"./si.js": "./node_modules/moment/locale/si.js",
+	"./sk": "./node_modules/moment/locale/sk.js",
+	"./sk.js": "./node_modules/moment/locale/sk.js",
+	"./sl": "./node_modules/moment/locale/sl.js",
+	"./sl.js": "./node_modules/moment/locale/sl.js",
+	"./sq": "./node_modules/moment/locale/sq.js",
+	"./sq.js": "./node_modules/moment/locale/sq.js",
+	"./sr": "./node_modules/moment/locale/sr.js",
+	"./sr-cyrl": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr-cyrl.js": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr.js": "./node_modules/moment/locale/sr.js",
+	"./ss": "./node_modules/moment/locale/ss.js",
+	"./ss.js": "./node_modules/moment/locale/ss.js",
+	"./sv": "./node_modules/moment/locale/sv.js",
+	"./sv.js": "./node_modules/moment/locale/sv.js",
+	"./sw": "./node_modules/moment/locale/sw.js",
+	"./sw.js": "./node_modules/moment/locale/sw.js",
+	"./ta": "./node_modules/moment/locale/ta.js",
+	"./ta.js": "./node_modules/moment/locale/ta.js",
+	"./te": "./node_modules/moment/locale/te.js",
+	"./te.js": "./node_modules/moment/locale/te.js",
+	"./tet": "./node_modules/moment/locale/tet.js",
+	"./tet.js": "./node_modules/moment/locale/tet.js",
+	"./tg": "./node_modules/moment/locale/tg.js",
+	"./tg.js": "./node_modules/moment/locale/tg.js",
+	"./th": "./node_modules/moment/locale/th.js",
+	"./th.js": "./node_modules/moment/locale/th.js",
+	"./tl-ph": "./node_modules/moment/locale/tl-ph.js",
+	"./tl-ph.js": "./node_modules/moment/locale/tl-ph.js",
+	"./tlh": "./node_modules/moment/locale/tlh.js",
+	"./tlh.js": "./node_modules/moment/locale/tlh.js",
+	"./tr": "./node_modules/moment/locale/tr.js",
+	"./tr.js": "./node_modules/moment/locale/tr.js",
+	"./tzl": "./node_modules/moment/locale/tzl.js",
+	"./tzl.js": "./node_modules/moment/locale/tzl.js",
+	"./tzm": "./node_modules/moment/locale/tzm.js",
+	"./tzm-latn": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm-latn.js": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm.js": "./node_modules/moment/locale/tzm.js",
+	"./ug-cn": "./node_modules/moment/locale/ug-cn.js",
+	"./ug-cn.js": "./node_modules/moment/locale/ug-cn.js",
+	"./uk": "./node_modules/moment/locale/uk.js",
+	"./uk.js": "./node_modules/moment/locale/uk.js",
+	"./ur": "./node_modules/moment/locale/ur.js",
+	"./ur.js": "./node_modules/moment/locale/ur.js",
+	"./uz": "./node_modules/moment/locale/uz.js",
+	"./uz-latn": "./node_modules/moment/locale/uz-latn.js",
+	"./uz-latn.js": "./node_modules/moment/locale/uz-latn.js",
+	"./uz.js": "./node_modules/moment/locale/uz.js",
+	"./vi": "./node_modules/moment/locale/vi.js",
+	"./vi.js": "./node_modules/moment/locale/vi.js",
+	"./x-pseudo": "./node_modules/moment/locale/x-pseudo.js",
+	"./x-pseudo.js": "./node_modules/moment/locale/x-pseudo.js",
+	"./yo": "./node_modules/moment/locale/yo.js",
+	"./yo.js": "./node_modules/moment/locale/yo.js",
+	"./zh-cn": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-cn.js": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-hk": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-hk.js": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-tw": "./node_modules/moment/locale/zh-tw.js",
+	"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/app.component.html":
 /*!**************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/app.component.html ***!
@@ -473,6 +759,17 @@ module.exports = "<ion-content>\n  <ion-toolbar color=\"primary\">\n    <ion-but
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/calendar/calendar.component.html":
+/*!****************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/calendar/calendar.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-content fullscreen>\n  <form [formGroup]=\"calendarForm\" (ngSubmit)=\"addToCalendar()\">\n    <ion-list>\n      <ion-item>\n        <ion-label position=\"floating\">Title</ion-label>\n        <ion-input formControlName=\"name\" placeholder=\"Masters Level Clinician\"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Type</ion-label>\n        <ion-select formControlName=\"type\" placeholder=\"Select One\">\n          <ion-select-option value=\"First Session\">First Session</ion-select-option>\n          <ion-select-option value=\"Insurance\">Insurance</ion-select-option>\n          <ion-select-option value=\"Self Pay\">Self Pay</ion-select-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label position=\"floating\">Duration</ion-label>\n        <ion-input formControlName=\"duration\" placeholder=\"1 hr\"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label position=\"floating\">Price</ion-label>\n        <ion-input formControlName=\"price\" placeholder=\"$100\"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label position=\"floating\">Location</ion-label>\n        <ion-input formControlName=\"location\" [placeholder]=\"location\"></ion-input>\n      </ion-item>\n      <ion-item-divider></ion-item-divider>\n      <ion-item>\n        <ion-label>Start Date</ion-label>\n        <ion-datetime formControlName=\"date\" mode=\"ios\" displayFormat=\"MMM DD, YYYY HH:mm\" placeholder=\"Select Date\"></ion-datetime>\n      </ion-item>\n     \n      <ion-item-divider></ion-item-divider>\n      <ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Add To Calendar</ion-button>\n      <ion-button type=\"button\" expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n  \n    </ion-list>\n  </form>\n  \n</ion-content>"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/fees/fees.component.html":
 /*!********************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/fees/fees.component.html ***!
@@ -481,6 +778,28 @@ module.exports = "<ion-content>\n  <ion-toolbar color=\"primary\">\n    <ion-but
 /***/ (function(module, exports) {
 
 module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-back-button defaultHref=\"home\"></ion-back-button>\n      </ion-buttons>\n      <ion-title class=\"title-text\">Fees</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <h1>Insurance and Rates:</h1>\n\n    <h2>Licensed Masters-Level Clinician</h2>\n    <p>$125 per 60-Minutes Intake Session  (Insurance and Self-Pay)</p>\n    <p>$110 per 45-Minutes Session (Insurance Only)</p>\n    <p>$80 per 45-Minutes Session (Self-Pay Only)</p>\n\n    <h2>Masters-Level Clinician Under Supervision</h2>\n    <p>$100 per 60-Minutes Intake Session  (Self-Pay Only)</p>\n    <p>$65 per 45- Minute Session (Self-Pay Only)</p>\n\n    <h2>Couples/Family Counseling:</h2>\n    <p>$110 per 50- Minutes Session (Insurance and Self-Pay)</p>\n\n    <h2>Adolescent Groups:</h2>\n    <p>$35 per group member/session per 60-Minutes Session (Self-Pay Only)</p>\n\n    <h2>Workshops, Consultations, and Mental Speaking Engagements: Please contact our office for pricing.</h2>\n\n    <h2>Payment</h2>\n    <p>Acceptable forms of payment include cash, check, and the following credit \n      cards (Visa, Mastercard, Discover, and American Express). Please note that \n      there is a 4% convenience fee on credit card transactions to cover the cost \n      of this secure and convenient payment service. We will provide, upon request, \n      a receipt of payment.\n    </p>\n\n    <h1>Insurance:</h1>\n    <p>In-network insurance: Billing rate of $110/session\n        If you have one of the following providers, you may be eligible for \n        mental health benefits, which we can bill directly. We accept the following \n        providers, in-network:\n      </p>\n      <ul>\n        <li>Magellan Behavioral Health</li>\n        <li>CareSource</li>\n        <li>Peach State Health Plan Medicaid Behavioral Health</li>\n        <li>Cenpatico</li>\n        <li>Allwell from Peach State Health Plan</li>\n        <li>Ambetter from Peach State Health Plan</li>\n        <li>Amerigroup</li>\n        <li>Tricare East</li>\n        <li>Aetna</li>\n        <li>Beacon Health</li>\n        <li>Blue Cross Blue Shield of Georgia</li>\n        <li>Blue Cross Blue Shield Federal Employee Program</li>\n        <li>Out of Network</li>\n      </ul>\n\n      <p>It is possible that your insurance company may reimburse for services \n        rendered based on your Out-of-Network benefits.\n      </p>\n\n      <p>Here are a list of questions you can ask your insurance provider:</p>\n      <ol>\n        <li>What are my “Out-of-Network, Out-Patient, Mental Health Benefits” when seeing\n           a Licensed Professional Counselor (Insurance companies sometimes distinguish \n           between Psychiatrist, Psychologist, and Mental Health Counselor or Associate. \n           Make sure you specify that you will be seeing an outpatient Licensed Professional \n           Counselor)\n          </li>\n          <li>Do I need a referral from my Primary Care Provider (PCP) to receive Mental \n            Health services?\n          </li>\n          <li>Do I have a deductible, coinsurance, or copayment?</li>\n          <li>Have I met my deductible this year? When does my deductible restart?</li>\n          <li>Does Pre-Certification apply? (Does the insurance company have to \n            approve the treatment prior to starting therapy?)\n          </li>\n\n          <p>\n              In the event that you are unable to keep an appointment, you must notify your \n              therapist at least 24 hours in advance by email or phone. If such advance notice\n               is not received, you will be financially responsible for the session you missed.\n                The fee is paid in full at the end of each session.\n          </p>\n      </ol>\n  </ion-content>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/forgot-password/forgot-password.component.html":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/forgot-password/forgot-password.component.html ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-content>\n  <div class=\"header-container \">\n    <h1>Forgot Password</h1>\n  </div>\n  <form [formGroup]=\"passwordForm\" (ngSubmit)=\"forgotPassword()\">\n    <ion-item>\n      <ion-label position=\"floating\">Email</ion-label>\n      <ion-input type=\"text\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"text\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">New Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <div class=\"button-container\">\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Submit</ion-button>\n\t\t\t<ion-button expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n</ion-content>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/forgot-username/forgot-username.component.html":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/forgot-username/forgot-username.component.html ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-content>\n  <div class=\"header-container\">\n    <h1>Forgot Username</h1>\n  </div>\n  <form [formGroup]=\"usernameForm\" (ngSubmit)=\"forgotUsername()\">\n    <ion-item>\n      <ion-label position=\"floating\">Phone Number</ion-label>\n      <ion-input type=\"text\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"text\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <div class=\"button-container\">\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Submit</ion-button>\n\t\t\t<ion-button expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n\n  <div class=\"username-container\" *ngIf=\"loaded\">\n    <p>Your username is: {{username}}</p>\n  </div>\n</ion-content>"
 
 /***/ }),
 
@@ -535,7 +854,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "    <ion-card class=\"card\">\n        <ion-card-header>\n          <ion-card-header class=\"menu-text text\">\n            Services Provided\n          </ion-card-header>\n        </ion-card-header>\n        <ion-card-content>\n            <p>\n                We offer services that equip our clients with tools for success. During your counseling sessions, \n                no matter if it’s Relationship Counseling, Family/Individual Counseling, Group Counseling, Anger \n                Management Classes, Adolescent Counseling or Career Coaching, we  always provide personalized \n                attention to help each client identify their personal values, strengths, and abilities in support \n                of their personal and professional goals. The goal of We Climb Counseling and Consulting, is to \n                create a supportive environment in which clients can explore their own emotional needs and overcome \n                barriers that limit their full potential by meeting each client where they are. \n            </p>\n        </ion-card-content>\n      </ion-card>\n      <ion-list *ngFor=\"let service of services\">\n        <ion-item button (click)=\"navigate(service)\">{{service.title}}</ion-item>\n      </ion-list>"
+module.exports = "    <ion-card class=\"card\">\n        <ion-card-header>\n          <ion-card-header class=\"menu-text text\">\n            Services Provided\n          </ion-card-header>\n        </ion-card-header>\n        <ion-card-content class=\"services\">\n            <p>\n                We offer services that equip our clients with tools for success. During your counseling sessions, \n                no matter if it’s Relationship Counseling, Family/Individual Counseling, Group Counseling, Anger \n                Management Classes, Adolescent Counseling or Career Coaching, we  always provide personalized \n                attention to help each client identify their personal values, strengths, and abilities in support \n                of their personal and professional goals. The goal of We Climb Counseling and Consulting, is to \n                create a supportive environment in which clients can explore their own emotional needs and overcome \n                barriers that limit their full potential by meeting each client where they are. \n            </p>\n        </ion-card-content>\n      </ion-card>\n      <ion-list *ngFor=\"let service of services\">\n        <ion-item button (click)=\"navigate(service)\">{{service.title}}</ion-item>\n      </ion-list>"
 
 /***/ }),
 
@@ -568,7 +887,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content>\n\t<div class=\"logo-container\">\n\t\t<img src=\"/assets/logo.png\" alt=\"\">\n\t</div>\n\n\t<!-- <amplify-authenticator [signUpConfig]=\"signUpConfig\" framework=\"ionic\"></amplify-authenticator> -->\n\n\t<form [formGroup]=\"loginForm\">\n\t\t<ion-item>\n\t\t\t<ion-label position=\"floating\">Username</ion-label>\n\t\t\t<ion-input formControlName=\"email\" placeholder=\"example@gmail.com\" type=\"email\"></ion-input>\n\t\t  </ion-item>\n\t\t  <ion-item>\n\t\t\t<ion-label position=\"floating\">Password</ion-label>\n\t\t\t<ion-input formControlName=\"password\" placeholder=\"password\" type=\"password\"></ion-input>\n\t\t  </ion-item>\n\t\t  <div class=\"button-container\">\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"login()\">Login</ion-button>\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"register()\">Register</ion-button>\n\t\t\t<a href=\"\">Forgot Username?</a>\n\t\t\t<a href=\"\">Forgot Password?</a>\n\t\t  </div>\n\t</form>\n</ion-content>"
+module.exports = "<ion-content>\n\t<div class=\"logo-container\">\n\t\t<img src=\"/assets/logo.png\" alt=\"\">\n\t</div>\n\n\t<!-- <amplify-authenticator [signUpConfig]=\"signUpConfig\" framework=\"ionic\"></amplify-authenticator> -->\n\n\t<form [formGroup]=\"loginForm\">\n\t\t<ion-item>\n\t\t\t<ion-label position=\"floating\">Username</ion-label>\n\t\t\t<ion-input formControlName=\"email\" placeholder=\"example@gmail.com\" type=\"email\"></ion-input>\n\t\t  </ion-item>\n\t\t  <ion-item>\n\t\t\t<ion-label position=\"floating\">Password</ion-label>\n\t\t\t<ion-input formControlName=\"password\" placeholder=\"password\" type=\"password\"></ion-input>\n\t\t  </ion-item>\n\t\t  <div class=\"button-container\">\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"login()\">Login</ion-button>\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"register()\">Register</ion-button>\n\t\t\t<a (click)=\"presentForgotUsernameModal()\">Forgot Username?</a>\n\t\t\t<a (click)=\"presentForgotPasswordModal()\">Forgot Password?</a>\n\t\t  </div>\n\t</form>\n</ion-content>"
 
 /***/ }),
 
@@ -601,7 +920,7 @@ module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Profile</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <div>\n    <div class=\"personal-info-container\">\n      <h1>Personal Information</h1>\n      <p>Name: {{user?.firstName}} {{user?.lastName}}</p>\n      <p>Phone Number: {{user?.phone}}</p>\n      <p>Email: {{user?.email}}</p>\n      <p>Role: {{user?.role}}</p>\n    </div>\n    <div  class=\"appointment-container\">\n      <div class=\"user-container\" *ngIf=\"role == 'user'\">\n        <h1>My Appointment</h1>\n        <div *ngFor=\"let appt of appts\">\n          <p>Name: {{appt?.name}}</p>\n          <p>Date: {{appt?.date}}</p>\n          <p>Duration: {{appt?.duration}}</p>\n          <p>Counselor: {{appt?.counselor}}</p>\n          <p>Price: {{appt?.price}}</p>\n          <p>Location: {{appt?.location}}</p>\n        </div>\n      </div>\n\n      <!-- admin -->\n      <div class=\"admin-container\" *ngIf=\"role == 'admin'\">\n        <h1>My Schedule</h1>\n        <ion-list >\n          <ion-item *ngFor=\"let appt of appts\">\n            <div class=\"candidate-info-container\">\n              <p>Date: {{appt.date}}</p>\n              <p>Client Name: {{appt?.candidateFirstName}} {{appt?.candidateLastName}}</p>\n              <p>Phone: 666-666-6666</p>\n            </div>\n          </ion-item>\n        </ion-list>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"button-container\">\n    <ion-button *ngIf=\"role == 'admin'\" shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Set Calendar</ion-button>\n    <ion-button *ngIf=\"role == 'admin'\" shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Add Admin</ion-button>\n    <ion-button shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Signout</ion-button>\n  </div>\n</ion-content>"
+module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Profile</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <div>\n    <div class=\"personal-info-container\">\n      <h1>Personal Information</h1>\n      <p>Name: {{user?.firstName}} {{user?.lastName}}</p>\n      <p>Phone Number: {{user?.phone}}</p>\n      <p>Email: {{user?.email}}</p>\n      <p>Role: {{user?.role}}</p>\n    </div>\n    <div  class=\"appointment-container\">\n      <div class=\"user-container\" *ngIf=\"role == 'user'\">\n        <h1>My Appointment</h1>\n        <ion-item *ngFor=\"let appt of appts\">\n          <div>\n            <p>Name: {{appt?.name}}</p>\n            <p>Date: {{appt?.date}}</p>\n            <p>Duration: {{appt?.duration}}</p>\n            <p>Counselor: {{appt?.counselor}}</p>\n            <p>Price: {{appt?.price}}</p>\n            <p>Location: {{appt?.location}}</p>\n          </div>\n        </ion-item>\n      </div>\n\n      <!-- admin -->\n      <div class=\"admin-container\" *ngIf=\"role == 'admin'\">\n        <h1>My Schedule</h1>\n        <ion-list >\n          <ion-item *ngFor=\"let appt of appts\">\n            <div class=\"candidate-info-container\">\n              <p>Date: {{appt.date}}</p>\n              <p>Client Name: {{appt?.candidateFirstName}} {{appt?.candidateLastName}}</p>\n              <p>Phone: 666-666-6666</p>\n            </div>\n          </ion-item>\n        </ion-list>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"button-container\">\n    <ion-button *ngIf=\"role == 'admin'\" shape=\"round\" fill=\"outline\" (click)=\"setCalendar()\">Set Calendar</ion-button>\n    <!-- <ion-button *ngIf=\"role == 'admin'\" shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Add Admin</ion-button> -->\n    <ion-button shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Signout</ion-button>\n  </div>\n</ion-content>"
 
 /***/ }),
 
@@ -662,6 +981,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
 /* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/profile/profile.component.ts");
 /* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+/* harmony import */ var _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./calendar/calendar.component */ "./src/app/calendar/calendar.component.ts");
+
 
 
 
@@ -688,6 +1009,10 @@ var routes = [
     {
         path: 'register',
         component: _register_register_component__WEBPACK_IMPORTED_MODULE_13__["RegisterComponent"]
+    },
+    {
+        path: "calendar",
+        component: _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_14__["CalendarComponent"]
     },
     {
         path: 'services',
@@ -900,6 +1225,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var src_services_auth_service__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! src/services/auth.service */ "./src/services/auth.service.ts");
 /* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+/* harmony import */ var _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./calendar/calendar.component */ "./src/app/calendar/calendar.component.ts");
+/* harmony import */ var _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./forgot-password/forgot-password.component */ "./src/app/forgot-password/forgot-password.component.ts");
+/* harmony import */ var _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./forgot-username/forgot-username.component */ "./src/app/forgot-username/forgot-username.component.ts");
+
+
+
 
 
 
@@ -952,10 +1283,15 @@ var AppModule = /** @class */ (function () {
                 _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"],
                 _login_login_component__WEBPACK_IMPORTED_MODULE_26__["LoginComponent"],
                 _profile_profile_component__WEBPACK_IMPORTED_MODULE_28__["ProfileComponent"],
-                _register_register_component__WEBPACK_IMPORTED_MODULE_33__["RegisterComponent"]
+                _register_register_component__WEBPACK_IMPORTED_MODULE_33__["RegisterComponent"],
+                _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_34__["CalendarComponent"],
+                _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_35__["ForgotPasswordComponent"],
+                _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_36__["ForgotUsernameComponent"]
             ],
             entryComponents: [
-                _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"]
+                _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"],
+                _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_35__["ForgotPasswordComponent"],
+                _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_36__["ForgotUsernameComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
@@ -1330,6 +1666,124 @@ var ApptModalComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/calendar/calendar.component.scss":
+/*!**************************************************!*\
+  !*** ./src/app/calendar/calendar.component.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhbGVuZGFyL2NhbGVuZGFyLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/calendar/calendar.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/calendar/calendar.component.ts ***!
+  \************************************************/
+/*! exports provided: CalendarComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarComponent", function() { return CalendarComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
+/* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+
+
+
+
+var CalendarComponent = /** @class */ (function () {
+    function CalendarComponent(formBuilder, userService, apptService, router) {
+        this.formBuilder = formBuilder;
+        this.userService = userService;
+        this.apptService = apptService;
+        this.router = router;
+        this.location = "Bldg. A. Suites 122-124 2175 Highpoint Road, Snellville, GA, USA";
+        this.date = "";
+    }
+    CalendarComponent.prototype.ngOnInit = function () {
+        this.calendarForm = this.formBuilder.group({
+            name: "",
+            type: "",
+            duration: "",
+            price: "",
+            location: "",
+            date: "",
+        });
+    };
+    CalendarComponent.prototype.addToCalendar = function () {
+        var appts = [];
+        var schedule = {
+            name: this.calendarForm.get("name").value,
+            date: this.formDate(this.calendarForm.get("date").value),
+            duration: this.calendarForm.get("duration").value,
+            price: this.calendarForm.get("price").value,
+            location: this.calendarForm.get("location").value,
+            counselor: this.userService.getUserInfo().firstName + " " + this.userService.getUserInfo().lastName,
+            type: this.calendarForm.get("type").value,
+        };
+        appts.push(schedule);
+        switch (schedule.name) {
+            case "Licensed Level Clinician":
+                this.apptService.setLicenseLevelSchedule(appts)
+                    .subscribe(function (res) {
+                    alert("Schedule added");
+                }, function (err) {
+                    alert("error adding schedule");
+                });
+                break;
+            case "Master Level Clinician":
+                this.apptService.setMastersLevelSchedule(appts)
+                    .subscribe(function (res) {
+                    alert("Schedule added");
+                }, function (err) {
+                    alert("error adding schedule");
+                });
+        }
+        console.log(schedule);
+    };
+    CalendarComponent.prototype.formDate = function (date) {
+        var newDate = moment__WEBPACK_IMPORTED_MODULE_5__(date).format('LLL');
+        console.log(newDate);
+        return newDate;
+    };
+    CalendarComponent.prototype.cancel = function () {
+        this.router.navigateByUrl("profile");
+    };
+    CalendarComponent.ctorParameters = function () { return [
+        { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+        { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
+        { type: src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] }
+    ]; };
+    CalendarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-calendar',
+            template: __webpack_require__(/*! raw-loader!./calendar.component.html */ "./node_modules/raw-loader/index.js!./src/app/calendar/calendar.component.html"),
+            styles: [__webpack_require__(/*! ./calendar.component.scss */ "./src/app/calendar/calendar.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
+            src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"],
+            src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]])
+    ], CalendarComponent);
+    return CalendarComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/fees/fees.component.scss":
 /*!******************************************!*\
   !*** ./src/app/fees/fees.component.scss ***!
@@ -1368,6 +1822,249 @@ var FeesComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], FeesComponent);
     return FeesComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/forgot-password/forgot-password.component.scss":
+/*!****************************************************************!*\
+  !*** ./src/app/forgot-password/forgot-password.component.scss ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".header-container {\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9mb3Jnb3QtcGFzc3dvcmQvZm9yZ290LXBhc3N3b3JkLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9mb3Jnb3QtcGFzc3dvcmQvZm9yZ290LXBhc3N3b3JkLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL2ZvcmdvdC1wYXNzd29yZC9mb3Jnb3QtcGFzc3dvcmQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaGVhZGVyLWNvbnRhaW5lciB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufSIsIi5oZWFkZXItY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/forgot-password/forgot-password.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/forgot-password/forgot-password.component.ts ***!
+  \**************************************************************/
+/*! exports provided: ForgotPasswordComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotPasswordComponent", function() { return ForgotPasswordComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+
+
+
+
+var ForgotPasswordComponent = /** @class */ (function () {
+    function ForgotPasswordComponent(formBuilder, modalController, userService, toastController, router) {
+        this.formBuilder = formBuilder;
+        this.modalController = modalController;
+        this.userService = userService;
+        this.toastController = toastController;
+        this.router = router;
+    }
+    ForgotPasswordComponent.prototype.ngOnInit = function () {
+        this.passwordForm = this.formBuilder.group({
+            email: "",
+            lastName: "",
+            password: ""
+        });
+    };
+    ForgotPasswordComponent.prototype.forgotPassword = function () {
+        var _this = this;
+        var body = {
+            email: this.passwordForm.get("email").value,
+            lastName: this.passwordForm.get("lastName").value,
+            password: this.passwordForm.get("password").value
+        };
+        this.userService.forgotPassword(body)
+            .subscribe(function (res) {
+            _this.presentToast();
+            _this.modalController.dismiss();
+        }, function (err) {
+            alert("Error");
+        });
+    };
+    ForgotPasswordComponent.prototype.cancel = function () {
+        this.modalController.dismiss();
+    };
+    ForgotPasswordComponent.prototype.presentToast = function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var toast;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.toastController.create({
+                            message: 'Password has been changed.',
+                            duration: 2000
+                        })];
+                    case 1:
+                        toast = _a.sent();
+                        toast.present();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    ForgotPasswordComponent.ctorParameters = function () { return [
+        { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"] },
+        { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_4__["UserService"] },
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ToastController"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"] }
+    ]; };
+    ForgotPasswordComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-forgot-password',
+            template: __webpack_require__(/*! raw-loader!./forgot-password.component.html */ "./node_modules/raw-loader/index.js!./src/app/forgot-password/forgot-password.component.html"),
+            styles: [__webpack_require__(/*! ./forgot-password.component.scss */ "./src/app/forgot-password/forgot-password.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"],
+            src_services_user_service__WEBPACK_IMPORTED_MODULE_4__["UserService"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ToastController"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]])
+    ], ForgotPasswordComponent);
+    return ForgotPasswordComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/forgot-username/forgot-username.component.scss":
+/*!****************************************************************!*\
+  !*** ./src/app/forgot-username/forgot-username.component.scss ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".header-container {\n  text-align: center;\n}\n\n.username-container {\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9mb3Jnb3QtdXNlcm5hbWUvZm9yZ290LXVzZXJuYW1lLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9mb3Jnb3QtdXNlcm5hbWUvZm9yZ290LXVzZXJuYW1lLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQUE7QUNDSjs7QURFQTtFQUNJLGtCQUFBO0FDQ0oiLCJmaWxlIjoic3JjL2FwcC9mb3Jnb3QtdXNlcm5hbWUvZm9yZ290LXVzZXJuYW1lLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmhlYWRlci1jb250YWluZXIge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLnVzZXJuYW1lLWNvbnRhaW5lciB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufSIsIi5oZWFkZXItY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4udXNlcm5hbWUtY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/forgot-username/forgot-username.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/forgot-username/forgot-username.component.ts ***!
+  \**************************************************************/
+/*! exports provided: ForgotUsernameComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotUsernameComponent", function() { return ForgotUsernameComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+
+
+
+
+
+
+var ForgotUsernameComponent = /** @class */ (function () {
+    function ForgotUsernameComponent(formBuilder, userService, toastController, loadingController, modalController) {
+        this.formBuilder = formBuilder;
+        this.userService = userService;
+        this.toastController = toastController;
+        this.loadingController = loadingController;
+        this.modalController = modalController;
+        this.username = "";
+        this.loaded = false;
+    }
+    ForgotUsernameComponent.prototype.ngOnInit = function () {
+        this.usernameForm = this.formBuilder.group({
+            phone: "",
+            lastName: "",
+        });
+    };
+    ForgotUsernameComponent.prototype.forgotUsername = function () {
+        var _this = this;
+        this.presentLoading();
+        var phone = this.usernameForm.get("phone").value;
+        var lastName = this.usernameForm.get("lastName").value;
+        this.userService.forgotUserName(lastName, phone)
+            .subscribe(function (res) {
+            _this.username = res;
+            _this.loadingController.dismiss;
+        }, function (err) {
+            _this.presentErrorToast();
+        });
+    };
+    ForgotUsernameComponent.prototype.cancel = function () {
+        this.modalController.dismiss();
+    };
+    ForgotUsernameComponent.prototype.presentErrorToast = function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var toast;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.toastController.create({
+                            message: 'Error getting username',
+                            duration: 2000,
+                            color: "warning"
+                        })];
+                    case 1:
+                        toast = _a.sent();
+                        toast.present();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    ForgotUsernameComponent.prototype.presentLoading = function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var loading, _a, role, data;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_b) {
+                switch (_b.label) {
+                    case 0: return [4 /*yield*/, this.loadingController.create({
+                            message: 'Please wait...',
+                            duration: 2000,
+                            mode: "ios"
+                        })];
+                    case 1:
+                        loading = _b.sent();
+                        return [4 /*yield*/, loading.present()];
+                    case 2:
+                        _b.sent();
+                        return [4 /*yield*/, loading.onDidDismiss()];
+                    case 3:
+                        _a = _b.sent(), role = _a.role, data = _a.data;
+                        this.loaded = true;
+                        console.log('Loading dismissed!');
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    ForgotUsernameComponent.ctorParameters = function () { return [
+        { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+        { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"] },
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"] },
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ModalController"] }
+    ]; };
+    ForgotUsernameComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-forgot-username',
+            template: __webpack_require__(/*! raw-loader!./forgot-username.component.html */ "./node_modules/raw-loader/index.js!./src/app/forgot-username/forgot-username.component.html"),
+            styles: [__webpack_require__(/*! ./forgot-username.component.scss */ "./src/app/forgot-username/forgot-username.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
+            src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ModalController"]])
+    ], ForgotUsernameComponent);
+    return ForgotUsernameComponent;
 }());
 
 
@@ -1687,7 +2384,7 @@ var FamilyModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".welcome-card img {\n  max-height: 35vh;\n  overflow: hidden;\n}\n\n.card {\n  height: 75%;\n}\n\n.primary {\n  background-color: black;\n}\n\n.text {\n  text-align: center;\n  color: black;\n}\n\n.title {\n  text-align: center;\n  font-weight: bold;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIiwic3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0UsZ0JBQUE7RUFDQSxnQkFBQTtBQ0RGOztBRElBO0VBQ0UsV0FBQTtBQ0RGOztBRElBO0VBQ0UsdUJBQUE7QUNERjs7QURNQTtFQUNFLGtCQUFBO0VBQ0EsWUFBQTtBQ0hGOztBRE1BO0VBQ0Usa0JBQUE7RUFDQSxpQkFBQTtBQ0hGIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uL3RoZW1lLy9jb2xvcnMuc2Nzcyc7XG5cbi53ZWxjb21lLWNhcmQgaW1nIHtcbiAgbWF4LWhlaWdodDogMzV2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuLmNhcmQge1xuICBoZWlnaHQ6IDc1JTtcbn1cblxuLnByaW1hcnkge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKVxufVxuXG5cblxuLnRleHQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiBibGFjaztcbn1cblxuLnRpdGxle1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuXG4vLyBpb24tY2FyZC1jb250ZW50IHtcbi8vICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyayk7XG4vLyB9XG5cbi8vIGlvbi1pdGVtIHtcbi8vICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyaylcbi8vIH1cblxuLy8gaW9uLWxpc3R7XG4vLyAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspO1xuLy8gfVxuXG4iLCIud2VsY29tZS1jYXJkIGltZyB7XG4gIG1heC1oZWlnaHQ6IDM1dmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG59XG5cbi5jYXJkIHtcbiAgaGVpZ2h0OiA3NSU7XG59XG5cbi5wcmltYXJ5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG59XG5cbi50ZXh0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBjb2xvcjogYmxhY2s7XG59XG5cbi50aXRsZSB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59Il19 */"
+module.exports = ".welcome-card img {\n  max-height: 35vh;\n  overflow: hidden;\n}\n\n.card {\n  height: 90%;\n}\n\n.primary {\n  background-color: black;\n}\n\n.services {\n  margin-bottom: 15px;\n}\n\n.text {\n  text-align: center;\n  color: black;\n}\n\n.title {\n  text-align: center;\n  font-weight: bold;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIiwic3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0UsZ0JBQUE7RUFDQSxnQkFBQTtBQ0RGOztBRElBO0VBQ0UsV0FBQTtBQ0RGOztBRElBO0VBQ0UsdUJBQUE7QUNERjs7QURJQTtFQUNFLG1CQUFBO0FDREY7O0FES0E7RUFDRSxrQkFBQTtFQUNBLFlBQUE7QUNGRjs7QURLQTtFQUNFLGtCQUFBO0VBQ0EsaUJBQUE7QUNGRiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS8vY29sb3JzLnNjc3MnO1xuXG4ud2VsY29tZS1jYXJkIGltZyB7XG4gIG1heC1oZWlnaHQ6IDM1dmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG59XG5cbi5jYXJkIHtcbiAgaGVpZ2h0OiA5MCU7XG59XG5cbi5wcmltYXJ5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyaylcbn1cblxuLnNlcnZpY2VzIHtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cblxuXG4udGV4dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG4udGl0bGV7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG5cbi8vIGlvbi1jYXJkLWNvbnRlbnQge1xuLy8gICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTtcbi8vIH1cblxuLy8gaW9uLWl0ZW0ge1xuLy8gICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKVxuLy8gfVxuXG4vLyBpb24tbGlzdHtcbi8vICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyayk7XG4vLyB9XG5cbiIsIi53ZWxjb21lLWNhcmQgaW1nIHtcbiAgbWF4LWhlaWdodDogMzV2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuLmNhcmQge1xuICBoZWlnaHQ6IDkwJTtcbn1cblxuLnByaW1hcnkge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbn1cblxuLnNlcnZpY2VzIHtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cblxuLnRleHQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiBibGFjaztcbn1cblxuLnRpdGxlIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXdlaWdodDogYm9sZDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -1963,6 +2660,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_services_login_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/services/login.service */ "./src/services/login.service.ts");
 /* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../services/auth.service */ "./src/services/auth.service.ts");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../forgot-password/forgot-password.component */ "./src/app/forgot-password/forgot-password.component.ts");
+/* harmony import */ var _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../forgot-username/forgot-username.component */ "./src/app/forgot-username/forgot-username.component.ts");
+
+
+
 
 
 
@@ -1975,7 +2677,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var LoginComponent = /** @class */ (function () {
-    function LoginComponent(events, amplifyService, formBuilder, router, userService, loginService, authService, loadingController) {
+    function LoginComponent(events, amplifyService, formBuilder, router, userService, loginService, authService, loadingController, modalController) {
         this.events = events;
         this.amplifyService = amplifyService;
         this.formBuilder = formBuilder;
@@ -1984,6 +2686,7 @@ var LoginComponent = /** @class */ (function () {
         this.loginService = loginService;
         this.authService = authService;
         this.loadingController = loadingController;
+        this.modalController = modalController;
         this.signUpConfig = {
             header: 'Sign Up',
             hideAllDefaults: true,
@@ -2061,11 +2764,12 @@ var LoginComponent = /** @class */ (function () {
         }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["switchMap"])(function () {
             return _this.userService.getUser(email);
         }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["tap"])(function (data) {
-            _this.loadingController.dismiss();
             _this.userService.setUserInfo(data);
             _this.navigate();
         }))
-            .subscribe();
+            .subscribe(function (res) {
+            _this.loadingController.dismiss();
+        });
     };
     LoginComponent.prototype.register = function () {
         this.router.navigateByUrl('register');
@@ -2094,6 +2798,38 @@ var LoginComponent = /** @class */ (function () {
             });
         });
     };
+    LoginComponent.prototype.presentForgotPasswordModal = function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var modal;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.modalController.create({
+                            component: _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_10__["ForgotPasswordComponent"]
+                        })];
+                    case 1:
+                        modal = _a.sent();
+                        return [4 /*yield*/, modal.present()];
+                    case 2: return [2 /*return*/, _a.sent()];
+                }
+            });
+        });
+    };
+    LoginComponent.prototype.presentForgotUsernameModal = function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var modal;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.modalController.create({
+                            component: _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_11__["ForgotUsernameComponent"]
+                        })];
+                    case 1:
+                        modal = _a.sent();
+                        return [4 /*yield*/, modal.present()];
+                    case 2: return [2 /*return*/, _a.sent()];
+                }
+            });
+        });
+    };
     LoginComponent.ctorParameters = function () { return [
         { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Events"] },
         { type: aws_amplify_angular__WEBPACK_IMPORTED_MODULE_2__["AmplifyService"] },
@@ -2102,7 +2838,8 @@ var LoginComponent = /** @class */ (function () {
         { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_6__["UserService"] },
         { type: src_services_login_service__WEBPACK_IMPORTED_MODULE_7__["LoginService"] },
         { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_8__["AuthService"] },
-        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["LoadingController"] }
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["LoadingController"] },
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"] }
     ]; };
     LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -2117,7 +2854,8 @@ var LoginComponent = /** @class */ (function () {
             src_services_user_service__WEBPACK_IMPORTED_MODULE_6__["UserService"],
             src_services_login_service__WEBPACK_IMPORTED_MODULE_7__["LoginService"],
             _services_auth_service__WEBPACK_IMPORTED_MODULE_8__["AuthService"],
-            _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["LoadingController"]])
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["LoadingController"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"]])
     ], LoginComponent);
     return LoginComponent;
 }());
@@ -2400,6 +3138,9 @@ var ProfileComponent = /** @class */ (function () {
                 alert("Error getting user info");
             });
         }
+    };
+    ProfileComponent.prototype.setCalendar = function () {
+        this.router.navigateByUrl("calendar");
     };
     ProfileComponent.prototype.transformData = function (res) {
         var appts = [];
@@ -2892,6 +3633,15 @@ var AppointmentService = /** @class */ (function () {
         };
         return this.http.post(url, appointments, httpOptions);
     };
+    AppointmentService.prototype.setLicenseLevelSchedule = function (appointments) {
+        var url = "https://o18ov9ki32.execute-api.us-east-1.amazonaws.com/default/setLicenseLevelSchedule";
+        var httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.post(url, appointments, httpOptions);
+    };
     AppointmentService.prototype.setMastersLevelSchedule = function (appointments) {
         var url = "https://w4hvl0lqll.execute-api.us-east-1.amazonaws.com/default/setMastersLevelSchedule";
         var httpOptions = {
@@ -3214,6 +3964,24 @@ var UserService = /** @class */ (function () {
             })
         };
         return this.http.post(url, user, httpOptions);
+    };
+    UserService.prototype.forgotUserName = function (lastName, phone) {
+        var url = "https://20xl1yz5a7.execute-api.us-east-1.amazonaws.com/default/forgotUserName?phone=" + phone + "&lastName=" + lastName;
+        var httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.get(url, httpOptions);
+    };
+    UserService.prototype.forgotPassword = function (body) {
+        var url = "https://jwigmpiobg.execute-api.us-east-1.amazonaws.com/default/forgotPassword";
+        var httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.post(url, body, httpOptions);
     };
     UserService.prototype.getUserInfo = function () {
         return this.user;

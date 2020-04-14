@@ -38,6 +38,7 @@ import { RegisterComponent } from './register/register.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ForgotUsernameComponent } from './forgot-username/forgot-username.component';
+import { FormService } from 'src/services/form.service';
 
 @NgModule({
   declarations: [
@@ -87,6 +88,7 @@ import { ForgotUsernameComponent } from './forgot-username/forgot-username.compo
     AuthGuardService,
     LoginService,
     AuthService,
+    FormService,
     // File,
     // FileTransfer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
