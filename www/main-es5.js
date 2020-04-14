@@ -810,7 +810,7 @@ module.exports = "<ion-content>\n  <div class=\"header-container\">\n    <h1>For
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Forms</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1>New Patient Forms</h1>\n\n  <div>\n    <h2>Prior to your Appointment</h2>\n    <p>​\n      Be sure to call the toll free number on the back of your health insurance \n      card to find out if your plan includes mental health benefits. If mental \n      health benefits are covered, ask for the following information:\n    </p>\n    <ul>\n      <li>Number of sessions covered per benefit period</li>\n      <li>Amount of the deductible and co-pay</li>\n      <li>Authorization needed for your appointment</li>\n    </ul>\n    <p>After you’ve completed your New Intake Forms, please submit them in \n      order to schedule your appointment. You will need to bring your health \n      insurance card and photo identification as well.\n    </p>\n  </div>\n\n  <div>\n    <h2>What to Expect at Your First Appointment</h2>\n    <p>Regardless of the type of service, your first appointment is a time to \n      meet with your treatment provider and discuss your concerns. The first \n      appointment is a time for a thorough evaluation and you will likely be \n      asked a good deal of factual information about yourself. This might include \n      things like the reason you’re seeking treatment, what your symptoms are, \n      history of past problems and treatment, medical history, past use of drugs \n      and alcohol, and how some of the important areas in your life are going (\n      work, family, hobbies, etc.). This is also a time for you to evaluate your \n      treatment provider in order to ensure that you feel comfortable with the \n      person and the setting.\n    </p>\n  </div>\n\n  <div>\n    <h2>First Session Information & Important Paperwork</h2>\n    <p>Because counseling involves a professional relationship, we need to agree on the \n      terms of our work together.\n      <b class=\"alert\">Please complete a New Client Form, Child or Adult Intake Form \n        (if applicable), Communications Agreement, Consent & Confidentiality Agreement, \n        Credit Card Authorization Form & Late Cancellation/Missed Appointment Policy \n        and bring the forms in to our office at your first appointment or email the forms. \n      </b>\n      Please provide your photo identification and health insurance card when presenting \n      the forms. If you have any questions and/or require clarification, please be sure \n      to ask us.\n    </p>\n    <ul>\n      <li>\n        <a href=\"https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3408979cc10a44ce9a67d840a7a89a85.pdf\" target=\"_blank\">\n        Adult Intake Form\n      </a>\n    </li>\n      <li><a href=\"\">New Client Form</a></li>\n      <li><a href=\"\">Child/Adolescent Intake Form</a></li>\n      <li><a href=\"\">Consent & Confidentiality Agreement </a></li>\n      <li><a href=\"\">Couples Intake Form</a></li>\n      <li><a href=\"\">Authorization to Release Information Form</a></li>\n      <li><a href=\"\">Credit Card Authorization Form </a></li>\n      <li><a href=\"\">Communication Agreement</a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>Late Cancellation/ Missed Appointment Policy</h2>\n    <p>Our current late cancellation/missed appointment policy is unique \n      to psychotherapy practices. We ask that you read it and consider it\n       carefully to reduce the chance of misunderstandings that may hinder \n       your progress in therapy.\n    </p>\n    <ul>\n      <li><a href=\"\">Late Cancellation/Missed Appointment Policy</a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>Download for your Reference</h2>\n    <ul>\n      <li><a href=\"\">HIPAA/Privacy Notice</a></li>\n      <li><a href=\"\">Social Media Policy </a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>School-Based Services</h2>\n    <p>If you would like to participate in school-based counseling services, \n      complete both forms and submit a copy of the forms to our office and \n      to the client's school for their records.\n    </p>\n    <ul>\n      <li><a href=\"\">Authorization to Exchange Confidential Information</a></li>\n      <li><a href=\"\">School Collaboration Consent Form</a></li>\n    </ul>\n  </div>\n</ion-content>"
+module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Forms</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1>New Patient Forms</h1>\n\n  <div>\n    <h2>Prior to your Appointment</h2>\n    <p>​\n      Be sure to call the toll free number on the back of your health insurance \n      card to find out if your plan includes mental health benefits. If mental \n      health benefits are covered, ask for the following information:\n    </p>\n    <ul>\n      <li>Number of sessions covered per benefit period</li>\n      <li>Amount of the deductible and co-pay</li>\n      <li>Authorization needed for your appointment</li>\n    </ul>\n    <p>After you’ve completed your New Intake Forms, please submit them in \n      order to schedule your appointment. You will need to bring your health \n      insurance card and photo identification as well.\n    </p>\n  </div>\n\n  <div>\n    <h2>What to Expect at Your First Appointment</h2>\n    <p>Regardless of the type of service, your first appointment is a time to \n      meet with your treatment provider and discuss your concerns. The first \n      appointment is a time for a thorough evaluation and you will likely be \n      asked a good deal of factual information about yourself. This might include \n      things like the reason you’re seeking treatment, what your symptoms are, \n      history of past problems and treatment, medical history, past use of drugs \n      and alcohol, and how some of the important areas in your life are going (\n      work, family, hobbies, etc.). This is also a time for you to evaluate your \n      treatment provider in order to ensure that you feel comfortable with the \n      person and the setting.\n    </p>\n  </div>\n\n  <div>\n    <h2>First Session Information & Important Paperwork</h2>\n    <p>Because counseling involves a professional relationship, we need to agree on the \n      terms of our work together.\n      <b class=\"alert\">Please complete a New Client Form, Child or Adult Intake Form \n        (if applicable), Communications Agreement, Consent & Confidentiality Agreement, \n        Credit Card Authorization Form & Late Cancellation/Missed Appointment Policy \n        and bring the forms in to our office at your first appointment or email the forms. \n      </b>\n      Please provide your photo identification and health insurance card when presenting \n      the forms. If you have any questions and/or require clarification, please be sure \n      to ask us.\n    </p>\n    <ul>\n      <li>\n        <a (click)=\"openAdultIntake()\">\n        Adult Intake Form\n      </a>\n    </li>\n      <li><a (click)=\"openNewClient()\">New Client Form</a></li>\n      <li><a (click)=\"openChild()\">Child/Adolescent Intake Form</a></li>\n      <li><a (click)=\"openConsentAgreement()\">Consent & Confidentiality Agreement </a></li>\n      <li><a (click)=\"openCoupleIntake()\">Couples Intake Form</a></li>\n      <li><a (click)=\"openReleaseInfo()\">Authorization to Release Information Form</a></li>\n      <li><a (click)=\"openCreditCard()\">Credit Card Authorization Form </a></li>\n      <li><a (click)=\"openCommunicationAgreement()\">Communication Agreement</a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>Late Cancellation/ Missed Appointment Policy</h2>\n    <p>Our current late cancellation/missed appointment policy is unique \n      to psychotherapy practices. We ask that you read it and consider it\n       carefully to reduce the chance of misunderstandings that may hinder \n       your progress in therapy.\n    </p>\n    <ul>\n      <li><a (click)=\"openLateCancellation()\">Late Cancellation/Missed Appointment Policy</a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>Download for your Reference</h2>\n    <ul>\n      <li><a (click)=\"openHippa()\">HIPAA/Privacy Notice</a></li>\n      <li><a (click)=\"openSocialMedia()\">Social Media Policy </a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>School-Based Services</h2>\n    <p>If you would like to participate in school-based counseling services, \n      complete both forms and submit a copy of the forms to our office and \n      to the client's school for their records.\n    </p>\n    <ul>\n      <li><a (click)=\"openExchangeConfidential()\">Authorization to Exchange Confidential Information</a></li>\n      <li><a (click)=\"openSchoolColab()\">School Collaboration Consent Form</a></li>\n    </ul>\n  </div>\n</ion-content>"
 
 /***/ }),
 
@@ -909,7 +909,7 @@ module.exports = "\n  <ion-app>\n\n    <!-- option menu -->\n    <ion-menu side=
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-back-button defaultHref=\"home\"></ion-back-button>\n      </ion-buttons>\n      <ion-title class=\"title-text\">Outreach</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <p>\n        Here at We Climb Counseling & Consulting, we are dedicated to serving\n         the community through various community outreach initiatives. We Climb \n         Counseling & Consulting would love to work with your organization on its \n         next event. For information on how to reach us, please click on the contact tab. \n    </p>\n    <ul>\n      <li>Motivational Speaking</li>\n      <li>Career Day</li>\n      <li>Community Partnerships</li>\n      <li>Public and Private Schools Partnerships</li>\n      <li>Mental Health Awareness Seminars</li>\n      <li>Mental Health Training & Workshops</li>\n      <li>Community & School Suicide Prevention Training</li>\n      <li>Community & School Crisis Intervention Training</li>\n    </ul>\n    <ion-slides [options]=\"slideOpts\">\n      <ion-slide>\n        <img src=\"/assets/outreach1.jpeg\" alt=\"\">\n      </ion-slide>\n      <ion-slide>\n        <img src=\"/assets/outreach2.jpeg\" alt=\"\">\n      </ion-slide>\n    </ion-slides>\n  </ion-content>"
+module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-back-button defaultHref=\"home\"></ion-back-button>\n      </ion-buttons>\n      <ion-title class=\"title-text\">Outreach</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <p>\n        Here at We Climb Counseling & Consulting, we are dedicated to serving\n         the community through various community outreach initiatives. We Climb \n         Counseling & Consulting would love to work with your organization on its \n         next event. For information on how to reach us, please click on the contact tab. \n    </p>\n    <ul>\n      <li>Motivational Speaking</li>\n      <li>Career Day</li>\n      <li>Community Partnerships</li>\n      <li>Public and Private Schools Partnerships</li>\n      <li>Mental Health Awareness Seminars</li>\n      <li>Mental Health Training & Workshops</li>\n      <li>Community & School Suicide Prevention Training</li>\n      <li>Community & School Crisis Intervention Training</li>\n    </ul>\n    <ion-slides pager=\"true\" mode=\"ios\" init=\"true\">\n      <ion-slide>\n        <img src=\"/assets/outreach1.jpeg\" alt=\"\">\n      </ion-slide>\n      <ion-slide>\n        <img src=\"/assets/outreach2.jpeg\" alt=\"\">\n      </ion-slide>\n    </ion-slides>\n  </ion-content>"
 
 /***/ }),
 
@@ -1228,6 +1228,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./calendar/calendar.component */ "./src/app/calendar/calendar.component.ts");
 /* harmony import */ var _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./forgot-password/forgot-password.component */ "./src/app/forgot-password/forgot-password.component.ts");
 /* harmony import */ var _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./forgot-username/forgot-username.component */ "./src/app/forgot-username/forgot-username.component.ts");
+/* harmony import */ var src_services_form_service__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! src/services/form.service */ "./src/services/form.service.ts");
+
 
 
 
@@ -1317,6 +1319,7 @@ var AppModule = /** @class */ (function () {
                 _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_27__["AuthGuardService"],
                 _services_login_service__WEBPACK_IMPORTED_MODULE_29__["LoginService"],
                 src_services_auth_service__WEBPACK_IMPORTED_MODULE_32__["AuthService"],
+                src_services_form_service__WEBPACK_IMPORTED_MODULE_37__["FormService"],
                 // File,
                 // FileTransfer,
                 { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }
@@ -1533,9 +1536,7 @@ var ApptModalComponent = /** @class */ (function () {
         this.errMessage = "No schedule available";
     }
     ApptModalComponent.prototype.ngOnInit = function () {
-        if (this.count == 0) {
-            this.noData = true;
-        }
+        this.noAppointments(this.data);
         this.user = this.userService.getUserInfo();
     };
     ApptModalComponent.prototype.dismiss = function () {
@@ -1631,6 +1632,11 @@ var ApptModalComponent = /** @class */ (function () {
                 break;
         }
         return tableName;
+    };
+    ApptModalComponent.prototype.noAppointments = function (data) {
+        if (data.length == 0) {
+            this.noData = true;
+        }
     };
     ApptModalComponent.ctorParameters = function () { return [
         { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"] },
@@ -2078,7 +2084,7 @@ var ForgotUsernameComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "img {\n  width: 70px;\n}\n\n.text {\n  padding: 10px;\n}\n\n.alert {\n  color: red;\n}\n\na {\n  color: black;\n  cursor: pointer;\n}\n\np {\n  padding: 10px;\n}\n\nh1 {\n  text-align: center;\n}\n\nh2 {\n  padding: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9mb3Jtcy9mb3Jtcy5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvZm9ybXMvZm9ybXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxXQUFBO0FDREo7O0FESUE7RUFDSSxhQUFBO0FDREo7O0FESUE7RUFDSSxVQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0VBQ0EsZUFBQTtBQ0RKOztBRElBO0VBQ0ksYUFBQTtBQ0RKOztBRElBO0VBQ0ksa0JBQUE7QUNESjs7QURJQTtFQUNJLFlBQUE7QUNESiIsImZpbGUiOiJzcmMvYXBwL2Zvcm1zL2Zvcm1zLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vLi4vdGhlbWUvY29sb3JzLnNjc3MnO1xuXG5pbWcge1xuICAgIHdpZHRoOiA3MHB4O1xufVxuXG4udGV4dCB7XG4gICAgcGFkZGluZzogMTBweDtcbn1cblxuLmFsZXJ0IHtcbiAgICBjb2xvcjogcmVkO1xufVxuXG5hIHtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG5wIHtcbiAgICBwYWRkaW5nOiAxMHB4O1xufVxuXG5oMSB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5oMiB7XG4gICAgcGFkZGluZzogNXB4O1xufSIsImltZyB7XG4gIHdpZHRoOiA3MHB4O1xufVxuXG4udGV4dCB7XG4gIHBhZGRpbmc6IDEwcHg7XG59XG5cbi5hbGVydCB7XG4gIGNvbG9yOiByZWQ7XG59XG5cbmEge1xuICBjb2xvcjogYmxhY2s7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cblxucCB7XG4gIHBhZGRpbmc6IDEwcHg7XG59XG5cbmgxIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5oMiB7XG4gIHBhZGRpbmc6IDVweDtcbn0iXX0= */"
+module.exports = "img {\n  width: 70px;\n}\n\n.text {\n  padding: 10px;\n}\n\n.alert {\n  color: red;\n}\n\na {\n  color: black;\n  text-decoration: underline;\n}\n\np {\n  padding: 10px;\n}\n\nh1 {\n  text-align: center;\n}\n\nh2 {\n  padding: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9mb3Jtcy9mb3Jtcy5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvZm9ybXMvZm9ybXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxXQUFBO0FDREo7O0FESUE7RUFDSSxhQUFBO0FDREo7O0FESUE7RUFDSSxVQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0VBQ0EsMEJBQUE7QUNESjs7QURJQTtFQUNJLGFBQUE7QUNESjs7QURJQTtFQUNJLGtCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9mb3Jtcy9mb3Jtcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuaW1nIHtcbiAgICB3aWR0aDogNzBweDtcbn1cblxuLnRleHQge1xuICAgIHBhZGRpbmc6IDEwcHg7XG59XG5cbi5hbGVydCB7XG4gICAgY29sb3I6IHJlZDtcbn1cblxuYSB7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuXG5wIHtcbiAgICBwYWRkaW5nOiAxMHB4O1xufVxuXG5oMSB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5oMiB7XG4gICAgcGFkZGluZzogNXB4O1xufSIsImltZyB7XG4gIHdpZHRoOiA3MHB4O1xufVxuXG4udGV4dCB7XG4gIHBhZGRpbmc6IDEwcHg7XG59XG5cbi5hbGVydCB7XG4gIGNvbG9yOiByZWQ7XG59XG5cbmEge1xuICBjb2xvcjogYmxhY2s7XG4gIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuXG5wIHtcbiAgcGFkZGluZzogMTBweDtcbn1cblxuaDEge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbmgyIHtcbiAgcGFkZGluZzogNXB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -2094,20 +2100,65 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormsComponent", function() { return FormsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_services_form_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/services/form.service */ "./src/services/form.service.ts");
+
 
 
 var FormsComponent = /** @class */ (function () {
-    function FormsComponent() {
+    function FormsComponent(formService) {
+        this.formService = formService;
         this.adultIntakeUrl = 'https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3408979cc10a44ce9a67d840a7a89a85.pdf';
     }
     FormsComponent.prototype.ngOnInit = function () { };
+    FormsComponent.prototype.openAdultIntake = function () {
+        window.open(this.formService.getAdultIntakeForm(), "_blank");
+    };
+    FormsComponent.prototype.openNewClient = function () {
+        window.open(this.formService.getNewClientForm(), "_blank");
+    };
+    FormsComponent.prototype.openChild = function () {
+        window.open(this.formService.getChildIntakeForm(), "_blank");
+    };
+    FormsComponent.prototype.openConsentAgreement = function () {
+        window.open(this.formService.getConsentAgreementForm(), "_blank");
+    };
+    FormsComponent.prototype.openCoupleIntake = function () {
+        window.open(this.formService.getCoupleIntakeForm(), "_blank");
+    };
+    FormsComponent.prototype.openReleaseInfo = function () {
+        window.open(this.formService.getatriForm(), "_blank");
+    };
+    FormsComponent.prototype.openCreditCard = function () {
+        window.open(this.formService.getCreditCardForm(), "_blank");
+    };
+    FormsComponent.prototype.openCommunicationAgreement = function () {
+        window.open(this.formService.getCommunicationAgreementForm(), "_blank");
+    };
+    FormsComponent.prototype.openLateCancellation = function () {
+        window.open(this.formService.getLateAppointmentForm(), "_blank");
+    };
+    FormsComponent.prototype.openHippa = function () {
+        window.open(this.formService.getHippaForm(), "_blank");
+    };
+    FormsComponent.prototype.openSocialMedia = function () {
+        window.open(this.formService.getSocialMediaForm(), "_blank");
+    };
+    FormsComponent.prototype.openExchangeConfidential = function () {
+        window.open(this.formService.getAteciForm(), "_blank");
+    };
+    FormsComponent.prototype.openSchoolColab = function () {
+        window.open(this.formService.getSchoolColabForm(), "_blank");
+    };
+    FormsComponent.ctorParameters = function () { return [
+        { type: src_services_form_service__WEBPACK_IMPORTED_MODULE_2__["FormService"] }
+    ]; };
     FormsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-forms',
             template: __webpack_require__(/*! raw-loader!./forms.component.html */ "./node_modules/raw-loader/index.js!./src/app/forms/forms.component.html"),
             styles: [__webpack_require__(/*! ./forms.component.scss */ "./src/app/forms/forms.component.scss"), __webpack_require__(/*! ../../theme/font.scss */ "./src/theme/font.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_services_form_service__WEBPACK_IMPORTED_MODULE_2__["FormService"]])
     ], FormsComponent);
     return FormsComponent;
 }());
@@ -3037,7 +3088,7 @@ var OutreachComponent = /** @class */ (function () {
             preloadImages: true
         });
         this.slideOpts = {
-            pager: true,
+            init: true
         };
     }
     OutreachComponent.prototype.ngOnInit = function () {
@@ -3781,6 +3832,86 @@ var AuthService = /** @class */ (function () {
         })
     ], AuthService);
     return AuthService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/services/form.service.ts":
+/*!**************************************!*\
+  !*** ./src/services/form.service.ts ***!
+  \**************************************/
+/*! exports provided: FormService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormService", function() { return FormService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var FormService = /** @class */ (function () {
+    function FormService() {
+        this.adultIntakeForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3408979cc10a44ce9a67d840a7a89a85.pdf";
+        this.newClientForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3fbb43d69c7a4dffbd6743ec700141f7.pdf";
+        this.childIntakeForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_562308c8842142ffaf2f8eac293fcb11.pdf";
+        this.consentAgreementForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_b2a3b828ec9b47cbba3b19abb99978f8.pdf";
+        this.coupleIntakeForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_22f978315cd14176a7511fc81399492d.pdf";
+        this.aTRIForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_22f978315cd14176a7511fc81399492d.pdf";
+        this.creditCardForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3e1c03baf5f947d3a70527713a290eac.pdf";
+        this.communicationAgreementForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3f1537aa9025494fb9e0cdeebd244fe4.pdf";
+        this.hippaForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_f638f00b33c34e4ba05b9c53eed36a56.pdf";
+        this.lateAppointmentForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_7654ee15bfd84db79f69600524aa9177.pdf";
+        this.socialMediaForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_4dee92300d0d459080461f2a2febc3ff.pdf";
+        this.ateciForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_4075d96ff4264ad89219b5c76a9f808e.pdf";
+        this.schoolColabForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_4075d96ff4264ad89219b5c76a9f808e.pdf";
+    }
+    FormService.prototype.getAdultIntakeForm = function () {
+        return this.adultIntakeForm;
+    };
+    FormService.prototype.getNewClientForm = function () {
+        return this.newClientForm;
+    };
+    FormService.prototype.getChildIntakeForm = function () {
+        return this.childIntakeForm;
+    };
+    FormService.prototype.getConsentAgreementForm = function () {
+        return this.consentAgreementForm;
+    };
+    FormService.prototype.getCoupleIntakeForm = function () {
+        return this.coupleIntakeForm;
+    };
+    FormService.prototype.getatriForm = function () {
+        return this.aTRIForm;
+    };
+    FormService.prototype.getCreditCardForm = function () {
+        return this.creditCardForm;
+    };
+    FormService.prototype.getCommunicationAgreementForm = function () {
+        return this.communicationAgreementForm;
+    };
+    FormService.prototype.getHippaForm = function () {
+        return this.hippaForm;
+    };
+    FormService.prototype.getLateAppointmentForm = function () {
+        return this.lateAppointmentForm;
+    };
+    FormService.prototype.getSocialMediaForm = function () {
+        return this.socialMediaForm;
+    };
+    FormService.prototype.getAteciForm = function () {
+        return this.ateciForm;
+    };
+    FormService.prototype.getSchoolColabForm = function () {
+        return this.schoolColabForm;
+    };
+    FormService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], FormService);
+    return FormService;
 }());
 
 

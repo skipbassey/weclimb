@@ -24,7 +24,9 @@ export class OutreachComponent implements OnInit {
     });
 
   slideOpts = {
-    pager: true,
+
+    
+    init: true
   };
 
   constructor() { }
