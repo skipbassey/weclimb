@@ -6,7 +6,15 @@ import { FormBuilder } from '@angular/forms';
 import { UserService } from 'src/services/user.service';
 import { LoginService } from 'src/services/login.service';
 import { AuthService } from '../../services/auth.service';
-import { mergeMap, tap, switchMap } from 'rxjs/operators';
+import { tap, switchMap } from 'rxjs/operators';
+import { LoadingController } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
+import { ForgotPasswordComponent } from '../forgot-password/forgot-password.component';
+import { ForgotUsernameComponent } from '../forgot-username/forgot-username.component';
+import { LoadingService } from 'src/services/loading.service';
+import { ToasterService } from 'src/services/toaster.service';
+import { Auth } from 'aws-amplify';
+
 
 @Component({
   selector: 'app-login',
@@ -14,59 +22,6 @@ import { mergeMap, tap, switchMap } from 'rxjs/operators';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-
-
-  signUpConfig = {
-    header: 'Sign Up',
-    hideAllDefaults: true,
-    defaultCountryCode: '1',
-    signUpFields: [
-      {
-        label: 'Username',
-        key: 'username',
-        required: true,
-        displayOrder: 1,
-        type: 'string',
-      },
-      {
-        label: 'Email',
-        key: 'email',
-        required: true,
-        displayOrder: 2,
-        type: 'string',
-      },
-      {
-        label: 'Password',
-        key: 'password',
-        required: true,
-        displayOrder: 3,
-        type: 'password'
-      },
-      {
-        label: 'Phone Number',
-        key: 'phone_number',
-        required: true,
-        displayOrder: 4,
-        type: 'string'
-      },
-      {
-        label: 'First Name',
-        key: 'name',
-        required: true,
-        displayOrder: 5,
-        type: 'string',
-      },
-      {
-        label: 'Last Name',
-        key: 'family_name',
-        required: true,
-        displayOrder: 6,
-        type: 'string',
-      }
-    ]
-  }
-
-  authState: any;
 
   loginForm: any;
 
@@ -77,17 +32,13 @@ export class LoginComponent implements OnInit {
     public router: Router,
     private userService: UserService,
     private loginService: LoginService,
-    private authService: AuthService
-  ) {
-    this.authState = { signedIn: false };
-
-    // this.amplifyService.authStateChange$
-    //   .subscribe(authState => {
-    //     this.authState.signedIn = authState.state === 'signedIn';
-    //     this.events.publish('data:AuthState', this.authState);
-    //     this.redirectSignIn();
-    //   });
-    }
+    private authService: AuthService,
+    private loadingController: LoadingController,
+    private modalController: ModalController,
+    private loadingService: LoadingService,
+    private toasterService: ToasterService,
+  
+  ) { }
 
     ngOnInit() { 
       this.loginForm = this.formBuilder.group({
@@ -96,28 +47,88 @@ export class LoginComponent implements OnInit {
       });
     }
 
-    navigate() {
+    navigateToHome() {
       this.router.navigateByUrl('home');
     }
 
+    async signIn() {
+      this.loadingService.presentLoading();
+
+      try {
+        const res = await Auth.signIn(
+          this.loginForm.get("email").value,
+          this.loginForm.get("password").value
+        )
+        if(res) {
+          console.log(res);
+          this.authService.setAuthorization(
+            res.signInUserSession.accessToken.jwtToken,
+            res.signInUserSession.refreshToken.token
+          )
+          this.userService.setUserInfo(res.attributes);
+          this.navigateToHome();
+        }
+      }
+      catch(err) {
+        console.log(err);
+        this.toasterService.presentToast(err.message, "danger")
+      }
+      
+    }
+
     login() {
+      this.loadingService.presentLoading();
       var email = this.loginForm.get('email').value;
       var password = this.loginForm.get('password').value;
       
       this.loginService.login(email, password)
         .pipe(
           tap(data => {
-            console.log("tap: " + data)
-            this.authService.setAuthorization(data.token);
+            // this.authService.setAuthorization(data.token);
           }),
           switchMap( () => {
             return this.userService.getUser(email)
           }),
           tap(data => {
             this.userService.setUserInfo(data);
-            this.navigate()
+            this.navigateToHome();
           })
         )
-        .subscribe(res => console.log("res: " + res))
+        .subscribe(res => {
+          this.loadingController.dismiss();
+        },
+        err => {
+          this.toasterService.presentToast(err.message, "danger")
+        })
     }
+
+  register() {
+    this.router.navigateByUrl('register');
+  }
+
+  async presentLoading() {
+    const loading = await this.loadingController.create({
+      message: 'Please wait...',
+      mode: "ios",
+      duration: 2000
+    });
+    await loading.present();
+
+    const { role, data } = await loading.onDidDismiss();
+    console.log('Loading dismissed!');
+  }
+
+  async presentForgotPasswordModal() {
+    const modal = await this.modalController.create({
+      component: ForgotPasswordComponent
+    });
+    return await modal.present();
+  }
+
+  async presentForgotUsernameModal() {
+    const modal = await this.modalController.create({
+      component: ForgotUsernameComponent
+    });
+    return await modal.present();
+  }
 }

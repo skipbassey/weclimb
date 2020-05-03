@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
 import { MenuController } from '@ionic/angular';
 import { AmplifyService } from 'aws-amplify-angular';
+import { AuthService } from 'src/services/auth.service';
 
 @Component({
   selector: 'app-menu',
@@ -28,6 +29,7 @@ export class MenuComponent implements OnInit {
     private navController: NavController,
     private menuController: MenuController,
     public amplifyService: AmplifyService,
+    private authService: AuthService
 
     ) { 
       
@@ -38,6 +40,7 @@ export class MenuComponent implements OnInit {
   }
 
   navigate(route: string): void {
+    this.menuController.close("option");
     this.navController.navigateForward(route)
   }
 
@@ -68,11 +71,8 @@ export class MenuComponent implements OnInit {
   }
 
   signOut() {
-    this.authState = { state: "signedOut" };
-
-    this.amplifyService.setAuthState(this.authState);
-    
-    // this.router.navigateByUrl('login');
+    this.authService.logOut()
+    this.router.navigateByUrl('login');
   }
 
 }

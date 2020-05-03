@@ -434,6 +434,292 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
+/***/ "./node_modules/moment/locale sync recursive ^\\.\\/.*$":
+/*!**************************************************!*\
+  !*** ./node_modules/moment/locale sync ^\.\/.*$ ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./af": "./node_modules/moment/locale/af.js",
+	"./af.js": "./node_modules/moment/locale/af.js",
+	"./ar": "./node_modules/moment/locale/ar.js",
+	"./ar-dz": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-dz.js": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-kw": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-kw.js": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-ly": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ly.js": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ma": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-ma.js": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-sa": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-sa.js": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-tn": "./node_modules/moment/locale/ar-tn.js",
+	"./ar-tn.js": "./node_modules/moment/locale/ar-tn.js",
+	"./ar.js": "./node_modules/moment/locale/ar.js",
+	"./az": "./node_modules/moment/locale/az.js",
+	"./az.js": "./node_modules/moment/locale/az.js",
+	"./be": "./node_modules/moment/locale/be.js",
+	"./be.js": "./node_modules/moment/locale/be.js",
+	"./bg": "./node_modules/moment/locale/bg.js",
+	"./bg.js": "./node_modules/moment/locale/bg.js",
+	"./bm": "./node_modules/moment/locale/bm.js",
+	"./bm.js": "./node_modules/moment/locale/bm.js",
+	"./bn": "./node_modules/moment/locale/bn.js",
+	"./bn.js": "./node_modules/moment/locale/bn.js",
+	"./bo": "./node_modules/moment/locale/bo.js",
+	"./bo.js": "./node_modules/moment/locale/bo.js",
+	"./br": "./node_modules/moment/locale/br.js",
+	"./br.js": "./node_modules/moment/locale/br.js",
+	"./bs": "./node_modules/moment/locale/bs.js",
+	"./bs.js": "./node_modules/moment/locale/bs.js",
+	"./ca": "./node_modules/moment/locale/ca.js",
+	"./ca.js": "./node_modules/moment/locale/ca.js",
+	"./cs": "./node_modules/moment/locale/cs.js",
+	"./cs.js": "./node_modules/moment/locale/cs.js",
+	"./cv": "./node_modules/moment/locale/cv.js",
+	"./cv.js": "./node_modules/moment/locale/cv.js",
+	"./cy": "./node_modules/moment/locale/cy.js",
+	"./cy.js": "./node_modules/moment/locale/cy.js",
+	"./da": "./node_modules/moment/locale/da.js",
+	"./da.js": "./node_modules/moment/locale/da.js",
+	"./de": "./node_modules/moment/locale/de.js",
+	"./de-at": "./node_modules/moment/locale/de-at.js",
+	"./de-at.js": "./node_modules/moment/locale/de-at.js",
+	"./de-ch": "./node_modules/moment/locale/de-ch.js",
+	"./de-ch.js": "./node_modules/moment/locale/de-ch.js",
+	"./de.js": "./node_modules/moment/locale/de.js",
+	"./dv": "./node_modules/moment/locale/dv.js",
+	"./dv.js": "./node_modules/moment/locale/dv.js",
+	"./el": "./node_modules/moment/locale/el.js",
+	"./el.js": "./node_modules/moment/locale/el.js",
+	"./en-SG": "./node_modules/moment/locale/en-SG.js",
+	"./en-SG.js": "./node_modules/moment/locale/en-SG.js",
+	"./en-au": "./node_modules/moment/locale/en-au.js",
+	"./en-au.js": "./node_modules/moment/locale/en-au.js",
+	"./en-ca": "./node_modules/moment/locale/en-ca.js",
+	"./en-ca.js": "./node_modules/moment/locale/en-ca.js",
+	"./en-gb": "./node_modules/moment/locale/en-gb.js",
+	"./en-gb.js": "./node_modules/moment/locale/en-gb.js",
+	"./en-ie": "./node_modules/moment/locale/en-ie.js",
+	"./en-ie.js": "./node_modules/moment/locale/en-ie.js",
+	"./en-il": "./node_modules/moment/locale/en-il.js",
+	"./en-il.js": "./node_modules/moment/locale/en-il.js",
+	"./en-nz": "./node_modules/moment/locale/en-nz.js",
+	"./en-nz.js": "./node_modules/moment/locale/en-nz.js",
+	"./eo": "./node_modules/moment/locale/eo.js",
+	"./eo.js": "./node_modules/moment/locale/eo.js",
+	"./es": "./node_modules/moment/locale/es.js",
+	"./es-do": "./node_modules/moment/locale/es-do.js",
+	"./es-do.js": "./node_modules/moment/locale/es-do.js",
+	"./es-us": "./node_modules/moment/locale/es-us.js",
+	"./es-us.js": "./node_modules/moment/locale/es-us.js",
+	"./es.js": "./node_modules/moment/locale/es.js",
+	"./et": "./node_modules/moment/locale/et.js",
+	"./et.js": "./node_modules/moment/locale/et.js",
+	"./eu": "./node_modules/moment/locale/eu.js",
+	"./eu.js": "./node_modules/moment/locale/eu.js",
+	"./fa": "./node_modules/moment/locale/fa.js",
+	"./fa.js": "./node_modules/moment/locale/fa.js",
+	"./fi": "./node_modules/moment/locale/fi.js",
+	"./fi.js": "./node_modules/moment/locale/fi.js",
+	"./fo": "./node_modules/moment/locale/fo.js",
+	"./fo.js": "./node_modules/moment/locale/fo.js",
+	"./fr": "./node_modules/moment/locale/fr.js",
+	"./fr-ca": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ca.js": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ch": "./node_modules/moment/locale/fr-ch.js",
+	"./fr-ch.js": "./node_modules/moment/locale/fr-ch.js",
+	"./fr.js": "./node_modules/moment/locale/fr.js",
+	"./fy": "./node_modules/moment/locale/fy.js",
+	"./fy.js": "./node_modules/moment/locale/fy.js",
+	"./ga": "./node_modules/moment/locale/ga.js",
+	"./ga.js": "./node_modules/moment/locale/ga.js",
+	"./gd": "./node_modules/moment/locale/gd.js",
+	"./gd.js": "./node_modules/moment/locale/gd.js",
+	"./gl": "./node_modules/moment/locale/gl.js",
+	"./gl.js": "./node_modules/moment/locale/gl.js",
+	"./gom-latn": "./node_modules/moment/locale/gom-latn.js",
+	"./gom-latn.js": "./node_modules/moment/locale/gom-latn.js",
+	"./gu": "./node_modules/moment/locale/gu.js",
+	"./gu.js": "./node_modules/moment/locale/gu.js",
+	"./he": "./node_modules/moment/locale/he.js",
+	"./he.js": "./node_modules/moment/locale/he.js",
+	"./hi": "./node_modules/moment/locale/hi.js",
+	"./hi.js": "./node_modules/moment/locale/hi.js",
+	"./hr": "./node_modules/moment/locale/hr.js",
+	"./hr.js": "./node_modules/moment/locale/hr.js",
+	"./hu": "./node_modules/moment/locale/hu.js",
+	"./hu.js": "./node_modules/moment/locale/hu.js",
+	"./hy-am": "./node_modules/moment/locale/hy-am.js",
+	"./hy-am.js": "./node_modules/moment/locale/hy-am.js",
+	"./id": "./node_modules/moment/locale/id.js",
+	"./id.js": "./node_modules/moment/locale/id.js",
+	"./is": "./node_modules/moment/locale/is.js",
+	"./is.js": "./node_modules/moment/locale/is.js",
+	"./it": "./node_modules/moment/locale/it.js",
+	"./it-ch": "./node_modules/moment/locale/it-ch.js",
+	"./it-ch.js": "./node_modules/moment/locale/it-ch.js",
+	"./it.js": "./node_modules/moment/locale/it.js",
+	"./ja": "./node_modules/moment/locale/ja.js",
+	"./ja.js": "./node_modules/moment/locale/ja.js",
+	"./jv": "./node_modules/moment/locale/jv.js",
+	"./jv.js": "./node_modules/moment/locale/jv.js",
+	"./ka": "./node_modules/moment/locale/ka.js",
+	"./ka.js": "./node_modules/moment/locale/ka.js",
+	"./kk": "./node_modules/moment/locale/kk.js",
+	"./kk.js": "./node_modules/moment/locale/kk.js",
+	"./km": "./node_modules/moment/locale/km.js",
+	"./km.js": "./node_modules/moment/locale/km.js",
+	"./kn": "./node_modules/moment/locale/kn.js",
+	"./kn.js": "./node_modules/moment/locale/kn.js",
+	"./ko": "./node_modules/moment/locale/ko.js",
+	"./ko.js": "./node_modules/moment/locale/ko.js",
+	"./ku": "./node_modules/moment/locale/ku.js",
+	"./ku.js": "./node_modules/moment/locale/ku.js",
+	"./ky": "./node_modules/moment/locale/ky.js",
+	"./ky.js": "./node_modules/moment/locale/ky.js",
+	"./lb": "./node_modules/moment/locale/lb.js",
+	"./lb.js": "./node_modules/moment/locale/lb.js",
+	"./lo": "./node_modules/moment/locale/lo.js",
+	"./lo.js": "./node_modules/moment/locale/lo.js",
+	"./lt": "./node_modules/moment/locale/lt.js",
+	"./lt.js": "./node_modules/moment/locale/lt.js",
+	"./lv": "./node_modules/moment/locale/lv.js",
+	"./lv.js": "./node_modules/moment/locale/lv.js",
+	"./me": "./node_modules/moment/locale/me.js",
+	"./me.js": "./node_modules/moment/locale/me.js",
+	"./mi": "./node_modules/moment/locale/mi.js",
+	"./mi.js": "./node_modules/moment/locale/mi.js",
+	"./mk": "./node_modules/moment/locale/mk.js",
+	"./mk.js": "./node_modules/moment/locale/mk.js",
+	"./ml": "./node_modules/moment/locale/ml.js",
+	"./ml.js": "./node_modules/moment/locale/ml.js",
+	"./mn": "./node_modules/moment/locale/mn.js",
+	"./mn.js": "./node_modules/moment/locale/mn.js",
+	"./mr": "./node_modules/moment/locale/mr.js",
+	"./mr.js": "./node_modules/moment/locale/mr.js",
+	"./ms": "./node_modules/moment/locale/ms.js",
+	"./ms-my": "./node_modules/moment/locale/ms-my.js",
+	"./ms-my.js": "./node_modules/moment/locale/ms-my.js",
+	"./ms.js": "./node_modules/moment/locale/ms.js",
+	"./mt": "./node_modules/moment/locale/mt.js",
+	"./mt.js": "./node_modules/moment/locale/mt.js",
+	"./my": "./node_modules/moment/locale/my.js",
+	"./my.js": "./node_modules/moment/locale/my.js",
+	"./nb": "./node_modules/moment/locale/nb.js",
+	"./nb.js": "./node_modules/moment/locale/nb.js",
+	"./ne": "./node_modules/moment/locale/ne.js",
+	"./ne.js": "./node_modules/moment/locale/ne.js",
+	"./nl": "./node_modules/moment/locale/nl.js",
+	"./nl-be": "./node_modules/moment/locale/nl-be.js",
+	"./nl-be.js": "./node_modules/moment/locale/nl-be.js",
+	"./nl.js": "./node_modules/moment/locale/nl.js",
+	"./nn": "./node_modules/moment/locale/nn.js",
+	"./nn.js": "./node_modules/moment/locale/nn.js",
+	"./pa-in": "./node_modules/moment/locale/pa-in.js",
+	"./pa-in.js": "./node_modules/moment/locale/pa-in.js",
+	"./pl": "./node_modules/moment/locale/pl.js",
+	"./pl.js": "./node_modules/moment/locale/pl.js",
+	"./pt": "./node_modules/moment/locale/pt.js",
+	"./pt-br": "./node_modules/moment/locale/pt-br.js",
+	"./pt-br.js": "./node_modules/moment/locale/pt-br.js",
+	"./pt.js": "./node_modules/moment/locale/pt.js",
+	"./ro": "./node_modules/moment/locale/ro.js",
+	"./ro.js": "./node_modules/moment/locale/ro.js",
+	"./ru": "./node_modules/moment/locale/ru.js",
+	"./ru.js": "./node_modules/moment/locale/ru.js",
+	"./sd": "./node_modules/moment/locale/sd.js",
+	"./sd.js": "./node_modules/moment/locale/sd.js",
+	"./se": "./node_modules/moment/locale/se.js",
+	"./se.js": "./node_modules/moment/locale/se.js",
+	"./si": "./node_modules/moment/locale/si.js",
+	"./si.js": "./node_modules/moment/locale/si.js",
+	"./sk": "./node_modules/moment/locale/sk.js",
+	"./sk.js": "./node_modules/moment/locale/sk.js",
+	"./sl": "./node_modules/moment/locale/sl.js",
+	"./sl.js": "./node_modules/moment/locale/sl.js",
+	"./sq": "./node_modules/moment/locale/sq.js",
+	"./sq.js": "./node_modules/moment/locale/sq.js",
+	"./sr": "./node_modules/moment/locale/sr.js",
+	"./sr-cyrl": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr-cyrl.js": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr.js": "./node_modules/moment/locale/sr.js",
+	"./ss": "./node_modules/moment/locale/ss.js",
+	"./ss.js": "./node_modules/moment/locale/ss.js",
+	"./sv": "./node_modules/moment/locale/sv.js",
+	"./sv.js": "./node_modules/moment/locale/sv.js",
+	"./sw": "./node_modules/moment/locale/sw.js",
+	"./sw.js": "./node_modules/moment/locale/sw.js",
+	"./ta": "./node_modules/moment/locale/ta.js",
+	"./ta.js": "./node_modules/moment/locale/ta.js",
+	"./te": "./node_modules/moment/locale/te.js",
+	"./te.js": "./node_modules/moment/locale/te.js",
+	"./tet": "./node_modules/moment/locale/tet.js",
+	"./tet.js": "./node_modules/moment/locale/tet.js",
+	"./tg": "./node_modules/moment/locale/tg.js",
+	"./tg.js": "./node_modules/moment/locale/tg.js",
+	"./th": "./node_modules/moment/locale/th.js",
+	"./th.js": "./node_modules/moment/locale/th.js",
+	"./tl-ph": "./node_modules/moment/locale/tl-ph.js",
+	"./tl-ph.js": "./node_modules/moment/locale/tl-ph.js",
+	"./tlh": "./node_modules/moment/locale/tlh.js",
+	"./tlh.js": "./node_modules/moment/locale/tlh.js",
+	"./tr": "./node_modules/moment/locale/tr.js",
+	"./tr.js": "./node_modules/moment/locale/tr.js",
+	"./tzl": "./node_modules/moment/locale/tzl.js",
+	"./tzl.js": "./node_modules/moment/locale/tzl.js",
+	"./tzm": "./node_modules/moment/locale/tzm.js",
+	"./tzm-latn": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm-latn.js": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm.js": "./node_modules/moment/locale/tzm.js",
+	"./ug-cn": "./node_modules/moment/locale/ug-cn.js",
+	"./ug-cn.js": "./node_modules/moment/locale/ug-cn.js",
+	"./uk": "./node_modules/moment/locale/uk.js",
+	"./uk.js": "./node_modules/moment/locale/uk.js",
+	"./ur": "./node_modules/moment/locale/ur.js",
+	"./ur.js": "./node_modules/moment/locale/ur.js",
+	"./uz": "./node_modules/moment/locale/uz.js",
+	"./uz-latn": "./node_modules/moment/locale/uz-latn.js",
+	"./uz-latn.js": "./node_modules/moment/locale/uz-latn.js",
+	"./uz.js": "./node_modules/moment/locale/uz.js",
+	"./vi": "./node_modules/moment/locale/vi.js",
+	"./vi.js": "./node_modules/moment/locale/vi.js",
+	"./x-pseudo": "./node_modules/moment/locale/x-pseudo.js",
+	"./x-pseudo.js": "./node_modules/moment/locale/x-pseudo.js",
+	"./yo": "./node_modules/moment/locale/yo.js",
+	"./yo.js": "./node_modules/moment/locale/yo.js",
+	"./zh-cn": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-cn.js": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-hk": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-hk.js": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-tw": "./node_modules/moment/locale/zh-tw.js",
+	"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/app.component.html":
 /*!**************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/app.component.html ***!
@@ -452,7 +738,7 @@ module.exports = "\n<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Appointments</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content fullscreen>\n  <p class=\"text\">\n    If you are going through your insurance company for services, please provide\n    the client's name, date of birth and member ID number in the \"Add Your Message\"\n    section once you have selected your appointment. You will receive an email confirming\n    your appointment.\n  </p>\n\n  <ion-list>\n    <ion-item button (click)=\"bookAppointment('ll-intake')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$125</p>\n    </ion-item>\n    <ion-item button (click)=\"bookAppointment('ll-insurance')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Insurance: </b>$110</p>\n    </ion-item>\n    <ion-item button (click)=\"bookAppointment('ll-selfpay')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$80</p>\n    </ion-item>\n    <ion-item button (click)=\"bookAppointment('ml-intake')\">\n      <img src=\"assets/photo2.jpeg\" alt=\"\">\n      <p><b>Masters Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$100</p>\n    </ion-item>\n    <ion-item button (click)=\"bookAppointment('ml-selfpay')\">\n      <img src=\"assets/photo2.jpeg\" alt=\"\">\n      <p><b>Masters Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$65</p>\n    </ion-item>\n    <ion-item button (click)=\"bookAppointment('youth')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Adolescent Group Counseling: </b>1hr</p>\n      <p><b>Self Pay: </b>$$35</p>\n      <p>Apollo Sports Counseling Inc.</p>\n    </ion-item>\n  </ion-list>\n\n  <!-- <ionic-calendar-date-picker (onSelect)=\"dateSelected($event)\"></ionic-calendar-date-picker>\t -->\n\n</ion-content>"
+module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Appointments</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content fullscreen>\n  <p class=\"text\">\n    If you are going through your insurance company for services, please provide\n    the client's name, date of birth and member ID number in the \"Add Your Message\"\n    section once you have selected your appointment. You will receive an email confirming\n    your appointment.\n  </p>\n\n  <ion-list>\n    <ion-item button (click)=\"selectAppointment('ll-intake')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$125</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ll-insurance')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Insurance: </b>$110</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ll-selfpay')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$80</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ml-intake')\">\n      <img src=\"assets/photo2.jpeg\" alt=\"\">\n      <p><b>Masters Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$100</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ml-selfpay')\">\n      <img src=\"assets/photo2.jpeg\" alt=\"\">\n      <p><b>Masters Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$65</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('youth')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Adolescent Group Counseling: </b>1hr</p>\n      <p><b>Self Pay: </b>$$35</p>\n      <p>Apollo Sports Counseling Inc.</p>\n    </ion-item>\n  </ion-list>\n</ion-content>"
 
 /***/ }),
 
@@ -463,7 +749,18 @@ module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content>\n  <!-- no schedule -->\n  <div class=\"err-content\" *ngIf=\"noData\">\n    <p>No schedule available at this time.</p>\n    <ion-button fill=\"solid\" shape=\"round\" (click)=\"dismiss()\">Return to Appointments</ion-button>\n  </div>\n  <ion-list *ngFor=\"let item of data\">\n    <ion-item button (click)=\"book()\">\n      <div class=\"list-item\">\n        <p>{{item.Date.S}}</p>\n        <p>{{item.Location.S}}</p>\n      </div>\n    </ion-item>\n  </ion-list>\n  <div class=\"btn-container\">\n    <ion-button *ngIf=\"!noData\" fill=\"solid\" shape=\"round\" (click)=\"dismiss()\">Return to Appointments</ion-button>\n  </div>\n</ion-content>"
+module.exports = "<ion-content>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" (click)=\"dismiss()\" defaultHref=\"/appointments\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Booking</ion-title>\n  </ion-toolbar>\n  <!-- no schedule -->\n  <div class=\"err-content\" *ngIf=\"noData\">\n    <p>No schedule available at this time.</p>\n  </div>\n  <ion-list *ngFor=\"let item of data\">\n    <ion-item button (click)=\"confirm(item)\">\n      <div class=\"list-item\">\n        <p>{{item.date}}</p>\n        <p>{{item.location}}</p>\n      </div>\n    </ion-item>\n  </ion-list>\n</ion-content>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/calendar/calendar.component.html":
+/*!****************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/calendar/calendar.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-content fullscreen>\n  <form [formGroup]=\"calendarForm\" (ngSubmit)=\"addToCalendar()\">\n    <ion-list>\n      <ion-item>\n        <ion-label position=\"floating\">Title</ion-label>\n        <ion-input formControlName=\"name\" placeholder=\"Masters Level Clinician\"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Type</ion-label>\n        <ion-select formControlName=\"type\" placeholder=\"Select One\">\n          <ion-select-option value=\"First Session\">First Session</ion-select-option>\n          <ion-select-option value=\"Insurance\">Insurance</ion-select-option>\n          <ion-select-option value=\"Self Pay\">Self Pay</ion-select-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label position=\"floating\">Duration</ion-label>\n        <ion-input formControlName=\"duration\" placeholder=\"1 hr\"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label position=\"floating\">Price</ion-label>\n        <ion-input formControlName=\"price\" placeholder=\"$100\"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label position=\"floating\">Location</ion-label>\n        <ion-input formControlName=\"location\" [placeholder]=\"location\"></ion-input>\n      </ion-item>\n      <ion-item-divider></ion-item-divider>\n      <ion-item>\n        <ion-label>Start Date</ion-label>\n        <ion-datetime formControlName=\"date\" mode=\"ios\" displayFormat=\"MMM DD, YYYY HH:mm\" placeholder=\"Select Date\"></ion-datetime>\n      </ion-item>\n     \n      <ion-item-divider></ion-item-divider>\n      <ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Add To Calendar</ion-button>\n      <ion-button type=\"button\" expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n  \n    </ion-list>\n  </form>\n  \n</ion-content>"
 
 /***/ }),
 
@@ -478,6 +775,28 @@ module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/forgot-password/forgot-password.component.html":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/forgot-password/forgot-password.component.html ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-content>\n  <div class=\"header-container \">\n    <h1>Forgot Password</h1>\n  </div>\n  <form [formGroup]=\"passwordForm\" (ngSubmit)=\"forgotPassword()\">\n    <ion-item>\n      <ion-label position=\"floating\">Email</ion-label>\n      <ion-input type=\"text\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"text\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">New Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <div class=\"button-container\">\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Submit</ion-button>\n\t\t\t<ion-button expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n</ion-content>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/forgot-username/forgot-username.component.html":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/forgot-username/forgot-username.component.html ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-content>\n  <div class=\"header-container\">\n    <h1>Forgot Username</h1>\n  </div>\n  <form [formGroup]=\"usernameForm\" (ngSubmit)=\"forgotUsername()\">\n    <ion-item>\n      <ion-label position=\"floating\">Phone Number</ion-label>\n      <ion-input type=\"text\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"text\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <div class=\"button-container\">\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Submit</ion-button>\n\t\t\t<ion-button expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n\n  <div class=\"username-container\" *ngIf=\"loaded\">\n    <p>Your username is: {{username}}</p>\n  </div>\n</ion-content>"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/forms/forms.component.html":
 /*!**********************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/forms/forms.component.html ***!
@@ -485,7 +804,7 @@ module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Forms</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1>New Patient Forms</h1>\n\n  <div>\n    <h2>Prior to your Appointment</h2>\n    <p>​\n      Be sure to call the toll free number on the back of your health insurance \n      card to find out if your plan includes mental health benefits. If mental \n      health benefits are covered, ask for the following information:\n    </p>\n    <ul>\n      <li>Number of sessions covered per benefit period</li>\n      <li>Amount of the deductible and co-pay</li>\n      <li>Authorization needed for your appointment</li>\n    </ul>\n    <p>After you’ve completed your New Intake Forms, please submit them in \n      order to schedule your appointment. You will need to bring your health \n      insurance card and photo identification as well.\n    </p>\n  </div>\n\n  <div>\n    <h2>What to Expect at Your First Appointment</h2>\n    <p>Regardless of the type of service, your first appointment is a time to \n      meet with your treatment provider and discuss your concerns. The first \n      appointment is a time for a thorough evaluation and you will likely be \n      asked a good deal of factual information about yourself. This might include \n      things like the reason you’re seeking treatment, what your symptoms are, \n      history of past problems and treatment, medical history, past use of drugs \n      and alcohol, and how some of the important areas in your life are going (\n      work, family, hobbies, etc.). This is also a time for you to evaluate your \n      treatment provider in order to ensure that you feel comfortable with the \n      person and the setting.\n    </p>\n  </div>\n\n  <div>\n    <h2>First Session Information & Important Paperwork</h2>\n    <p>Because counseling involves a professional relationship, we need to agree on the \n      terms of our work together.\n      <b class=\"alert\">Please complete a New Client Form, Child or Adult Intake Form \n        (if applicable), Communications Agreement, Consent & Confidentiality Agreement, \n        Credit Card Authorization Form & Late Cancellation/Missed Appointment Policy \n        and bring the forms in to our office at your first appointment or email the forms. \n      </b>\n      Please provide your photo identification and health insurance card when presenting \n      the forms. If you have any questions and/or require clarification, please be sure \n      to ask us.\n    </p>\n    <ul>\n      <li>\n        <a href=\"https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3408979cc10a44ce9a67d840a7a89a85.pdf\" target=\"_blank\">\n        Adult Intake Form\n      </a>\n    </li>\n      <li><a href=\"\">New Client Form</a></li>\n      <li><a href=\"\">Child/Adolescent Intake Form</a></li>\n      <li><a href=\"\">Consent & Confidentiality Agreement </a></li>\n      <li><a href=\"\">Couples Intake Form</a></li>\n      <li><a href=\"\">Authorization to Release Information Form</a></li>\n      <li><a href=\"\">Credit Card Authorization Form </a></li>\n      <li><a href=\"\">Communication Agreement</a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>Late Cancellation/ Missed Appointment Policy</h2>\n    <p>Our current late cancellation/missed appointment policy is unique \n      to psychotherapy practices. We ask that you read it and consider it\n       carefully to reduce the chance of misunderstandings that may hinder \n       your progress in therapy.\n    </p>\n    <ul>\n      <li><a href=\"\">Late Cancellation/Missed Appointment Policy</a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>Download for your Reference</h2>\n    <ul>\n      <li><a href=\"\">HIPAA/Privacy Notice</a></li>\n      <li><a href=\"\">Social Media Policy </a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>School-Based Services</h2>\n    <p>If you would like to participate in school-based counseling services, \n      complete both forms and submit a copy of the forms to our office and \n      to the client's school for their records.\n    </p>\n    <ul>\n      <li><a href=\"\">Authorization to Exchange Confidential Information</a></li>\n      <li><a href=\"\">School Collaboration Consent Form</a></li>\n    </ul>\n  </div>\n</ion-content>"
+module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Forms</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1>New Patient Forms</h1>\n\n  <div>\n    <h2>Prior to your Appointment</h2>\n    <p>​\n      Be sure to call the toll free number on the back of your health insurance \n      card to find out if your plan includes mental health benefits. If mental \n      health benefits are covered, ask for the following information:\n    </p>\n    <ul>\n      <li>Number of sessions covered per benefit period</li>\n      <li>Amount of the deductible and co-pay</li>\n      <li>Authorization needed for your appointment</li>\n    </ul>\n    <p>After you’ve completed your New Intake Forms, please submit them in \n      order to schedule your appointment. You will need to bring your health \n      insurance card and photo identification as well.\n    </p>\n  </div>\n\n  <div>\n    <h2>What to Expect at Your First Appointment</h2>\n    <p>Regardless of the type of service, your first appointment is a time to \n      meet with your treatment provider and discuss your concerns. The first \n      appointment is a time for a thorough evaluation and you will likely be \n      asked a good deal of factual information about yourself. This might include \n      things like the reason you’re seeking treatment, what your symptoms are, \n      history of past problems and treatment, medical history, past use of drugs \n      and alcohol, and how some of the important areas in your life are going (\n      work, family, hobbies, etc.). This is also a time for you to evaluate your \n      treatment provider in order to ensure that you feel comfortable with the \n      person and the setting.\n    </p>\n  </div>\n\n  <div>\n    <h2>First Session Information & Important Paperwork</h2>\n    <p>Because counseling involves a professional relationship, we need to agree on the \n      terms of our work together.\n      <b class=\"alert\">Please complete a New Client Form, Child or Adult Intake Form \n        (if applicable), Communications Agreement, Consent & Confidentiality Agreement, \n        Credit Card Authorization Form & Late Cancellation/Missed Appointment Policy \n        and bring the forms in to our office at your first appointment or email the forms. \n      </b>\n      Please provide your photo identification and health insurance card when presenting \n      the forms. If you have any questions and/or require clarification, please be sure \n      to ask us.\n    </p>\n    <ul>\n      <li>\n        <a (click)=\"openAdultIntake()\">\n        Adult Intake Form\n      </a>\n    </li>\n      <li><a (click)=\"openNewClient()\">New Client Form</a></li>\n      <li><a (click)=\"openChild()\">Child/Adolescent Intake Form</a></li>\n      <li><a (click)=\"openConsentAgreement()\">Consent & Confidentiality Agreement </a></li>\n      <li><a (click)=\"openCoupleIntake()\">Couples Intake Form</a></li>\n      <li><a (click)=\"openReleaseInfo()\">Authorization to Release Information Form</a></li>\n      <li><a (click)=\"openCreditCard()\">Credit Card Authorization Form </a></li>\n      <li><a (click)=\"openCommunicationAgreement()\">Communication Agreement</a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>Late Cancellation/ Missed Appointment Policy</h2>\n    <p>Our current late cancellation/missed appointment policy is unique \n      to psychotherapy practices. We ask that you read it and consider it\n       carefully to reduce the chance of misunderstandings that may hinder \n       your progress in therapy.\n    </p>\n    <ul>\n      <li><a (click)=\"openLateCancellation()\">Late Cancellation/Missed Appointment Policy</a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>Download for your Reference</h2>\n    <ul>\n      <li><a (click)=\"openHippa()\">HIPAA/Privacy Notice</a></li>\n      <li><a (click)=\"openSocialMedia()\">Social Media Policy </a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>School-Based Services</h2>\n    <p>If you would like to participate in school-based counseling services, \n      complete both forms and submit a copy of the forms to our office and \n      to the client's school for their records.\n    </p>\n    <ul>\n      <li><a (click)=\"openExchangeConfidential()\">Authorization to Exchange Confidential Information</a></li>\n      <li><a (click)=\"openSchoolColab()\">School Collaboration Consent Form</a></li>\n    </ul>\n  </div>\n</ion-content>"
 
 /***/ }),
 
@@ -529,7 +848,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "    <ion-card class=\"card\">\n        <ion-card-header>\n          <ion-card-header class=\"menu-text text\">\n            Services Provided\n          </ion-card-header>\n        </ion-card-header>\n        <ion-card-content>\n            <p>\n                We offer services that equip our clients with tools for success. During your counseling sessions, \n                no matter if it’s Relationship Counseling, Family/Individual Counseling, Group Counseling, Anger \n                Management Classes, Adolescent Counseling or Career Coaching, we  always provide personalized \n                attention to help each client identify their personal values, strengths, and abilities in support \n                of their personal and professional goals. The goal of We Climb Counseling and Consulting, is to \n                create a supportive environment in which clients can explore their own emotional needs and overcome \n                barriers that limit their full potential by meeting each client where they are. \n            </p>\n        </ion-card-content>\n      </ion-card>\n      <ion-list *ngFor=\"let service of services\">\n        <ion-item button (click)=\"navigate(service)\">{{service.title}}</ion-item>\n      </ion-list>"
+module.exports = "    <ion-card class=\"card\">\n        <ion-card-header>\n          <ion-card-header class=\"menu-text text\">\n            Services Provided\n          </ion-card-header>\n        </ion-card-header>\n        <ion-card-content class=\"services\">\n            <p>\n                We offer services that equip our clients with tools for success. During your counseling sessions, \n                no matter if it’s Relationship Counseling, Family/Individual Counseling, Group Counseling, Anger \n                Management Classes, Adolescent Counseling or Career Coaching, we  always provide personalized \n                attention to help each client identify their personal values, strengths, and abilities in support \n                of their personal and professional goals. The goal of We Climb Counseling and Consulting, is to \n                create a supportive environment in which clients can explore their own emotional needs and overcome \n                barriers that limit their full potential by meeting each client where they are. \n            </p>\n        </ion-card-content>\n      </ion-card>\n      <ion-list *ngFor=\"let service of services\">\n        <ion-item button (click)=\"navigate(service)\">{{service.title}}</ion-item>\n      </ion-list>"
 
 /***/ }),
 
@@ -551,7 +870,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"secondary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"menu\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Relationship Counseling</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1 class=\"header-text ion-color-primary\">Embrace Life’s Challenges</h1>\n  <p class=\"content-text\">Sometimes, it seems as if life just has it in for us and we can never catch a break.\n    In reality, there will always be moments we have little to no control over but, what\n    we can always control is how we react to those moments. With my Relationship Counseling\n    sessions, you’ll learn about acceptance and how to exert your power of choice over whatever\n    life may throw at you.\n  </p>\n  <ion-list>\n    <ul>\n      <li>Blending Family Adjustments</li>\n      <li>Behavioral Issues</li>\n      <li>Academic Concerns in Children</li>\n      <li>Divorce & Divorce Adjustments</li>\n      <li>Grief Counseling</li>\n    </ul>\n  </ion-list>\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"menu\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Relationship Counseling</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1 class=\"header-text ion-color-primary\">Embrace Life’s Challenges</h1>\n  <p class=\"content-text\">Sometimes, it seems as if life just has it in for us and we can never catch a break.\n    In reality, there will always be moments we have little to no control over but, what\n    we can always control is how we react to those moments. With my Relationship Counseling\n    sessions, you’ll learn about acceptance and how to exert your power of choice over whatever\n    life may throw at you.\n  </p>\n  <ion-list>\n    <ul>\n      <li>Blending Family Adjustments</li>\n      <li>Behavioral Issues</li>\n      <li>Academic Concerns in Children</li>\n      <li>Divorce & Divorce Adjustments</li>\n      <li>Grief Counseling</li>\n    </ul>\n  </ion-list>\n</ion-content>"
 
 /***/ }),
 
@@ -562,7 +881,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"secondary\">\n    <ion-bu
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content padding>\n\t<div class=\"logo-container\">\n\t\t<img src=\"/assets/logo.png\" alt=\"\">\n\t</div>\n\n\t<amplify-authenticator [signUpConfig]=\"signUpConfig\" framework=\"ionic\"></amplify-authenticator>\n\n</ion-content>"
+module.exports = "<ion-content>\n\t<div class=\"logo-container\">\n\t\t<img src=\"/assets/img/logo.png\" alt=\"\">\n\t</div>\n\n\t<!-- <amplify-authenticator [signUpConfig]=\"signUpConfig\" framework=\"ionic\"></amplify-authenticator> -->\n\n\t<form [formGroup]=\"loginForm\">\n\t\t<ion-item>\n\t\t\t<ion-label position=\"floating\">Username</ion-label>\n\t\t\t<ion-input formControlName=\"email\" placeholder=\"example@gmail.com\" type=\"email\"></ion-input>\n\t\t  </ion-item>\n\t\t  <ion-item>\n\t\t\t<ion-label position=\"floating\">Password</ion-label>\n\t\t\t<ion-input formControlName=\"password\" placeholder=\"password\" type=\"password\"></ion-input>\n\t\t  </ion-item>\n\t\t  <div class=\"button-container\">\n\t\t\t<ion-button class=\"btn\" type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"login()\">Login</ion-button>\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"register()\">Register</ion-button>\n\t\t\t<a (click)=\"presentForgotUsernameModal()\">Forgot Username?</a>\n\t\t\t<a (click)=\"presentForgotPasswordModal()\">Forgot Password?</a>\n\t\t  </div>\n\t</form>\n</ion-content>"
 
 /***/ }),
 
@@ -573,7 +892,7 @@ module.exports = "<ion-content padding>\n\t<div class=\"logo-container\">\n\t\t<
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<!-- option menu -->\n  <ion-menu color=\"primary\" side=\"end\" (click)=\"openMenu('end')\">\n    <ion-header>\n      <!-- <ion-toolbar color=\"secondary\">\n        <ion-title class=\"menu-header-text text\">We Climb</ion-title>\n      </ion-toolbar> -->\n    </ion-header>\n    <ion-content>\n      <ion-nav>\n        <ion-list *ngFor=\"let option of options\">\n          <ion-item class=\"menu-text\" (click)=\"navigate(option.route)\" button>{{option.title}}</ion-item>\n        </ion-list>\n      </ion-nav>\n    </ion-content>\n  </ion-menu>\n\n  <!-- profile menu -->\n  <ion-menu side=\"start\" >\n    <ion-content>\n      <ion-list>\n        <ion-item class=\"menu-text\" button>Profile</ion-item>\n        <ion-item class=\"menu-text\" button>My Appointments</ion-item>\n        <ion-item class=\"menu-text\" button (click)=\"signOut()\">Sign Off</ion-item>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n\n  <div class=\"ion-page\" main>\n    <ion-header>\n      <ion-toolbar mode=\"ios\" color=\"secondary\">\n        <ion-buttons slot=\"end\">\n          <ion-menu-button (click)=\"openMenu('end')\"></ion-menu-button>\n        </ion-buttons>\n        <ion-buttons slot=\"start\">\n          <ion-menu-button (click)=\"openMenu('start')\">\n            <ion-icon name=\"person\"></ion-icon>\n          </ion-menu-button>\n        </ion-buttons>\n        <ion-title class=\"title-text text\">\n          <div class=\"logo-container\">\n            <img src=\"/assets/logo.png\" class=\"logo-header\" alt=\"\">\n          </div>\n        </ion-title>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <app-home></app-home>\n     </ion-content>\n  </div>\n\n\t<!-- <amplify-authenticator [hide]=\"['signIn']\" framework=\"ionic\"></amplify-authenticator> -->\n\n\n\n\n"
+module.exports = "\n  <ion-app>\n\n    <!-- option menu -->\n    <ion-menu side=\"end\" contentId=\"main-content\" menuId=\"option\">\n      <ion-header>\n        <ion-toolbar color=\"primary\">\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-nav>\n          <ion-list *ngFor=\"let option of options\">\n            <ion-item  (click)=\"navigate(option.route)\" button>\n              <ion-label class=\"menu-text\">{{option.title}}</ion-label>\n              <ion-icon [name]=\"option.icon\"></ion-icon>\n            </ion-item>\n          </ion-list>\n        </ion-nav>\n      </ion-content>\n    </ion-menu>\n\n  <!-- profile menu -->\n    <!-- <ion-menu side=\"start\" contentId=\"main-content\" menuId=\"profile\">\n      <ion-header>\n        <ion-toolbar translucent>\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-list>\n          <ion-item class=\"menu-text\" button>Profile</ion-item>\n          <ion-item class=\"menu-text\" button>My Appointments</ion-item>\n          <ion-item class=\"menu-text\" button (click)=\"signOut()\">Sign Off</ion-item>\n        </ion-list>     \n      </ion-content>\n    </ion-menu> -->\n\n    <div class=\"ion-page\" id=\"main-content\">\n      <ion-header>\n        <ion-toolbar mode=\"ios\" color=\"primary\">\n          <ion-buttons slot=\"end\">\n            <ion-menu-button></ion-menu-button>\n          </ion-buttons>\n          <!-- <ion-buttons slot=\"start\">\n            <ion-menu-button (click)=\"signOut()\">\n              Log Out\n            </ion-menu-button>\n          </ion-buttons> -->\n          <ion-title>\n            <div class=\"logo-container\">\n              <img class=\"logo-header\" src=\"assets/img/logo.png\" alt=\"\">\n            </div>\n          </ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content class=\"ion-padding\">\n        <app-home></app-home>\n      </ion-content>\n    </div>\n  </ion-app>\n\n\n \n\n\n\n\n"
 
 /***/ }),
 
@@ -584,7 +903,29 @@ module.exports = "\n<!-- option menu -->\n  <ion-menu color=\"primary\" side=\"e
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-back-button defaultHref=\"home\"></ion-back-button>\n      </ion-buttons>\n      <ion-title class=\"title-text\">Outreach</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <p>\n        Here at We Climb Counseling & Consulting, we are dedicated to serving\n         the community through various community outreach initiatives. We Climb \n         Counseling & Consulting would love to work with your organization on its \n         next event. For information on how to reach us, please click on the contact tab. \n    </p>\n    <ul>\n      <li>Motivational Speaking</li>\n      <li>Career Day</li>\n      <li>Community Partnerships</li>\n      <li>Public and Private Schools Partnerships</li>\n      <li>Mental Health Awareness Seminars</li>\n      <li>Mental Health Training & Workshops</li>\n      <li>Community & School Suicide Prevention Training</li>\n      <li>Community & School Crisis Intervention Training</li>\n    </ul>\n    <ion-slides [options]=\"slideOpts\">\n      <ion-slide>\n        <img src=\"/assets/outreach1.jpeg\" alt=\"\">\n      </ion-slide>\n      <ion-slide>\n        <img src=\"/assets/outreach2.jpeg\" alt=\"\">\n      </ion-slide>\n    </ion-slides>\n  </ion-content>"
+module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-back-button defaultHref=\"home\"></ion-back-button>\n      </ion-buttons>\n      <ion-title class=\"title-text\">Outreach</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <p>\n        Here at We Climb Counseling & Consulting, we are dedicated to serving\n         the community through various community outreach initiatives. We Climb \n         Counseling & Consulting would love to work with your organization on its \n         next event. For information on how to reach us, please click on the contact tab. \n    </p>\n    <ul>\n      <li>Motivational Speaking</li>\n      <li>Career Day</li>\n      <li>Community Partnerships</li>\n      <li>Public and Private Schools Partnerships</li>\n      <li>Mental Health Awareness Seminars</li>\n      <li>Mental Health Training & Workshops</li>\n      <li>Community & School Suicide Prevention Training</li>\n      <li>Community & School Crisis Intervention Training</li>\n    </ul>\n    <ion-slides pager=\"true\" mode=\"ios\" init=\"true\">\n      <ion-slide>\n        <img src=\"/assets/img/outreach1.jpeg\" alt=\"pic 1\">\n      </ion-slide>\n      <ion-slide>\n        <img src=\"/assets/img/outreach2.jpeg\" alt=\"pic 2\">\n      </ion-slide>\n    </ion-slides>\n  </ion-content>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/profile/profile.component.html":
+/*!**************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/profile/profile.component.html ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Profile</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <div>\n    <div class=\"personal-info-container\">\n      <h1>Personal Information</h1>\n      <p>Name: {{user?.firstName}} {{user?.lastName}}</p>\n      <p>Phone Number: {{user?.phone}}</p>\n      <p>Email: {{user?.email}}</p>\n      <p>Role: {{user?.role}}</p>\n    </div>\n    <div  class=\"appointment-container\">\n      <div class=\"user-container\" *ngIf=\"role == 'user'\">\n        <h1>My Appointment</h1>\n        <ion-item *ngFor=\"let appt of appts\">\n          <div>\n            <p>Name: {{appt?.name}}</p>\n            <p>Date: {{appt?.date}}</p>\n            <p>Duration: {{appt?.duration}}</p>\n            <p>Counselor: {{appt?.counselor}}</p>\n            <p>Price: {{appt?.price}}</p>\n            <p>Location: {{appt?.location}}</p>\n          </div>\n        </ion-item>\n      </div>\n\n      <!-- admin -->\n      <div class=\"admin-container\" *ngIf=\"role == 'admin'\">\n        <h1>My Schedule</h1>\n        <ion-list >\n          <ion-item *ngFor=\"let appt of appts\">\n            <div class=\"candidate-info-container\">\n              <p>Date: {{appt.date}}</p>\n              <p>Client Name: {{appt?.candidateFirstName}} {{appt?.candidateLastName}}</p>\n              <p>Phone: 666-666-6666</p>\n            </div>\n          </ion-item>\n        </ion-list>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"button-container\">\n    <ion-button *ngIf=\"role == 'admin'\" shape=\"round\" fill=\"outline\" (click)=\"setCalendar()\">Set Calendar</ion-button>\n    <!-- <ion-button *ngIf=\"role == 'admin'\" shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Add Admin</ion-button> -->\n    <ion-button shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Signout</ion-button>\n  </div>\n</ion-content>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/register/register.component.html":
+/*!****************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/register/register.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"header-container\">\n    <h1>Registration</h1>\n  </div>\n\n  <form [formGroup]=\"registerForm\">\n    <ion-item>\n      <ion-label position=\"floating\">First Name</ion-label>\n      <ion-input type=\"string\" placeholder=\"John\" formControlName=\"firstName\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"string\" placeholder=\"Doe\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Email</ion-label>\n      <ion-input type=\"email\" placeholder=\"example@gmail.com\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Phone</ion-label>\n      <ion-input type=\"tel\" placeholder=\"xxx-xxx-xxxx\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Confirm Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"confirmPassword\"></ion-input>\n    </ion-item>\n    <ion-button type=\"submit\" expand=\"block\" fill=\"solid\" [disabled]=\"!passwordMatch()\" (click)=\"registerUser()\">Submit</ion-button>\n    <ion-button type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n  </form>\n</div>\n"
 
 /***/ }),
 
@@ -632,6 +973,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _appointment_appointment_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./appointment/appointment.component */ "./src/app/appointment/appointment.component.ts");
 /* harmony import */ var _forms_forms_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./forms/forms.component */ "./src/app/forms/forms.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/profile/profile.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+/* harmony import */ var _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./calendar/calendar.component */ "./src/app/calendar/calendar.component.ts");
+
+
+
 
 
 
@@ -652,6 +999,14 @@ const routes = [
     {
         path: 'login',
         component: _login_login_component__WEBPACK_IMPORTED_MODULE_11__["LoginComponent"]
+    },
+    {
+        path: 'register',
+        component: _register_register_component__WEBPACK_IMPORTED_MODULE_13__["RegisterComponent"]
+    },
+    {
+        path: "calendar",
+        component: _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_14__["CalendarComponent"]
     },
     {
         path: 'services',
@@ -702,6 +1057,10 @@ const routes = [
     {
         path: 'forms',
         component: _forms_forms_component__WEBPACK_IMPORTED_MODULE_10__["FormsComponent"]
+    },
+    {
+        path: 'profile',
+        component: _profile_profile_component__WEBPACK_IMPORTED_MODULE_12__["ProfileComponent"]
     },
     {
         path: '',
@@ -839,7 +1198,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
 /* harmony import */ var _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../services/auth-guard.service */ "./src/services/auth-guard.service.ts");
-/* harmony import */ var aws_amplify_angular__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! aws-amplify-angular */ "./node_modules/aws-amplify-angular/dist/index.js");
+/* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./profile/profile.component */ "./src/app/profile/profile.component.ts");
+/* harmony import */ var _services_login_service__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../services/login.service */ "./src/services/login.service.ts");
+/* harmony import */ var aws_amplify_angular__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! aws-amplify-angular */ "./node_modules/aws-amplify-angular/dist/index.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var src_services_auth_service__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! src/services/auth.service */ "./src/services/auth.service.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+/* harmony import */ var _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./calendar/calendar.component */ "./src/app/calendar/calendar.component.ts");
+/* harmony import */ var _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./forgot-password/forgot-password.component */ "./src/app/forgot-password/forgot-password.component.ts");
+/* harmony import */ var _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./forgot-username/forgot-username.component */ "./src/app/forgot-username/forgot-username.component.ts");
+/* harmony import */ var src_services_form_service__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! src/services/form.service */ "./src/services/form.service.ts");
+
+
+
+
+
+
+
+
+
 
 
 
@@ -884,10 +1261,17 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _appointment_appointment_component__WEBPACK_IMPORTED_MODULE_21__["AppointmentComponent"],
             _forms_forms_component__WEBPACK_IMPORTED_MODULE_22__["FormsComponent"],
             _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"],
-            _login_login_component__WEBPACK_IMPORTED_MODULE_26__["LoginComponent"]
+            _login_login_component__WEBPACK_IMPORTED_MODULE_26__["LoginComponent"],
+            _profile_profile_component__WEBPACK_IMPORTED_MODULE_28__["ProfileComponent"],
+            _register_register_component__WEBPACK_IMPORTED_MODULE_33__["RegisterComponent"],
+            _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_34__["CalendarComponent"],
+            _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_35__["ForgotPasswordComponent"],
+            _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_36__["ForgotUsernameComponent"]
         ],
         entryComponents: [
-            _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"]
+            _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"],
+            _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_35__["ForgotPasswordComponent"],
+            _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_36__["ForgotUsernameComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
@@ -899,16 +1283,21 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _home_adolescent_adolescent_module__WEBPACK_IMPORTED_MODULE_15__["AdolescentModule"],
             _home_individual_indivudal_module__WEBPACK_IMPORTED_MODULE_16__["IndividualModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_25__["HttpClientModule"],
-            aws_amplify_angular__WEBPACK_IMPORTED_MODULE_28__["AmplifyAngularModule"],
-            aws_amplify_angular__WEBPACK_IMPORTED_MODULE_28__["AmplifyIonicModule"],
+            aws_amplify_angular__WEBPACK_IMPORTED_MODULE_30__["AmplifyAngularModule"],
+            aws_amplify_angular__WEBPACK_IMPORTED_MODULE_30__["AmplifyIonicModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_31__["FormsModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_31__["ReactiveFormsModule"]
         ],
         providers: [
             _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"],
             _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["SplashScreen"],
             _services_menu_service__WEBPACK_IMPORTED_MODULE_12__["MenuService"],
             src_services_appointment_service__WEBPACK_IMPORTED_MODULE_24__["AppointmentService"],
-            aws_amplify_angular__WEBPACK_IMPORTED_MODULE_28__["AmplifyService"],
+            aws_amplify_angular__WEBPACK_IMPORTED_MODULE_30__["AmplifyService"],
             _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_27__["AuthGuardService"],
+            _services_login_service__WEBPACK_IMPORTED_MODULE_29__["LoginService"],
+            src_services_auth_service__WEBPACK_IMPORTED_MODULE_32__["AuthService"],
+            src_services_form_service__WEBPACK_IMPORTED_MODULE_37__["FormService"],
             // File,
             // FileTransfer,
             { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }
@@ -928,7 +1317,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "img {\n  width: 70px;\n}\n\n.text {\n  padding: 10px;\n}\n\np {\n  padding: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvYXBwb2ludG1lbnQvYXBwb2ludG1lbnQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2FwcG9pbnRtZW50L2FwcG9pbnRtZW50LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0ksV0FBQTtBQ0RKOztBRElBO0VBQ0ksYUFBQTtBQ0RKOztBRElBO0VBQ0ksWUFBQTtBQ0RKIiwiZmlsZSI6InNyYy9hcHAvYXBwb2ludG1lbnQvYXBwb2ludG1lbnQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cbmltZyB7XG4gICAgd2lkdGg6IDcwcHg7XG59XG5cbi50ZXh0IHtcbiAgICBwYWRkaW5nOiAxMHB4O1xufVxuXG5wIHtcbiAgICBwYWRkaW5nOiA1cHg7XG59IiwiaW1nIHtcbiAgd2lkdGg6IDcwcHg7XG59XG5cbi50ZXh0IHtcbiAgcGFkZGluZzogMTBweDtcbn1cblxucCB7XG4gIHBhZGRpbmc6IDVweDtcbn0iXX0= */"
+module.exports = "img {\n  width: 70px;\n}\n\n.text {\n  padding: 10px;\n}\n\np {\n  padding: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9hcHBvaW50bWVudC9hcHBvaW50bWVudC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYXBwb2ludG1lbnQvYXBwb2ludG1lbnQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxXQUFBO0FDREo7O0FESUE7RUFDSSxhQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9hcHBvaW50bWVudC9hcHBvaW50bWVudC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuaW1nIHtcbiAgICB3aWR0aDogNzBweDtcbn1cblxuLnRleHQge1xuICAgIHBhZGRpbmc6IDEwcHg7XG59XG5cbnAge1xuICAgIHBhZGRpbmc6IDVweDtcbn0iLCJpbWcge1xuICB3aWR0aDogNzBweDtcbn1cblxuLnRleHQge1xuICBwYWRkaW5nOiAxMHB4O1xufVxuXG5wIHtcbiAgcGFkZGluZzogNXB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -967,20 +1356,19 @@ let AppointmentComponent = class AppointmentComponent {
                 mode: 'ios',
                 backdropDismiss: true,
                 componentProps: {
-                    data: data.Items,
-                    count: data.Count
+                    data: data,
                 }
             });
             return yield this.modal.present();
         });
     }
-    bookAppointment(appointment) {
+    selectAppointment(appointment) {
         //gets schedule and opend modal
         switch (appointment) {
             case 'll-intake':
                 this.appointmentService.getLicensedLevelFirstSession()
                     .subscribe(res => {
-                    this.presentModal(res);
+                    this.presentModal(this.parseAppointments(res));
                 }, err => {
                     this.handleError(err, 'Error retrieving schedule');
                 });
@@ -988,7 +1376,7 @@ let AppointmentComponent = class AppointmentComponent {
             case 'll-insurance':
                 this.appointmentService.getLicensedLevelInsurance()
                     .subscribe(res => {
-                    this.presentModal(res);
+                    this.presentModal(this.parseAppointments(res));
                 }, err => {
                     this.handleError(err, 'Error retrieving schedule');
                 });
@@ -996,7 +1384,7 @@ let AppointmentComponent = class AppointmentComponent {
             case 'll-selfpay':
                 this.appointmentService.getLicensedLevelSelfPay()
                     .subscribe(res => {
-                    this.presentModal(res);
+                    this.presentModal(this.parseAppointments(res));
                 }, err => {
                     this.handleError(err, 'Error retrieving schedule');
                 });
@@ -1004,7 +1392,7 @@ let AppointmentComponent = class AppointmentComponent {
             case 'ml-intake':
                 this.appointmentService.getMastersLevelIntake()
                     .subscribe(res => {
-                    this.presentModal(res);
+                    this.presentModal(this.parseAppointments(res));
                 }, err => {
                     this.handleError(err, 'Error retrieving schedule');
                 });
@@ -1012,7 +1400,7 @@ let AppointmentComponent = class AppointmentComponent {
             case 'ml-selfpay':
                 this.appointmentService.getMastersLevelSelfPay()
                     .subscribe(res => {
-                    this.presentModal(res);
+                    this.presentModal(this.parseAppointments(res));
                 }, err => {
                     this.handleError(err, 'Error retrieving schedule');
                 });
@@ -1020,7 +1408,7 @@ let AppointmentComponent = class AppointmentComponent {
             case 'youth':
                 this.appointmentService.getAdolescentGroupSelfPay()
                     .subscribe(res => {
-                    this.presentModal(res);
+                    this.presentModal(this.parseAppointments(res));
                 }, err => {
                     this.handleError(err, 'Error retrieving schedule');
                 });
@@ -1030,6 +1418,24 @@ let AppointmentComponent = class AppointmentComponent {
     handleError(err, errMessage) {
         console.log(err + err.message);
         alert(errMessage);
+    }
+    parseAppointments(res) {
+        var appts = [];
+        res.Items.forEach(x => {
+            // create appt obj
+            var appt = {
+                name: x.Name.S,
+                date: x.Date.S,
+                duration: x.Duration.S,
+                price: x.Price.S,
+                location: x.Location.S,
+                counselor: x.Counselor.S,
+                type: x.Type.S
+            };
+            //add to array
+            appts.push(appt);
+        });
+        return appts;
     }
 };
 AppointmentComponent.ctorParameters = () => [
@@ -1057,7 +1463,7 @@ AppointmentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".err-content {\n  text-align: center;\n  padding: 5px;\n}\n\n.btn-container {\n  text-align: center;\n}\n\nion-button {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvYXBwdC1tb2RhbC9hcHB0LW1vZGFsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hcHB0LW1vZGFsL2FwcHQtbW9kYWwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxrQkFBQTtFQUNBLFlBQUE7QUNESjs7QURJQTtFQUNJLGtCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9hcHB0LW1vZGFsL2FwcHQtbW9kYWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcblxuLmVyci1jb250ZW50IHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgcGFkZGluZzogNXB4O1xufVxuXG4uYnRuLWNvbnRhaW5lciB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyOztcbn1cblxuaW9uLWJ1dHRvbiB7XG4gICAgY29sb3I6IGJsYWNrO1xufSIsIi5lcnItY29udGVudCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcGFkZGluZzogNXB4O1xufVxuXG4uYnRuLWNvbnRhaW5lciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuaW9uLWJ1dHRvbiB7XG4gIGNvbG9yOiBibGFjaztcbn0iXX0= */"
+module.exports = ".err-content {\n  text-align: center;\n  padding: 5px;\n}\n\n.btn-container {\n  text-align: center;\n}\n\nion-button {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9hcHB0LW1vZGFsL2FwcHQtbW9kYWwuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2FwcHQtbW9kYWwvYXBwdC1tb2RhbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLGtCQUFBO0VBQ0EsWUFBQTtBQ0RKOztBRElBO0VBQ0ksa0JBQUE7QUNESjs7QURJQTtFQUNJLFlBQUE7QUNESiIsImZpbGUiOiJzcmMvYXBwL2FwcHQtbW9kYWwvYXBwdC1tb2RhbC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuXG4uZXJyLWNvbnRlbnQge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBwYWRkaW5nOiA1cHg7XG59XG5cbi5idG4tY29udGFpbmVyIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7O1xufVxuXG5pb24tYnV0dG9uIHtcbiAgICBjb2xvcjogYmxhY2s7XG59IiwiLmVyci1jb250ZW50IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBwYWRkaW5nOiA1cHg7XG59XG5cbi5idG4tY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5pb24tYnV0dG9uIHtcbiAgY29sb3I6IGJsYWNrO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -1074,29 +1480,53 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
+/* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
+
+
 
 
 
 
 
 let ApptModalComponent = class ApptModalComponent {
-    constructor(modalController, actionSheetController, toastController) {
+    constructor(modalController, actionSheetController, toastController, userService, apptService) {
         this.modalController = modalController;
         this.actionSheetController = actionSheetController;
         this.toastController = toastController;
+        this.userService = userService;
+        this.apptService = apptService;
         this.noData = false;
         this.errMessage = "No schedule available";
     }
     ngOnInit() {
-        if (this.count == 0) {
-            this.noData = true;
-        }
-        console.log(this.data);
+        this.noAppointments(this.data);
+        this.user = this.userService.getUserInfo();
     }
     dismiss() {
         this.modalController.dismiss();
     }
-    book() {
+    bookAppointment(appt) {
+        var booking = {
+            name: appt.name,
+            date: appt.date,
+            duration: appt.duration,
+            price: appt.price,
+            location: appt.location,
+            counselor: appt.counselor,
+            candidateFirstName: this.user.firstName,
+            candidateLastName: this.user.lastName,
+            candidateEmail: this.user.email,
+            type: appt.type,
+            table: this.determineTable(appt)
+        };
+        this.apptService.bookAppointment(booking)
+            .subscribe(res => {
+        }, err => {
+            console.log("Error booking appointment");
+        });
+    }
+    confirm(appt) {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
             const actionSheet = yield this.actionSheetController.create({
                 header: 'Are you sure you want to book this appointment?',
@@ -1106,6 +1536,8 @@ let ApptModalComponent = class ApptModalComponent {
                         icon: 'checkmark',
                         handler: () => {
                             console.log('Appointment booked');
+                            this.bookAppointment(appt);
+                            console.log(appt);
                             this.presentToast();
                         }
                     },
@@ -1131,11 +1563,33 @@ let ApptModalComponent = class ApptModalComponent {
             this.modalController.dismiss();
         });
     }
+    determineTable(appt) {
+        var tableName = "";
+        switch (appt.name) {
+            case "Licensed Level Clinician":
+                tableName = "Licensed_Appointments";
+                break;
+            case "Masters Level Clinician":
+                tableName = "Masters_Appointments";
+                break;
+            case "Adolescent Group Counseling":
+                tableName = "Adolescent";
+                break;
+        }
+        return tableName;
+    }
+    noAppointments(data) {
+        if (data.length == 0) {
+            this.noData = true;
+        }
+    }
 };
 ApptModalComponent.ctorParameters = () => [
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"] },
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ActionSheetController"] },
-    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"] }
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"] },
+    { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
+    { type: src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"] }
 ];
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
@@ -1153,8 +1607,127 @@ ApptModalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"],
         _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ActionSheetController"],
-        _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"]])
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"],
+        src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"],
+        src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"]])
 ], ApptModalComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/calendar/calendar.component.scss":
+/*!**************************************************!*\
+  !*** ./src/app/calendar/calendar.component.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhbGVuZGFyL2NhbGVuZGFyLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/calendar/calendar.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/calendar/calendar.component.ts ***!
+  \************************************************/
+/*! exports provided: CalendarComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarComponent", function() { return CalendarComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
+/* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
+
+
+
+
+
+let CalendarComponent = class CalendarComponent {
+    constructor(formBuilder, userService, apptService, router) {
+        this.formBuilder = formBuilder;
+        this.userService = userService;
+        this.apptService = apptService;
+        this.router = router;
+        this.location = "Bldg. A. Suites 122-124 2175 Highpoint Road, Snellville, GA, USA";
+        this.date = "";
+    }
+    ngOnInit() {
+        this.calendarForm = this.formBuilder.group({
+            name: "",
+            type: "",
+            duration: "",
+            price: "",
+            location: "",
+            date: "",
+        });
+    }
+    addToCalendar() {
+        var appts = [];
+        var schedule = {
+            name: this.calendarForm.get("name").value,
+            date: this.formDate(this.calendarForm.get("date").value),
+            duration: this.calendarForm.get("duration").value,
+            price: this.calendarForm.get("price").value,
+            location: this.calendarForm.get("location").value,
+            counselor: this.userService.getUserInfo().firstName + " " + this.userService.getUserInfo().lastName,
+            type: this.calendarForm.get("type").value,
+        };
+        appts.push(schedule);
+        switch (schedule.name) {
+            case "Licensed Level Clinician":
+                this.apptService.setLicenseLevelSchedule(appts)
+                    .subscribe(res => {
+                    alert("Schedule added");
+                }, err => {
+                    alert("error adding schedule");
+                });
+                break;
+            case "Master Level Clinician":
+                this.apptService.setMastersLevelSchedule(appts)
+                    .subscribe(res => {
+                    alert("Schedule added");
+                }, err => {
+                    alert("error adding schedule");
+                });
+        }
+        console.log(schedule);
+    }
+    formDate(date) {
+        let newDate = moment__WEBPACK_IMPORTED_MODULE_5__(date).format('LLL');
+        console.log(newDate);
+        return newDate;
+    }
+    cancel() {
+        this.router.navigateByUrl("profile");
+    }
+};
+CalendarComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+    { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
+    { type: src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] }
+];
+CalendarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-calendar',
+        template: __webpack_require__(/*! raw-loader!./calendar.component.html */ "./node_modules/raw-loader/index.js!./src/app/calendar/calendar.component.html"),
+        styles: [__webpack_require__(/*! ./calendar.component.scss */ "./src/app/calendar/calendar.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
+        src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"],
+        src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"],
+        _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]])
+], CalendarComponent);
 
 
 
@@ -1167,7 +1740,7 @@ ApptModalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "p {\n  padding: 10px;\n}\n\nh1 {\n  padding: 5px;\n}\n\nh2 {\n  padding: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvZmVlcy9mZWVzLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9mZWVzL2ZlZXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxhQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9mZWVzL2ZlZXMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cbnAge1xuICAgIHBhZGRpbmc6IDEwcHg7XG59XG5cbmgxIHtcbiAgICBwYWRkaW5nOiA1cHg7XG59XG5cbmgyIHtcbiAgICBwYWRkaW5nOiA1cHg7XG59IiwicCB7XG4gIHBhZGRpbmc6IDEwcHg7XG59XG5cbmgxIHtcbiAgcGFkZGluZzogNXB4O1xufVxuXG5oMiB7XG4gIHBhZGRpbmc6IDVweDtcbn0iXX0= */"
+module.exports = "p {\n  padding: 10px;\n}\n\nh1 {\n  padding: 5px;\n}\n\nh2 {\n  padding: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9mZWVzL2ZlZXMuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2ZlZXMvZmVlcy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLGFBQUE7QUNESjs7QURJQTtFQUNJLFlBQUE7QUNESjs7QURJQTtFQUNJLFlBQUE7QUNESiIsImZpbGUiOiJzcmMvYXBwL2ZlZXMvZmVlcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxucCB7XG4gICAgcGFkZGluZzogMTBweDtcbn1cblxuaDEge1xuICAgIHBhZGRpbmc6IDVweDtcbn1cblxuaDIge1xuICAgIHBhZGRpbmc6IDVweDtcbn0iLCJwIHtcbiAgcGFkZGluZzogMTBweDtcbn1cblxuaDEge1xuICBwYWRkaW5nOiA1cHg7XG59XG5cbmgyIHtcbiAgcGFkZGluZzogNXB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -1202,6 +1775,217 @@ FeesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/forgot-password/forgot-password.component.scss":
+/*!****************************************************************!*\
+  !*** ./src/app/forgot-password/forgot-password.component.scss ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".header-container {\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9mb3Jnb3QtcGFzc3dvcmQvZm9yZ290LXBhc3N3b3JkLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9mb3Jnb3QtcGFzc3dvcmQvZm9yZ290LXBhc3N3b3JkLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL2ZvcmdvdC1wYXNzd29yZC9mb3Jnb3QtcGFzc3dvcmQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaGVhZGVyLWNvbnRhaW5lciB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufSIsIi5oZWFkZXItY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/forgot-password/forgot-password.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/forgot-password/forgot-password.component.ts ***!
+  \**************************************************************/
+/*! exports provided: ForgotPasswordComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotPasswordComponent", function() { return ForgotPasswordComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
+
+
+
+
+
+let ForgotPasswordComponent = class ForgotPasswordComponent {
+    constructor(formBuilder, modalController, userService, toastController, router) {
+        this.formBuilder = formBuilder;
+        this.modalController = modalController;
+        this.userService = userService;
+        this.toastController = toastController;
+        this.router = router;
+    }
+    ngOnInit() {
+        this.passwordForm = this.formBuilder.group({
+            email: "",
+            lastName: "",
+            password: ""
+        });
+    }
+    forgotPassword() {
+        var body = {
+            email: this.passwordForm.get("email").value,
+            lastName: this.passwordForm.get("lastName").value,
+            password: this.passwordForm.get("password").value
+        };
+        this.userService.forgotPassword(body)
+            .subscribe(res => {
+            this.presentToast();
+            this.modalController.dismiss();
+        }, err => {
+            alert("Error");
+        });
+    }
+    cancel() {
+        this.modalController.dismiss();
+    }
+    presentToast() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const toast = yield this.toastController.create({
+                message: 'Password has been changed.',
+                duration: 2000
+            });
+            toast.present();
+        });
+    }
+};
+ForgotPasswordComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"] },
+    { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_4__["UserService"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ToastController"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"] }
+];
+ForgotPasswordComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-forgot-password',
+        template: __webpack_require__(/*! raw-loader!./forgot-password.component.html */ "./node_modules/raw-loader/index.js!./src/app/forgot-password/forgot-password.component.html"),
+        styles: [__webpack_require__(/*! ./forgot-password.component.scss */ "./src/app/forgot-password/forgot-password.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"],
+        src_services_user_service__WEBPACK_IMPORTED_MODULE_4__["UserService"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ToastController"],
+        _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]])
+], ForgotPasswordComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/forgot-username/forgot-username.component.scss":
+/*!****************************************************************!*\
+  !*** ./src/app/forgot-username/forgot-username.component.scss ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".header-container {\n  text-align: center;\n}\n\n.username-container {\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9mb3Jnb3QtdXNlcm5hbWUvZm9yZ290LXVzZXJuYW1lLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9mb3Jnb3QtdXNlcm5hbWUvZm9yZ290LXVzZXJuYW1lLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQUE7QUNDSjs7QURFQTtFQUNJLGtCQUFBO0FDQ0oiLCJmaWxlIjoic3JjL2FwcC9mb3Jnb3QtdXNlcm5hbWUvZm9yZ290LXVzZXJuYW1lLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmhlYWRlci1jb250YWluZXIge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLnVzZXJuYW1lLWNvbnRhaW5lciB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufSIsIi5oZWFkZXItY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4udXNlcm5hbWUtY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/forgot-username/forgot-username.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/forgot-username/forgot-username.component.ts ***!
+  \**************************************************************/
+/*! exports provided: ForgotUsernameComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotUsernameComponent", function() { return ForgotUsernameComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+
+
+
+
+
+
+let ForgotUsernameComponent = class ForgotUsernameComponent {
+    constructor(formBuilder, userService, toastController, loadingController, modalController) {
+        this.formBuilder = formBuilder;
+        this.userService = userService;
+        this.toastController = toastController;
+        this.loadingController = loadingController;
+        this.modalController = modalController;
+        this.username = "";
+        this.loaded = false;
+    }
+    ngOnInit() {
+        this.usernameForm = this.formBuilder.group({
+            phone: "",
+            lastName: "",
+        });
+    }
+    forgotUsername() {
+        this.presentLoading();
+        var phone = this.usernameForm.get("phone").value;
+        var lastName = this.usernameForm.get("lastName").value;
+        this.userService.forgotUserName(lastName, phone)
+            .subscribe(res => {
+            this.username = res;
+            this.loadingController.dismiss;
+        }, err => {
+            this.presentErrorToast();
+        });
+    }
+    cancel() {
+        this.modalController.dismiss();
+    }
+    presentErrorToast() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const toast = yield this.toastController.create({
+                message: 'Error getting username',
+                duration: 2000,
+                color: "warning"
+            });
+            toast.present();
+        });
+    }
+    presentLoading() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const loading = yield this.loadingController.create({
+                message: 'Please wait...',
+                duration: 2000,
+                mode: "ios"
+            });
+            yield loading.present();
+            const { role, data } = yield loading.onDidDismiss();
+            this.loaded = true;
+            console.log('Loading dismissed!');
+        });
+    }
+};
+ForgotUsernameComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+    { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ModalController"] }
+];
+ForgotUsernameComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-forgot-username',
+        template: __webpack_require__(/*! raw-loader!./forgot-username.component.html */ "./node_modules/raw-loader/index.js!./src/app/forgot-username/forgot-username.component.html"),
+        styles: [__webpack_require__(/*! ./forgot-username.component.scss */ "./src/app/forgot-username/forgot-username.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
+        src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ModalController"]])
+], ForgotUsernameComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/forms/forms.component.scss":
 /*!********************************************!*\
   !*** ./src/app/forms/forms.component.scss ***!
@@ -1209,7 +1993,7 @@ FeesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "img {\n  width: 70px;\n}\n\n.text {\n  padding: 10px;\n}\n\n.alert {\n  color: red;\n}\n\na {\n  color: black;\n  cursor: pointer;\n}\n\np {\n  padding: 10px;\n}\n\nh1 {\n  text-align: center;\n}\n\nh2 {\n  padding: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvZm9ybXMvZm9ybXMuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2Zvcm1zL2Zvcm1zLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0ksV0FBQTtBQ0RKOztBRElBO0VBQ0ksYUFBQTtBQ0RKOztBRElBO0VBQ0ksVUFBQTtBQ0RKOztBRElBO0VBQ0ksWUFBQTtFQUNBLGVBQUE7QUNESjs7QURJQTtFQUNJLGFBQUE7QUNESjs7QURJQTtFQUNJLGtCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9mb3Jtcy9mb3Jtcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuaW1nIHtcbiAgICB3aWR0aDogNzBweDtcbn1cblxuLnRleHQge1xuICAgIHBhZGRpbmc6IDEwcHg7XG59XG5cbi5hbGVydCB7XG4gICAgY29sb3I6IHJlZDtcbn1cblxuYSB7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cblxucCB7XG4gICAgcGFkZGluZzogMTBweDtcbn1cblxuaDEge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuaDIge1xuICAgIHBhZGRpbmc6IDVweDtcbn0iLCJpbWcge1xuICB3aWR0aDogNzBweDtcbn1cblxuLnRleHQge1xuICBwYWRkaW5nOiAxMHB4O1xufVxuXG4uYWxlcnQge1xuICBjb2xvcjogcmVkO1xufVxuXG5hIHtcbiAgY29sb3I6IGJsYWNrO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbnAge1xuICBwYWRkaW5nOiAxMHB4O1xufVxuXG5oMSB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuaDIge1xuICBwYWRkaW5nOiA1cHg7XG59Il19 */"
+module.exports = "img {\n  width: 70px;\n}\n\n.text {\n  padding: 10px;\n}\n\n.alert {\n  color: red;\n}\n\na {\n  color: black;\n  text-decoration: underline;\n}\n\np {\n  padding: 10px;\n}\n\nh1 {\n  text-align: center;\n}\n\nh2 {\n  padding: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9mb3Jtcy9mb3Jtcy5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvZm9ybXMvZm9ybXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxXQUFBO0FDREo7O0FESUE7RUFDSSxhQUFBO0FDREo7O0FESUE7RUFDSSxVQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0VBQ0EsMEJBQUE7QUNESjs7QURJQTtFQUNJLGFBQUE7QUNESjs7QURJQTtFQUNJLGtCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9mb3Jtcy9mb3Jtcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuaW1nIHtcbiAgICB3aWR0aDogNzBweDtcbn1cblxuLnRleHQge1xuICAgIHBhZGRpbmc6IDEwcHg7XG59XG5cbi5hbGVydCB7XG4gICAgY29sb3I6IHJlZDtcbn1cblxuYSB7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuXG5wIHtcbiAgICBwYWRkaW5nOiAxMHB4O1xufVxuXG5oMSB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5oMiB7XG4gICAgcGFkZGluZzogNXB4O1xufSIsImltZyB7XG4gIHdpZHRoOiA3MHB4O1xufVxuXG4udGV4dCB7XG4gIHBhZGRpbmc6IDEwcHg7XG59XG5cbi5hbGVydCB7XG4gIGNvbG9yOiByZWQ7XG59XG5cbmEge1xuICBjb2xvcjogYmxhY2s7XG4gIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuXG5wIHtcbiAgcGFkZGluZzogMTBweDtcbn1cblxuaDEge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbmgyIHtcbiAgcGFkZGluZzogNXB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -1225,21 +2009,66 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormsComponent", function() { return FormsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_services_form_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/services/form.service */ "./src/services/form.service.ts");
+
 
 
 let FormsComponent = class FormsComponent {
-    constructor() {
+    constructor(formService) {
+        this.formService = formService;
         this.adultIntakeUrl = 'https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3408979cc10a44ce9a67d840a7a89a85.pdf';
     }
     ngOnInit() { }
+    openAdultIntake() {
+        window.open(this.formService.getAdultIntakeForm(), "_blank");
+    }
+    openNewClient() {
+        window.open(this.formService.getNewClientForm(), "_blank");
+    }
+    openChild() {
+        window.open(this.formService.getChildIntakeForm(), "_blank");
+    }
+    openConsentAgreement() {
+        window.open(this.formService.getConsentAgreementForm(), "_blank");
+    }
+    openCoupleIntake() {
+        window.open(this.formService.getCoupleIntakeForm(), "_blank");
+    }
+    openReleaseInfo() {
+        window.open(this.formService.getatriForm(), "_blank");
+    }
+    openCreditCard() {
+        window.open(this.formService.getCreditCardForm(), "_blank");
+    }
+    openCommunicationAgreement() {
+        window.open(this.formService.getCommunicationAgreementForm(), "_blank");
+    }
+    openLateCancellation() {
+        window.open(this.formService.getLateAppointmentForm(), "_blank");
+    }
+    openHippa() {
+        window.open(this.formService.getHippaForm(), "_blank");
+    }
+    openSocialMedia() {
+        window.open(this.formService.getSocialMediaForm(), "_blank");
+    }
+    openExchangeConfidential() {
+        window.open(this.formService.getAteciForm(), "_blank");
+    }
+    openSchoolColab() {
+        window.open(this.formService.getSchoolColabForm(), "_blank");
+    }
 };
+FormsComponent.ctorParameters = () => [
+    { type: src_services_form_service__WEBPACK_IMPORTED_MODULE_2__["FormService"] }
+];
 FormsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-forms',
         template: __webpack_require__(/*! raw-loader!./forms.component.html */ "./node_modules/raw-loader/index.js!./src/app/forms/forms.component.html"),
         styles: [__webpack_require__(/*! ./forms.component.scss */ "./src/app/forms/forms.component.scss"), __webpack_require__(/*! ../../theme/font.scss */ "./src/theme/font.scss")]
     }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_services_form_service__WEBPACK_IMPORTED_MODULE_2__["FormService"]])
 ], FormsComponent);
 
 
@@ -1253,7 +2082,7 @@ FormsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header-text {\n  text-align: center;\n}\n\n.content-text {\n  padding: 10px;\n  text-align: center;\n}\n\nion-back-button {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvaG9tZS9hZG9sZXNjZW50L2Fkb2xlc2NlbnQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2hvbWUvYWRvbGVzY2VudC9hZG9sZXNjZW50LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0ksa0JBQUE7QUNESjs7QURJQTtFQUNJLGFBQUE7RUFDQSxrQkFBQTtBQ0RKOztBRElBO0VBQ0ksWUFBQTtBQ0RKIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9hZG9sZXNjZW50L2Fkb2xlc2NlbnQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cbi5oZWFkZXItdGV4dHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5jb250ZW50LXRleHQge1xuICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5pb24tYmFjay1idXR0b24ge1xuICAgIGNvbG9yOiBjb2xvcihkYXJrKVxufVxuIiwiLmhlYWRlci10ZXh0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uY29udGVudC10ZXh0IHtcbiAgcGFkZGluZzogMTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5pb24tYmFjay1idXR0b24ge1xuICBjb2xvcjogYmxhY2s7XG59Il19 */"
+module.exports = ".header-text {\n  text-align: center;\n}\n\n.content-text {\n  padding: 10px;\n  text-align: center;\n}\n\nion-back-button {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9ob21lL2Fkb2xlc2NlbnQvYWRvbGVzY2VudC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvaG9tZS9hZG9sZXNjZW50L2Fkb2xlc2NlbnQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxrQkFBQTtBQ0RKOztBRElBO0VBQ0ksYUFBQTtFQUNBLGtCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9ob21lL2Fkb2xlc2NlbnQvYWRvbGVzY2VudC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuLmhlYWRlci10ZXh0e1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmNvbnRlbnQtdGV4dCB7XG4gICAgcGFkZGluZzogMTBweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbmlvbi1iYWNrLWJ1dHRvbiB7XG4gICAgY29sb3I6IGNvbG9yKGRhcmspXG59XG4iLCIuaGVhZGVyLXRleHQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5jb250ZW50LXRleHQge1xuICBwYWRkaW5nOiAxMHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbmlvbi1iYWNrLWJ1dHRvbiB7XG4gIGNvbG9yOiBibGFjaztcbn0iXX0= */"
 
 /***/ }),
 
@@ -1334,7 +2163,7 @@ AdolescentModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header-text {\n  text-align: center;\n}\n\n.content-text {\n  padding: 10px;\n  text-align: center;\n}\n\nion-back-button {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvaG9tZS9jYXJlZXIvY2FyZWVyLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9ob21lL2NhcmVlci9jYXJlZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxrQkFBQTtBQ0RKOztBRElBO0VBQ0ksYUFBQTtFQUNBLGtCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9ob21lL2NhcmVlci9jYXJlZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cbi5oZWFkZXItdGV4dHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5jb250ZW50LXRleHQge1xuICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5pb24tYmFjay1idXR0b24ge1xuICAgIGNvbG9yOiBjb2xvcihkYXJrKTtcbn0iLCIuaGVhZGVyLXRleHQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5jb250ZW50LXRleHQge1xuICBwYWRkaW5nOiAxMHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbmlvbi1iYWNrLWJ1dHRvbiB7XG4gIGNvbG9yOiBibGFjaztcbn0iXX0= */"
+module.exports = ".header-text {\n  text-align: center;\n}\n\n.content-text {\n  padding: 10px;\n  text-align: center;\n}\n\nion-back-button {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9ob21lL2NhcmVlci9jYXJlZXIuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2hvbWUvY2FyZWVyL2NhcmVlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLGtCQUFBO0FDREo7O0FESUE7RUFDSSxhQUFBO0VBQ0Esa0JBQUE7QUNESjs7QURJQTtFQUNJLFlBQUE7QUNESiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvY2FyZWVyL2NhcmVlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuLmhlYWRlci10ZXh0e1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmNvbnRlbnQtdGV4dCB7XG4gICAgcGFkZGluZzogMTBweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbmlvbi1iYWNrLWJ1dHRvbiB7XG4gICAgY29sb3I6IGNvbG9yKGRhcmspO1xufSIsIi5oZWFkZXItdGV4dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmNvbnRlbnQtdGV4dCB7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuaW9uLWJhY2stYnV0dG9uIHtcbiAgY29sb3I6IGJsYWNrO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -1415,7 +2244,7 @@ CareerModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header-text {\n  text-align: center;\n}\n\n.content-text {\n  padding: 10px;\n  text-align: center;\n}\n\nion-back-button {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvaG9tZS9mYW1pbHkvZmFtaWx5LmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9ob21lL2ZhbWlseS9mYW1pbHkuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxrQkFBQTtBQ0RKOztBRElBO0VBQ0ksYUFBQTtFQUNBLGtCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9ob21lL2ZhbWlseS9mYW1pbHkuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cbi5oZWFkZXItdGV4dHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5jb250ZW50LXRleHQge1xuICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5pb24tYmFjay1idXR0b24ge1xuICAgIGNvbG9yOiBjb2xvcihkYXJrKVxufSIsIi5oZWFkZXItdGV4dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmNvbnRlbnQtdGV4dCB7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuaW9uLWJhY2stYnV0dG9uIHtcbiAgY29sb3I6IGJsYWNrO1xufSJdfQ== */"
+module.exports = ".header-text {\n  text-align: center;\n}\n\n.content-text {\n  padding: 10px;\n  text-align: center;\n}\n\nion-back-button {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9ob21lL2ZhbWlseS9mYW1pbHkuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2hvbWUvZmFtaWx5L2ZhbWlseS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLGtCQUFBO0FDREo7O0FESUE7RUFDSSxhQUFBO0VBQ0Esa0JBQUE7QUNESjs7QURJQTtFQUNJLFlBQUE7QUNESiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvZmFtaWx5L2ZhbWlseS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuLmhlYWRlci10ZXh0e1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmNvbnRlbnQtdGV4dCB7XG4gICAgcGFkZGluZzogMTBweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbmlvbi1iYWNrLWJ1dHRvbiB7XG4gICAgY29sb3I6IGNvbG9yKGRhcmspXG59IiwiLmhlYWRlci10ZXh0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uY29udGVudC10ZXh0IHtcbiAgcGFkZGluZzogMTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5pb24tYmFjay1idXR0b24ge1xuICBjb2xvcjogYmxhY2s7XG59Il19 */"
 
 /***/ }),
 
@@ -1499,7 +2328,7 @@ FamilyModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".welcome-card img {\n  max-height: 35vh;\n  overflow: hidden;\n}\n\n.card {\n  height: 75%;\n}\n\n.primary {\n  background-color: black;\n}\n\n.text {\n  text-align: center;\n  color: black;\n}\n\n.title {\n  text-align: center;\n  font-weight: bold;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyIsInNyYy9hcHAvaG9tZS9ob21lLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNFLGdCQUFBO0VBQ0EsZ0JBQUE7QUNERjs7QURJQTtFQUNFLFdBQUE7QUNERjs7QURJQTtFQUNFLHVCQUFBO0FDREY7O0FETUE7RUFDRSxrQkFBQTtFQUNBLFlBQUE7QUNIRjs7QURNQTtFQUNFLGtCQUFBO0VBQ0EsaUJBQUE7QUNIRiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS8vY29sb3JzLnNjc3MnO1xuXG4ud2VsY29tZS1jYXJkIGltZyB7XG4gIG1heC1oZWlnaHQ6IDM1dmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG59XG5cbi5jYXJkIHtcbiAgaGVpZ2h0OiA3NSU7XG59XG5cbi5wcmltYXJ5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyaylcbn1cblxuXG5cbi50ZXh0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBjb2xvcjogYmxhY2s7XG59XG5cbi50aXRsZXtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXdlaWdodDogYm9sZDtcbn1cblxuLy8gaW9uLWNhcmQtY29udGVudCB7XG4vLyAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspO1xuLy8gfVxuXG4vLyBpb24taXRlbSB7XG4vLyAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspXG4vLyB9XG5cbi8vIGlvbi1saXN0e1xuLy8gICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTtcbi8vIH1cblxuIiwiLndlbGNvbWUtY2FyZCBpbWcge1xuICBtYXgtaGVpZ2h0OiAzNXZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xufVxuXG4uY2FyZCB7XG4gIGhlaWdodDogNzUlO1xufVxuXG4ucHJpbWFyeSB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG4udGV4dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG4udGl0bGUge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xufSJdfQ== */"
+module.exports = ".welcome-card img {\n  max-height: 35vh;\n  overflow: hidden;\n}\n\n.card {\n  height: 90%;\n}\n\n.primary {\n  background-color: black;\n}\n\n.services {\n  margin-bottom: 15px;\n}\n\n.text {\n  text-align: center;\n  color: black;\n}\n\n.title {\n  text-align: center;\n  font-weight: bold;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIiwic3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0UsZ0JBQUE7RUFDQSxnQkFBQTtBQ0RGOztBRElBO0VBQ0UsV0FBQTtBQ0RGOztBRElBO0VBQ0UsdUJBQUE7QUNERjs7QURJQTtFQUNFLG1CQUFBO0FDREY7O0FES0E7RUFDRSxrQkFBQTtFQUNBLFlBQUE7QUNGRjs7QURLQTtFQUNFLGtCQUFBO0VBQ0EsaUJBQUE7QUNGRiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS8vY29sb3JzLnNjc3MnO1xuXG4ud2VsY29tZS1jYXJkIGltZyB7XG4gIG1heC1oZWlnaHQ6IDM1dmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG59XG5cbi5jYXJkIHtcbiAgaGVpZ2h0OiA5MCU7XG59XG5cbi5wcmltYXJ5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyaylcbn1cblxuLnNlcnZpY2VzIHtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cblxuXG4udGV4dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG4udGl0bGV7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG5cbi8vIGlvbi1jYXJkLWNvbnRlbnQge1xuLy8gICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTtcbi8vIH1cblxuLy8gaW9uLWl0ZW0ge1xuLy8gICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKVxuLy8gfVxuXG4vLyBpb24tbGlzdHtcbi8vICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyayk7XG4vLyB9XG5cbiIsIi53ZWxjb21lLWNhcmQgaW1nIHtcbiAgbWF4LWhlaWdodDogMzV2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuLmNhcmQge1xuICBoZWlnaHQ6IDkwJTtcbn1cblxuLnByaW1hcnkge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbn1cblxuLnNlcnZpY2VzIHtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cblxuLnRleHQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiBibGFjaztcbn1cblxuLnRpdGxlIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXdlaWdodDogYm9sZDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -1572,7 +2401,7 @@ HomePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header-text {\n  text-align: center;\n}\n\n.content-text {\n  padding: 10px;\n  text-align: center;\n}\n\nion-back-button {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvaG9tZS9pbmRpdmlkdWFsL2luZGl2aWR1YWwuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2hvbWUvaW5kaXZpZHVhbC9pbmRpdmlkdWFsLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0ksa0JBQUE7QUNESjs7QURJQTtFQUNJLGFBQUE7RUFDQSxrQkFBQTtBQ0RKOztBRElBO0VBQ0ksWUFBQTtBQ0RKIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9pbmRpdmlkdWFsL2luZGl2aWR1YWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cbi5oZWFkZXItdGV4dHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5jb250ZW50LXRleHQge1xuICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5pb24tYmFjay1idXR0b24ge1xuICAgIGNvbG9yOiBjb2xvcihkYXJrKVxufSIsIi5oZWFkZXItdGV4dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmNvbnRlbnQtdGV4dCB7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuaW9uLWJhY2stYnV0dG9uIHtcbiAgY29sb3I6IGJsYWNrO1xufSJdfQ== */"
+module.exports = ".header-text {\n  text-align: center;\n}\n\n.content-text {\n  padding: 10px;\n  text-align: center;\n}\n\nion-back-button {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9ob21lL2luZGl2aWR1YWwvaW5kaXZpZHVhbC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvaG9tZS9pbmRpdmlkdWFsL2luZGl2aWR1YWwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxrQkFBQTtBQ0RKOztBRElBO0VBQ0ksYUFBQTtFQUNBLGtCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9ob21lL2luZGl2aWR1YWwvaW5kaXZpZHVhbC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuLmhlYWRlci10ZXh0e1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmNvbnRlbnQtdGV4dCB7XG4gICAgcGFkZGluZzogMTBweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbmlvbi1iYWNrLWJ1dHRvbiB7XG4gICAgY29sb3I6IGNvbG9yKGRhcmspXG59IiwiLmhlYWRlci10ZXh0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uY29udGVudC10ZXh0IHtcbiAgcGFkZGluZzogMTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5pb24tYmFjay1idXR0b24ge1xuICBjb2xvcjogYmxhY2s7XG59Il19 */"
 
 /***/ }),
 
@@ -1656,7 +2485,7 @@ IndividualModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header-text {\n  text-align: center;\n}\n\n.content-text {\n  padding: 10px;\n  text-align: center;\n}\n\n.title {\n  color: black;\n}\n\nion-back-button {\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvaG9tZS9yZWxhdGlvbnNoaXAvcmVsYXRpb25zaGlwLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9ob21lL3JlbGF0aW9uc2hpcC9yZWxhdGlvbnNoaXAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxrQkFBQTtBQ0RKOztBRElBO0VBQ0ksYUFBQTtFQUNBLGtCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9ob21lL3JlbGF0aW9uc2hpcC9yZWxhdGlvbnNoaXAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi8uLi90aGVtZS8vY29sb3JzLnNjc3MnO1xuXG4uaGVhZGVyLXRleHR7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uY29udGVudC10ZXh0IHtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLnRpdGxlIHtcbiAgICBjb2xvcjogY29sb3IoZGFyaylcbn1cblxuaW9uLWJhY2stYnV0dG9uIHtcbiAgICBjb2xvcjogY29sb3Iod2hpdGUpXG59IiwiLmhlYWRlci10ZXh0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uY29udGVudC10ZXh0IHtcbiAgcGFkZGluZzogMTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4udGl0bGUge1xuICBjb2xvcjogYmxhY2s7XG59XG5cbmlvbi1iYWNrLWJ1dHRvbiB7XG4gIGNvbG9yOiB3aGl0ZTtcbn0iXX0= */"
+module.exports = ".header-text {\n  text-align: center;\n}\n\n.content-text {\n  padding: 10px;\n  text-align: center;\n}\n\n.title {\n  color: black;\n}\n\nion-back-button {\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9ob21lL3JlbGF0aW9uc2hpcC9yZWxhdGlvbnNoaXAuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2hvbWUvcmVsYXRpb25zaGlwL3JlbGF0aW9uc2hpcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLGtCQUFBO0FDREo7O0FESUE7RUFDSSxhQUFBO0VBQ0Esa0JBQUE7QUNESjs7QURJQTtFQUNJLFlBQUE7QUNESjs7QURJQTtFQUNJLFlBQUE7QUNESiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvcmVsYXRpb25zaGlwL3JlbGF0aW9uc2hpcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uLy4uL3RoZW1lLy9jb2xvcnMuc2Nzcyc7XG5cbi5oZWFkZXItdGV4dHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5jb250ZW50LXRleHQge1xuICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4udGl0bGUge1xuICAgIGNvbG9yOiBjb2xvcihkYXJrKVxufVxuXG5pb24tYmFjay1idXR0b24ge1xuICAgIGNvbG9yOiBjb2xvcih3aGl0ZSlcbn0iLCIuaGVhZGVyLXRleHQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5jb250ZW50LXRleHQge1xuICBwYWRkaW5nOiAxMHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi50aXRsZSB7XG4gIGNvbG9yOiBibGFjaztcbn1cblxuaW9uLWJhY2stYnV0dG9uIHtcbiAgY29sb3I6IHdoaXRlO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -1740,7 +2569,7 @@ RelationshipModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "img {\n  width: 70%;\n}\n\n.logo-container {\n  padding: 15px;\n  text-align: center;\n}\n\n.amplify-form-button {\n  background-color: #449e44;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2xvZ2luL2xvZ2luLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0ksVUFBQTtBQ0RKOztBRElBO0VBQ0ksYUFBQTtFQUNBLGtCQUFBO0FDREo7O0FESUE7RUFDSSx5QkFBQTtBQ0RKIiwiZmlsZSI6InNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cbmltZyB7XG4gICAgd2lkdGg6IDcwJTtcbn1cblxuLmxvZ28tY29udGFpbmVyIHtcbiAgICBwYWRkaW5nOiAxNXB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmFtcGxpZnktZm9ybS1idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKHNlY29uZGFyeSk7XG59IiwiaW1nIHtcbiAgd2lkdGg6IDcwJTtcbn1cblxuLmxvZ28tY29udGFpbmVyIHtcbiAgcGFkZGluZzogMTVweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uYW1wbGlmeS1mb3JtLWJ1dHRvbiB7XG4gIGJhY2tncm91bmQtY29sb3I6ICM0NDllNDQ7XG59Il19 */"
+module.exports = "img {\n  width: 70%;\n}\n\n.logo-container {\n  padding: 15px;\n  text-align: center;\n}\n\n.amplify-form-button {\n  background-color: #449e44;\n}\n\n.button-container {\n  margin: 20px;\n}\n\na {\n  margin: 10px;\n}\n\n.btn {\n  --color-hover: color(secondary);\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9sb2dpbi9sb2dpbi5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxVQUFBO0FDREo7O0FESUE7RUFDSSxhQUFBO0VBQ0Esa0JBQUE7QUNESjs7QURJQTtFQUNJLHlCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSwrQkFBQTtBQ0RKIiwiZmlsZSI6InNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cbmltZyB7XG4gICAgd2lkdGg6IDcwJTtcbn1cblxuLmxvZ28tY29udGFpbmVyIHtcbiAgICBwYWRkaW5nOiAxNXB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmFtcGxpZnktZm9ybS1idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKHNlY29uZGFyeSk7XG59XG5cbi5idXR0b24tY29udGFpbmVyIHtcbiAgICBtYXJnaW46IDIwcHg7XG59XG5cbmEge1xuICAgIG1hcmdpbjogMTBweDtcbn1cblxuLmJ0biB7XG4gICAgLS1jb2xvci1ob3ZlcjogY29sb3Ioc2Vjb25kYXJ5KTtcbn0iLCJpbWcge1xuICB3aWR0aDogNzAlO1xufVxuXG4ubG9nby1jb250YWluZXIge1xuICBwYWRkaW5nOiAxNXB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5hbXBsaWZ5LWZvcm0tYnV0dG9uIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzQ0OWU0NDtcbn1cblxuLmJ1dHRvbi1jb250YWluZXIge1xuICBtYXJnaW46IDIwcHg7XG59XG5cbmEge1xuICBtYXJnaW46IDEwcHg7XG59XG5cbi5idG4ge1xuICAtLWNvbG9yLWhvdmVyOiBjb2xvcihzZWNvbmRhcnkpO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -1759,18 +2588,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var aws_amplify_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! aws-amplify-angular */ "./node_modules/aws-amplify-angular/dist/index.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
+/* harmony import */ var src_services_login_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/services/login.service */ "./src/services/login.service.ts");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../services/auth.service */ "./src/services/auth.service.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../forgot-password/forgot-password.component */ "./src/app/forgot-password/forgot-password.component.ts");
+/* harmony import */ var _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../forgot-username/forgot-username.component */ "./src/app/forgot-username/forgot-username.component.ts");
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 let LoginComponent = class LoginComponent {
-    constructor(events, amplifyService, router) {
+    constructor(events, amplifyService, formBuilder, router, userService, loginService, authService, loadingController, modalController) {
         this.events = events;
         this.amplifyService = amplifyService;
+        this.formBuilder = formBuilder;
         this.router = router;
+        this.userService = userService;
+        this.loginService = loginService;
+        this.authService = authService;
+        this.loadingController = loadingController;
+        this.modalController = modalController;
         this.signUpConfig = {
-            header: 'My Customized Sign Up',
+            header: 'Sign Up',
             hideAllDefaults: true,
             defaultCountryCode: '1',
             signUpFields: [
@@ -1819,27 +2670,81 @@ let LoginComponent = class LoginComponent {
             ]
         };
         this.authState = { signedIn: false };
-        this.amplifyService.authStateChange$
-            .subscribe(authState => {
-            this.authState.signedIn = authState.state === 'signedIn';
-            this.events.publish('data:AuthState', this.authState);
-            this.redirectSignIn();
+        // this.amplifyService.authStateChange$
+        //   .subscribe(authState => {
+        //     this.authState.signedIn = authState.state === 'signedIn';
+        //     this.events.publish('data:AuthState', this.authState);
+        //     this.redirectSignIn();
+        //   });
+    }
+    ngOnInit() {
+        this.loginForm = this.formBuilder.group({
+            email: '',
+            password: ''
         });
     }
-    ngOnInit() { }
-    redirectSignIn() {
-        if (this.authState.signedIn) {
-            this.router.navigateByUrl('home');
-        }
-        else {
-            this.router.navigateByUrl('login');
-        }
+    navigate() {
+        this.router.navigateByUrl('home');
+    }
+    login() {
+        this.presentLoading();
+        var email = this.loginForm.get('email').value;
+        var password = this.loginForm.get('password').value;
+        this.loginService.login(email, password)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["tap"])(data => {
+            this.authService.setAuthorization(data.token);
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["switchMap"])(() => {
+            return this.userService.getUser(email);
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["tap"])(data => {
+            this.userService.setUserInfo(data);
+            this.navigate();
+        }))
+            .subscribe(res => {
+            this.loadingController.dismiss();
+        });
+    }
+    register() {
+        this.router.navigateByUrl('register');
+    }
+    presentLoading() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const loading = yield this.loadingController.create({
+                message: 'Please wait...',
+                mode: "ios",
+                duration: 2000
+            });
+            yield loading.present();
+            const { role, data } = yield loading.onDidDismiss();
+            console.log('Loading dismissed!');
+        });
+    }
+    presentForgotPasswordModal() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const modal = yield this.modalController.create({
+                component: _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_10__["ForgotPasswordComponent"]
+            });
+            return yield modal.present();
+        });
+    }
+    presentForgotUsernameModal() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const modal = yield this.modalController.create({
+                component: _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_11__["ForgotUsernameComponent"]
+            });
+            return yield modal.present();
+        });
     }
 };
 LoginComponent.ctorParameters = () => [
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Events"] },
     { type: aws_amplify_angular__WEBPACK_IMPORTED_MODULE_2__["AmplifyService"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] }
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormBuilder"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
+    { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_6__["UserService"] },
+    { type: src_services_login_service__WEBPACK_IMPORTED_MODULE_7__["LoginService"] },
+    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_8__["AuthService"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["LoadingController"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"] }
 ];
 LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1849,7 +2754,13 @@ LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Events"],
         aws_amplify_angular__WEBPACK_IMPORTED_MODULE_2__["AmplifyService"],
-        _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
+        _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormBuilder"],
+        _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"],
+        src_services_user_service__WEBPACK_IMPORTED_MODULE_6__["UserService"],
+        src_services_login_service__WEBPACK_IMPORTED_MODULE_7__["LoginService"],
+        _services_auth_service__WEBPACK_IMPORTED_MODULE_8__["AuthService"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["LoadingController"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"]])
 ], LoginComponent);
 
 
@@ -1863,7 +2774,7 @@ LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".text {\n  color: black;\n}\n\nion-item.menu-text.text.background.item.md.in-list.ion-activatable.ion-focusable.hydrated {\n  background-color: black;\n}\n\n.background {\n  background-color: black;\n}\n\nion-toolbar {\n  background-color: #449e44;\n}\n\nion-menu-button {\n  color: white;\n}\n\nion-content {\n  background-color: black;\n}\n\n.logo-header {\n  height: 40px;\n  width: 150px;\n}\n\n.logo-container {\n  margin-top: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvbWVudS9tZW51LmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9tZW51L21lbnUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSx1QkFBQTtBQ0RKOztBRElBO0VBQ0ksdUJBQUE7QUNESjs7QURJQTtFQUNJLHlCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSx1QkFBQTtBQ0RKOztBRElBO0VBQ0ksWUFBQTtFQUNBLFlBQUE7QUNESjs7QURJQTtFQUNJLGdCQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9tZW51L21lbnUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cbi50ZXh0IHtcbiAgICBjb2xvcjogY29sb3IoZGFyayk7XG59XG5cbmlvbi1pdGVtLm1lbnUtdGV4dC50ZXh0LmJhY2tncm91bmQuaXRlbS5tZC5pbi1saXN0Lmlvbi1hY3RpdmF0YWJsZS5pb24tZm9jdXNhYmxlLmh5ZHJhdGVkIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTsgXG59XG5cbi5iYWNrZ3JvdW5kIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTtcbn1cblxuaW9uLXRvb2xiYXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKHNlY29uZGFyeSk7XG59XG5cbmlvbi1tZW51LWJ1dHRvbiB7XG4gICAgY29sb3I6IGNvbG9yKHByaW1hcnkpO1xufVxuXG5pb24tY29udGVudCB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyayk7XG59XG5cbi5sb2dvLWhlYWRlciB7XG4gICAgaGVpZ2h0OiA0MHB4O1xuICAgIHdpZHRoOiAxNTBweDtcbn1cblxuLmxvZ28tY29udGFpbmVyIHtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xufSIsIi50ZXh0IHtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG5pb24taXRlbS5tZW51LXRleHQudGV4dC5iYWNrZ3JvdW5kLml0ZW0ubWQuaW4tbGlzdC5pb24tYWN0aXZhdGFibGUuaW9uLWZvY3VzYWJsZS5oeWRyYXRlZCB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG4uYmFja2dyb3VuZCB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG5pb24tdG9vbGJhciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICM0NDllNDQ7XG59XG5cbmlvbi1tZW51LWJ1dHRvbiB7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuaW9uLWNvbnRlbnQge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbn1cblxuLmxvZ28taGVhZGVyIHtcbiAgaGVpZ2h0OiA0MHB4O1xuICB3aWR0aDogMTUwcHg7XG59XG5cbi5sb2dvLWNvbnRhaW5lciB7XG4gIG1hcmdpbi10b3A6IDEwcHg7XG59Il19 */"
+module.exports = ".text {\n  color: black;\n}\n\nion-item.menu-text.text.background.item.md.in-list.ion-activatable.ion-focusable.hydrated {\n  background-color: black;\n}\n\n.background {\n  background-color: black;\n}\n\nion-toolbar {\n  background-color: #449e44;\n}\n\nion-menu-button {\n  color: white;\n}\n\nion-content {\n  background-color: black;\n}\n\n.logo-header {\n  height: 40px;\n  width: 150px;\n  margin-top: 10px;\n  margin-bottom: 15px;\n}\n\n.logo-container {\n  margin-top: 20px;\n  margin-bottom: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9tZW51L21lbnUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL21lbnUvbWVudS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLFlBQUE7QUNESjs7QURJQTtFQUNJLHVCQUFBO0FDREo7O0FESUE7RUFDSSx1QkFBQTtBQ0RKOztBRElBO0VBQ0kseUJBQUE7QUNESjs7QURJQTtFQUNJLFlBQUE7QUNESjs7QURJQTtFQUNJLHVCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0VBQ0EsWUFBQTtFQUNBLGdCQUFBO0VBQ0EsbUJBQUE7QUNESjs7QURJQTtFQUNJLGdCQUFBO0VBQ0EsbUJBQUE7QUNESiIsImZpbGUiOiJzcmMvYXBwL21lbnUvbWVudS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuLnRleHQge1xuICAgIGNvbG9yOiBjb2xvcihkYXJrKTtcbn1cblxuaW9uLWl0ZW0ubWVudS10ZXh0LnRleHQuYmFja2dyb3VuZC5pdGVtLm1kLmluLWxpc3QuaW9uLWFjdGl2YXRhYmxlLmlvbi1mb2N1c2FibGUuaHlkcmF0ZWQge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspOyBcbn1cblxuLmJhY2tncm91bmQge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspO1xufVxuXG5pb24tdG9vbGJhciB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3Ioc2Vjb25kYXJ5KTtcbn1cblxuaW9uLW1lbnUtYnV0dG9uIHtcbiAgICBjb2xvcjogY29sb3IocHJpbWFyeSk7XG59XG5cbmlvbi1jb250ZW50IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTtcbn1cblxuLmxvZ28taGVhZGVyIHtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgd2lkdGg6IDE1MHB4O1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cblxuLmxvZ28tY29udGFpbmVyIHtcbiAgICBtYXJnaW4tdG9wOiAyMHB4O1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG59IiwiLnRleHQge1xuICBjb2xvcjogYmxhY2s7XG59XG5cbmlvbi1pdGVtLm1lbnUtdGV4dC50ZXh0LmJhY2tncm91bmQuaXRlbS5tZC5pbi1saXN0Lmlvbi1hY3RpdmF0YWJsZS5pb24tZm9jdXNhYmxlLmh5ZHJhdGVkIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG59XG5cbi5iYWNrZ3JvdW5kIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG59XG5cbmlvbi10b29sYmFyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzQ0OWU0NDtcbn1cblxuaW9uLW1lbnUtYnV0dG9uIHtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG5pb24tY29udGVudCB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG4ubG9nby1oZWFkZXIge1xuICBoZWlnaHQ6IDQwcHg7XG4gIHdpZHRoOiAxNTBweDtcbiAgbWFyZ2luLXRvcDogMTBweDtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cblxuLmxvZ28tY29udGFpbmVyIHtcbiAgbWFyZ2luLXRvcDogMjBweDtcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -1883,6 +2794,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
 /* harmony import */ var aws_amplify_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! aws-amplify-angular */ "./node_modules/aws-amplify-angular/dist/index.js");
+/* harmony import */ var src_services_auth_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/services/auth.service */ "./src/services/auth.service.ts");
+
 
 
 
@@ -1891,27 +2804,50 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let MenuComponent = class MenuComponent {
-    constructor(menuService, router, navController, menuController, amplifyService) {
+    constructor(menuService, router, navController, menuController, amplifyService, authService) {
         this.menuService = menuService;
         this.router = router;
         this.navController = navController;
         this.menuController = menuController;
         this.amplifyService = amplifyService;
+        this.authService = authService;
         this.title = '';
     }
     ngOnInit() {
         this.options = this.menuService.getOptions();
     }
     navigate(route) {
+        this.menuController.close("option");
         this.navController.navigateForward(route);
     }
-    openMenu(side) {
-        this.menuController.open(side);
+    openMenu() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            yield this.menuController.open("start")
+                .then(res => console.log(res));
+        });
+    }
+    openProfileMenu() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.menuController.enable(true, "profile")
+                .then(res => console.log(res));
+            yield this.menuController.open("profile");
+            this.menuController.isOpen("option")
+                .then(res => console.log("option menu is open: " + res));
+            console.log("profile opened");
+        });
+    }
+    openOptionMenu() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.menuController.enable(true, 'option');
+            yield this.menuController.open('option');
+            this.menuController.isOpen("profile")
+                .then(res => console.log("profile menu is open: " + res));
+            console.log("Option opened");
+        });
     }
     signOut() {
-        this.authState = { state: "signedOut" };
-        this.amplifyService.setAuthState(this.authState);
-        // this.router.navigateByUrl('login');
+        this.authService.logOut();
+        this.router.navigateByUrl('login');
     }
 };
 MenuComponent.ctorParameters = () => [
@@ -1919,7 +2855,8 @@ MenuComponent.ctorParameters = () => [
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["NavController"] },
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["MenuController"] },
-    { type: aws_amplify_angular__WEBPACK_IMPORTED_MODULE_5__["AmplifyService"] }
+    { type: aws_amplify_angular__WEBPACK_IMPORTED_MODULE_5__["AmplifyService"] },
+    { type: src_services_auth_service__WEBPACK_IMPORTED_MODULE_6__["AuthService"] }
 ];
 MenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1932,7 +2869,8 @@ MenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
         _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["NavController"],
         _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["MenuController"],
-        aws_amplify_angular__WEBPACK_IMPORTED_MODULE_5__["AmplifyService"]])
+        aws_amplify_angular__WEBPACK_IMPORTED_MODULE_5__["AmplifyService"],
+        src_services_auth_service__WEBPACK_IMPORTED_MODULE_6__["AuthService"]])
 ], MenuComponent);
 
 
@@ -1946,7 +2884,7 @@ MenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "img {\n  width: 100%;\n  height: 400px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvb3V0cmVhY2gvb3V0cmVhY2guY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL291dHJlYWNoL291dHJlYWNoLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUdBO0VBQ0ksV0FBQTtFQUNBLGFBQUE7QUNGSiIsImZpbGUiOiJzcmMvYXBwL291dHJlYWNoL291dHJlYWNoLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vLi4vdGhlbWUvY29sb3JzLnNjc3MnO1xuXG5cbmltZyB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiA0MDBweDtcbn0iLCJpbWcge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiA0MDBweDtcbn0iXX0= */"
+module.exports = "img {\n  width: 100%;\n  height: 400px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9vdXRyZWFjaC9vdXRyZWFjaC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvb3V0cmVhY2gvb3V0cmVhY2guY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0E7RUFDSSxXQUFBO0VBQ0EsYUFBQTtBQ0ZKIiwiZmlsZSI6InNyYy9hcHAvb3V0cmVhY2gvb3V0cmVhY2guY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cblxuaW1nIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDQwMHB4O1xufSIsImltZyB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDQwMHB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -1978,7 +2916,7 @@ let OutreachComponent = class OutreachComponent {
             preloadImages: true
         });
         this.slideOpts = {
-            pager: true,
+            init: true
         };
     }
     ngOnInit() {
@@ -2007,6 +2945,273 @@ OutreachComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/profile/profile.component.scss":
+/*!************************************************!*\
+  !*** ./src/app/profile/profile.component.scss ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".personal-info-container {\n  margin: 10px;\n}\n\n.appointment-container {\n  margin: 10px;\n}\n\n.loading-container {\n  margin-top: 50%;\n}\n\n.button-container {\n  text-align: center;\n  margin: 15px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9wcm9maWxlL3Byb2ZpbGUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3Byb2ZpbGUvcHJvZmlsZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFlBQUE7QUNDSjs7QURFQTtFQUNJLFlBQUE7QUNDSjs7QURFQTtFQUNJLGVBQUE7QUNDSjs7QURFQTtFQUNJLGtCQUFBO0VBQ0EsWUFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvcHJvZmlsZS9wcm9maWxlLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBlcnNvbmFsLWluZm8tY29udGFpbmVyIHtcbiAgICBtYXJnaW46IDEwcHg7XG59XG5cbi5hcHBvaW50bWVudC1jb250YWluZXIge1xuICAgIG1hcmdpbjogMTBweDtcbn1cblxuLmxvYWRpbmctY29udGFpbmVyIHtcbiAgICBtYXJnaW4tdG9wOiA1MCU7XG59XG5cbi5idXR0b24tY29udGFpbmVyIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgbWFyZ2luOiAxNXB4O1xufSIsIi5wZXJzb25hbC1pbmZvLWNvbnRhaW5lciB7XG4gIG1hcmdpbjogMTBweDtcbn1cblxuLmFwcG9pbnRtZW50LWNvbnRhaW5lciB7XG4gIG1hcmdpbjogMTBweDtcbn1cblxuLmxvYWRpbmctY29udGFpbmVyIHtcbiAgbWFyZ2luLXRvcDogNTAlO1xufVxuXG4uYnV0dG9uLWNvbnRhaW5lciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luOiAxNXB4O1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/profile/profile.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/profile/profile.component.ts ***!
+  \**********************************************/
+/*! exports provided: ProfileComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfileComponent", function() { return ProfileComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
+/* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var src_services_auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/services/auth.service */ "./src/services/auth.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
+
+
+
+
+
+let ProfileComponent = class ProfileComponent {
+    constructor(userService, apptService, loadingController, authService, router) {
+        this.userService = userService;
+        this.apptService = apptService;
+        this.loadingController = loadingController;
+        this.authService = authService;
+        this.router = router;
+        this.role = "";
+        this.userInfoLoaded = false;
+        this.apptInfoLoaded = false;
+    }
+    ngOnInit() {
+        this.presentLoading();
+        this.user = this.userService.getUserInfo();
+        this.role = this.user.role.toLowerCase();
+        if (this.user.role.toLowerCase() == "admin") {
+            this.apptService.getAppointmentsByCounselor(this.user.firstName + " " + this.user.lastName)
+                .subscribe(res => {
+                this.appts = this.transformData(res.Items);
+                this.loadingController.dismiss();
+            }, err => {
+                console.log(err, err.message);
+                alert("Error getting user info");
+            });
+        }
+        else if (this.user.role.toLowerCase() == "user") {
+            this.apptService.getMyAppointments(this.user.email)
+                .subscribe(res => {
+                this.appts = this.transformData(res.Items);
+                this.loadingController.dismiss();
+            }, err => {
+                console.log(err, err.message);
+                alert("Error getting user info");
+            });
+        }
+    }
+    setCalendar() {
+        this.router.navigateByUrl("calendar");
+    }
+    transformData(res) {
+        var appts = [];
+        res.forEach(item => {
+            var appointment = {
+                name: item.Name.S,
+                date: item.Date.S,
+                duration: item.Duration.S,
+                price: item.Price.S,
+                location: item.Location.S,
+                counselor: item.Counselor.S,
+                candidateFirstName: item.CandidateFirstName.S,
+                candidateLastName: item.CandidateLastName.S,
+                candidateEmail: item.CandidateEmail.S,
+                type: item.Type.S
+            };
+            appts.push(appointment);
+        });
+        return appts;
+    }
+    logOut() {
+        this.authService.logOut();
+        this.router.navigateByUrl("login");
+    }
+    presentLoading() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const loading = yield this.loadingController.create({
+                message: 'Please wait...',
+                mode: "ios",
+                duration: 2000
+            });
+            yield loading.present();
+            const { role, data } = yield loading.onDidDismiss();
+            console.log('Loading dismissed!');
+        });
+    }
+};
+ProfileComponent.ctorParameters = () => [
+    { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_2__["UserService"] },
+    { type: src_services_appointment_service__WEBPACK_IMPORTED_MODULE_3__["AppointmentService"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"] },
+    { type: src_services_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] }
+];
+ProfileComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-profile',
+        template: __webpack_require__(/*! raw-loader!./profile.component.html */ "./node_modules/raw-loader/index.js!./src/app/profile/profile.component.html"),
+        styles: [__webpack_require__(/*! ./profile.component.scss */ "./src/app/profile/profile.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_services_user_service__WEBPACK_IMPORTED_MODULE_2__["UserService"],
+        src_services_appointment_service__WEBPACK_IMPORTED_MODULE_3__["AppointmentService"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"],
+        src_services_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"],
+        _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]])
+], ProfileComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/register/register.component.scss":
+/*!**************************************************!*\
+  !*** ./src/app/register/register.component.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".header-container {\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9yZWdpc3Rlci9yZWdpc3Rlci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxrQkFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaGVhZGVyLWNvbnRhaW5lciB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufSIsIi5oZWFkZXItY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/register/register.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/register/register.component.ts ***!
+  \************************************************/
+/*! exports provided: RegisterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterComponent", function() { return RegisterComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
+
+
+
+
+
+let RegisterComponent = class RegisterComponent {
+    constructor(formBuilder, userService, toastController, loadingController, router) {
+        this.formBuilder = formBuilder;
+        this.userService = userService;
+        this.toastController = toastController;
+        this.loadingController = loadingController;
+        this.router = router;
+    }
+    ngOnInit() {
+        this.registerForm = this.formBuilder.group({
+            firstName: '',
+            lastName: '',
+            email: '',
+            password: '',
+            confirmPassword: '',
+            phone: ''
+        });
+    }
+    registerUser() {
+        this.presentLoading();
+        var user = {
+            firstName: this.registerForm.get('firstName').value,
+            lastName: this.registerForm.get('lastName').value,
+            email: this.registerForm.get('email').value,
+            password: this.registerForm.get('password').value,
+            phone: this.registerForm.get('phone').value,
+            role: "User"
+        };
+        this.userService.addUser(user)
+            .subscribe(res => {
+            this.loadingController.dismiss();
+            this.router.navigateByUrl("home");
+        }, err => {
+            this.handleError(err, err.message);
+        });
+    }
+    cancel() {
+        this.router.navigateByUrl('login');
+    }
+    passwordMatch() {
+        var password = this.registerForm.get('password').value;
+        var confirmPassword = this.registerForm.get('confirmPassword').value;
+        if (password === confirmPassword) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    presentLoading() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const loading = yield this.loadingController.create({
+                message: 'Please wait...',
+                mode: "ios",
+                duration: 2000
+            });
+            yield loading.present();
+            const { role, data } = yield loading.onDidDismiss();
+            console.log('Loading dismissed!');
+        });
+    }
+    handleError(err, errMessage) {
+        console.log(err + err.message);
+        alert(errMessage);
+    }
+    presentToast() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const toast = yield this.toastController.create({
+                message: 'Your profile has been created.',
+                duration: 2000
+            });
+            toast.present();
+        });
+    }
+};
+RegisterComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+    { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"] }
+];
+RegisterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-register',
+        template: __webpack_require__(/*! raw-loader!./register.component.html */ "./node_modules/raw-loader/index.js!./src/app/register/register.component.html"),
+        styles: [__webpack_require__(/*! ./register.component.scss */ "./src/app/register/register.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
+        src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"],
+        _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]])
+], RegisterComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/school/school.component.scss":
 /*!**********************************************!*\
   !*** ./src/app/school/school.component.scss ***!
@@ -2014,7 +3219,7 @@ OutreachComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".title {\n  text-align: center;\n}\n\n.text {\n  padding: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvc2Nob29sL3NjaG9vbC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvc2Nob29sL3NjaG9vbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLGtCQUFBO0FDREo7O0FESUE7RUFDSSxhQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9zY2hvb2wvc2Nob29sLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vLi4vdGhlbWUvY29sb3JzLnNjc3MnO1xuXG4udGl0bGUge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLnRleHQge1xuICAgIHBhZGRpbmc6IDEwcHg7XG59XG4iLCIudGl0bGUge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi50ZXh0IHtcbiAgcGFkZGluZzogMTBweDtcbn0iXX0= */"
+module.exports = ".title {\n  text-align: center;\n}\n\n.text {\n  padding: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9zY2hvb2wvc2Nob29sLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9zY2hvb2wvc2Nob29sLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0ksa0JBQUE7QUNESjs7QURJQTtFQUNJLGFBQUE7QUNESiIsImZpbGUiOiJzcmMvYXBwL3NjaG9vbC9zY2hvb2wuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cbi50aXRsZSB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4udGV4dCB7XG4gICAgcGFkZGluZzogMTBweDtcbn1cbiIsIi50aXRsZSB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLnRleHQge1xuICBwYWRkaW5nOiAxMHB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -2056,7 +3261,7 @@ SchoolComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "img {\n  width: 200px;\n  height: 250px;\n}\n\n.img-container {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\np {\n  margin: 10px;\n  padding: 5px;\n}\n\n.span {\n  display: inline;\n}\n\n.img-title {\n  text-align: center;\n}\n\nion-card {\n  margin: 15px;\n  background-color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy9hcHAvdGVhbS90ZWFtLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC90ZWFtL3RlYW0uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxZQUFBO0VBQ0EsYUFBQTtBQ0RKOztBRElBO0VBQ0ksb0JBQUE7RUFBQSxhQUFBO0VBQ0Esd0JBQUE7VUFBQSx1QkFBQTtBQ0RKOztBRElBO0VBQ0ksWUFBQTtFQUNBLFlBQUE7QUNESjs7QURHQTtFQUNJLGVBQUE7QUNBSjs7QURHQTtFQUNJLGtCQUFBO0FDQUo7O0FER0E7RUFDSSxZQUFBO0VBQ0EsdUJBQUE7QUNBSiIsImZpbGUiOiJzcmMvYXBwL3RlYW0vdGVhbS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuaW1nIHtcbiAgICB3aWR0aDogMjAwcHg7XG4gICAgaGVpZ2h0OiAyNTBweDtcbn1cblxuLmltZy1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbnAge1xuICAgIG1hcmdpbjogMTBweDtcbiAgICBwYWRkaW5nOiA1cHhcbn1cbi5zcGFuIHtcbiAgICBkaXNwbGF5OiBpbmxpbmU7XG59XG5cbi5pbWctdGl0bGUge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuaW9uLWNhcmR7XG4gICAgbWFyZ2luOiAxNXB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKHByaW1hcnkpXG59XG4iLCJpbWcge1xuICB3aWR0aDogMjAwcHg7XG4gIGhlaWdodDogMjUwcHg7XG59XG5cbi5pbWctY29udGFpbmVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbnAge1xuICBtYXJnaW46IDEwcHg7XG4gIHBhZGRpbmc6IDVweDtcbn1cblxuLnNwYW4ge1xuICBkaXNwbGF5OiBpbmxpbmU7XG59XG5cbi5pbWctdGl0bGUge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbmlvbi1jYXJkIHtcbiAgbWFyZ2luOiAxNXB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbn0iXX0= */"
+module.exports = "img {\n  width: 200px;\n  height: 250px;\n}\n\n.img-container {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\np {\n  margin: 10px;\n  padding: 5px;\n}\n\n.span {\n  display: inline;\n}\n\n.img-title {\n  text-align: center;\n}\n\nion-card {\n  margin: 15px;\n  background-color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC90ZWFtL3RlYW0uY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3RlYW0vdGVhbS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0FDREo7O0FESUE7RUFDSSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx3QkFBQTtVQUFBLHVCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0VBQ0EsWUFBQTtBQ0RKOztBREdBO0VBQ0ksZUFBQTtBQ0FKOztBREdBO0VBQ0ksa0JBQUE7QUNBSjs7QURHQTtFQUNJLFlBQUE7RUFDQSx1QkFBQTtBQ0FKIiwiZmlsZSI6InNyYy9hcHAvdGVhbS90ZWFtLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vLi4vdGhlbWUvY29sb3JzLnNjc3MnO1xuXG5pbWcge1xuICAgIHdpZHRoOiAyMDBweDtcbiAgICBoZWlnaHQ6IDI1MHB4O1xufVxuXG4uaW1nLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cblxucCB7XG4gICAgbWFyZ2luOiAxMHB4O1xuICAgIHBhZGRpbmc6IDVweFxufVxuLnNwYW4ge1xuICAgIGRpc3BsYXk6IGlubGluZTtcbn1cblxuLmltZy10aXRsZSB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5pb24tY2FyZHtcbiAgICBtYXJnaW46IDE1cHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IocHJpbWFyeSlcbn1cbiIsImltZyB7XG4gIHdpZHRoOiAyMDBweDtcbiAgaGVpZ2h0OiAyNTBweDtcbn1cblxuLmltZy1jb250YWluZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cblxucCB7XG4gIG1hcmdpbjogMTBweDtcbiAgcGFkZGluZzogNXB4O1xufVxuXG4uc3BhbiB7XG4gIGRpc3BsYXk6IGlubGluZTtcbn1cblxuLmltZy10aXRsZSB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuaW9uLWNhcmQge1xuICBtYXJnaW46IDE1cHg7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -2267,6 +3472,15 @@ class AppointmentService {
         };
         return this.http.post(url, appointments, httpOptions);
     }
+    setLicenseLevelSchedule(appointments) {
+        const url = "https://o18ov9ki32.execute-api.us-east-1.amazonaws.com/default/setLicenseLevelSchedule";
+        const httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.post(url, appointments, httpOptions);
+    }
     setMastersLevelSchedule(appointments) {
         const url = "https://w4hvl0lqll.execute-api.us-east-1.amazonaws.com/default/setMastersLevelSchedule";
         const httpOptions = {
@@ -2275,6 +3489,33 @@ class AppointmentService {
             })
         };
         return this.http.post(url, appointments, httpOptions);
+    }
+    bookAppointment(appt) {
+        const url = "https://1wm21omqnc.execute-api.us-east-1.amazonaws.com/default/bookAppointment";
+        const httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.post(url, appt, httpOptions);
+    }
+    getMyAppointments(email) {
+        const url = "https://5for6fp862.execute-api.us-east-1.amazonaws.com/default/getMyAppointments?email=" + email;
+        const httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.get(url, httpOptions);
+    }
+    getAppointmentsByCounselor(name) {
+        const url = " https://6559d4fmz9.execute-api.us-east-1.amazonaws.com/default/getAppointmentsByCounselor?counselor=" + name;
+        const httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.get(url, httpOptions);
     }
 }
 AppointmentService.ctorParameters = () => [
@@ -2334,6 +3575,176 @@ AuthGuardService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/services/auth.service.ts":
+/*!**************************************!*\
+  !*** ./src/services/auth.service.ts ***!
+  \**************************************/
+/*! exports provided: AuthService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthService", function() { return AuthService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let AuthService = class AuthService {
+    constructor() {
+        this.authenticated = false;
+    }
+    setToken(token) {
+        sessionStorage.setItem("token", token);
+    }
+    getToken() {
+        return sessionStorage.getItem('token');
+    }
+    setAuthorization(token) {
+        this.setToken(token);
+        this.authenticated = true;
+    }
+    logOut() {
+        sessionStorage.removeItem("token");
+        this.authenticated = false;
+    }
+};
+AuthService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], AuthService);
+
+
+
+/***/ }),
+
+/***/ "./src/services/form.service.ts":
+/*!**************************************!*\
+  !*** ./src/services/form.service.ts ***!
+  \**************************************/
+/*! exports provided: FormService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormService", function() { return FormService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let FormService = class FormService {
+    constructor() {
+        this.adultIntakeForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3408979cc10a44ce9a67d840a7a89a85.pdf";
+        this.newClientForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3fbb43d69c7a4dffbd6743ec700141f7.pdf";
+        this.childIntakeForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_562308c8842142ffaf2f8eac293fcb11.pdf";
+        this.consentAgreementForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_b2a3b828ec9b47cbba3b19abb99978f8.pdf";
+        this.coupleIntakeForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_22f978315cd14176a7511fc81399492d.pdf";
+        this.aTRIForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_22f978315cd14176a7511fc81399492d.pdf";
+        this.creditCardForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3e1c03baf5f947d3a70527713a290eac.pdf";
+        this.communicationAgreementForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3f1537aa9025494fb9e0cdeebd244fe4.pdf";
+        this.hippaForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_f638f00b33c34e4ba05b9c53eed36a56.pdf";
+        this.lateAppointmentForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_7654ee15bfd84db79f69600524aa9177.pdf";
+        this.socialMediaForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_4dee92300d0d459080461f2a2febc3ff.pdf";
+        this.ateciForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_4075d96ff4264ad89219b5c76a9f808e.pdf";
+        this.schoolColabForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_4075d96ff4264ad89219b5c76a9f808e.pdf";
+    }
+    getAdultIntakeForm() {
+        return this.adultIntakeForm;
+    }
+    getNewClientForm() {
+        return this.newClientForm;
+    }
+    getChildIntakeForm() {
+        return this.childIntakeForm;
+    }
+    getConsentAgreementForm() {
+        return this.consentAgreementForm;
+    }
+    getCoupleIntakeForm() {
+        return this.coupleIntakeForm;
+    }
+    getatriForm() {
+        return this.aTRIForm;
+    }
+    getCreditCardForm() {
+        return this.creditCardForm;
+    }
+    getCommunicationAgreementForm() {
+        return this.communicationAgreementForm;
+    }
+    getHippaForm() {
+        return this.hippaForm;
+    }
+    getLateAppointmentForm() {
+        return this.lateAppointmentForm;
+    }
+    getSocialMediaForm() {
+        return this.socialMediaForm;
+    }
+    getAteciForm() {
+        return this.ateciForm;
+    }
+    getSchoolColabForm() {
+        return this.schoolColabForm;
+    }
+};
+FormService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+], FormService);
+
+
+
+/***/ }),
+
+/***/ "./src/services/login.service.ts":
+/*!***************************************!*\
+  !*** ./src/services/login.service.ts ***!
+  \***************************************/
+/*! exports provided: LoginService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginService", function() { return LoginService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let LoginService = class LoginService {
+    constructor(http) {
+        this.http = http;
+    }
+    login(username, password) {
+        const url = "https://ae4o7a3u62.execute-api.us-east-1.amazonaws.com/default/login";
+        const httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        const body = {
+            email: username,
+            password: password
+        };
+        return this.http.post(url, body, httpOptions);
+    }
+};
+LoginService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+LoginService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+], LoginService);
+
+
+
+/***/ }),
+
 /***/ "./src/services/menu.service.ts":
 /*!**************************************!*\
   !*** ./src/services/menu.service.ts ***!
@@ -2353,39 +3764,45 @@ let MenuService = class MenuService {
         this.options = [
             {
                 title: 'Team',
-                icon: 'person',
+                icon: 'people',
                 description: "Team Page",
                 route: 'team'
             },
             {
                 title: 'School Services',
-                icon: 'person',
+                icon: 'school',
                 description: "School Page",
                 route: 'school-based-services'
             },
             {
                 title: 'Outreach',
-                icon: 'person',
+                icon: 'globe',
                 description: "Outreach Page",
                 route: 'outreach'
             },
             {
                 title: 'Forms',
-                icon: 'person',
+                icon: 'document',
                 description: "Forms Page",
                 route: 'forms'
             },
             {
                 title: 'Fees',
-                icon: 'person',
+                icon: 'card',
                 description: "Fees Page",
                 route: 'fees'
             },
             {
                 title: 'Appointments',
-                icon: 'person',
+                icon: 'calendar',
                 description: "Appointment Page",
                 route: 'appointments'
+            },
+            {
+                title: 'Profile',
+                icon: 'person',
+                description: "Profile",
+                route: 'profile'
             }
         ];
         this.title = '';
@@ -2411,6 +3828,97 @@ MenuService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/services/user.service.ts":
+/*!**************************************!*\
+  !*** ./src/services/user.service.ts ***!
+  \**************************************/
+/*! exports provided: UserService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserService", function() { return UserService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let UserService = class UserService {
+    constructor(http) {
+        this.http = http;
+        this.user = {
+            firstName: "",
+            lastName: "",
+            email: "",
+            phone: "",
+            role: ""
+        };
+    }
+    getUser(email) {
+        const url = "https://au8x6x3ue1.execute-api.us-east-1.amazonaws.com/default/getUserInfo?email=" + email;
+        const httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.get(url, httpOptions);
+    }
+    addUser(user) {
+        const url = "https://a62hdz3sfj.execute-api.us-east-1.amazonaws.com/default/addUser";
+        const httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.post(url, user, httpOptions);
+    }
+    forgotUserName(lastName, phone) {
+        const url = "https://20xl1yz5a7.execute-api.us-east-1.amazonaws.com/default/forgotUserName?phone=" + phone + "&lastName=" + lastName;
+        const httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.get(url, httpOptions);
+    }
+    forgotPassword(body) {
+        const url = "https://jwigmpiobg.execute-api.us-east-1.amazonaws.com/default/forgotPassword";
+        const httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+            })
+        };
+        return this.http.post(url, body, httpOptions);
+    }
+    getUserInfo() {
+        return this.user;
+    }
+    setUserInfo(userInfo) {
+        var user = {
+            firstName: userInfo.Items[0].first_name.S,
+            lastName: userInfo.Items[0].last_name.S,
+            email: userInfo.Items[0].email.S,
+            phone: userInfo.Items[0].phone.S,
+            role: userInfo.Items[0].role.S
+        };
+        this.user = user;
+    }
+};
+UserService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+UserService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+], UserService);
+
+
+
+/***/ }),
+
 /***/ "./src/theme/button.scss":
 /*!*******************************!*\
   !*** ./src/theme/button.scss ***!
@@ -2418,7 +3926,7 @@ MenuService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "ion-back-button {\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy90aGVtZS9idXR0b24uc2NzcyIsInNyYy90aGVtZS9idXR0b24uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHQTtFQUNJLFlBQUE7QUNGSiIsImZpbGUiOiJzcmMvdGhlbWUvYnV0dG9uLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuL2NvbG9ycy5zY3NzJztcblxuXG5pb24tYmFjay1idXR0b24ge1xuICAgIGNvbG9yOiBjb2xvcih3aGl0ZSlcbn0iLCJpb24tYmFjay1idXR0b24ge1xuICBjb2xvcjogd2hpdGU7XG59Il19 */"
+module.exports = "ion-back-button {\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL3RoZW1lL2J1dHRvbi5zY3NzIiwic3JjL3RoZW1lL2J1dHRvbi5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUdBO0VBQ0ksWUFBQTtBQ0ZKIiwiZmlsZSI6InNyYy90aGVtZS9idXR0b24uc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4vY29sb3JzLnNjc3MnO1xuXG5cbmlvbi1iYWNrLWJ1dHRvbiB7XG4gICAgY29sb3I6IGNvbG9yKHdoaXRlKVxufSIsImlvbi1iYWNrLWJ1dHRvbiB7XG4gIGNvbG9yOiB3aGl0ZTtcbn0iXX0= */"
 
 /***/ }),
 
@@ -2440,7 +3948,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".title-text {\n  font-style: italic;\n  font-family: Apple Chancery;\n  color: white;\n}\n\n.menu-text {\n  font-style: italic;\n  font-family: Apple Chancery;\n  color: black;\n}\n\n.menu-header-text {\n  font-style: italic;\n  font-family: Apple Chancery;\n  color: white;\n}\n\n.menu-header-text {\n  font-style: italic;\n  font-family: Apple Chancery;\n  font-weight: bold;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC93ZWNsaW1iL3NyYy90aGVtZS9mb250LnNjc3MiLCJzcmMvdGhlbWUvZm9udC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0ksa0JBQUE7RUFDQSwyQkFBQTtFQUNBLFlBQUE7QUNESjs7QURJQTtFQUNJLGtCQUFBO0VBQ0EsMkJBQUE7RUFDQSxZQUFBO0FDREo7O0FESUE7RUFDSSxrQkFBQTtFQUNBLDJCQUFBO0VBQ0EsWUFBQTtBQ0RKOztBRElBO0VBQ0ksa0JBQUE7RUFDQSwyQkFBQTtFQUNBLGlCQUFBO0FDREoiLCJmaWxlIjoic3JjL3RoZW1lL2ZvbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4vY29sb3JzLnNjc3MnO1xuXG4udGl0bGUtdGV4dCB7XG4gICAgZm9udC1zdHlsZTogaXRhbGljO1xuICAgIGZvbnQtZmFtaWx5OiBBcHBsZSBDaGFuY2VyeTtcbiAgICBjb2xvcjogY29sb3IocHJpbWFyeSlcbn1cblxuLm1lbnUtdGV4dCB7XG4gICAgZm9udC1zdHlsZTogaXRhbGljO1xuICAgIGZvbnQtZmFtaWx5OiBBcHBsZSBDaGFuY2VyeTtcbiAgICBjb2xvcjogY29sb3IoZGFyaylcbn1cblxuLm1lbnUtaGVhZGVyLXRleHQge1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgICBmb250LWZhbWlseTogQXBwbGUgQ2hhbmNlcnk7XG4gICAgY29sb3I6IGNvbG9yKHByaW1hcnkpXG59XG5cbi5tZW51LWhlYWRlci10ZXh0IHtcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XG4gICAgZm9udC1mYW1pbHk6IEFwcGxlIENoYW5jZXJ5O1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xufSIsIi50aXRsZS10ZXh0IHtcbiAgZm9udC1zdHlsZTogaXRhbGljO1xuICBmb250LWZhbWlseTogQXBwbGUgQ2hhbmNlcnk7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLm1lbnUtdGV4dCB7XG4gIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgZm9udC1mYW1pbHk6IEFwcGxlIENoYW5jZXJ5O1xuICBjb2xvcjogYmxhY2s7XG59XG5cbi5tZW51LWhlYWRlci10ZXh0IHtcbiAgZm9udC1zdHlsZTogaXRhbGljO1xuICBmb250LWZhbWlseTogQXBwbGUgQ2hhbmNlcnk7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLm1lbnUtaGVhZGVyLXRleHQge1xuICBmb250LXN0eWxlOiBpdGFsaWM7XG4gIGZvbnQtZmFtaWx5OiBBcHBsZSBDaGFuY2VyeTtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59Il19 */"
+module.exports = ".title-text {\n  font-style: italic;\n  font-family: Apple Chancery;\n  color: white;\n}\n\n.menu-text {\n  font-style: italic;\n  font-family: Apple Chancery;\n  color: black;\n}\n\n.menu-header-text {\n  font-style: italic;\n  font-family: Apple Chancery;\n  color: white;\n}\n\n.menu-header-text {\n  font-style: italic;\n  font-family: Apple Chancery;\n  font-weight: bold;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL3RoZW1lL2ZvbnQuc2NzcyIsInNyYy90aGVtZS9mb250LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxrQkFBQTtFQUNBLDJCQUFBO0VBQ0EsWUFBQTtBQ0RKOztBRElBO0VBQ0ksa0JBQUE7RUFDQSwyQkFBQTtFQUNBLFlBQUE7QUNESjs7QURJQTtFQUNJLGtCQUFBO0VBQ0EsMkJBQUE7RUFDQSxZQUFBO0FDREo7O0FESUE7RUFDSSxrQkFBQTtFQUNBLDJCQUFBO0VBQ0EsaUJBQUE7QUNESiIsImZpbGUiOiJzcmMvdGhlbWUvZm9udC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi9jb2xvcnMuc2Nzcyc7XG5cbi50aXRsZS10ZXh0IHtcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XG4gICAgZm9udC1mYW1pbHk6IEFwcGxlIENoYW5jZXJ5O1xuICAgIGNvbG9yOiBjb2xvcihwcmltYXJ5KVxufVxuXG4ubWVudS10ZXh0IHtcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XG4gICAgZm9udC1mYW1pbHk6IEFwcGxlIENoYW5jZXJ5O1xuICAgIGNvbG9yOiBjb2xvcihkYXJrKVxufVxuXG4ubWVudS1oZWFkZXItdGV4dCB7XG4gICAgZm9udC1zdHlsZTogaXRhbGljO1xuICAgIGZvbnQtZmFtaWx5OiBBcHBsZSBDaGFuY2VyeTtcbiAgICBjb2xvcjogY29sb3IocHJpbWFyeSlcbn1cblxuLm1lbnUtaGVhZGVyLXRleHQge1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgICBmb250LWZhbWlseTogQXBwbGUgQ2hhbmNlcnk7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59IiwiLnRpdGxlLXRleHQge1xuICBmb250LXN0eWxlOiBpdGFsaWM7XG4gIGZvbnQtZmFtaWx5OiBBcHBsZSBDaGFuY2VyeTtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4ubWVudS10ZXh0IHtcbiAgZm9udC1zdHlsZTogaXRhbGljO1xuICBmb250LWZhbWlseTogQXBwbGUgQ2hhbmNlcnk7XG4gIGNvbG9yOiBibGFjaztcbn1cblxuLm1lbnUtaGVhZGVyLXRleHQge1xuICBmb250LXN0eWxlOiBpdGFsaWM7XG4gIGZvbnQtZmFtaWx5OiBBcHBsZSBDaGFuY2VyeTtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4ubWVudS1oZWFkZXItdGV4dCB7XG4gIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgZm9udC1mYW1pbHk6IEFwcGxlIENoYW5jZXJ5O1xuICBmb250LXdlaWdodDogYm9sZDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -2451,7 +3959,7 @@ module.exports = ".title-text {\n  font-style: italic;\n  font-family: Apple Cha
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/okwongbassey/Desktop/weclimb/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/okwongbassey/Desktop/apps/weclimb/src/main.ts */"./src/main.ts");
 
 
 /***/ }),

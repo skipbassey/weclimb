@@ -9,4 +9,5 @@ export class Appointment {
     candidateLastName?: string;
     candidateEmail?: string;
     type?: string;
+    table?: string;
 }

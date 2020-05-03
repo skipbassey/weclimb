@@ -3,6 +3,11 @@
 
     <!-- option menu -->
     <ion-menu side="end" contentId="main-content" menuId="option">
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
       <ion-content>
         <ion-nav>
           <ion-list *ngFor="let option of options">
@@ -35,7 +40,7 @@
       <ion-header>
         <ion-toolbar mode="ios" color="primary">
           <ion-buttons slot="end">
-            <ion-menu-button ></ion-menu-button>
+            <ion-menu-button></ion-menu-button>
           </ion-buttons>
           <!-- <ion-buttons slot="start">
             <ion-menu-button (click)="signOut()">
@@ -44,7 +49,7 @@
           </ion-buttons> -->
           <ion-title>
             <div class="logo-container">
-              <img class="logo-header" src="/assets/logo.png" alt="">
+              <img class="logo-header" src="assets/img/logo.png" alt="">
             </div>
           </ion-title>
         </ion-toolbar>
