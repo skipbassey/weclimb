@@ -23,12 +23,10 @@
       <li>Community & School Suicide Prevention Training</li>
       <li>Community & School Crisis Intervention Training</li>
     </ul>
-    <ion-slides [options]="slideOpts">
-      <ion-slide>
-        <img src="/assets/outreach1.jpeg" alt="">
-      </ion-slide>
-      <ion-slide>
-        <img src="/assets/outreach2.jpeg" alt="">
+
+    <ion-slides mode="ios" pager="true">
+      <ion-slide *ngFor="let url of photos">
+        <img [src]="url" alt="">
       </ion-slide>
     </ion-slides>
   </ion-content>

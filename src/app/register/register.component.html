@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="header-container">
+    <h1>Registration</h1>
+  </div>
+
+  <form [formGroup]="registerForm">
+    <ion-item>
+      <ion-label position="floating">First Name</ion-label>
+      <ion-input type="string" placeholder="John" formControlName="firstName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Last Name</ion-label>
+      <ion-input type="string" placeholder="Doe" formControlName="lastName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" placeholder="example@gmail.com" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Phone</ion-label>
+      <ion-input type="tel" placeholder="xxxxxxxxxx" formControlName="phone"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Confirm Password</ion-label>
+      <ion-input type="password" formControlName="confirmPassword"></ion-input>
+    </ion-item>
+    <ion-button type="submit" expand="block" fill="solid" [disabled]="!passwordMatch()" (click)="signUp()">Submit</ion-button>
+    <ion-button type="submit" expand="block" fill="solid" (click)="cancel()">Cancel</ion-button>
+  </form>
+</div>

@@ -84,6 +84,18 @@ export class AppointmentService {
         return this.http.post(url, appointments, httpOptions);
     }
 
+    setLicenseLevelSchedule(appointments: Appointment[]): Observable<any> {
+      const url = "https://o18ov9ki32.execute-api.us-east-1.amazonaws.com/default/setLicenseLevelSchedule";
+
+      const httpOptions = {
+        headers: new HttpHeaders({
+          'Content-Type':  'application/json',
+        })
+      };
+
+      return this.http.post(url, appointments, httpOptions)
+    }
+
     setMastersLevelSchedule(appointments: Appointment[]) : Observable<any> {
         const url = "https://w4hvl0lqll.execute-api.us-east-1.amazonaws.com/default/setMastersLevelSchedule";
 
@@ -96,5 +108,39 @@ export class AppointmentService {
         return this.http.post(url, appointments, httpOptions)
     }
 
-    
+    bookAppointment(appt: Appointment): Observable<any> {
+      const url = "https://1wm21omqnc.execute-api.us-east-1.amazonaws.com/default/bookAppointment";
+
+      const httpOptions = {
+        headers: new HttpHeaders({
+          'Content-Type':  'application/json',
+        })
+      };
+
+      return this.http.post(url, appt, httpOptions)
+    }
+
+    getMyAppointments(email: string): Observable<any> {
+      const url = "https://5for6fp862.execute-api.us-east-1.amazonaws.com/default/getMyAppointments?email=" + email;
+
+      const httpOptions = {
+        headers: new HttpHeaders({
+          'Content-Type':  'application/json',
+        })
+      };
+
+      return this.http.get(url, httpOptions)
+    }
+
+    getAppointmentsByCounselor(name: string): Observable<any> {
+      const url = " https://6559d4fmz9.execute-api.us-east-1.amazonaws.com/default/getAppointmentsByCounselor?counselor=" + name;
+
+      const httpOptions = {
+        headers: new HttpHeaders({
+          'Content-Type':  'application/json',
+        })
+      };
+
+      return this.http.get(url, httpOptions)
+    }
 }

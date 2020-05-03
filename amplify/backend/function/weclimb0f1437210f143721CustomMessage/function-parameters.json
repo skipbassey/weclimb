@@ -1,0 +1,14 @@
+{
+    "trigger": true,
+    "modules": [
+        "verification-link"
+    ],
+    "parentResource": "weclimb0f1437210f143721",
+    "functionName": "weclimb0f1437210f143721CustomMessage",
+    "parentStack": "auth",
+    "triggerEnvs": "[{\"key\":\"RESOURCENAME\",\"value\":\"resourceName\"}]",
+    "triggerTemplate": "CustomMessage.json.ejs",
+    "roleName": "weclimb0f1437210f143721CustomMessage",
+    "skipEdit": true,
+    "resourceName": "weclimb0f1437210f143721CustomMessage"
+}
