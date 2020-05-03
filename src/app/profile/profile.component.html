@@ -10,13 +10,13 @@
   <div>
     <div class="personal-info-container">
       <h1>Personal Information</h1>
-      <p>Name: {{user?.firstName}} {{user?.lastName}}</p>
-      <p>Phone Number: {{user?.phone}}</p>
+      <p>Name: {{user?.name}} {{user?.family_name}}</p>
+      <p>Phone Number: {{user?.phone_number}}</p>
       <p>Email: {{user?.email}}</p>
-      <p>Role: {{user?.role}}</p>
+      <p>Role: {{user?.profile}}</p>
     </div>
     <div  class="appointment-container">
-      <div class="user-container" *ngIf="role == 'user'">
+      <div class="user-container" *ngIf="user.profile == 'User'">
         <h1>My Appointment</h1>
         <ion-item *ngFor="let appt of appts">
           <div>
@@ -31,7 +31,7 @@
       </div>
 
       <!-- admin -->
-      <div class="admin-container" *ngIf="role == 'admin'">
+      <div class="admin-container" *ngIf="user.profile == 'Admin'">
         <h1>My Schedule</h1>
         <ion-list >
           <ion-item *ngFor="let appt of appts">

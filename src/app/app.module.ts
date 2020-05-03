@@ -39,6 +39,10 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ForgotUsernameComponent } from './forgot-username/forgot-username.component';
 import { FormService } from 'src/services/form.service';
+import { PictureService } from 'src/services/picture.service';
+import { ConfirmationModalComponent } from './confirmation-modal/confirmation-modal.component';
+import { ToasterService } from 'src/services/toaster.service';
+import { LoadingService } from 'src/services/loading.service';
 
 @NgModule({
   declarations: [
@@ -57,12 +61,14 @@ import { FormService } from 'src/services/form.service';
     RegisterComponent,
     CalendarComponent,
     ForgotPasswordComponent,
-    ForgotUsernameComponent
+    ForgotUsernameComponent,
+    ConfirmationModalComponent
   ],
   entryComponents: [
     ApptModalComponent,
     ForgotPasswordComponent,
-    ForgotUsernameComponent
+    ForgotUsernameComponent,
+    ConfirmationModalComponent
   ],
   imports: [
     BrowserModule,
@@ -89,6 +95,9 @@ import { FormService } from 'src/services/form.service';
     LoginService,
     AuthService,
     FormService,
+    PictureService,
+    ToasterService,
+    LoadingService,
     // File,
     // FileTransfer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }

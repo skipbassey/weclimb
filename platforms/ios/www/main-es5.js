@@ -744,7 +744,7 @@ module.exports = "\n<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Appointments</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content fullscreen>\n  <p class=\"text\">\n    If you are going through your insurance company for services, please provide\n    the client's name, date of birth and member ID number in the \"Add Your Message\"\n    section once you have selected your appointment. You will receive an email confirming\n    your appointment.\n  </p>\n\n  <ion-list>\n    <ion-item button (click)=\"selectAppointment('ll-intake')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$125</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ll-insurance')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Insurance: </b>$110</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ll-selfpay')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$80</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ml-intake')\">\n      <img src=\"assets/photo2.jpeg\" alt=\"\">\n      <p><b>Masters Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$100</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ml-selfpay')\">\n      <img src=\"assets/photo2.jpeg\" alt=\"\">\n      <p><b>Masters Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$65</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('youth')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Adolescent Group Counseling: </b>1hr</p>\n      <p><b>Self Pay: </b>$$35</p>\n      <p>Apollo Sports Counseling Inc.</p>\n    </ion-item>\n  </ion-list>\n</ion-content>"
+module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Appointments</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content fullscreen>\n  <p class=\"text\">\n    If you are going through your insurance company for services, please provide\n    the client's name, date of birth and member ID number in the \"Add Your Message\"\n    section once you have selected your appointment. You will receive an email confirming\n    your appointment.\n  </p>\n\n  <ion-list>\n    <ion-item button (click)=\"selectAppointment('ll-intake')\">\n      <p><b>Licensed Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$125</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ll-insurance')\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Insurance: </b>$110</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ll-selfpay')\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$80</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ml-intake')\">\n      <p><b>Masters Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$100</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ml-selfpay')\">\n      <p><b>Masters Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$65</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('youth')\">\n      <p><b>Adolescent Group Counseling: </b>1hr</p>\n      <p><b>Self Pay: </b>$$35</p>\n      <p>Apollo Sports Counseling Inc.</p>\n    </ion-item>\n  </ion-list>\n</ion-content>"
 
 /***/ }),
 
@@ -799,7 +799,7 @@ module.exports = "<ion-content>\n  <div class=\"header-container \">\n    <h1>Fo
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content>\n  <div class=\"header-container\">\n    <h1>Forgot Username</h1>\n  </div>\n  <form [formGroup]=\"usernameForm\" (ngSubmit)=\"forgotUsername()\">\n    <ion-item>\n      <ion-label position=\"floating\">Phone Number</ion-label>\n      <ion-input type=\"text\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"text\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <div class=\"button-container\">\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Submit</ion-button>\n\t\t\t<ion-button expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n\n  <div class=\"username-container\" *ngIf=\"loaded\">\n    <p>Your username is: {{username}}</p>\n  </div>\n</ion-content>"
+module.exports = "<ion-content>\n  <div class=\"header-container\">\n    <h1>Forgot Username</h1>\n  </div>\n  <form [formGroup]=\"usernameForm\" (ngSubmit)=\"forgotUsername()\">\n    <ion-item>\n      <ion-label position=\"floating\">Phone Number</ion-label>\n      <ion-input type=\"text\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"text\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <div class=\"button-container\">\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Submit</ion-button>\n\t\t\t<ion-button expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n\n</ion-content>"
 
 /***/ }),
 
@@ -909,7 +909,7 @@ module.exports = "\n  <ion-app>\n\n    <!-- option menu -->\n    <ion-menu side=
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-back-button defaultHref=\"home\"></ion-back-button>\n      </ion-buttons>\n      <ion-title class=\"title-text\">Outreach</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <p>\n        Here at We Climb Counseling & Consulting, we are dedicated to serving\n         the community through various community outreach initiatives. We Climb \n         Counseling & Consulting would love to work with your organization on its \n         next event. For information on how to reach us, please click on the contact tab. \n    </p>\n    <ul>\n      <li>Motivational Speaking</li>\n      <li>Career Day</li>\n      <li>Community Partnerships</li>\n      <li>Public and Private Schools Partnerships</li>\n      <li>Mental Health Awareness Seminars</li>\n      <li>Mental Health Training & Workshops</li>\n      <li>Community & School Suicide Prevention Training</li>\n      <li>Community & School Crisis Intervention Training</li>\n    </ul>\n    <img src=\"../../assets/img/outreach1.jpeg\" alt=\"pic 1\">\n    <img src=\"/assets/img/logo.png\" alt=\"\">\n\n    <ion-slides pager=\"true\" mode=\"ios\" init=\"true\">\n      <ion-slide>\n        <img src=\"/assets/img/outreach1.jpg\" alt=\"pic 1\">\n      </ion-slide>\n      <ion-slide>\n        <img src=\"assets/img/outreach2.png\" alt=\"pic 2\">\n      </ion-slide>\n    </ion-slides>\n  </ion-content>"
+module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-back-button defaultHref=\"home\"></ion-back-button>\n      </ion-buttons>\n      <ion-title class=\"title-text\">Outreach</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <p>\n        Here at We Climb Counseling & Consulting, we are dedicated to serving\n         the community through various community outreach initiatives. We Climb \n         Counseling & Consulting would love to work with your organization on its \n         next event. For information on how to reach us, please click on the contact tab. \n    </p>\n    <ul>\n      <li>Motivational Speaking</li>\n      <li>Career Day</li>\n      <li>Community Partnerships</li>\n      <li>Public and Private Schools Partnerships</li>\n      <li>Mental Health Awareness Seminars</li>\n      <li>Mental Health Training & Workshops</li>\n      <li>Community & School Suicide Prevention Training</li>\n      <li>Community & School Crisis Intervention Training</li>\n    </ul>\n\n    <ion-slides mode=\"ios\" pager=\"true\">\n      <ion-slide *ngFor=\"let url of photos\">\n        <img [src]=\"url\" alt=\"\">\n      </ion-slide>\n    </ion-slides>\n  </ion-content>"
 
 /***/ }),
 
@@ -1229,6 +1229,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./forgot-password/forgot-password.component */ "./src/app/forgot-password/forgot-password.component.ts");
 /* harmony import */ var _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./forgot-username/forgot-username.component */ "./src/app/forgot-username/forgot-username.component.ts");
 /* harmony import */ var src_services_form_service__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! src/services/form.service */ "./src/services/form.service.ts");
+/* harmony import */ var src_services_picture_service__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! src/services/picture.service */ "./src/services/picture.service.ts");
+
 
 
 
@@ -1320,6 +1322,7 @@ var AppModule = /** @class */ (function () {
                 _services_login_service__WEBPACK_IMPORTED_MODULE_29__["LoginService"],
                 src_services_auth_service__WEBPACK_IMPORTED_MODULE_32__["AuthService"],
                 src_services_form_service__WEBPACK_IMPORTED_MODULE_37__["FormService"],
+                src_services_picture_service__WEBPACK_IMPORTED_MODULE_38__["PictureService"],
                 // File,
                 // FileTransfer,
                 { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }
@@ -1895,7 +1898,7 @@ var ForgotPasswordComponent = /** @class */ (function () {
             _this.presentToast();
             _this.modalController.dismiss();
         }, function (err) {
-            alert("Error");
+            _this.presentErrorToast();
         });
     };
     ForgotPasswordComponent.prototype.cancel = function () {
@@ -1908,7 +1911,26 @@ var ForgotPasswordComponent = /** @class */ (function () {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.toastController.create({
                             message: 'Password has been changed.',
-                            duration: 2000
+                            duration: 2000,
+                            color: "success"
+                        })];
+                    case 1:
+                        toast = _a.sent();
+                        toast.present();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    ForgotPasswordComponent.prototype.presentErrorToast = function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var toast;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.toastController.create({
+                            message: 'Error resetting password',
+                            duration: 2000,
+                            color: "warning"
                         })];
                     case 1:
                         toast = _a.sent();
@@ -1983,7 +2005,6 @@ var ForgotUsernameComponent = /** @class */ (function () {
         this.toastController = toastController;
         this.loadingController = loadingController;
         this.modalController = modalController;
-        this.username = "";
         this.loaded = false;
     }
     ForgotUsernameComponent.prototype.ngOnInit = function () {
@@ -1999,14 +2020,32 @@ var ForgotUsernameComponent = /** @class */ (function () {
         var lastName = this.usernameForm.get("lastName").value;
         this.userService.forgotUserName(lastName, phone)
             .subscribe(function (res) {
-            _this.username = res;
-            _this.loadingController.dismiss;
+            _this.presentSuccessToast();
+            _this.modalController.dismiss();
         }, function (err) {
             _this.presentErrorToast();
         });
     };
     ForgotUsernameComponent.prototype.cancel = function () {
         this.modalController.dismiss();
+    };
+    ForgotUsernameComponent.prototype.presentSuccessToast = function () {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
+            var toast;
+            return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.toastController.create({
+                            message: 'Username has been sent to your email.',
+                            duration: 2000,
+                            color: "success"
+                        })];
+                    case 1:
+                        toast = _a.sent();
+                        toast.present();
+                        return [2 /*return*/];
+                }
+            });
+        });
     };
     ForgotUsernameComponent.prototype.presentErrorToast = function () {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
@@ -3056,7 +3095,7 @@ var MenuComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "img {\n  width: 100%;\n  height: 400px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9vdXRyZWFjaC9vdXRyZWFjaC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvb3V0cmVhY2gvb3V0cmVhY2guY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0E7RUFDSSxXQUFBO0VBQ0EsYUFBQTtBQ0ZKIiwiZmlsZSI6InNyYy9hcHAvb3V0cmVhY2gvb3V0cmVhY2guY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cblxuaW1nIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDQwMHB4O1xufSIsImltZyB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDQwMHB4O1xufSJdfQ== */"
+module.exports = "p {\n  margin: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9vdXRyZWFjaC9vdXRyZWFjaC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvb3V0cmVhY2gvb3V0cmVhY2guY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0E7RUFDSSxZQUFBO0FDRkoiLCJmaWxlIjoic3JjL2FwcC9vdXRyZWFjaC9vdXRyZWFjaC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuXG5wIHtcbiAgICBtYXJnaW46IDEwcHg7XG59XG4iLCJwIHtcbiAgbWFyZ2luOiAxMHB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -3072,44 +3111,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OutreachComponent", function() { return OutreachComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/js/swiper.esm.bundle.js");
+/* harmony import */ var src_services_picture_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/services/picture.service */ "./src/services/picture.service.ts");
 
 
 
 // import * as fs from 'fs';
 var OutreachComponent = /** @class */ (function () {
-    function OutreachComponent() {
-        this.testFolder = '/assets';
-        this.mySwiper = new swiper__WEBPACK_IMPORTED_MODULE_2__["default"]('.swiper-container', {
-            speed: 400,
-            spaceBetween: 100,
-            grabCursor: true,
-            iOSEdgeSwipeDetection: true,
-            preloadImages: true
-        });
+    function OutreachComponent(pictureService) {
+        this.pictureService = pictureService;
+        this.photos = [];
         this.slideOpts = {
-            init: true
+            initialSlide: this.photos.length,
+            init: true,
+            pager: true,
+            mode: "ios"
         };
     }
     OutreachComponent.prototype.ngOnInit = function () {
         this.getPhotos();
     };
     OutreachComponent.prototype.getPhotos = function () {
-        // fs.readdir(this.testFolder, (err, files) => {
-        //   files.forEach(file => {
-        //     console.log(file);
-        //   });
-        // });
+        this.photos = this.pictureService.getPhotos();
     };
-    OutreachComponent.prototype.next = function () {
-    };
+    OutreachComponent.ctorParameters = function () { return [
+        { type: src_services_picture_service__WEBPACK_IMPORTED_MODULE_2__["PictureService"] }
+    ]; };
     OutreachComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-outreach',
             template: __webpack_require__(/*! raw-loader!./outreach.component.html */ "./node_modules/raw-loader/index.js!./src/app/outreach/outreach.component.html"),
             styles: [__webpack_require__(/*! ./outreach.component.scss */ "./src/app/outreach/outreach.component.scss"), __webpack_require__(/*! ../../theme/font.scss */ "./src/theme/font.scss"), __webpack_require__(/*! ../../../node_modules/swiper/css/swiper.min.css */ "./node_modules/swiper/css/swiper.min.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_services_picture_service__WEBPACK_IMPORTED_MODULE_2__["PictureService"]])
     ], OutreachComponent);
     return OutreachComponent;
 }());
@@ -4045,6 +4078,50 @@ var MenuService = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], MenuService);
     return MenuService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/services/picture.service.ts":
+/*!*****************************************!*\
+  !*** ./src/services/picture.service.ts ***!
+  \*****************************************/
+/*! exports provided: PictureService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PictureService", function() { return PictureService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var PictureService = /** @class */ (function () {
+    function PictureService() {
+        this.photos = [
+            "/assets/img/outreach1.png",
+            "/assets/img/outreach2.png",
+            "/assets/img/outreach3.png",
+            "/assets/img/outreach4.png",
+            "/assets/img/outreach5.png",
+            "/assets/img/outreach6.png",
+            "/assets/img/outreach7.png",
+            "/assets/img/outreach8.png",
+            "/assets/img/outreach9.png",
+            "/assets/img/outreach10.png",
+            "/assets/img/outreach11.png",
+            "/assets/img/outreach12.png"
+        ];
+    }
+    PictureService.prototype.getPhotos = function () {
+        return this.photos;
+    };
+    PictureService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+    ], PictureService);
+    return PictureService;
 }());
 
 

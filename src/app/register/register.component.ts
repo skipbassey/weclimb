@@ -3,9 +3,12 @@ import { FormBuilder } from '@angular/forms';
 import { User } from 'src/models/user';
 import { UserService } from 'src/services/user.service';
 import { HttpErrorResponse } from '@angular/common/http';
-import { ToastController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { LoadingController } from '@ionic/angular';
+import { Auth } from 'aws-amplify';
+import { ModalController } from '@ionic/angular';
+import { ConfirmationModalComponent } from '../confirmation-modal/confirmation-modal.component';
+import { ToasterService } from 'src/services/toaster.service';
 
 @Component({
   selector: 'app-register',
@@ -19,8 +22,9 @@ export class RegisterComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private userService: UserService,
-    private toastController: ToastController,
     public loadingController: LoadingController,
+    private modalController: ModalController,
+    private toasterService: ToasterService,
     private router: Router
   ) { }
 
@@ -35,16 +39,48 @@ export class RegisterComponent implements OnInit {
     });
   }
 
+  async signUp() {
+    this.presentLoading()
+    
+    try {
+        const user = await Auth.signUp({
+            username: this.registerForm.get("email").value,
+            password: this.registerForm.get("password").value,
+            attributes: {
+                name: this.registerForm.get("firstName").value,  
+                family_name: this.registerForm.get("lastName").value,      
+                phone_number: "+1" + this.registerForm.get("phone").value,
+                profile: 'User'  
+              }
+        });
+        this.loadingController.dismiss();
+        this.presentConfirmationModal();
+    } catch (error) {
+        console.log('error signing up:', error);
+        this.toasterService.presentToast(
+          "There was an error completing your registration.",
+          "danger"
+        )
+    }
+  }
+
+  async presentConfirmationModal() {
+    const modal = await this.modalController.create({
+      component: ConfirmationModalComponent
+    });
+    return await modal.present();
+  }
+
   registerUser() {
     this.presentLoading();
 
-    var user: User = {
+    var user: any = {
       firstName: this.registerForm.get('firstName').value,
       lastName: this.registerForm.get('lastName').value,
       email: this.registerForm.get('email').value,
       password: this.registerForm.get('password').value,
       phone: this.registerForm.get('phone').value,
-      role: "User"
+      profile: "User"
     };
 
     this.userService.addUser(user)
@@ -87,14 +123,6 @@ export class RegisterComponent implements OnInit {
 
   private handleError(err: HttpErrorResponse, errMessage) {
     console.log(err + err.message)
-    alert(errMessage);
   }
 
-  async presentToast() {
-    const toast = await this.toastController.create({
-      message: 'Your profile has been created.',
-      duration: 2000
-    });
-    toast.present();
-  }
 }

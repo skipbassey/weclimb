@@ -2,8 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { ModalController } from '@ionic/angular';
 import { UserService } from 'src/services/user.service';
-import { ToastController } from '@ionic/angular';
-import { Router } from '@angular/router';
+import { Auth } from 'aws-amplify';
+import { ToasterService } from 'src/services/toaster.service';
+import { LoadingService } from 'src/services/loading.service';
 
 @Component({
   selector: 'app-forgot-password',
@@ -14,20 +15,55 @@ export class ForgotPasswordComponent implements OnInit {
 
   passwordForm: any;
 
+  codeSent = false;
+
   constructor(
     private formBuilder: FormBuilder,
     private modalController: ModalController,
     private userService: UserService,
-    private toastController: ToastController,
-    private router: Router
+    private toasterService: ToasterService,
+    private loadingService: LoadingService
   ) { }
 
   ngOnInit() {
     this.passwordForm = this.formBuilder.group({
       email: "",
-      lastName: "",
+      code: "",
       password: ""
     })
+  }
+
+  async forgotPasswordRequest() {
+    this.loadingService.presentLoading();
+    try {
+      const res = await Auth.forgotPassword("skipbassey@gmail.com");
+      if(res) {
+        this.codeSent = true;
+      }
+    } catch (error) {
+        console.log('error confirming sign up', error);
+        this.toasterService.presentToast(error.message, "danger")
+    }
+    this.loadingService.dismissLoading();
+  }
+
+  async forgotPasswordSubmit() {
+    this.loadingService.presentLoading();
+
+    try {
+      const req = await Auth.forgotPasswordSubmit(
+        this.passwordForm.get("email").value,
+        this.passwordForm.get("code").value,
+        this.passwordForm.get("password").value
+      )
+      this.toasterService.presentToast("Password has been reset.", "success");
+      this.modalController.dismiss();
+    }
+    catch(error) {
+      console.log(error)
+      this.toasterService.presentToast(error.message, "danger");
+    }
+    this.loadingService.dismissLoading();
   }
 
   forgotPassword() {
@@ -39,24 +75,15 @@ export class ForgotPasswordComponent implements OnInit {
 
     this.userService.forgotPassword(body)
       .subscribe(res => {
-        this.presentToast();
+        this.toasterService.presentToast("Password has been reset.", "success");
         this.modalController.dismiss();
       },
       err => {
-        alert("Error")
+        this.toasterService.presentToast("Error resetting password.", "danger");
       })
   }
 
   cancel() {
     this.modalController.dismiss();
   }
-
-  async presentToast() {
-    const toast = await this.toastController.create({
-      message: 'Password has been changed.',
-      duration: 2000
-    });
-    toast.present();
-  }
-
 }

@@ -18,7 +18,7 @@
     </ion-item>
     <ion-item>
       <ion-label position="floating">Phone</ion-label>
-      <ion-input type="tel" placeholder="xxx-xxx-xxxx" formControlName="phone"></ion-input>
+      <ion-input type="tel" placeholder="xxxxxxxxxx" formControlName="phone"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Password</ion-label>
@@ -28,7 +28,7 @@
       <ion-label position="floating">Confirm Password</ion-label>
       <ion-input type="password" formControlName="confirmPassword"></ion-input>
     </ion-item>
-    <ion-button type="submit" expand="block" fill="solid" [disabled]="!passwordMatch()" (click)="registerUser()">Submit</ion-button>
+    <ion-button type="submit" expand="block" fill="solid" [disabled]="!passwordMatch()" (click)="signUp()">Submit</ion-button>
     <ion-button type="submit" expand="block" fill="solid" (click)="cancel()">Cancel</ion-button>
   </form>
 </div>

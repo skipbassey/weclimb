@@ -11,6 +11,10 @@ import { LoadingController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
 import { ForgotPasswordComponent } from '../forgot-password/forgot-password.component';
 import { ForgotUsernameComponent } from '../forgot-username/forgot-username.component';
+import { LoadingService } from 'src/services/loading.service';
+import { ToasterService } from 'src/services/toaster.service';
+import { Auth } from 'aws-amplify';
+
 
 @Component({
   selector: 'app-login',
@@ -18,59 +22,6 @@ import { ForgotUsernameComponent } from '../forgot-username/forgot-username.comp
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-
-
-  signUpConfig = {
-    header: 'Sign Up',
-    hideAllDefaults: true,
-    defaultCountryCode: '1',
-    signUpFields: [
-      {
-        label: 'Username',
-        key: 'username',
-        required: true,
-        displayOrder: 1,
-        type: 'string',
-      },
-      {
-        label: 'Email',
-        key: 'email',
-        required: true,
-        displayOrder: 2,
-        type: 'string',
-      },
-      {
-        label: 'Password',
-        key: 'password',
-        required: true,
-        displayOrder: 3,
-        type: 'password'
-      },
-      {
-        label: 'Phone Number',
-        key: 'phone_number',
-        required: true,
-        displayOrder: 4,
-        type: 'string'
-      },
-      {
-        label: 'First Name',
-        key: 'name',
-        required: true,
-        displayOrder: 5,
-        type: 'string',
-      },
-      {
-        label: 'Last Name',
-        key: 'family_name',
-        required: true,
-        displayOrder: 6,
-        type: 'string',
-      }
-    ]
-  }
-
-  authState: any;
 
   loginForm: any;
 
@@ -83,17 +34,11 @@ export class LoginComponent implements OnInit {
     private loginService: LoginService,
     private authService: AuthService,
     private loadingController: LoadingController,
-    private modalController: ModalController
-  ) {
-    this.authState = { signedIn: false };
-
-    // this.amplifyService.authStateChange$
-    //   .subscribe(authState => {
-    //     this.authState.signedIn = authState.state === 'signedIn';
-    //     this.events.publish('data:AuthState', this.authState);
-    //     this.redirectSignIn();
-    //   });
-    }
+    private modalController: ModalController,
+    private loadingService: LoadingService,
+    private toasterService: ToasterService,
+  
+  ) { }
 
     ngOnInit() { 
       this.loginForm = this.formBuilder.group({
@@ -102,30 +47,58 @@ export class LoginComponent implements OnInit {
       });
     }
 
-    navigate() {
+    navigateToHome() {
       this.router.navigateByUrl('home');
     }
 
+    async signIn() {
+      this.loadingService.presentLoading();
+
+      try {
+        const res = await Auth.signIn(
+          this.loginForm.get("email").value,
+          this.loginForm.get("password").value
+        )
+        if(res) {
+          console.log(res);
+          this.authService.setAuthorization(
+            res.signInUserSession.accessToken.jwtToken,
+            res.signInUserSession.refreshToken.token
+          )
+          this.userService.setUserInfo(res.attributes);
+          this.navigateToHome();
+        }
+      }
+      catch(err) {
+        console.log(err);
+        this.toasterService.presentToast(err.message, "danger")
+      }
+      
+    }
+
     login() {
-      this.presentLoading();
+      this.loadingService.presentLoading();
       var email = this.loginForm.get('email').value;
       var password = this.loginForm.get('password').value;
       
       this.loginService.login(email, password)
         .pipe(
           tap(data => {
-            this.authService.setAuthorization(data.token);
+            // this.authService.setAuthorization(data.token);
           }),
           switchMap( () => {
             return this.userService.getUser(email)
           }),
           tap(data => {
             this.userService.setUserInfo(data);
-            this.navigate();
+            this.navigateToHome();
           })
         )
         .subscribe(res => {
           this.loadingController.dismiss();
+        },
+        err => {
+          this.toasterService.presentToast(err.message, "danger")
         })
     }
 
@@ -158,6 +131,4 @@ export class LoginComponent implements OnInit {
     });
     return await modal.present();
   }
-
-  
 }

@@ -6,6 +6,7 @@ import { ToastController } from '@ionic/angular';
 import { UserService } from 'src/services/user.service';
 import { User } from 'src/models/user';
 import { AppointmentService } from 'src/services/appointment.service';
+import { ToasterService } from 'src/services/toaster.service';
 
 
 @Component({
@@ -29,7 +30,8 @@ export class ApptModalComponent implements OnInit {
     private actionSheetController: ActionSheetController,
     private toastController: ToastController,
     private userService: UserService,
-    private apptService: AppointmentService
+    private apptService: AppointmentService,
+    private toasterService: ToasterService
   ) { }
 
   ngOnInit() {
@@ -76,7 +78,10 @@ export class ApptModalComponent implements OnInit {
           console.log('Appointment booked');
           this.bookAppointment(appt);
           console.log(appt);
-          this.presentToast();
+          this.toasterService.presentToast(
+            "Your appointment has been booked.",
+            "success"
+          )
         }
       },
       {
@@ -89,15 +94,6 @@ export class ApptModalComponent implements OnInit {
       }]
     });
     await actionSheet.present();
-  }
-
-  async presentToast() {
-    const toast = await this.toastController.create({
-      message: 'Your appointment has been booked.',
-      duration: 2000
-    });
-    toast.present();
-    this.modalController.dismiss();
   }
 
   determineTable(appt: Appointment): string {

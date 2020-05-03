@@ -8,13 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
-  user: User = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    role: ""
-  }
+  user: any = { }
 
   constructor(private http: HttpClient) { }
 
@@ -67,18 +61,27 @@ export class UserService {
     return this.http.post(url, body, httpOptions);
   }
 
-  getUserInfo(): User {
+  getUserInfo(): any {
     return this.user;
   }
 
   setUserInfo(userInfo: any) {
-    var user: User = {
-      firstName: userInfo.Items[0].first_name.S,
-      lastName: userInfo.Items[0].last_name.S,
-      email: userInfo.Items[0].email.S,
-      phone: userInfo.Items[0].phone.S,
-      role: userInfo.Items[0].role.S
-    }
-    this.user = user;
+    // var user: User = {
+    //   firstName: userInfo.Items[0].first_name.S,
+    //   lastName: userInfo.Items[0].last_name.S,
+    //   email: userInfo.Items[0].email.S,
+    //   phone: userInfo.Items[0].phone.S,
+    //   role: userInfo.Items[0].role.S
+    // }
+
+    // var user: User = {
+    //   firstName: userInfo.name,
+    //   lastName: userInfo.family_name,
+    //   email: userInfo.email,
+    //   phone: userInfo.phone_number,
+    //   role: userInfo.role
+    // }
+
+    this.user = userInfo;
   }
 }

@@ -14,8 +14,6 @@ export class ForgotUsernameComponent implements OnInit {
 
   usernameForm: any;
 
-  username = "";
-
   loaded = false;
 
   constructor(
@@ -41,8 +39,8 @@ export class ForgotUsernameComponent implements OnInit {
 
     this.userService.forgotUserName(lastName, phone)
       .subscribe(res => {
-        this.username = res;
-        this.loadingController.dismiss;
+        this.presentSuccessToast()
+        this.modalController.dismiss();
       },
       err => {
         this.presentErrorToast();
@@ -51,6 +49,15 @@ export class ForgotUsernameComponent implements OnInit {
 
   cancel() {
     this.modalController.dismiss();
+  }
+
+  async presentSuccessToast() {
+    const toast = await this.toastController.create({
+      message: 'Username has been sent to your email.',
+      duration: 2000,
+      color: "success"
+    });
+    toast.present();
   }
 
   async presentErrorToast() {

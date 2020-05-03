@@ -15,6 +15,7 @@ import { AuthGuardService } from 'src/services/auth-guard.service';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { ConfirmationModalComponent } from './confirmation-modal/confirmation-modal.component';
 
 const routes: Routes = [
   {

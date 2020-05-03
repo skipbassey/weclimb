@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
 })
 export class ProfileComponent implements OnInit {
 
-  user: User;
+  user: any = {} ;
 
   role = ""
 
@@ -34,10 +34,9 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
     this.presentLoading();
-    this.user = this.userService.getUserInfo();
-    this.role = this.user.role.toLowerCase();
-
-    if(this.user.role.toLowerCase() == "admin") {
+    this.user = this.userService.getUserInfo()
+     
+    if(this.user.profile == "Admin") {
       this.apptService.getAppointmentsByCounselor(this.user.firstName + " " + this.user.lastName)
         .subscribe(res => {
           this.appts = this.transformData(res.Items);
@@ -48,7 +47,7 @@ export class ProfileComponent implements OnInit {
           alert("Error getting user info");
         })
     }
-    else if (this.user.role.toLowerCase() == "user") {
+    else if (this.user.profile == "User") {
       this.apptService.getMyAppointments(this.user.email)
       .subscribe(res => {
         this.appts = this.transformData(res.Items)
