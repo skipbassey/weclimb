@@ -10,4 +10,5 @@ export class Appointment {
     candidateEmail?: string;
     type?: string;
     table?: string;
+    expires?: string
 }

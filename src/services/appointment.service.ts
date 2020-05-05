@@ -1,10 +1,12 @@
 import { Injectable } from "@angular/core";
-import { Observable } from 'rxjs';
+import { Observable, BehaviorSubject } from 'rxjs';
 import { Appointment } from 'src/models/Appointment';
 import { HttpClient, HttpHeaders  } from '@angular/common/http';
 
 Injectable()
 export class AppointmentService {
+
+  schedule: Appointment[] = [];
 
     constructor(private http: HttpClient) { }
 
@@ -142,5 +144,9 @@ export class AppointmentService {
       };
 
       return this.http.get(url, httpOptions)
+    }
+
+    clearSchedule() {
+      this.schedule = [];
     }
 }

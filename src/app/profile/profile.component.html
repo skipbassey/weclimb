@@ -13,10 +13,9 @@
       <p>Name: {{user?.name}} {{user?.family_name}}</p>
       <p>Phone Number: {{user?.phone_number}}</p>
       <p>Email: {{user?.email}}</p>
-      <p>Role: {{user?.profile}}</p>
     </div>
     <div  class="appointment-container">
-      <div class="user-container" *ngIf="user.profile == 'User'">
+      <div class="user-container" *ngIf="!isAdmin()">
         <h1>My Appointment</h1>
         <ion-item *ngFor="let appt of appts">
           <div>
@@ -31,7 +30,7 @@
       </div>
 
       <!-- admin -->
-      <div class="admin-container" *ngIf="user.profile == 'Admin'">
+      <div class="admin-container" *ngIf="isAdmin()">
         <h1>My Schedule</h1>
         <ion-list >
           <ion-item *ngFor="let appt of appts">
@@ -47,7 +46,7 @@
   </div>
 
   <div class="button-container">
-    <ion-button *ngIf="role == 'admin'" shape="round" fill="outline" (click)="setCalendar()">Set Calendar</ion-button>
+    <ion-button *ngIf="user.profile == 'User'" shape="round" fill="outline" (click)="setCalendar()">Set Calendar</ion-button>
     <!-- <ion-button *ngIf="role == 'admin'" shape="round" fill="outline" (click)="logOut()">Add Admin</ion-button> -->
     <ion-button shape="round" fill="outline" (click)="logOut()">Signout</ion-button>
   </div>

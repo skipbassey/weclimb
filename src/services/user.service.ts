@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 export class UserService {
 
   user: any = { }
+  groups: string[] = []
 
   constructor(private http: HttpClient) { }
 
@@ -83,5 +84,13 @@ export class UserService {
     // }
 
     this.user = userInfo;
+  }
+
+  setUserGroups(group: string[]) {
+    this.groups = group
+  }
+
+  getUserGroups(): string[] {
+    return this.groups;
   }
 }

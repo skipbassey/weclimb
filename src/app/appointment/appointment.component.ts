@@ -3,7 +3,7 @@ import { ModalController } from '@ionic/angular';
 import { AppointmentService } from 'src/services/appointment.service';
 import { Appointment } from 'src/models/Appointment';
 import { HttpErrorResponse } from '@angular/common/http';
-import { ApptModalComponent } from '../appt-modal/appt-modal.component';
+import { ApptModalComponent } from '../modals/appt-modal/appt-modal.component';
 
 @Component({
   selector: 'app-appointment',

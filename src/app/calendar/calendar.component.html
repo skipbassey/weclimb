@@ -1,41 +1,27 @@
 <ion-content fullscreen>
-  <form [formGroup]="calendarForm" (ngSubmit)="addToCalendar()">
-    <ion-list>
-      <ion-item>
-        <ion-label position="floating">Title</ion-label>
-        <ion-input formControlName="name" placeholder="Masters Level Clinician"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>Type</ion-label>
-        <ion-select formControlName="type" placeholder="Select One">
-          <ion-select-option value="First Session">First Session</ion-select-option>
-          <ion-select-option value="Insurance">Insurance</ion-select-option>
-          <ion-select-option value="Self Pay">Self Pay</ion-select-option>
-        </ion-select>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating">Duration</ion-label>
-        <ion-input formControlName="duration" placeholder="1 hr"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating">Price</ion-label>
-        <ion-input formControlName="price" placeholder="$100"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating">Location</ion-label>
-        <ion-input formControlName="location" [placeholder]="location"></ion-input>
-      </ion-item>
-      <ion-item-divider></ion-item-divider>
-      <ion-item>
-        <ion-label>Start Date</ion-label>
-        <ion-datetime formControlName="date" mode="ios" displayFormat="MMM DD, YYYY HH:mm" placeholder="Select Date"></ion-datetime>
-      </ion-item>
-     
-      <ion-item-divider></ion-item-divider>
-      <ion-button type="submit" expand="block" fill="solid">Add To Calendar</ion-button>
-      <ion-button type="button" expand="block" fill="solid" (click)="cancel()">Cancel</ion-button>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-button>
+          <ion-back-button class="back-btn" defaultHref="profile"></ion-back-button>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Add to Calendar</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="openCalendarModal()"> 
+          <ion-icon name="add"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="appt-container">
+    <ion-item *ngFor="let appt of appts">
+      <p>{{appt.name}} {{appt.date}}</p>
+    </ion-item>
+  </div>
   
-    </ion-list>
-  </form>
-  
+  <div class="btn-container">
+    <ion-button shape="round" fill="solid" (click)="submit()">Submit</ion-button>
+  </div>
 </ion-content>

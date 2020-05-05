@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 import { LoadingController } from '@ionic/angular';
 import { Auth } from 'aws-amplify';
 import { ModalController } from '@ionic/angular';
-import { ConfirmationModalComponent } from '../confirmation-modal/confirmation-modal.component';
+import { ConfirmationModalComponent } from '../modals/confirmation-modal/confirmation-modal.component';
 import { ToasterService } from 'src/services/toaster.service';
 
 @Component({

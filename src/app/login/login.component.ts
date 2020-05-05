@@ -25,6 +25,8 @@ export class LoginComponent implements OnInit {
 
   loginForm: any;
 
+  checked = false;
+
   constructor(
     public events: Events,
     public amplifyService: AmplifyService,
@@ -43,8 +45,11 @@ export class LoginComponent implements OnInit {
     ngOnInit() { 
       this.loginForm = this.formBuilder.group({
         email: '',
-        password: ''
+        password: '',
+        toggle: ''
       });
+
+      this.getRememberMeCredentials();
     }
 
     navigateToHome() {
@@ -59,13 +64,15 @@ export class LoginComponent implements OnInit {
           this.loginForm.get("email").value,
           this.loginForm.get("password").value
         )
+        console.log(Auth.currentUserInfo());
         if(res) {
           console.log(res);
           this.authService.setAuthorization(
             res.signInUserSession.accessToken.jwtToken,
             res.signInUserSession.refreshToken.token
           )
-          this.userService.setUserInfo(res.attributes);
+          this.userService.setUserInfo(res.signInUserSession.idToken.payload);
+          // this.userService.setUserGroups(res.signInUserSession.idToken.payload)
           this.navigateToHome();
         }
       }
@@ -84,7 +91,6 @@ export class LoginComponent implements OnInit {
       this.loginService.login(email, password)
         .pipe(
           tap(data => {
-            // this.authService.setAuthorization(data.token);
           }),
           switchMap( () => {
             return this.userService.getUser(email)
@@ -130,5 +136,34 @@ export class LoginComponent implements OnInit {
       component: ForgotUsernameComponent
     });
     return await modal.present();
+  }
+
+  rememberMe(event: any) {
+    switch(event.detail.checked) {
+      case true:
+        window.localStorage.setItem ("email", this.loginForm.get("email").value);
+        window.localStorage.setItem ("password", this.loginForm.get("password").value);
+        window.localStorage.setItem("checked", "true");
+        break;
+      case false:
+        window.localStorage.setItem ("email", "");
+        window.localStorage.setItem ("password", "");
+        window.localStorage.setItem("checked", "false");
+        break;
+    }
+  }
+
+  private getRememberMeCredentials() {
+    this.loginForm.controls["email"].setValue(window.localStorage.getItem("email"));
+    this.loginForm.controls["password"].setValue(window.localStorage.getItem("password"));
+
+    switch(window.localStorage.getItem("checked")) {
+      case "true":
+        this.checked = true;
+        break;
+      case "false":
+        this.checked = false;
+        break;
+    }  
   }
 }
