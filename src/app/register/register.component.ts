@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { User } from 'src/models/user';
 import { UserService } from 'src/services/user.service';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Router } from '@angular/router';
@@ -94,7 +93,7 @@ export class RegisterComponent implements OnInit {
   }
 
   cancel() {
-    this.router.navigateByUrl('login');
+    this.modalController.dismiss();
   }
 
   passwordMatch(): boolean {
