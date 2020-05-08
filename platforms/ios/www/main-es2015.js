@@ -870,7 +870,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content>\n\t<div class=\"logo-container\">\n\t\t<img src=\"/assets/img/logo.png\" alt=\"\">\n\t</div>\n\n\t<form [formGroup]=\"loginForm\" (ngSubmit)=\"signIn()\">\n\t\t<div class=\"credential-container\">\n\t\t\t<ion-item>\n\t\t\t\t<ion-label position=\"floating\">Username</ion-label>\n\t\t\t\t<ion-input formControlName=\"email\" placeholder=\"example@gmail.com\" type=\"email\"></ion-input>\n\t\t\t  </ion-item>\n\t\t\t  <ion-item>\n\t\t\t\t<ion-label position=\"floating\">Password</ion-label>\n\t\t\t\t<ion-input formControlName=\"password\" placeholder=\"password\" type=\"password\"></ion-input>\n\t\t\t  </ion-item>\n\t\t</div>\n\t\t  <div class=\"button-container\">\n\t\t\t  <div class=\"remember-me-container\">\n\t\t\t\t<ion-item (click)=\"rememberMe()\">\n\t\t\t\t\t<ion-label>Remember Me</ion-label>\n\t\t\t\t\t<ion-toggle mode=\"ios\" slot=\"start\" value [checked]=\"checked\" (ionChange)=\"rememberMe($event)\"></ion-toggle>\n\t\t\t\t  </ion-item>\t\n\t\t\t  </div>\n\t\t\t  <div class=\"action-btn-container\">\n\t\t\t\t<ion-button class=\"btn\" type=\"submit\" fill=\"solid\" >Login</ion-button>\n\t\t\t\t<ion-button class=\"btn\" fill=\"solid\" (click)=\"register()\">Register</ion-button>\n\t\t\t  </div>\n\t\t\t\t\t\n\t\t\t<div class=\"reset-container\">\n\t\t\t\t<a class=\"reset\" (click)=\"presentForgotUsernameModal()\">Forgot Username?</a>\n\t\t\t\t<a class=\"reset\" (click)=\"presentForgotPasswordModal()\">Forgot Password?</a>\n\t\t\t</div>\n\t\t  </div>\n\t</form>\n</ion-content>"
+module.exports = "<ion-content>\n\t<div class=\"logo-container\">\n\t\t<img src=\"/assets/img/logo.png\" alt=\"\">\n\t</div>\n\n\t<form [formGroup]=\"loginForm\" (ngSubmit)=\"signIn()\">\n\t\t<div class=\"credential-container\">\n\t\t\t<ion-item>\n\t\t\t\t<ion-label position=\"floating\">Username</ion-label>\n\t\t\t\t<ion-input formControlName=\"email\" placeholder=\"example@gmail.com\" type=\"email\"></ion-input>\n\t\t\t  </ion-item>\n\t\t\t  <ion-item>\n\t\t\t\t<ion-label position=\"floating\">Password</ion-label>\n\t\t\t\t<ion-input formControlName=\"password\" placeholder=\"password\" type=\"password\"></ion-input>\n\t\t\t  </ion-item>\n\t\t</div>\n\t\t  <div class=\"button-container\">\n\t\t\t  <div class=\"remember-me-container\">\n\t\t\t\t<ion-item (click)=\"rememberMe()\">\n\t\t\t\t\t<ion-label>Remember Me</ion-label>\n\t\t\t\t\t<ion-toggle mode=\"ios\" slot=\"start\" value [checked]=\"checked\" (ionChange)=\"rememberMe($event)\"></ion-toggle>\n\t\t\t\t  </ion-item>\t\n\t\t\t  </div>\n\t\t\t  <div class=\"action-btn-container\">\n\t\t\t\t<ion-button class=\"btn\" type=\"submit\" fill=\"solid\" >Login</ion-button>\n\t\t\t\t<ion-button class=\"btn\" fill=\"solid\" (click)=\"presentRegisterModal()\">Register</ion-button>\n\t\t\t  </div>\n\t\t\t\t\t\n\t\t\t<div class=\"reset-container\">\n\t\t\t\t<a class=\"reset\" (click)=\"presentForgotUsernameModal()\">Forgot Username?</a>\n\t\t\t\t<a class=\"reset\" (click)=\"presentForgotPasswordModal()\">Forgot Password?</a>\n\t\t\t</div>\n\t\t  </div>\n\t</form>\n</ion-content>"
 
 /***/ }),
 
@@ -1311,7 +1311,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_35__["ForgotPasswordComponent"],
             _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_36__["ForgotUsernameComponent"],
             _modals_confirmation_modal_confirmation_modal_component__WEBPACK_IMPORTED_MODULE_39__["ConfirmationModalComponent"],
-            _modals_calendar_modal_calendar_modal_component__WEBPACK_IMPORTED_MODULE_42__["CalendarModalComponent"]
+            _modals_calendar_modal_calendar_modal_component__WEBPACK_IMPORTED_MODULE_42__["CalendarModalComponent"],
+            _register_register_component__WEBPACK_IMPORTED_MODULE_33__["RegisterComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
@@ -2568,6 +2569,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_services_loading_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! src/services/loading.service */ "./src/services/loading.service.ts");
 /* harmony import */ var src_services_toaster_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! src/services/toaster.service */ "./src/services/toaster.service.ts");
 /* harmony import */ var aws_amplify__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! aws-amplify */ "./node_modules/aws-amplify/lib-esm/index.js");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../register/register.component */ "./src/app/register/register.component.ts");
+
 
 
 
@@ -2648,8 +2651,13 @@ let LoginComponent = class LoginComponent {
             this.toasterService.presentToast(err.message, "danger");
         });
     }
-    register() {
-        this.router.navigateByUrl('register');
+    presentRegisterModal() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const modal = yield this.modalController.create({
+                component: _register_register_component__WEBPACK_IMPORTED_MODULE_15__["RegisterComponent"]
+            });
+            return yield modal.present();
+        });
     }
     presentLoading() {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
