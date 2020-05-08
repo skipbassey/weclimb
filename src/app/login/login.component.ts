@@ -14,6 +14,7 @@ import { ForgotUsernameComponent } from '../forgot-username/forgot-username.comp
 import { LoadingService } from 'src/services/loading.service';
 import { ToasterService } from 'src/services/toaster.service';
 import { Auth } from 'aws-amplify';
+import { RegisterComponent } from '../register/register.component';
 
 
 @Component({
@@ -107,8 +108,11 @@ export class LoginComponent implements OnInit {
         })
     }
 
-  register() {
-    this.router.navigateByUrl('register');
+  async presentRegisterModal() {
+    const modal = await this.modalController.create({
+      component: RegisterComponent
+    });
+    return await modal.present();
   }
 
   async presentLoading() {

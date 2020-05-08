@@ -73,7 +73,8 @@ import { MaterialModule } from './modules/material.module';
     ForgotPasswordComponent,
     ForgotUsernameComponent,
     ConfirmationModalComponent,
-    CalendarModalComponent
+    CalendarModalComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
