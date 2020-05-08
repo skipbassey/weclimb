@@ -33,18 +33,8 @@
     --ion-color-base: color(secondary);
 }
 
-.amplify-form-link {
-    color: color(secondary);
-}
-
-.amplify-form-cell-right {
-    text-align: center;
-}
-
-.amplify-form-button {
-    background-color: color(secondary);
-}
-
-.amplify-form-button:hover {
-    background-color: color(secondary);
+.btn {
+    --background-hover: rgb(85, 197, 85);
+    width: 150px;
+    margin: 15px;
 }
