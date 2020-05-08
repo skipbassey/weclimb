@@ -749,7 +749,7 @@ module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content fullscreen>\n  <ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-button>\n          <ion-back-button class=\"back-btn\" defaultHref=\"profile\"></ion-back-button>\n        </ion-button>\n      </ion-buttons>\n      <ion-title>Add to Calendar</ion-title>\n      <ion-buttons slot=\"end\">\n        <ion-button (click)=\"openCalendarModal()\"> \n          <ion-icon name=\"add\"></ion-icon>\n        </ion-button>\n      </ion-buttons>\n    </ion-toolbar>\n  </ion-header>\n\n  <div class=\"appt-container\">\n    <ion-item *ngFor=\"let appt of appts\">\n      <p>{{appt.name}} {{appt.date}}</p>\n    </ion-item>\n  </div>\n  \n  <div class=\"btn-container\">\n    <ion-button shape=\"round\" fill=\"solid\" (click)=\"submit()\">Submit</ion-button>\n  </div>\n</ion-content>"
+module.exports = "<ion-content fullscreen>\n  <ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-button>\n          <ion-back-button class=\"back-btn\" defaultHref=\"profile\"></ion-back-button>\n        </ion-button>\n      </ion-buttons>\n      <ion-title>Add to Calendar</ion-title>\n\n\n    </ion-toolbar>\n  </ion-header>\n  <ion-fab vertical=\"top\" horizontal=\"end\" slot=\"fixed\">\n    <ion-fab-button (click)=\"openCalendarModal()\">\n      <ion-icon name=\"add\"></ion-icon>\n    </ion-fab-button>\n  </ion-fab>\n  <div class=\"appt-container\">\n    <ion-item (click)=\"removeAppointment(appt)\" *ngFor=\"let appt of appts\">\n      <p>{{appt.name}} {{appt.date}}</p>\n    </ion-item>\n  </div>\n\n  <div class=\"btn-container\">\n    <ion-fab vertical=\"bottom\" horizontal=\"center\" slot=\"fixed\">\n      <ion-fab-button (click)=\"submit()\">\n        <ion-icon name=\"checkmark\"></ion-icon>\n      </ion-fab-button>\n    </ion-fab>\n  </div>\n</ion-content>"
 
 /***/ }),
 
@@ -771,7 +771,7 @@ module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content>\n  <div class=\"header-container \">\n    <h1>Forgot Password</h1>\n  </div>\n  <form [formGroup]=\"passwordForm\" (ngSubmit)=\"forgotPasswordRequest()\">\n    <ion-item>\n      <ion-label position=\"floating\">Email</ion-label>\n      <ion-input type=\"text\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item *ngIf=\"codeSent\">\n      <ion-label position=\"floating\">Code</ion-label>\n      <ion-input type=\"text\" formControlName=\"code\"></ion-input>\n    </ion-item>\n    <ion-item *ngIf=\"codeSent\">\n      <ion-label position=\"floating\">New Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <div class=\"button-container\">\n      <ion-button *ngIf=\"!codeSent\" type=\"submit\" expand=\"block\" fill=\"solid\">Submit</ion-button>\n      <ion-button *ngIf=\"codeSent\" expand=\"block\" fill=\"solid\" (click)=\"forgotPasswordSubmit()\">Submit</ion-button>\n\t\t\t<ion-button expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n</ion-content>"
+module.exports = "<ion-content>\n  <div class=\"header-container \">\n    <h1>Forgot Password</h1>\n  </div>\n  <form [formGroup]=\"passwordForm\" (ngSubmit)=\"forgotPasswordRequest()\">\n    <ion-item>\n      <ion-label position=\"floating\">Email</ion-label>\n      <ion-input type=\"text\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item *ngIf=\"codeSent\">\n      <ion-label position=\"floating\">Code</ion-label>\n      <ion-input type=\"text\" formControlName=\"code\"></ion-input>\n    </ion-item>\n    <ion-item *ngIf=\"codeSent\">\n      <ion-label position=\"floating\">New Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <div class=\"button-container\">\n      <ion-button *ngIf=\"!codeSent\" type=\"submit\" class=\"btn\" fill=\"solid\">Submit</ion-button>\n      <ion-button *ngIf=\"codeSent\" class=\"btn\" fill=\"solid\" (click)=\"forgotPasswordSubmit()\">Submit</ion-button>\n\t\t\t<ion-button class=\"btn\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n</ion-content>"
 
 /***/ }),
 
@@ -782,7 +782,7 @@ module.exports = "<ion-content>\n  <div class=\"header-container \">\n    <h1>Fo
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content>\n  <div class=\"header-container\">\n    <h1>Forgot Username</h1>\n  </div>\n  <form [formGroup]=\"usernameForm\" (ngSubmit)=\"forgotUsername()\">\n    <ion-item>\n      <ion-label position=\"floating\">Phone Number</ion-label>\n      <ion-input type=\"text\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"text\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <div class=\"button-container\">\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Submit</ion-button>\n\t\t\t<ion-button expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n\n</ion-content>"
+module.exports = "<ion-content>\n  <div class=\"header-container\">\n    <h1>Forgot Username</h1>\n  </div>\n  <form [formGroup]=\"usernameForm\" (ngSubmit)=\"forgotUsername()\">\n    <ion-item>\n      <ion-label position=\"floating\">Phone Number</ion-label>\n      <ion-input type=\"text\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"text\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <div class=\"button-container\">\n\t\t\t<ion-button type=\"submit\" class=\"btn\" fill=\"solid\">Submit</ion-button>\n\t\t\t<ion-button class=\"btn\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n\n</ion-content>"
 
 /***/ }),
 
@@ -903,7 +903,7 @@ module.exports = "<ion-content>\n  <ion-toolbar color=\"primary\">\n    <ion-but
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form [formGroup]=\"calendarForm\" (ngSubmit)=\"addToCalendar()\">\n    <ion-list>\n      <ion-item>\n        <ion-label>Title</ion-label>\n        <ion-select formControlName=\"name\" placeholder=\"Select One\">\n          <ion-select-option value=\"Licensed Level Clinician\">Licensed Level Clinician</ion-select-option>\n          <ion-select-option value=\"Masters Level Clinician\">Masters Level Clinician</ion-select-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Type</ion-label>\n        <ion-select formControlName=\"type\" placeholder=\"Select One\">\n          <ion-select-option value=\"First Session\">First Session</ion-select-option>\n          <ion-select-option value=\"Insurance\">Insurance</ion-select-option>\n          <ion-select-option value=\"Self Pay\">Self Pay</ion-select-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label position=\"floating\">Duration</ion-label>\n        <ion-input formControlName=\"duration\" placeholder=\"1 hr\"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label position=\"floating\">Price</ion-label>\n        <ion-input formControlName=\"price\" placeholder=\"$100\"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Location</ion-label>\n        <ion-select formControlName=\"location\" placeholder=\"Select One\">\n          <ion-select-option [value]=\"location\">Bldg. A. Suites 122-124 2175 Highpoint Road, Snellville, GA, USA</ion-select-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Start Date</ion-label>\n        <ion-datetime formControlName=\"date\" mode=\"ios\" displayFormat=\"MMM DD, YYYY h:mm A\" placeholder=\"Select Date\"></ion-datetime>\n      </ion-item>\n     \n      <ion-item-divider></ion-item-divider>\n      <ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Add</ion-button>\n      <ion-button type=\"button\" expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n  \n    </ion-list>\n  </form>\n  "
+module.exports = "<form [formGroup]=\"calendarForm\" (ngSubmit)=\"addToCalendar()\">\n    <ion-list>\n      <ion-item>\n        <ion-label>Title</ion-label>\n        <ion-select formControlName=\"name\" placeholder=\"Select One\">\n          <ion-select-option value=\"Licensed Level Clinician\">Licensed Level Clinician</ion-select-option>\n          <ion-select-option value=\"Masters Level Clinician\">Masters Level Clinician</ion-select-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Type</ion-label>\n        <ion-select formControlName=\"type\" placeholder=\"Select One\">\n          <ion-select-option value=\"First Session\">First Session</ion-select-option>\n          <ion-select-option value=\"Insurance\">Insurance</ion-select-option>\n          <ion-select-option value=\"Self Pay\">Self Pay</ion-select-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label position=\"floating\">Duration</ion-label>\n        <ion-input formControlName=\"duration\" placeholder=\"1 hr\"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label position=\"floating\">Price</ion-label>\n        <ion-input formControlName=\"price\" placeholder=\"$100\"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Location</ion-label>\n        <ion-select formControlName=\"location\" placeholder=\"Select One\">\n          <ion-select-option [value]=\"location\">Bldg. A. Suites 122-124 2175 Highpoint Road, Snellville, GA, USA</ion-select-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Start Date</ion-label>\n        <ion-datetime formControlName=\"date\" mode=\"ios\" displayFormat=\"MMM DD, YYYY h:mm A\" placeholder=\"Select Date\"></ion-datetime>\n      </ion-item>\n     \n      <!-- <ion-item-divider></ion-item-divider> -->\n      <div class=\"action-btn-container\">\n        <ion-button type=\"submit\" class=\"btn\" fill=\"solid\">Add</ion-button>\n        <ion-button type=\"button\" class=\"btn\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n      </div>\n      \n    </ion-list>\n  </form>\n  "
 
 /***/ }),
 
@@ -947,7 +947,7 @@ module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"header-container\">\n    <h1>Registration</h1>\n  </div>\n\n  <form [formGroup]=\"registerForm\">\n    <ion-item>\n      <ion-label position=\"floating\">First Name</ion-label>\n      <ion-input type=\"string\" placeholder=\"John\" formControlName=\"firstName\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"string\" placeholder=\"Doe\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Email</ion-label>\n      <ion-input type=\"email\" placeholder=\"example@gmail.com\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Phone</ion-label>\n      <ion-input type=\"tel\" placeholder=\"xxxxxxxxxx\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Confirm Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"confirmPassword\"></ion-input>\n    </ion-item>\n    <ion-button type=\"submit\" expand=\"block\" fill=\"solid\" [disabled]=\"!passwordMatch()\" (click)=\"signUp()\">Submit</ion-button>\n    <ion-button type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n  </form>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"header-container\">\n    <h1>Registration</h1>\n  </div>\n\n  <form [formGroup]=\"registerForm\">\n    <ion-item>\n      <ion-label position=\"floating\">First Name</ion-label>\n      <ion-input type=\"string\" placeholder=\"John\" formControlName=\"firstName\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"string\" placeholder=\"Doe\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Email</ion-label>\n      <ion-input type=\"email\" placeholder=\"example@gmail.com\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Phone</ion-label>\n      <ion-input type=\"tel\" placeholder=\"xxxxxxxxxx\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Confirm Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"confirmPassword\"></ion-input>\n    </ion-item>\n    <ion-button type=\"submit\" class=\"btn\" fill=\"solid\" [disabled]=\"!passwordMatch()\" (click)=\"signUp()\">Submit</ion-button>\n    <ion-button type=\"submit\" class=\"btn\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n  </form>\n</div>\n"
 
 /***/ }),
 
@@ -1536,11 +1536,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 let CalendarComponent = class CalendarComponent {
-    constructor(modalController, apptService, toasterService, router) {
+    constructor(modalController, apptService, toasterService, alertController, router) {
         this.modalController = modalController;
         this.apptService = apptService;
         this.toasterService = toasterService;
+        this.alertController = alertController;
         this.router = router;
         this.appts = [];
     }
@@ -1580,11 +1582,36 @@ let CalendarComponent = class CalendarComponent {
                 });
         }
     }
+    removeAppointment(apt) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const alert = yield this.alertController.create({
+                header: 'Cancel',
+                message: 'Are you sure you want to cancel?',
+                mode: "ios",
+                buttons: [
+                    {
+                        text: 'Yes',
+                        role: 'cancel',
+                        handler: (blah) => {
+                            this.apptService.removeAppointment(apt);
+                            this.appts = this.apptService.schedule;
+                        }
+                    }, {
+                        text: 'No',
+                        handler: () => {
+                        }
+                    }
+                ]
+            });
+            yield alert.present();
+        });
+    }
 };
 CalendarComponent.ctorParameters = () => [
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"] },
     { type: src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"] },
     { type: src_services_toaster_service__WEBPACK_IMPORTED_MODULE_5__["ToasterService"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AlertController"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] }
 ];
 CalendarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1596,6 +1623,7 @@ CalendarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"],
         src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"],
         src_services_toaster_service__WEBPACK_IMPORTED_MODULE_5__["ToasterService"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AlertController"],
         _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]])
 ], CalendarComponent);
 
@@ -2511,7 +2539,7 @@ RelationshipModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "img {\n  width: 70%;\n}\n\n.logo-container {\n  margin-top: 15px;\n  padding: 15px;\n  text-align: center;\n}\n\n.button-container {\n  margin: 25px;\n  text-align: center;\n}\n\na {\n  margin: 10px;\n}\n\n.btn {\n  --background-hover: rgb(85, 197, 85);\n  width: 150px;\n  margin: 15px;\n}\n\n.credential-container {\n  margin: 20px;\n}\n\n.action-btn-container {\n  display: -webkit-box;\n  display: flex;\n  text-align: center;\n}\n\n.reset {\n  display: block;\n}\n\n.reset-container {\n  margin: 15px;\n  display: inline-block;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9sb2dpbi9sb2dpbi5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxVQUFBO0FDREo7O0FESUE7RUFDSSxnQkFBQTtFQUNBLGFBQUE7RUFDQSxrQkFBQTtBQ0RKOztBRElBO0VBQ0ksWUFBQTtFQUNBLGtCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSxvQ0FBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSxvQkFBQTtFQUFBLGFBQUE7RUFDQSxrQkFBQTtBQ0RKOztBRElBO0VBQ0ksY0FBQTtBQ0RKOztBRElBO0VBQ0ksWUFBQTtFQUNBLHFCQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9sb2dpbi9sb2dpbi5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuaW1nIHtcbiAgICB3aWR0aDogNzAlO1xufVxuXG4ubG9nby1jb250YWluZXIge1xuICAgIG1hcmdpbi10b3A6IDE1cHg7XG4gICAgcGFkZGluZzogMTVweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5idXR0b24tY29udGFpbmVyIHtcbiAgICBtYXJnaW46IDI1cHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5hIHtcbiAgICBtYXJnaW46IDEwcHg7XG59XG5cbi5idG4ge1xuICAgIC0tYmFja2dyb3VuZC1ob3ZlcjogcmdiKDg1LCAxOTcsIDg1KTtcbiAgICB3aWR0aDogMTUwcHg7XG4gICAgbWFyZ2luOiAxNXB4O1xufVxuXG4uY3JlZGVudGlhbC1jb250YWluZXIge1xuICAgIG1hcmdpbjogMjBweDtcbn1cblxuLmFjdGlvbi1idG4tY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLnJlc2V0IHtcbiAgICBkaXNwbGF5OiBibG9jaztcbn1cblxuLnJlc2V0LWNvbnRhaW5lciB7XG4gICAgbWFyZ2luOiAxNXB4O1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbn0iLCJpbWcge1xuICB3aWR0aDogNzAlO1xufVxuXG4ubG9nby1jb250YWluZXIge1xuICBtYXJnaW4tdG9wOiAxNXB4O1xuICBwYWRkaW5nOiAxNXB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5idXR0b24tY29udGFpbmVyIHtcbiAgbWFyZ2luOiAyNXB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbmEge1xuICBtYXJnaW46IDEwcHg7XG59XG5cbi5idG4ge1xuICAtLWJhY2tncm91bmQtaG92ZXI6IHJnYig4NSwgMTk3LCA4NSk7XG4gIHdpZHRoOiAxNTBweDtcbiAgbWFyZ2luOiAxNXB4O1xufVxuXG4uY3JlZGVudGlhbC1jb250YWluZXIge1xuICBtYXJnaW46IDIwcHg7XG59XG5cbi5hY3Rpb24tYnRuLWNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLnJlc2V0IHtcbiAgZGlzcGxheTogYmxvY2s7XG59XG5cbi5yZXNldC1jb250YWluZXIge1xuICBtYXJnaW46IDE1cHg7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbn0iXX0= */"
+module.exports = "img {\n  width: 70%;\n}\n\n.logo-container {\n  margin-top: 15px;\n  padding: 15px;\n  text-align: center;\n}\n\n.button-container {\n  margin: 25px;\n  text-align: center;\n}\n\na {\n  margin: 10px;\n}\n\n.credential-container {\n  margin: 20px;\n}\n\n.action-btn-container {\n  display: -webkit-box;\n  display: flex;\n  text-align: center;\n}\n\n.reset {\n  display: block;\n}\n\n.reset-container {\n  margin: 15px;\n  display: inline-block;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9sb2dpbi9sb2dpbi5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDSSxVQUFBO0FDREo7O0FESUE7RUFDSSxnQkFBQTtFQUNBLGFBQUE7RUFDQSxrQkFBQTtBQ0RKOztBRElBO0VBQ0ksWUFBQTtFQUNBLGtCQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSxZQUFBO0FDREo7O0FESUE7RUFDSSxvQkFBQTtFQUFBLGFBQUE7RUFDQSxrQkFBQTtBQ0RKOztBRElBO0VBQ0ksY0FBQTtBQ0RKOztBRElBO0VBQ0ksWUFBQTtFQUNBLHFCQUFBO0FDREoiLCJmaWxlIjoic3JjL2FwcC9sb2dpbi9sb2dpbi5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuaW1nIHtcbiAgICB3aWR0aDogNzAlO1xufVxuXG4ubG9nby1jb250YWluZXIge1xuICAgIG1hcmdpbi10b3A6IDE1cHg7XG4gICAgcGFkZGluZzogMTVweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5idXR0b24tY29udGFpbmVyIHtcbiAgICBtYXJnaW46IDI1cHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5hIHtcbiAgICBtYXJnaW46IDEwcHg7XG59XG5cbi5jcmVkZW50aWFsLWNvbnRhaW5lciB7XG4gICAgbWFyZ2luOiAyMHB4O1xufVxuXG4uYWN0aW9uLWJ0bi1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4ucmVzZXQge1xuICAgIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4ucmVzZXQtY29udGFpbmVyIHtcbiAgICBtYXJnaW46IDE1cHg7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufSIsImltZyB7XG4gIHdpZHRoOiA3MCU7XG59XG5cbi5sb2dvLWNvbnRhaW5lciB7XG4gIG1hcmdpbi10b3A6IDE1cHg7XG4gIHBhZGRpbmc6IDE1cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmJ1dHRvbi1jb250YWluZXIge1xuICBtYXJnaW46IDI1cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuYSB7XG4gIG1hcmdpbjogMTBweDtcbn1cblxuLmNyZWRlbnRpYWwtY29udGFpbmVyIHtcbiAgbWFyZ2luOiAyMHB4O1xufVxuXG4uYWN0aW9uLWJ0bi1jb250YWluZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5yZXNldCB7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4ucmVzZXQtY29udGFpbmVyIHtcbiAgbWFyZ2luOiAxNXB4O1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59Il19 */"
 
 /***/ }),
 
@@ -2988,7 +3016,7 @@ ApptModalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21vZGFscy9jYWxlbmRhci1tb2RhbC9jYWxlbmRhci1tb2RhbC5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = ".action-btn-container {\n  margin-top: 40px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9tb2RhbHMvY2FsZW5kYXItbW9kYWwvY2FsZW5kYXItbW9kYWwuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL21vZGFscy9jYWxlbmRhci1tb2RhbC9jYWxlbmRhci1tb2RhbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNJLGdCQUFBO0FDQUoiLCJmaWxlIjoic3JjL2FwcC9tb2RhbHMvY2FsZW5kYXItbW9kYWwvY2FsZW5kYXItbW9kYWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbi5hY3Rpb24tYnRuLWNvbnRhaW5lciB7XG4gICAgbWFyZ2luLXRvcDogNDBweDtcbn0iLCIuYWN0aW9uLWJ0bi1jb250YWluZXIge1xuICBtYXJnaW4tdG9wOiA0MHB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -3911,6 +3939,9 @@ class AppointmentService {
     }
     clearSchedule() {
         this.schedule = [];
+    }
+    removeAppointment(appt) {
+        this.schedule = this.schedule.filter(x => x.date !== appt.date);
     }
 }
 AppointmentService.ctorParameters = () => [
