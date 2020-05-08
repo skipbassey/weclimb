@@ -870,7 +870,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content>\n\t<div class=\"logo-container\">\n\t\t<img src=\"/assets/img/logo.png\" alt=\"\">\n\t</div>\n\n\t<form [formGroup]=\"loginForm\" (ngSubmit)=\"signIn()\">\n\t\t<ion-item>\n\t\t\t<ion-label position=\"floating\">Username</ion-label>\n\t\t\t<ion-input formControlName=\"email\" placeholder=\"example@gmail.com\" type=\"email\"></ion-input>\n\t\t  </ion-item>\n\t\t  <ion-item>\n\t\t\t<ion-label position=\"floating\">Password</ion-label>\n\t\t\t<ion-input formControlName=\"password\" placeholder=\"password\" type=\"password\"></ion-input>\n\t\t  </ion-item>\n\t\t  <div class=\"button-container\">\n\t\t\t<ion-item (click)=\"rememberMe()\">\n\t\t\t\t<ion-label>Remember Me</ion-label>\n\t\t\t\t<ion-toggle id=\"toggle\" mode=\"ios\" slot=\"start\" [checked]=\"checked\" (ionChange)=\"rememberMe($event)\"></ion-toggle>\n\t\t\t  </ion-item>\t\t\t\n\t\t\t<ion-button class=\"btn\" type=\"submit\" expand=\"block\" fill=\"solid\" >Login</ion-button>\n\t\t\t<ion-button expand=\"block\" fill=\"solid\" (click)=\"register()\">Register</ion-button>\n\t\t\t<a (click)=\"presentForgotUsernameModal()\">Forgot Username?</a>\n\t\t\t<a (click)=\"presentForgotPasswordModal()\">Forgot Password?</a>\n\t\t  </div>\n\t</form>\n</ion-content>"
+module.exports = "<ion-content>\n\t<div class=\"logo-container\">\n\t\t<img src=\"/assets/img/logo.png\" alt=\"\">\n\t</div>\n\n\t<form [formGroup]=\"loginForm\" (ngSubmit)=\"signIn()\">\n\t\t<ion-item>\n\t\t\t<ion-label position=\"floating\">Username</ion-label>\n\t\t\t<ion-input formControlName=\"email\" placeholder=\"example@gmail.com\" type=\"email\"></ion-input>\n\t\t  </ion-item>\n\t\t  <ion-item>\n\t\t\t<ion-label position=\"floating\">Password</ion-label>\n\t\t\t<ion-input formControlName=\"password\" placeholder=\"password\" type=\"password\"></ion-input>\n\t\t  </ion-item>\n\t\t  <div class=\"button-container\">\n\t\t\t<ion-item (click)=\"rememberMe()\">\n\t\t\t\t<ion-label>Remember Me</ion-label>\n\t\t\t\t<ion-toggle id=\"toggle\" mode=\"ios\" slot=\"start\" value [checked]=\"checked\" (ionChange)=\"rememberMe($event)\"></ion-toggle>\n\t\t\t  </ion-item>\t\t\t\n\t\t\t<ion-button class=\"btn\" type=\"submit\" expand=\"block\" fill=\"solid\" >Login</ion-button>\n\t\t\t<ion-button expand=\"block\" fill=\"solid\" (click)=\"register()\">Register</ion-button>\n\t\t\t<a (click)=\"presentForgotUsernameModal()\">Forgot Username?</a>\n\t\t\t<a (click)=\"presentForgotPasswordModal()\">Forgot Password?</a>\n\t\t  </div>\n\t</form>\n</ion-content>"
 
 /***/ }),
 
@@ -892,7 +892,7 @@ module.exports = "\n  <ion-app>\n\n    <!-- option menu -->\n    <ion-menu side=
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" (click)=\"dismiss()\" defaultHref=\"/appointments\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Booking</ion-title>\n  </ion-toolbar>\n  <!-- no schedule -->\n  <div class=\"err-content\" *ngIf=\"noData\">\n    <p>No schedule available at this time.</p>\n  </div>\n  <ion-list *ngFor=\"let item of data\">\n    <ion-item button (click)=\"confirm(item)\">\n      <div class=\"list-item\">\n        <p>{{item.date}}</p>\n        <p>{{item.location}}</p>\n      </div>\n    </ion-item>\n  </ion-list>\n</ion-content>"
+module.exports = "<ion-content>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" (click)=\"dismiss()\" defaultHref=\"/appointments\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Booking</ion-title>\n  </ion-toolbar>\n  <!-- no schedule -->\n  <div class=\"err-content\" *ngIf=\"noData\">\n    <p>No schedule available at this time.</p>\n  </div>\n  <ion-list *ngFor=\"let item of data\">\n    <ion-item button (click)=\"confirm(item)\">\n      <div class=\"list-item\">\n        <p>{{item.date}}</p>\n        <p>{{item.address}}</p>\n      </div>\n    </ion-item>\n  </ion-list>\n</ion-content>"
 
 /***/ }),
 
@@ -936,7 +936,7 @@ module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Profile</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <div>\n    <div class=\"personal-info-container\">\n      <h1>Personal Information</h1>\n      <p>Name: {{user?.name}} {{user?.family_name}}</p>\n      <p>Phone Number: {{user?.phone_number}}</p>\n      <p>Email: {{user?.email}}</p>\n      <p>Role: {{user?.profile}}</p>\n    </div>\n    <div  class=\"appointment-container\">\n      <div class=\"user-container\" *ngIf=\"user.profile == 'User'\">\n        <h1>My Appointment</h1>\n        <ion-item *ngFor=\"let appt of appts\">\n          <div>\n            <p>Name: {{appt?.name}}</p>\n            <p>Date: {{appt?.date}}</p>\n            <p>Duration: {{appt?.duration}}</p>\n            <p>Counselor: {{appt?.counselor}}</p>\n            <p>Price: {{appt?.price}}</p>\n            <p>Location: {{appt?.location}}</p>\n          </div>\n        </ion-item>\n      </div>\n\n      <!-- admin -->\n      <div class=\"admin-container\" *ngIf=\"user.profile == 'Admin'\">\n        <h1>My Schedule</h1>\n        <ion-list >\n          <ion-item *ngFor=\"let appt of appts\">\n            <div class=\"candidate-info-container\">\n              <p>Date: {{appt.date}}</p>\n              <p>Client Name: {{appt?.candidateFirstName}} {{appt?.candidateLastName}}</p>\n              <p>Phone: 666-666-6666</p>\n            </div>\n          </ion-item>\n        </ion-list>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"button-container\">\n    <ion-button *ngIf=\"user.profile == 'User'\" shape=\"round\" fill=\"outline\" (click)=\"setCalendar()\">Set Calendar</ion-button>\n    <!-- <ion-button *ngIf=\"role == 'admin'\" shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Add Admin</ion-button> -->\n    <ion-button shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Signout</ion-button>\n  </div>\n</ion-content>"
+module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Profile</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <div>\n    <div class=\"personal-info-container\">\n      <h1>Personal Information</h1>\n      <p>Name: {{user?.name}} {{user?.family_name}}</p>\n      <p>Phone Number: {{user?.phone_number}}</p>\n      <p>Email: {{user?.email}}</p>\n    </div>\n    <div  class=\"appointment-container\">\n      <div class=\"user-container\" *ngIf=\"!isAdmin()\">\n        <h1>My Appointment</h1>\n        <ion-item *ngFor=\"let appt of appts\">\n          <div>\n            <p>Name: {{appt?.name}}</p>\n            <p>Date: {{appt?.date}}</p>\n            <p>Duration: {{appt?.duration}}</p>\n            <p>Counselor: {{appt?.counselor}}</p>\n            <p>Price: {{appt?.price}}</p>\n            <p>Location: {{appt?.location}}</p>\n          </div>\n        </ion-item>\n      </div>\n\n      <!-- admin -->\n      <div class=\"admin-container\" *ngIf=\"isAdmin()\">\n        <h1>My Schedule</h1>\n        <ion-list >\n          <ion-item *ngFor=\"let appt of appts\">\n            <div class=\"candidate-info-container\">\n              <p>Date: {{appt.date}}</p>\n              <p>Client Name: {{appt?.candidateFirstName}} {{appt?.candidateLastName}}</p>\n              <p>Phone: 666-666-6666</p>\n            </div>\n          </ion-item>\n        </ion-list>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"button-container\">\n    <ion-button *ngIf=\"user.profile == 'User'\" shape=\"round\" fill=\"outline\" (click)=\"setCalendar()\">Set Calendar</ion-button>\n    <!-- <ion-button *ngIf=\"role == 'admin'\" shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Add Admin</ion-button> -->\n    <ion-button shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Signout</ion-button>\n  </div>\n</ion-content>"
 
 /***/ }),
 
@@ -1473,7 +1473,7 @@ let AppointmentComponent = class AppointmentComponent {
                 date: x.Date.S,
                 duration: x.Duration.S,
                 price: x.Price.S,
-                location: x.Location.S,
+                address: x.Location.S,
                 counselor: x.Counselor.S,
                 type: x.Type.S
             };
@@ -2319,9 +2319,6 @@ let HomePage = class HomePage {
             }
         ];
     }
-    navigate(service) {
-        // this.router.navigateByUrl(service.route)
-    }
 };
 HomePage.ctorParameters = () => [
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
@@ -2594,9 +2591,8 @@ let LoginComponent = class LoginComponent {
                 console.log(aws_amplify__WEBPACK_IMPORTED_MODULE_14__["Auth"].currentUserInfo());
                 if (res) {
                     console.log(res);
-                    this.authService.setAuthorization(res.signInUserSession.accessToken.jwtToken, res.signInUserSession.refreshToken.token);
-                    this.userService.setUserInfo(res.attributes);
-                    this.userService.setUserGroups(res.signInUserSession.idToken.payload);
+                    this.authService.setAuthorization(res.signInUserSession.idToken.jwtToken, res.signInUserSession.refreshToken.token);
+                    this.userService.setUserInfo(res.signInUserSession.idToken.payload);
                     this.navigateToHome();
                 }
             }
@@ -2612,7 +2608,6 @@ let LoginComponent = class LoginComponent {
         var password = this.loginForm.get('password').value;
         this.loginService.login(email, password)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["tap"])(data => {
-            // this.authService.setAuthorization(data.token);
         }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["switchMap"])(() => {
             return this.userService.getUser(email);
         }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["tap"])(data => {
@@ -2667,6 +2662,8 @@ let LoginComponent = class LoginComponent {
                 window.localStorage.setItem("email", "");
                 window.localStorage.setItem("password", "");
                 window.localStorage.setItem("checked", "false");
+                this.loginForm.controls["email"].setValue(window.localStorage.getItem("email"));
+                this.loginForm.controls["password"].setValue(window.localStorage.getItem("password"));
                 break;
         }
     }
@@ -2681,7 +2678,6 @@ let LoginComponent = class LoginComponent {
                 this.checked = false;
                 break;
         }
-        // var checked = document.getElementById("toggle").attributes.getNamedItem("checked");
     }
 };
 LoginComponent.ctorParameters = () => [
@@ -2889,7 +2885,7 @@ let ApptModalComponent = class ApptModalComponent {
             date: appt.date,
             duration: appt.duration,
             price: appt.price,
-            location: appt.location,
+            address: appt.address,
             counselor: appt.counselor,
             candidateFirstName: this.user.firstName,
             candidateLastName: this.user.lastName,
@@ -2908,22 +2904,22 @@ let ApptModalComponent = class ApptModalComponent {
             const actionSheet = yield this.actionSheetController.create({
                 header: 'Are you sure you want to book this appointment?',
                 buttons: [{
-                        text: 'Yes',
+                        text: 'No',
                         role: 'destructive',
+                        icon: 'clsoe',
+                        handler: () => {
+                            console.log('Appointment canceled');
+                        }
+                    },
+                    {
+                        text: 'Yes',
                         icon: 'checkmark',
+                        role: 'close',
                         handler: () => {
                             console.log('Appointment booked');
                             this.bookAppointment(appt);
                             console.log(appt);
                             this.toasterService.presentToast("Your appointment has been booked.", "success");
-                        }
-                    },
-                    {
-                        text: 'Cancel',
-                        icon: 'close',
-                        role: 'cancel',
-                        handler: () => {
-                            console.log('Appointment canceled');
                         }
                     }]
             });
@@ -3049,7 +3045,7 @@ let CalendarModalComponent = class CalendarModalComponent {
             date: this.formDate(this.calendarForm.get("date").value),
             duration: this.calendarForm.get("duration").value,
             price: this.calendarForm.get("price").value,
-            location: this.calendarForm.get("location").value,
+            address: this.calendarForm.get("location").value,
             counselor: this.userService.getUserInfo().name + " " + this.userService.getUserInfo().family_name,
             type: this.calendarForm.get("type").value,
             expires: moment__WEBPACK_IMPORTED_MODULE_5__(this.calendarForm.get("date").value).unix().toString()
@@ -3059,6 +3055,7 @@ let CalendarModalComponent = class CalendarModalComponent {
     }
     formDate(date) {
         let newDate = moment__WEBPACK_IMPORTED_MODULE_5__(date).format('LLL');
+        // let newDate = moment(date).utc().format('LLL');
         return newDate;
     }
     cancel() {
@@ -3336,7 +3333,16 @@ let ProfileComponent = class ProfileComponent {
     ngOnInit() {
         this.presentLoading();
         this.user = this.userService.getUserInfo();
-        if (this.user.profile == "Admin") {
+        // this.apptService.getMyAppointments(this.user.email)
+        //   .subscribe(res => {
+        //     this.appts = this.transformData(res.Items)
+        //     this.loadingController.dismiss();
+        //   },
+        //   err => {
+        //     console.log(err, err.message);
+        //     this.toasterService.presentToast("Error getting user appointements", "danger")
+        //   })
+        if (this.isAdmin()) {
             this.apptService.getAppointmentsByCounselor(this.user.firstName + " " + this.user.lastName)
                 .subscribe(res => {
                 this.appts = this.transformData(res.Items);
@@ -3346,7 +3352,7 @@ let ProfileComponent = class ProfileComponent {
                 this.toasterService.presentToast("Error getting user appointements", "danger");
             });
         }
-        else if (this.user.profile == "User") {
+        else if (!this.isAdmin()) {
             this.apptService.getMyAppointments(this.user.email)
                 .subscribe(res => {
                 this.appts = this.transformData(res.Items);
@@ -3368,7 +3374,7 @@ let ProfileComponent = class ProfileComponent {
                 date: item.Date.S,
                 duration: item.Duration.S,
                 price: item.Price.S,
-                location: item.Location.S,
+                address: item.Location.S,
                 counselor: item.Counselor.S,
                 candidateFirstName: item.CandidateFirstName.S,
                 candidateLastName: item.CandidateLastName.S,
@@ -3394,6 +3400,15 @@ let ProfileComponent = class ProfileComponent {
             const { role, data } = yield loading.onDidDismiss();
             console.log('Loading dismissed!');
         });
+    }
+    isAdmin() {
+        if (this.user['cognito:groups'][0] == "Admin") {
+            // console.log("true");
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 };
 ProfileComponent.ctorParameters = () => [
@@ -3780,12 +3795,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppointmentService", function() { return AppointmentService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./auth.service */ "./src/services/auth.service.ts");
+
 
 
 Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])();
 class AppointmentService {
-    constructor(http) {
+    constructor(http, authService) {
         this.http = http;
+        this.authService = authService;
         this.schedule = [];
     }
     getLicensedLevelFirstSession() {
@@ -3877,6 +3895,7 @@ class AppointmentService {
         const httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
+                "Authorization": this.authService.getToken()
             })
         };
         return this.http.get(url, httpOptions);
@@ -3895,7 +3914,8 @@ class AppointmentService {
     }
 }
 AppointmentService.ctorParameters = () => [
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] },
+    { type: _auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] }
 ];
 
 
@@ -3976,7 +3996,7 @@ let AuthService = class AuthService {
         sessionStorage.setItem("refreshToken", token);
     }
     getToken() {
-        return sessionStorage.getItem('token');
+        return sessionStorage.getItem("accessToken");
     }
     setAuthorization(accessToken, refreshToken) {
         this.setAccessToken(accessToken);
@@ -3984,7 +4004,7 @@ let AuthService = class AuthService {
         this.authenticated = true;
     }
     logOut() {
-        sessionStorage.removeItem("token");
+        sessionStorage.removeItem("accessToken");
         this.authenticated = false;
     }
 };
@@ -4427,6 +4447,9 @@ let UserService = class UserService {
     }
     setUserGroups(group) {
         this.groups = group;
+    }
+    getUserGroups() {
+        return this.groups;
     }
 };
 UserService.ctorParameters = () => [

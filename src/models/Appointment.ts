@@ -3,7 +3,7 @@ export class Appointment {
     date?: string;
     duration?: string;
     price?: string;
-    location?: string;
+    address?: string;
     counselor?: string;
     candidateFirstName?: string;
     candidateLastName?: string;

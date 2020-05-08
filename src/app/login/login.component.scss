@@ -5,16 +5,14 @@ img {
 }
 
 .logo-container {
+    margin-top: 15px;
     padding: 15px;
     text-align: center;
 }
 
-.amplify-form-button {
-    background-color: color(secondary);
-}
-
 .button-container {
-    margin: 20px;
+    margin: 25px;
+    text-align: center;
 }
 
 a {
@@ -22,5 +20,25 @@ a {
 }
 
 .btn {
-    --color-hover: color(secondary);
+    --background-hover: rgb(85, 197, 85);
+    width: 150px;
+    margin: 15px;
+}
+
+.credential-container {
+    margin: 20px;
+}
+
+.action-btn-container {
+    display: flex;
+    text-align: center;
+}
+
+.reset {
+    display: block;
+}
+
+.reset-container {
+    margin: 15px;
+    display: inline-block;
 }

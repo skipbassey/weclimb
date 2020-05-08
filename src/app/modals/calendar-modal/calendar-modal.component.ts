@@ -43,7 +43,7 @@ export class CalendarModalComponent implements OnInit {
       date: this.formDate(this.calendarForm.get("date").value),
       duration: this.calendarForm.get("duration").value,
       price: this.calendarForm.get("price").value,
-      location: this.calendarForm.get("location").value,
+      address: this.calendarForm.get("location").value,
       counselor: this.userService.getUserInfo().name + " " + this.userService.getUserInfo().family_name,
       type: this.calendarForm.get("type").value,
       expires: moment(this.calendarForm.get("date").value).unix().toString()
@@ -56,6 +56,7 @@ export class CalendarModalComponent implements OnInit {
 
   private formDate(date: string): string {
     let newDate = moment(date).format('LLL');
+    // let newDate = moment(date).utc().format('LLL');
     return newDate;
   }
 

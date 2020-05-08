@@ -738,18 +738,7 @@ module.exports = "\n<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Appointments</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content fullscreen>\n  <p class=\"text\">\n    If you are going through your insurance company for services, please provide\n    the client's name, date of birth and member ID number in the \"Add Your Message\"\n    section once you have selected your appointment. You will receive an email confirming\n    your appointment.\n  </p>\n\n  <ion-list>\n    <ion-item button (click)=\"selectAppointment('ll-intake')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$125</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ll-insurance')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Insurance: </b>$110</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ll-selfpay')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$80</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ml-intake')\">\n      <img src=\"assets/photo2.jpeg\" alt=\"\">\n      <p><b>Masters Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$100</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ml-selfpay')\">\n      <img src=\"assets/photo2.jpeg\" alt=\"\">\n      <p><b>Masters Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$65</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('youth')\">\n      <img src=\"assets/photo1.jpeg\" alt=\"\">\n      <p><b>Adolescent Group Counseling: </b>1hr</p>\n      <p><b>Self Pay: </b>$$35</p>\n      <p>Apollo Sports Counseling Inc.</p>\n    </ion-item>\n  </ion-list>\n</ion-content>"
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/appt-modal/appt-modal.component.html":
-/*!********************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/appt-modal/appt-modal.component.html ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<ion-content>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" (click)=\"dismiss()\" defaultHref=\"/appointments\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Booking</ion-title>\n  </ion-toolbar>\n  <!-- no schedule -->\n  <div class=\"err-content\" *ngIf=\"noData\">\n    <p>No schedule available at this time.</p>\n  </div>\n  <ion-list *ngFor=\"let item of data\">\n    <ion-item button (click)=\"confirm(item)\">\n      <div class=\"list-item\">\n        <p>{{item.date}}</p>\n        <p>{{item.location}}</p>\n      </div>\n    </ion-item>\n  </ion-list>\n</ion-content>"
+module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Appointments</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content fullscreen>\n  <p class=\"text\">\n    If you are going through your insurance company for services, please provide\n    the client's name, date of birth and member ID number in the \"Add Your Message\"\n    section once you have selected your appointment. You will receive an email confirming\n    your appointment.\n  </p>\n\n  <ion-list>\n    <ion-item button (click)=\"selectAppointment('ll-intake')\">\n      <p><b>Licensed Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$125</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ll-insurance')\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Insurance: </b>$110</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ll-selfpay')\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$80</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ml-intake')\">\n      <p><b>Masters Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$100</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('ml-selfpay')\">\n      <p><b>Masters Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$65</p>\n    </ion-item>\n    <ion-item button (click)=\"selectAppointment('youth')\">\n      <p><b>Adolescent Group Counseling: </b>1hr</p>\n      <p><b>Self Pay: </b>$$35</p>\n      <p>Apollo Sports Counseling Inc.</p>\n    </ion-item>\n  </ion-list>\n</ion-content>"
 
 /***/ }),
 
@@ -760,7 +749,7 @@ module.exports = "<ion-content>\n  <ion-toolbar color=\"primary\">\n    <ion-but
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content fullscreen>\n  <form [formGroup]=\"calendarForm\" (ngSubmit)=\"addToCalendar()\">\n    <ion-list>\n      <ion-item>\n        <ion-label position=\"floating\">Title</ion-label>\n        <ion-input formControlName=\"name\" placeholder=\"Masters Level Clinician\"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Type</ion-label>\n        <ion-select formControlName=\"type\" placeholder=\"Select One\">\n          <ion-select-option value=\"First Session\">First Session</ion-select-option>\n          <ion-select-option value=\"Insurance\">Insurance</ion-select-option>\n          <ion-select-option value=\"Self Pay\">Self Pay</ion-select-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label position=\"floating\">Duration</ion-label>\n        <ion-input formControlName=\"duration\" placeholder=\"1 hr\"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label position=\"floating\">Price</ion-label>\n        <ion-input formControlName=\"price\" placeholder=\"$100\"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label position=\"floating\">Location</ion-label>\n        <ion-input formControlName=\"location\" [placeholder]=\"location\"></ion-input>\n      </ion-item>\n      <ion-item-divider></ion-item-divider>\n      <ion-item>\n        <ion-label>Start Date</ion-label>\n        <ion-datetime formControlName=\"date\" mode=\"ios\" displayFormat=\"MMM DD, YYYY HH:mm\" placeholder=\"Select Date\"></ion-datetime>\n      </ion-item>\n     \n      <ion-item-divider></ion-item-divider>\n      <ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Add To Calendar</ion-button>\n      <ion-button type=\"button\" expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n  \n    </ion-list>\n  </form>\n  \n</ion-content>"
+module.exports = "<ion-content fullscreen>\n  <ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-button>\n          <ion-back-button class=\"back-btn\" defaultHref=\"profile\"></ion-back-button>\n        </ion-button>\n      </ion-buttons>\n      <ion-title>Add to Calendar</ion-title>\n      <ion-buttons slot=\"end\">\n        <ion-button (click)=\"openCalendarModal()\"> \n          <ion-icon name=\"add\"></ion-icon>\n        </ion-button>\n      </ion-buttons>\n    </ion-toolbar>\n  </ion-header>\n\n  <div class=\"appt-container\">\n    <ion-item *ngFor=\"let appt of appts\">\n      <p>{{appt.name}} {{appt.date}}</p>\n    </ion-item>\n  </div>\n  \n  <div class=\"btn-container\">\n    <ion-button shape=\"round\" fill=\"solid\" (click)=\"submit()\">Submit</ion-button>\n  </div>\n</ion-content>"
 
 /***/ }),
 
@@ -782,7 +771,7 @@ module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content>\n  <div class=\"header-container \">\n    <h1>Forgot Password</h1>\n  </div>\n  <form [formGroup]=\"passwordForm\" (ngSubmit)=\"forgotPassword()\">\n    <ion-item>\n      <ion-label position=\"floating\">Email</ion-label>\n      <ion-input type=\"text\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"text\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">New Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <div class=\"button-container\">\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Submit</ion-button>\n\t\t\t<ion-button expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n</ion-content>"
+module.exports = "<ion-content>\n  <div class=\"header-container \">\n    <h1>Forgot Password</h1>\n  </div>\n  <form [formGroup]=\"passwordForm\" (ngSubmit)=\"forgotPasswordRequest()\">\n    <ion-item>\n      <ion-label position=\"floating\">Email</ion-label>\n      <ion-input type=\"text\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item *ngIf=\"codeSent\">\n      <ion-label position=\"floating\">Code</ion-label>\n      <ion-input type=\"text\" formControlName=\"code\"></ion-input>\n    </ion-item>\n    <ion-item *ngIf=\"codeSent\">\n      <ion-label position=\"floating\">New Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <div class=\"button-container\">\n      <ion-button *ngIf=\"!codeSent\" type=\"submit\" expand=\"block\" fill=\"solid\">Submit</ion-button>\n      <ion-button *ngIf=\"codeSent\" expand=\"block\" fill=\"solid\" (click)=\"forgotPasswordSubmit()\">Submit</ion-button>\n\t\t\t<ion-button expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n</ion-content>"
 
 /***/ }),
 
@@ -793,7 +782,7 @@ module.exports = "<ion-content>\n  <div class=\"header-container \">\n    <h1>Fo
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content>\n  <div class=\"header-container\">\n    <h1>Forgot Username</h1>\n  </div>\n  <form [formGroup]=\"usernameForm\" (ngSubmit)=\"forgotUsername()\">\n    <ion-item>\n      <ion-label position=\"floating\">Phone Number</ion-label>\n      <ion-input type=\"text\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"text\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <div class=\"button-container\">\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Submit</ion-button>\n\t\t\t<ion-button expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n\n  <div class=\"username-container\" *ngIf=\"loaded\">\n    <p>Your username is: {{username}}</p>\n  </div>\n</ion-content>"
+module.exports = "<ion-content>\n  <div class=\"header-container\">\n    <h1>Forgot Username</h1>\n  </div>\n  <form [formGroup]=\"usernameForm\" (ngSubmit)=\"forgotUsername()\">\n    <ion-item>\n      <ion-label position=\"floating\">Phone Number</ion-label>\n      <ion-input type=\"text\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"text\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <div class=\"button-container\">\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Submit</ion-button>\n\t\t\t<ion-button expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n\n</ion-content>"
 
 /***/ }),
 
@@ -848,7 +837,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "    <ion-card class=\"card\">\n        <ion-card-header>\n          <ion-card-header class=\"menu-text text\">\n            Services Provided\n          </ion-card-header>\n        </ion-card-header>\n        <ion-card-content class=\"services\">\n            <p>\n                We offer services that equip our clients with tools for success. During your counseling sessions, \n                no matter if it’s Relationship Counseling, Family/Individual Counseling, Group Counseling, Anger \n                Management Classes, Adolescent Counseling or Career Coaching, we  always provide personalized \n                attention to help each client identify their personal values, strengths, and abilities in support \n                of their personal and professional goals. The goal of We Climb Counseling and Consulting, is to \n                create a supportive environment in which clients can explore their own emotional needs and overcome \n                barriers that limit their full potential by meeting each client where they are. \n            </p>\n        </ion-card-content>\n      </ion-card>\n      <ion-list *ngFor=\"let service of services\">\n        <ion-item button (click)=\"navigate(service)\">{{service.title}}</ion-item>\n      </ion-list>"
+module.exports = "    <ion-content>\n      <div class=\"header-container\">\n        <h1 class=\"menu-text text\">Services Provided</h1>\n      </div>\n      <div class=\"services-container\">\n        <p>\n          We offer services that equip our clients with tools for success. During your counseling sessions, \n          no matter if it’s Relationship Counseling, Family/Individual Counseling, Group Counseling, Anger \n          Management Classes, Adolescent Counseling or Career Coaching, we  always provide personalized \n          attention to help each client identify their personal values, strengths, and abilities in support \n          of their personal and professional goals. The goal of We Climb Counseling and Consulting, is to \n          create a supportive environment in which clients can explore their own emotional needs and overcome \n          barriers that limit their full potential by meeting each client where they are. \n      </p>\n      </div>\n        <mat-accordion>\n          <mat-expansion-panel *ngFor=\"let service of services\">\n            <mat-expansion-panel-header>\n              <mat-panel-title>\n                {{service.title}}\n              </mat-panel-title>\n              <!-- <mat-panel-description>\n              </mat-panel-description> -->\n            </mat-expansion-panel-header>\n            <ul *ngFor=\"let opt of service.data\">\n              <li>{{opt}}</li>\n            </ul>\n          </mat-expansion-panel>\n\n        </mat-accordion>\n        <!-- <ion-item button (click)=\"navigate(service)\">{{service.title}}</ion-item> -->\n    </ion-content>"
 
 /***/ }),
 
@@ -881,7 +870,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-butt
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content>\n\t<div class=\"logo-container\">\n\t\t<img src=\"/assets/img/logo.png\" alt=\"\">\n\t</div>\n\n\t<!-- <amplify-authenticator [signUpConfig]=\"signUpConfig\" framework=\"ionic\"></amplify-authenticator> -->\n\n\t<form [formGroup]=\"loginForm\">\n\t\t<ion-item>\n\t\t\t<ion-label position=\"floating\">Username</ion-label>\n\t\t\t<ion-input formControlName=\"email\" placeholder=\"example@gmail.com\" type=\"email\"></ion-input>\n\t\t  </ion-item>\n\t\t  <ion-item>\n\t\t\t<ion-label position=\"floating\">Password</ion-label>\n\t\t\t<ion-input formControlName=\"password\" placeholder=\"password\" type=\"password\"></ion-input>\n\t\t  </ion-item>\n\t\t  <div class=\"button-container\">\n\t\t\t<ion-button class=\"btn\" type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"login()\">Login</ion-button>\n\t\t\t<ion-button type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"register()\">Register</ion-button>\n\t\t\t<a (click)=\"presentForgotUsernameModal()\">Forgot Username?</a>\n\t\t\t<a (click)=\"presentForgotPasswordModal()\">Forgot Password?</a>\n\t\t  </div>\n\t</form>\n</ion-content>"
+module.exports = "<ion-content>\n\t<div class=\"logo-container\">\n\t\t<img src=\"/assets/img/logo.png\" alt=\"\">\n\t</div>\n\n\t<form [formGroup]=\"loginForm\" (ngSubmit)=\"signIn()\">\n\t\t<ion-item>\n\t\t\t<ion-label position=\"floating\">Username</ion-label>\n\t\t\t<ion-input formControlName=\"email\" placeholder=\"example@gmail.com\" type=\"email\"></ion-input>\n\t\t  </ion-item>\n\t\t  <ion-item>\n\t\t\t<ion-label position=\"floating\">Password</ion-label>\n\t\t\t<ion-input formControlName=\"password\" placeholder=\"password\" type=\"password\"></ion-input>\n\t\t  </ion-item>\n\t\t  <div class=\"button-container\">\n\t\t\t<ion-item (click)=\"rememberMe()\">\n\t\t\t\t<ion-label>Remember Me</ion-label>\n\t\t\t\t<ion-toggle id=\"toggle\" mode=\"ios\" slot=\"start\" value [checked]=\"checked\" (ionChange)=\"rememberMe($event)\"></ion-toggle>\n\t\t\t  </ion-item>\t\t\t\n\t\t\t<ion-button class=\"btn\" type=\"submit\" expand=\"block\" fill=\"solid\" >Login</ion-button>\n\t\t\t<ion-button expand=\"block\" fill=\"solid\" (click)=\"register()\">Register</ion-button>\n\t\t\t<a (click)=\"presentForgotUsernameModal()\">Forgot Username?</a>\n\t\t\t<a (click)=\"presentForgotPasswordModal()\">Forgot Password?</a>\n\t\t  </div>\n\t</form>\n</ion-content>"
 
 /***/ }),
 
@@ -892,7 +881,40 @@ module.exports = "<ion-content>\n\t<div class=\"logo-container\">\n\t\t<img src=
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n  <ion-app>\n\n    <!-- option menu -->\n    <ion-menu side=\"end\" contentId=\"main-content\" menuId=\"option\">\n      <ion-header>\n        <ion-toolbar color=\"primary\">\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-nav>\n          <ion-list *ngFor=\"let option of options\">\n            <ion-item  (click)=\"navigate(option.route)\" button>\n              <ion-label class=\"menu-text\">{{option.title}}</ion-label>\n              <ion-icon [name]=\"option.icon\"></ion-icon>\n            </ion-item>\n          </ion-list>\n        </ion-nav>\n      </ion-content>\n    </ion-menu>\n\n  <!-- profile menu -->\n    <!-- <ion-menu side=\"start\" contentId=\"main-content\" menuId=\"profile\">\n      <ion-header>\n        <ion-toolbar translucent>\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-list>\n          <ion-item class=\"menu-text\" button>Profile</ion-item>\n          <ion-item class=\"menu-text\" button>My Appointments</ion-item>\n          <ion-item class=\"menu-text\" button (click)=\"signOut()\">Sign Off</ion-item>\n        </ion-list>     \n      </ion-content>\n    </ion-menu> -->\n\n    <div class=\"ion-page\" id=\"main-content\">\n      <ion-header>\n        <ion-toolbar mode=\"ios\" color=\"primary\">\n          <ion-buttons slot=\"end\">\n            <ion-menu-button></ion-menu-button>\n          </ion-buttons>\n          <!-- <ion-buttons slot=\"start\">\n            <ion-menu-button (click)=\"signOut()\">\n              Log Out\n            </ion-menu-button>\n          </ion-buttons> -->\n          <ion-title>\n            <div class=\"logo-container\">\n              <img class=\"logo-header\" src=\"assets/img/logo.png\" alt=\"\">\n            </div>\n          </ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content class=\"ion-padding\">\n        <app-home></app-home>\n      </ion-content>\n    </div>\n  </ion-app>\n\n\n \n\n\n\n\n"
+module.exports = "\n  <ion-app>\n\n    <!-- option menu -->\n    <ion-menu side=\"end\" contentId=\"main-content\" menuId=\"option\">\n      <ion-header>\n        <ion-toolbar color=\"primary\">\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-nav>\n          <ion-list *ngFor=\"let option of options\">\n            <ion-item  (click)=\"navigate(option.route)\" button>\n              <ion-label class=\"menu-text\">{{option.title}}</ion-label>\n              <ion-icon [name]=\"option.icon\"></ion-icon>\n            </ion-item>\n          </ion-list>\n        </ion-nav>\n      </ion-content>\n    </ion-menu>\n\n  <!-- profile menu -->\n    <!-- <ion-menu side=\"start\" contentId=\"main-content\" menuId=\"profile\">\n      <ion-header>\n        <ion-toolbar translucent>\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-list>\n          <ion-item class=\"menu-text\" button>Profile</ion-item>\n          <ion-item class=\"menu-text\" button>My Appointments</ion-item>\n          <ion-item class=\"menu-text\" button (click)=\"signOut()\">Sign Off</ion-item>\n        </ion-list>     \n      </ion-content>\n    </ion-menu> -->\n\n    <div class=\"ion-page\" id=\"main-content\">\n      <ion-header>\n        <ion-toolbar mode=\"ios\" color=\"primary\">\n          <ion-buttons slot=\"start\">\n            <ion-menu-button></ion-menu-button>\n          </ion-buttons>\n          <!-- <ion-buttons slot=\"start\">\n            <ion-menu-button (click)=\"signOut()\">\n              Log Out\n            </ion-menu-button>\n          </ion-buttons> -->\n          <ion-title>\n            <div class=\"logo-container\">\n              <img class=\"logo-header\" src=\"assets/img/logo.png\" alt=\"\">\n            </div>\n          </ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content class=\"ion-padding\">\n        <app-home></app-home>\n      </ion-content>\n    </div>\n  </ion-app>\n\n\n \n\n\n\n\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/modals/appt-modal/appt-modal.component.html":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/modals/appt-modal/appt-modal.component.html ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-content>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" (click)=\"dismiss()\" defaultHref=\"/appointments\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Booking</ion-title>\n  </ion-toolbar>\n  <!-- no schedule -->\n  <div class=\"err-content\" *ngIf=\"noData\">\n    <p>No schedule available at this time.</p>\n  </div>\n  <ion-list *ngFor=\"let item of data\">\n    <ion-item button (click)=\"confirm(item)\">\n      <div class=\"list-item\">\n        <p>{{item.date}}</p>\n        <p>{{item.address}}</p>\n      </div>\n    </ion-item>\n  </ion-list>\n</ion-content>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/modals/calendar-modal/calendar-modal.component.html":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/modals/calendar-modal/calendar-modal.component.html ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<form [formGroup]=\"calendarForm\" (ngSubmit)=\"addToCalendar()\">\n    <ion-list>\n      <ion-item>\n        <ion-label>Title</ion-label>\n        <ion-select formControlName=\"name\" placeholder=\"Select One\">\n          <ion-select-option value=\"Licensed Level Clinician\">Licensed Level Clinician</ion-select-option>\n          <ion-select-option value=\"Masters Level Clinician\">Masters Level Clinician</ion-select-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Type</ion-label>\n        <ion-select formControlName=\"type\" placeholder=\"Select One\">\n          <ion-select-option value=\"First Session\">First Session</ion-select-option>\n          <ion-select-option value=\"Insurance\">Insurance</ion-select-option>\n          <ion-select-option value=\"Self Pay\">Self Pay</ion-select-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label position=\"floating\">Duration</ion-label>\n        <ion-input formControlName=\"duration\" placeholder=\"1 hr\"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label position=\"floating\">Price</ion-label>\n        <ion-input formControlName=\"price\" placeholder=\"$100\"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Location</ion-label>\n        <ion-select formControlName=\"location\" placeholder=\"Select One\">\n          <ion-select-option [value]=\"location\">Bldg. A. Suites 122-124 2175 Highpoint Road, Snellville, GA, USA</ion-select-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Start Date</ion-label>\n        <ion-datetime formControlName=\"date\" mode=\"ios\" displayFormat=\"MMM DD, YYYY h:mm A\" placeholder=\"Select Date\"></ion-datetime>\n      </ion-item>\n     \n      <ion-item-divider></ion-item-divider>\n      <ion-button type=\"submit\" expand=\"block\" fill=\"solid\">Add</ion-button>\n      <ion-button type=\"button\" expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n  \n    </ion-list>\n  </form>\n  "
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/modals/confirmation-modal/confirmation-modal.component.html":
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/modals/confirmation-modal/confirmation-modal.component.html ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-content>\n  <div class=\"text-container\">\n    <h1>Confirmation</h1>\n    <p class=\"text\">A confirmation code was sent to your email. \n      Please enter the code below to complete your registration.\n    </p>\n  </div>\n\n  <form [formGroup]=\"confirmationForm\">\n    <ion-item>\n      <ion-label position=\"floating\">Email</ion-label>\n      <ion-input placeholder=\"example@gmail.com\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Code</ion-label>\n      <ion-input formControlName=\"code\"></ion-input>\n    </ion-item>\n    <div class=\"button-container\">\n      <ion-button class=\"btn\" type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"confirmSignUp()\">Confirm</ion-button>\n      <ion-button class=\"btn\" type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n</ion-content>"
 
 /***/ }),
 
@@ -903,7 +925,7 @@ module.exports = "\n  <ion-app>\n\n    <!-- option menu -->\n    <ion-menu side=
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-back-button defaultHref=\"home\"></ion-back-button>\n      </ion-buttons>\n      <ion-title class=\"title-text\">Outreach</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <p>\n        Here at We Climb Counseling & Consulting, we are dedicated to serving\n         the community through various community outreach initiatives. We Climb \n         Counseling & Consulting would love to work with your organization on its \n         next event. For information on how to reach us, please click on the contact tab. \n    </p>\n    <ul>\n      <li>Motivational Speaking</li>\n      <li>Career Day</li>\n      <li>Community Partnerships</li>\n      <li>Public and Private Schools Partnerships</li>\n      <li>Mental Health Awareness Seminars</li>\n      <li>Mental Health Training & Workshops</li>\n      <li>Community & School Suicide Prevention Training</li>\n      <li>Community & School Crisis Intervention Training</li>\n    </ul>\n    <ion-slides pager=\"true\" mode=\"ios\" init=\"true\">\n      <ion-slide>\n        <img src=\"/assets/img/outreach1.jpeg\" alt=\"pic 1\">\n      </ion-slide>\n      <ion-slide>\n        <img src=\"/assets/img/outreach2.jpeg\" alt=\"pic 2\">\n      </ion-slide>\n    </ion-slides>\n  </ion-content>"
+module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-back-button defaultHref=\"home\"></ion-back-button>\n      </ion-buttons>\n      <ion-title class=\"title-text\">Outreach</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <p>\n        Here at We Climb Counseling & Consulting, we are dedicated to serving\n         the community through various community outreach initiatives. We Climb \n         Counseling & Consulting would love to work with your organization on its \n         next event. For information on how to reach us, please click on the contact tab. \n    </p>\n    <ul>\n      <li>Motivational Speaking</li>\n      <li>Career Day</li>\n      <li>Community Partnerships</li>\n      <li>Public and Private Schools Partnerships</li>\n      <li>Mental Health Awareness Seminars</li>\n      <li>Mental Health Training & Workshops</li>\n      <li>Community & School Suicide Prevention Training</li>\n      <li>Community & School Crisis Intervention Training</li>\n    </ul>\n\n    <ion-slides mode=\"ios\" pager=\"true\">\n      <ion-slide *ngFor=\"let url of photos\">\n        <img [src]=\"url\" alt=\"\">\n      </ion-slide>\n    </ion-slides>\n  </ion-content>"
 
 /***/ }),
 
@@ -914,7 +936,7 @@ module.exports = "<ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Profile</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <div>\n    <div class=\"personal-info-container\">\n      <h1>Personal Information</h1>\n      <p>Name: {{user?.firstName}} {{user?.lastName}}</p>\n      <p>Phone Number: {{user?.phone}}</p>\n      <p>Email: {{user?.email}}</p>\n      <p>Role: {{user?.role}}</p>\n    </div>\n    <div  class=\"appointment-container\">\n      <div class=\"user-container\" *ngIf=\"role == 'user'\">\n        <h1>My Appointment</h1>\n        <ion-item *ngFor=\"let appt of appts\">\n          <div>\n            <p>Name: {{appt?.name}}</p>\n            <p>Date: {{appt?.date}}</p>\n            <p>Duration: {{appt?.duration}}</p>\n            <p>Counselor: {{appt?.counselor}}</p>\n            <p>Price: {{appt?.price}}</p>\n            <p>Location: {{appt?.location}}</p>\n          </div>\n        </ion-item>\n      </div>\n\n      <!-- admin -->\n      <div class=\"admin-container\" *ngIf=\"role == 'admin'\">\n        <h1>My Schedule</h1>\n        <ion-list >\n          <ion-item *ngFor=\"let appt of appts\">\n            <div class=\"candidate-info-container\">\n              <p>Date: {{appt.date}}</p>\n              <p>Client Name: {{appt?.candidateFirstName}} {{appt?.candidateLastName}}</p>\n              <p>Phone: 666-666-6666</p>\n            </div>\n          </ion-item>\n        </ion-list>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"button-container\">\n    <ion-button *ngIf=\"role == 'admin'\" shape=\"round\" fill=\"outline\" (click)=\"setCalendar()\">Set Calendar</ion-button>\n    <!-- <ion-button *ngIf=\"role == 'admin'\" shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Add Admin</ion-button> -->\n    <ion-button shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Signout</ion-button>\n  </div>\n</ion-content>"
+module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Profile</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <div>\n    <div class=\"personal-info-container\">\n      <h1>Personal Information</h1>\n      <p>Name: {{user?.name}} {{user?.family_name}}</p>\n      <p>Phone Number: {{user?.phone_number}}</p>\n      <p>Email: {{user?.email}}</p>\n    </div>\n    <div  class=\"appointment-container\">\n      <div class=\"user-container\" *ngIf=\"!isAdmin()\">\n        <h1>My Appointment</h1>\n        <ion-item *ngFor=\"let appt of appts\">\n          <div>\n            <p>Name: {{appt?.name}}</p>\n            <p>Date: {{appt?.date}}</p>\n            <p>Duration: {{appt?.duration}}</p>\n            <p>Counselor: {{appt?.counselor}}</p>\n            <p>Price: {{appt?.price}}</p>\n            <p>Location: {{appt?.location}}</p>\n          </div>\n        </ion-item>\n      </div>\n\n      <!-- admin -->\n      <div class=\"admin-container\" *ngIf=\"isAdmin()\">\n        <h1>My Schedule</h1>\n        <ion-list >\n          <ion-item *ngFor=\"let appt of appts\">\n            <div class=\"candidate-info-container\">\n              <p>Date: {{appt.date}}</p>\n              <p>Client Name: {{appt?.candidateFirstName}} {{appt?.candidateLastName}}</p>\n              <p>Phone: 666-666-6666</p>\n            </div>\n          </ion-item>\n        </ion-list>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"button-container\">\n    <ion-button *ngIf=\"user.profile == 'User'\" shape=\"round\" fill=\"outline\" (click)=\"setCalendar()\">Set Calendar</ion-button>\n    <!-- <ion-button *ngIf=\"role == 'admin'\" shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Add Admin</ion-button> -->\n    <ion-button shape=\"round\" fill=\"outline\" (click)=\"logOut()\">Signout</ion-button>\n  </div>\n</ion-content>"
 
 /***/ }),
 
@@ -925,7 +947,7 @@ module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"header-container\">\n    <h1>Registration</h1>\n  </div>\n\n  <form [formGroup]=\"registerForm\">\n    <ion-item>\n      <ion-label position=\"floating\">First Name</ion-label>\n      <ion-input type=\"string\" placeholder=\"John\" formControlName=\"firstName\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"string\" placeholder=\"Doe\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Email</ion-label>\n      <ion-input type=\"email\" placeholder=\"example@gmail.com\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Phone</ion-label>\n      <ion-input type=\"tel\" placeholder=\"xxx-xxx-xxxx\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Confirm Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"confirmPassword\"></ion-input>\n    </ion-item>\n    <ion-button type=\"submit\" expand=\"block\" fill=\"solid\" [disabled]=\"!passwordMatch()\" (click)=\"registerUser()\">Submit</ion-button>\n    <ion-button type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n  </form>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"header-container\">\n    <h1>Registration</h1>\n  </div>\n\n  <form [formGroup]=\"registerForm\">\n    <ion-item>\n      <ion-label position=\"floating\">First Name</ion-label>\n      <ion-input type=\"string\" placeholder=\"John\" formControlName=\"firstName\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Last Name</ion-label>\n      <ion-input type=\"string\" placeholder=\"Doe\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Email</ion-label>\n      <ion-input type=\"email\" placeholder=\"example@gmail.com\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Phone</ion-label>\n      <ion-input type=\"tel\" placeholder=\"xxxxxxxxxx\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"floating\">Confirm Password</ion-label>\n      <ion-input type=\"password\" formControlName=\"confirmPassword\"></ion-input>\n    </ion-item>\n    <ion-button type=\"submit\" expand=\"block\" fill=\"solid\" [disabled]=\"!passwordMatch()\" (click)=\"signUp()\">Submit</ion-button>\n    <ion-button type=\"submit\" expand=\"block\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n  </form>\n</div>\n"
 
 /***/ }),
 
@@ -1193,7 +1215,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fees_fees_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./fees/fees.component */ "./src/app/fees/fees.component.ts");
 /* harmony import */ var _appointment_appointment_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./appointment/appointment.component */ "./src/app/appointment/appointment.component.ts");
 /* harmony import */ var _forms_forms_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./forms/forms.component */ "./src/app/forms/forms.component.ts");
-/* harmony import */ var _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./appt-modal/appt-modal.component */ "./src/app/appt-modal/appt-modal.component.ts");
+/* harmony import */ var _modals_appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./modals/appt-modal/appt-modal.component */ "./src/app/modals/appt-modal/appt-modal.component.ts");
 /* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
@@ -1208,6 +1230,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./forgot-password/forgot-password.component */ "./src/app/forgot-password/forgot-password.component.ts");
 /* harmony import */ var _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./forgot-username/forgot-username.component */ "./src/app/forgot-username/forgot-username.component.ts");
 /* harmony import */ var src_services_form_service__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! src/services/form.service */ "./src/services/form.service.ts");
+/* harmony import */ var src_services_picture_service__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! src/services/picture.service */ "./src/services/picture.service.ts");
+/* harmony import */ var _modals_confirmation_modal_confirmation_modal_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./modals/confirmation-modal/confirmation-modal.component */ "./src/app/modals/confirmation-modal/confirmation-modal.component.ts");
+/* harmony import */ var src_services_toaster_service__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! src/services/toaster.service */ "./src/services/toaster.service.ts");
+/* harmony import */ var src_services_loading_service__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! src/services/loading.service */ "./src/services/loading.service.ts");
+/* harmony import */ var _modals_calendar_modal_calendar_modal_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./modals/calendar-modal/calendar-modal.component */ "./src/app/modals/calendar-modal/calendar-modal.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
+/* harmony import */ var _modules_material_module__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./modules/material.module */ "./src/app/modules/material.module.ts");
+
+
+
+
+
+
+
 
 
 
@@ -1260,18 +1296,22 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _fees_fees_component__WEBPACK_IMPORTED_MODULE_20__["FeesComponent"],
             _appointment_appointment_component__WEBPACK_IMPORTED_MODULE_21__["AppointmentComponent"],
             _forms_forms_component__WEBPACK_IMPORTED_MODULE_22__["FormsComponent"],
-            _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"],
+            _modals_appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"],
             _login_login_component__WEBPACK_IMPORTED_MODULE_26__["LoginComponent"],
             _profile_profile_component__WEBPACK_IMPORTED_MODULE_28__["ProfileComponent"],
             _register_register_component__WEBPACK_IMPORTED_MODULE_33__["RegisterComponent"],
             _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_34__["CalendarComponent"],
             _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_35__["ForgotPasswordComponent"],
-            _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_36__["ForgotUsernameComponent"]
+            _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_36__["ForgotUsernameComponent"],
+            _modals_confirmation_modal_confirmation_modal_component__WEBPACK_IMPORTED_MODULE_39__["ConfirmationModalComponent"],
+            _modals_calendar_modal_calendar_modal_component__WEBPACK_IMPORTED_MODULE_42__["CalendarModalComponent"]
         ],
         entryComponents: [
-            _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"],
+            _modals_appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_23__["ApptModalComponent"],
             _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_35__["ForgotPasswordComponent"],
-            _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_36__["ForgotUsernameComponent"]
+            _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_36__["ForgotUsernameComponent"],
+            _modals_confirmation_modal_confirmation_modal_component__WEBPACK_IMPORTED_MODULE_39__["ConfirmationModalComponent"],
+            _modals_calendar_modal_calendar_modal_component__WEBPACK_IMPORTED_MODULE_42__["CalendarModalComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
@@ -1286,7 +1326,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             aws_amplify_angular__WEBPACK_IMPORTED_MODULE_30__["AmplifyAngularModule"],
             aws_amplify_angular__WEBPACK_IMPORTED_MODULE_30__["AmplifyIonicModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_31__["FormsModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_31__["ReactiveFormsModule"]
+            _angular_forms__WEBPACK_IMPORTED_MODULE_31__["ReactiveFormsModule"],
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_43__["BrowserAnimationsModule"],
+            _modules_material_module__WEBPACK_IMPORTED_MODULE_44__["MaterialModule"]
         ],
         providers: [
             _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"],
@@ -1298,6 +1340,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _services_login_service__WEBPACK_IMPORTED_MODULE_29__["LoginService"],
             src_services_auth_service__WEBPACK_IMPORTED_MODULE_32__["AuthService"],
             src_services_form_service__WEBPACK_IMPORTED_MODULE_37__["FormService"],
+            src_services_picture_service__WEBPACK_IMPORTED_MODULE_38__["PictureService"],
+            src_services_toaster_service__WEBPACK_IMPORTED_MODULE_40__["ToasterService"],
+            src_services_loading_service__WEBPACK_IMPORTED_MODULE_41__["LoadingService"],
             // File,
             // FileTransfer,
             { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }
@@ -1335,7 +1380,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
 /* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
-/* harmony import */ var _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../appt-modal/appt-modal.component */ "./src/app/appt-modal/appt-modal.component.ts");
+/* harmony import */ var _modals_appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../modals/appt-modal/appt-modal.component */ "./src/app/modals/appt-modal/appt-modal.component.ts");
 
 
 
@@ -1352,7 +1397,7 @@ let AppointmentComponent = class AppointmentComponent {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
             this.modal = yield this.modalController.create({
                 showBackdrop: true,
-                component: _appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_4__["ApptModalComponent"],
+                component: _modals_appt_modal_appt_modal_component__WEBPACK_IMPORTED_MODULE_4__["ApptModalComponent"],
                 mode: 'ios',
                 backdropDismiss: true,
                 componentProps: {
@@ -1428,7 +1473,7 @@ let AppointmentComponent = class AppointmentComponent {
                 date: x.Date.S,
                 duration: x.Duration.S,
                 price: x.Price.S,
-                location: x.Location.S,
+                address: x.Location.S,
                 counselor: x.Counselor.S,
                 type: x.Type.S
             };
@@ -1456,166 +1501,6 @@ AppointmentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/appt-modal/appt-modal.component.scss":
-/*!******************************************************!*\
-  !*** ./src/app/appt-modal/appt-modal.component.scss ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".err-content {\n  text-align: center;\n  padding: 5px;\n}\n\n.btn-container {\n  text-align: center;\n}\n\nion-button {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9hcHB0LW1vZGFsL2FwcHQtbW9kYWwuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2FwcHQtbW9kYWwvYXBwdC1tb2RhbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLGtCQUFBO0VBQ0EsWUFBQTtBQ0RKOztBRElBO0VBQ0ksa0JBQUE7QUNESjs7QURJQTtFQUNJLFlBQUE7QUNESiIsImZpbGUiOiJzcmMvYXBwL2FwcHQtbW9kYWwvYXBwdC1tb2RhbC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuXG4uZXJyLWNvbnRlbnQge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBwYWRkaW5nOiA1cHg7XG59XG5cbi5idG4tY29udGFpbmVyIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7O1xufVxuXG5pb24tYnV0dG9uIHtcbiAgICBjb2xvcjogYmxhY2s7XG59IiwiLmVyci1jb250ZW50IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBwYWRkaW5nOiA1cHg7XG59XG5cbi5idG4tY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5pb24tYnV0dG9uIHtcbiAgY29sb3I6IGJsYWNrO1xufSJdfQ== */"
-
-/***/ }),
-
-/***/ "./src/app/appt-modal/appt-modal.component.ts":
-/*!****************************************************!*\
-  !*** ./src/app/appt-modal/appt-modal.component.ts ***!
-  \****************************************************/
-/*! exports provided: ApptModalComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ApptModalComponent", function() { return ApptModalComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
-/* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
-/* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
-
-
-
-
-
-
-
-let ApptModalComponent = class ApptModalComponent {
-    constructor(modalController, actionSheetController, toastController, userService, apptService) {
-        this.modalController = modalController;
-        this.actionSheetController = actionSheetController;
-        this.toastController = toastController;
-        this.userService = userService;
-        this.apptService = apptService;
-        this.noData = false;
-        this.errMessage = "No schedule available";
-    }
-    ngOnInit() {
-        this.noAppointments(this.data);
-        this.user = this.userService.getUserInfo();
-    }
-    dismiss() {
-        this.modalController.dismiss();
-    }
-    bookAppointment(appt) {
-        var booking = {
-            name: appt.name,
-            date: appt.date,
-            duration: appt.duration,
-            price: appt.price,
-            location: appt.location,
-            counselor: appt.counselor,
-            candidateFirstName: this.user.firstName,
-            candidateLastName: this.user.lastName,
-            candidateEmail: this.user.email,
-            type: appt.type,
-            table: this.determineTable(appt)
-        };
-        this.apptService.bookAppointment(booking)
-            .subscribe(res => {
-        }, err => {
-            console.log("Error booking appointment");
-        });
-    }
-    confirm(appt) {
-        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
-            const actionSheet = yield this.actionSheetController.create({
-                header: 'Are you sure you want to book this appointment?',
-                buttons: [{
-                        text: 'Yes',
-                        role: 'destructive',
-                        icon: 'checkmark',
-                        handler: () => {
-                            console.log('Appointment booked');
-                            this.bookAppointment(appt);
-                            console.log(appt);
-                            this.presentToast();
-                        }
-                    },
-                    {
-                        text: 'Cancel',
-                        icon: 'close',
-                        role: 'cancel',
-                        handler: () => {
-                            console.log('Appointment canceled');
-                        }
-                    }]
-            });
-            yield actionSheet.present();
-        });
-    }
-    presentToast() {
-        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
-            const toast = yield this.toastController.create({
-                message: 'Your appointment has been booked.',
-                duration: 2000
-            });
-            toast.present();
-            this.modalController.dismiss();
-        });
-    }
-    determineTable(appt) {
-        var tableName = "";
-        switch (appt.name) {
-            case "Licensed Level Clinician":
-                tableName = "Licensed_Appointments";
-                break;
-            case "Masters Level Clinician":
-                tableName = "Masters_Appointments";
-                break;
-            case "Adolescent Group Counseling":
-                tableName = "Adolescent";
-                break;
-        }
-        return tableName;
-    }
-    noAppointments(data) {
-        if (data.length == 0) {
-            this.noData = true;
-        }
-    }
-};
-ApptModalComponent.ctorParameters = () => [
-    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"] },
-    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ActionSheetController"] },
-    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"] },
-    { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
-    { type: src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"] }
-];
-tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Array)
-], ApptModalComponent.prototype, "data", void 0);
-tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
-], ApptModalComponent.prototype, "count", void 0);
-ApptModalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-appt-modal',
-        template: __webpack_require__(/*! raw-loader!./appt-modal.component.html */ "./node_modules/raw-loader/index.js!./src/app/appt-modal/appt-modal.component.html"),
-        styles: [__webpack_require__(/*! ./appt-modal.component.scss */ "./src/app/appt-modal/appt-modal.component.scss")]
-    }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"],
-        _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ActionSheetController"],
-        _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"],
-        src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"],
-        src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"]])
-], ApptModalComponent);
-
-
-
-/***/ }),
-
 /***/ "./src/app/calendar/calendar.component.scss":
 /*!**************************************************!*\
   !*** ./src/app/calendar/calendar.component.scss ***!
@@ -1623,7 +1508,7 @@ ApptModalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NhbGVuZGFyL2NhbGVuZGFyLmNvbXBvbmVudC5zY3NzIn0= */"
+module.exports = ".btn-container {\n  text-align: end;\n  margin: 15px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9jYWxlbmRhci9jYWxlbmRhci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvY2FsZW5kYXIvY2FsZW5kYXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxlQUFBO0VBQ0EsWUFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvY2FsZW5kYXIvY2FsZW5kYXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnRuLWNvbnRhaW5lciB7XG4gICAgdGV4dC1hbGlnbjogZW5kO1xuICAgIG1hcmdpbjogMTVweDtcbn0iLCIuYnRuLWNvbnRhaW5lciB7XG4gIHRleHQtYWxpZ246IGVuZDtcbiAgbWFyZ2luOiAxNXB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -1639,11 +1524,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarComponent", function() { return CalendarComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _modals_calendar_modal_calendar_modal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modals/calendar-modal/calendar-modal.component */ "./src/app/modals/calendar-modal/calendar-modal.component.ts");
 /* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var src_services_toaster_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/services/toaster.service */ "./src/services/toaster.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 
@@ -1653,68 +1537,54 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let CalendarComponent = class CalendarComponent {
-    constructor(formBuilder, userService, apptService, router) {
-        this.formBuilder = formBuilder;
-        this.userService = userService;
+    constructor(modalController, apptService, toasterService, router) {
+        this.modalController = modalController;
         this.apptService = apptService;
+        this.toasterService = toasterService;
         this.router = router;
-        this.location = "Bldg. A. Suites 122-124 2175 Highpoint Road, Snellville, GA, USA";
-        this.date = "";
+        this.appts = [];
     }
     ngOnInit() {
-        this.calendarForm = this.formBuilder.group({
-            name: "",
-            type: "",
-            duration: "",
-            price: "",
-            location: "",
-            date: "",
+    }
+    ngDoCheck() {
+        this.appts = this.apptService.schedule;
+    }
+    openCalendarModal() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const modal = yield this.modalController.create({
+                component: _modals_calendar_modal_calendar_modal_component__WEBPACK_IMPORTED_MODULE_3__["CalendarModalComponent"]
+            });
+            return yield modal.present();
         });
     }
-    addToCalendar() {
-        var appts = [];
-        var schedule = {
-            name: this.calendarForm.get("name").value,
-            date: this.formDate(this.calendarForm.get("date").value),
-            duration: this.calendarForm.get("duration").value,
-            price: this.calendarForm.get("price").value,
-            location: this.calendarForm.get("location").value,
-            counselor: this.userService.getUserInfo().firstName + " " + this.userService.getUserInfo().lastName,
-            type: this.calendarForm.get("type").value,
-        };
-        appts.push(schedule);
-        switch (schedule.name) {
+    submit() {
+        switch (this.apptService.schedule[0].name) {
             case "Licensed Level Clinician":
-                this.apptService.setLicenseLevelSchedule(appts)
+                this.apptService.setLicenseLevelSchedule(this.apptService.schedule)
                     .subscribe(res => {
-                    alert("Schedule added");
+                    this.toasterService.presentToast("Schedule added", "success");
+                    this.apptService.clearSchedule();
+                    this.router.navigateByUrl("profile");
                 }, err => {
-                    alert("error adding schedule");
+                    this.toasterService.presentToast("Error adding schedule", "danger");
                 });
                 break;
             case "Master Level Clinician":
-                this.apptService.setMastersLevelSchedule(appts)
+                this.apptService.setMastersLevelSchedule(this.apptService.schedule)
                     .subscribe(res => {
-                    alert("Schedule added");
+                    this.toasterService.presentToast("Schedule added", "success");
+                    this.apptService.clearSchedule();
+                    this.router.navigateByUrl("profile");
                 }, err => {
-                    alert("error adding schedule");
+                    this.toasterService.presentToast("Error adding schedule", "danger");
                 });
         }
-        console.log(schedule);
-    }
-    formDate(date) {
-        let newDate = moment__WEBPACK_IMPORTED_MODULE_5__(date).format('LLL');
-        console.log(newDate);
-        return newDate;
-    }
-    cancel() {
-        this.router.navigateByUrl("profile");
     }
 };
 CalendarComponent.ctorParameters = () => [
-    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
-    { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"] },
     { type: src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"] },
+    { type: src_services_toaster_service__WEBPACK_IMPORTED_MODULE_5__["ToasterService"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] }
 ];
 CalendarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1723,9 +1593,9 @@ CalendarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         template: __webpack_require__(/*! raw-loader!./calendar.component.html */ "./node_modules/raw-loader/index.js!./src/app/calendar/calendar.component.html"),
         styles: [__webpack_require__(/*! ./calendar.component.scss */ "./src/app/calendar/calendar.component.scss")]
     }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
-        src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"],
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"],
         src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"],
+        src_services_toaster_service__WEBPACK_IMPORTED_MODULE_5__["ToasterService"],
         _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]])
 ], CalendarComponent);
 
@@ -1801,7 +1671,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
 /* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var aws_amplify__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! aws-amplify */ "./node_modules/aws-amplify/lib-esm/index.js");
+/* harmony import */ var src_services_toaster_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/services/toaster.service */ "./src/services/toaster.service.ts");
+/* harmony import */ var src_services_loading_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/services/loading.service */ "./src/services/loading.service.ts");
+
 
 
 
@@ -1810,18 +1683,50 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let ForgotPasswordComponent = class ForgotPasswordComponent {
-    constructor(formBuilder, modalController, userService, toastController, router) {
+    constructor(formBuilder, modalController, userService, toasterService, loadingService) {
         this.formBuilder = formBuilder;
         this.modalController = modalController;
         this.userService = userService;
-        this.toastController = toastController;
-        this.router = router;
+        this.toasterService = toasterService;
+        this.loadingService = loadingService;
+        this.codeSent = false;
     }
     ngOnInit() {
         this.passwordForm = this.formBuilder.group({
             email: "",
-            lastName: "",
+            code: "",
             password: ""
+        });
+    }
+    forgotPasswordRequest() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.loadingService.presentLoading();
+            try {
+                const res = yield aws_amplify__WEBPACK_IMPORTED_MODULE_5__["Auth"].forgotPassword("skipbassey@gmail.com");
+                if (res) {
+                    this.codeSent = true;
+                }
+            }
+            catch (error) {
+                console.log('error confirming sign up', error);
+                this.toasterService.presentToast(error.message, "danger");
+            }
+            this.loadingService.dismissLoading();
+        });
+    }
+    forgotPasswordSubmit() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.loadingService.presentLoading();
+            try {
+                const req = yield aws_amplify__WEBPACK_IMPORTED_MODULE_5__["Auth"].forgotPasswordSubmit(this.passwordForm.get("email").value, this.passwordForm.get("code").value, this.passwordForm.get("password").value);
+                this.toasterService.presentToast("Password has been reset.", "success");
+                this.modalController.dismiss();
+            }
+            catch (error) {
+                console.log(error);
+                this.toasterService.presentToast(error.message, "danger");
+            }
+            this.loadingService.dismissLoading();
         });
     }
     forgotPassword() {
@@ -1832,31 +1737,22 @@ let ForgotPasswordComponent = class ForgotPasswordComponent {
         };
         this.userService.forgotPassword(body)
             .subscribe(res => {
-            this.presentToast();
+            this.toasterService.presentToast("Password has been reset.", "success");
             this.modalController.dismiss();
         }, err => {
-            alert("Error");
+            this.toasterService.presentToast("Error resetting password.", "danger");
         });
     }
     cancel() {
         this.modalController.dismiss();
-    }
-    presentToast() {
-        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
-            const toast = yield this.toastController.create({
-                message: 'Password has been changed.',
-                duration: 2000
-            });
-            toast.present();
-        });
     }
 };
 ForgotPasswordComponent.ctorParameters = () => [
     { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"] },
     { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_4__["UserService"] },
-    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ToastController"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"] }
+    { type: src_services_toaster_service__WEBPACK_IMPORTED_MODULE_6__["ToasterService"] },
+    { type: src_services_loading_service__WEBPACK_IMPORTED_MODULE_7__["LoadingService"] }
 ];
 ForgotPasswordComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1867,8 +1763,8 @@ ForgotPasswordComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
         _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"],
         src_services_user_service__WEBPACK_IMPORTED_MODULE_4__["UserService"],
-        _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ToastController"],
-        _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]])
+        src_services_toaster_service__WEBPACK_IMPORTED_MODULE_6__["ToasterService"],
+        src_services_loading_service__WEBPACK_IMPORTED_MODULE_7__["LoadingService"]])
 ], ForgotPasswordComponent);
 
 
@@ -1914,7 +1810,6 @@ let ForgotUsernameComponent = class ForgotUsernameComponent {
         this.toastController = toastController;
         this.loadingController = loadingController;
         this.modalController = modalController;
-        this.username = "";
         this.loaded = false;
     }
     ngOnInit() {
@@ -1929,14 +1824,24 @@ let ForgotUsernameComponent = class ForgotUsernameComponent {
         var lastName = this.usernameForm.get("lastName").value;
         this.userService.forgotUserName(lastName, phone)
             .subscribe(res => {
-            this.username = res;
-            this.loadingController.dismiss;
+            this.presentSuccessToast();
+            this.modalController.dismiss();
         }, err => {
             this.presentErrorToast();
         });
     }
     cancel() {
         this.modalController.dismiss();
+    }
+    presentSuccessToast() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const toast = yield this.toastController.create({
+                message: 'Username has been sent to your email.',
+                duration: 2000,
+                color: "success"
+            });
+            toast.present();
+        });
     }
     presentErrorToast() {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
@@ -2328,7 +2233,7 @@ FamilyModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".welcome-card img {\n  max-height: 35vh;\n  overflow: hidden;\n}\n\n.card {\n  height: 90%;\n}\n\n.primary {\n  background-color: black;\n}\n\n.services {\n  margin-bottom: 15px;\n}\n\n.text {\n  text-align: center;\n  color: black;\n}\n\n.title {\n  text-align: center;\n  font-weight: bold;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIiwic3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0UsZ0JBQUE7RUFDQSxnQkFBQTtBQ0RGOztBRElBO0VBQ0UsV0FBQTtBQ0RGOztBRElBO0VBQ0UsdUJBQUE7QUNERjs7QURJQTtFQUNFLG1CQUFBO0FDREY7O0FES0E7RUFDRSxrQkFBQTtFQUNBLFlBQUE7QUNGRjs7QURLQTtFQUNFLGtCQUFBO0VBQ0EsaUJBQUE7QUNGRiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS8vY29sb3JzLnNjc3MnO1xuXG4ud2VsY29tZS1jYXJkIGltZyB7XG4gIG1heC1oZWlnaHQ6IDM1dmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG59XG5cbi5jYXJkIHtcbiAgaGVpZ2h0OiA5MCU7XG59XG5cbi5wcmltYXJ5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyaylcbn1cblxuLnNlcnZpY2VzIHtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cblxuXG4udGV4dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG4udGl0bGV7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG5cbi8vIGlvbi1jYXJkLWNvbnRlbnQge1xuLy8gICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTtcbi8vIH1cblxuLy8gaW9uLWl0ZW0ge1xuLy8gICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKVxuLy8gfVxuXG4vLyBpb24tbGlzdHtcbi8vICAgYmFja2dyb3VuZC1jb2xvcjogY29sb3IoZGFyayk7XG4vLyB9XG5cbiIsIi53ZWxjb21lLWNhcmQgaW1nIHtcbiAgbWF4LWhlaWdodDogMzV2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuLmNhcmQge1xuICBoZWlnaHQ6IDkwJTtcbn1cblxuLnByaW1hcnkge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbn1cblxuLnNlcnZpY2VzIHtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cblxuLnRleHQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiBibGFjaztcbn1cblxuLnRpdGxlIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXdlaWdodDogYm9sZDtcbn0iXX0= */"
+module.exports = ".welcome-card img {\n  max-height: 35vh;\n  overflow: hidden;\n}\n\n.card {\n  height: 90%;\n}\n\n.primary {\n  background-color: black;\n}\n\n.services-container {\n  padding: 10px;\n  text-align: center;\n}\n\n.text {\n  text-align: center;\n  color: black;\n}\n\n.title {\n  text-align: center;\n  font-weight: bold;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIiwic3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0UsZ0JBQUE7RUFDQSxnQkFBQTtBQ0RGOztBRElBO0VBQ0UsV0FBQTtBQ0RGOztBRElBO0VBQ0UsdUJBQUE7QUNERjs7QURJQTtFQUNFLGFBQUE7RUFDQSxrQkFBQTtBQ0RGOztBRElBO0VBQ0Usa0JBQUE7RUFDQSxZQUFBO0FDREY7O0FESUE7RUFDRSxrQkFBQTtFQUNBLGlCQUFBO0FDREYiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnLi4vLi4vdGhlbWUvL2NvbG9ycy5zY3NzJztcblxuLndlbGNvbWUtY2FyZCBpbWcge1xuICBtYXgtaGVpZ2h0OiAzNXZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xufVxuXG4uY2FyZCB7XG4gIGhlaWdodDogOTAlO1xufVxuXG4ucHJpbWFyeSB7XG4gIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspXG59XG5cbi5zZXJ2aWNlcy1jb250YWluZXIge1xuICBwYWRkaW5nOiAxMHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7fVxuXG5cbi50ZXh0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBjb2xvcjogYmxhY2s7XG59XG5cbi50aXRsZXtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXdlaWdodDogYm9sZDtcbn1cblxuLy8gaW9uLWNhcmQtY29udGVudCB7XG4vLyAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspO1xuLy8gfVxuXG4vLyBpb24taXRlbSB7XG4vLyAgIGJhY2tncm91bmQtY29sb3I6IGNvbG9yKGRhcmspXG4vLyB9XG5cbi8vIGlvbi1saXN0e1xuLy8gICBiYWNrZ3JvdW5kLWNvbG9yOiBjb2xvcihkYXJrKTtcbi8vIH1cblxuIiwiLndlbGNvbWUtY2FyZCBpbWcge1xuICBtYXgtaGVpZ2h0OiAzNXZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xufVxuXG4uY2FyZCB7XG4gIGhlaWdodDogOTAlO1xufVxuXG4ucHJpbWFyeSB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xufVxuXG4uc2VydmljZXMtY29udGFpbmVyIHtcbiAgcGFkZGluZzogMTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4udGV4dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG4udGl0bGUge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -2354,28 +2259,65 @@ let HomePage = class HomePage {
         this.services = [
             {
                 title: 'Relationship Counseling',
-                route: 'counseling/relationship'
+                data: [
+                    "Blending Family Adjustments",
+                    "Behavioral Issues",
+                    "Academic Concerns in Children",
+                    "Divorce & Divorce Adjustments",
+                    "Grief Counseling"
+                ]
             },
             {
                 title: 'Family Counseling',
-                route: 'counseling/family'
+                data: [
+                    "Blending Family Adjustments",
+                    "Behavioral Issues",
+                    "Academic Concerns in Children",
+                    "Divorce & Divorce Adjustments",
+                    "Grief Counseling"
+                ]
             },
             {
                 title: 'Adolescent Counseling',
-                route: 'counseling/adolescent'
+                data: [
+                    "Anger Management",
+                    "Self-Harming & Suicidal Behaviors",
+                    "Oppositional Defiant Behaviors",
+                    "ADD & ADHD",
+                    "Bullying",
+                    "Individualized Educational Plan (IEP)",
+                    "504 Plan",
+                    "Trauma",
+                    "Coping Skills"
+                ]
             },
             {
                 title: 'Individual Counseling',
-                route: 'counseling/individual'
+                data: [
+                    "Depression",
+                    "Anxiety & Stress Management",
+                    "Self-Esteem Issues",
+                    "Underachievement",
+                    "Anger Management",
+                    "Spiritual Issues",
+                    "Crisis Intervention",
+                    "Trauma/PTSD",
+                    "Grief",
+                    "Divorce Adjustment",
+                    "Coping Skills"
+                ]
             },
             {
                 title: 'Career Counseling',
-                route: 'counseling/career'
+                data: [
+                    "Career Counseling & Guidance",
+                    "Career Interest Assessment",
+                    "Choosing/Changing Majors",
+                    "Changing Career Paths",
+                    "Resume & Cover Letter Writing"
+                ]
             }
         ];
-    }
-    navigate(service) {
-        this.router.navigateByUrl(service.route);
     }
 };
 HomePage.ctorParameters = () => [
@@ -2595,6 +2537,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
 /* harmony import */ var _forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../forgot-password/forgot-password.component */ "./src/app/forgot-password/forgot-password.component.ts");
 /* harmony import */ var _forgot_username_forgot_username_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../forgot-username/forgot-username.component */ "./src/app/forgot-username/forgot-username.component.ts");
+/* harmony import */ var src_services_loading_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! src/services/loading.service */ "./src/services/loading.service.ts");
+/* harmony import */ var src_services_toaster_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! src/services/toaster.service */ "./src/services/toaster.service.ts");
+/* harmony import */ var aws_amplify__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! aws-amplify */ "./node_modules/aws-amplify/lib-esm/index.js");
+
+
+
 
 
 
@@ -2610,7 +2558,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let LoginComponent = class LoginComponent {
-    constructor(events, amplifyService, formBuilder, router, userService, loginService, authService, loadingController, modalController) {
+    constructor(events, amplifyService, formBuilder, router, userService, loginService, authService, loadingController, modalController, loadingService, toasterService) {
         this.events = events;
         this.amplifyService = amplifyService;
         this.formBuilder = formBuilder;
@@ -2620,87 +2568,56 @@ let LoginComponent = class LoginComponent {
         this.authService = authService;
         this.loadingController = loadingController;
         this.modalController = modalController;
-        this.signUpConfig = {
-            header: 'Sign Up',
-            hideAllDefaults: true,
-            defaultCountryCode: '1',
-            signUpFields: [
-                {
-                    label: 'Username',
-                    key: 'username',
-                    required: true,
-                    displayOrder: 1,
-                    type: 'string',
-                },
-                {
-                    label: 'Email',
-                    key: 'email',
-                    required: true,
-                    displayOrder: 2,
-                    type: 'string',
-                },
-                {
-                    label: 'Password',
-                    key: 'password',
-                    required: true,
-                    displayOrder: 3,
-                    type: 'password'
-                },
-                {
-                    label: 'Phone Number',
-                    key: 'phone_number',
-                    required: true,
-                    displayOrder: 4,
-                    type: 'string'
-                },
-                {
-                    label: 'First Name',
-                    key: 'name',
-                    required: true,
-                    displayOrder: 5,
-                    type: 'string',
-                },
-                {
-                    label: 'Last Name',
-                    key: 'family_name',
-                    required: true,
-                    displayOrder: 6,
-                    type: 'string',
-                }
-            ]
-        };
-        this.authState = { signedIn: false };
-        // this.amplifyService.authStateChange$
-        //   .subscribe(authState => {
-        //     this.authState.signedIn = authState.state === 'signedIn';
-        //     this.events.publish('data:AuthState', this.authState);
-        //     this.redirectSignIn();
-        //   });
+        this.loadingService = loadingService;
+        this.toasterService = toasterService;
+        this.checked = false;
     }
     ngOnInit() {
         this.loginForm = this.formBuilder.group({
             email: '',
-            password: ''
+            password: '',
+            toggle: ''
         });
+        this.getRememberMeCredentials();
     }
-    navigate() {
+    navigateToHome() {
         this.router.navigateByUrl('home');
     }
+    signIn() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.loadingService.presentLoading();
+            try {
+                const res = yield aws_amplify__WEBPACK_IMPORTED_MODULE_14__["Auth"].signIn(this.loginForm.get("email").value, this.loginForm.get("password").value);
+                console.log(aws_amplify__WEBPACK_IMPORTED_MODULE_14__["Auth"].currentUserInfo());
+                if (res) {
+                    console.log(res);
+                    this.authService.setAuthorization(res.signInUserSession.idToken.jwtToken, res.signInUserSession.refreshToken.token);
+                    this.userService.setUserInfo(res.signInUserSession.idToken.payload);
+                    this.navigateToHome();
+                }
+            }
+            catch (err) {
+                console.log(err);
+                this.toasterService.presentToast(err.message, "danger");
+            }
+        });
+    }
     login() {
-        this.presentLoading();
+        this.loadingService.presentLoading();
         var email = this.loginForm.get('email').value;
         var password = this.loginForm.get('password').value;
         this.loginService.login(email, password)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["tap"])(data => {
-            this.authService.setAuthorization(data.token);
         }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["switchMap"])(() => {
             return this.userService.getUser(email);
         }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["tap"])(data => {
             this.userService.setUserInfo(data);
-            this.navigate();
+            this.navigateToHome();
         }))
             .subscribe(res => {
             this.loadingController.dismiss();
+        }, err => {
+            this.toasterService.presentToast(err.message, "danger");
         });
     }
     register() {
@@ -2734,6 +2651,34 @@ let LoginComponent = class LoginComponent {
             return yield modal.present();
         });
     }
+    rememberMe(event) {
+        switch (event.detail.checked) {
+            case true:
+                window.localStorage.setItem("email", this.loginForm.get("email").value);
+                window.localStorage.setItem("password", this.loginForm.get("password").value);
+                window.localStorage.setItem("checked", "true");
+                break;
+            case false:
+                window.localStorage.setItem("email", "");
+                window.localStorage.setItem("password", "");
+                window.localStorage.setItem("checked", "false");
+                this.loginForm.controls["email"].setValue(window.localStorage.getItem("email"));
+                this.loginForm.controls["password"].setValue(window.localStorage.getItem("password"));
+                break;
+        }
+    }
+    getRememberMeCredentials() {
+        this.loginForm.controls["email"].setValue(window.localStorage.getItem("email"));
+        this.loginForm.controls["password"].setValue(window.localStorage.getItem("password"));
+        switch (window.localStorage.getItem("checked")) {
+            case "true":
+                this.checked = true;
+                break;
+            case "false":
+                this.checked = false;
+                break;
+        }
+    }
 };
 LoginComponent.ctorParameters = () => [
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Events"] },
@@ -2744,7 +2689,9 @@ LoginComponent.ctorParameters = () => [
     { type: src_services_login_service__WEBPACK_IMPORTED_MODULE_7__["LoginService"] },
     { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_8__["AuthService"] },
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["LoadingController"] },
-    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"] }
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"] },
+    { type: src_services_loading_service__WEBPACK_IMPORTED_MODULE_12__["LoadingService"] },
+    { type: src_services_toaster_service__WEBPACK_IMPORTED_MODULE_13__["ToasterService"] }
 ];
 LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -2760,7 +2707,9 @@ LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         src_services_login_service__WEBPACK_IMPORTED_MODULE_7__["LoginService"],
         _services_auth_service__WEBPACK_IMPORTED_MODULE_8__["AuthService"],
         _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["LoadingController"],
-        _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"]])
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ModalController"],
+        src_services_loading_service__WEBPACK_IMPORTED_MODULE_12__["LoadingService"],
+        src_services_toaster_service__WEBPACK_IMPORTED_MODULE_13__["ToasterService"]])
 ], LoginComponent);
 
 
@@ -2877,6 +2826,398 @@ MenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/modals/appt-modal/appt-modal.component.scss":
+/*!*************************************************************!*\
+  !*** ./src/app/modals/appt-modal/appt-modal.component.scss ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".err-content {\n  text-align: center;\n  padding: 5px;\n}\n\n.btn-container {\n  text-align: center;\n}\n\nion-button {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9tb2RhbHMvYXBwdC1tb2RhbC9hcHB0LW1vZGFsLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9tb2RhbHMvYXBwdC1tb2RhbC9hcHB0LW1vZGFsLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0ksa0JBQUE7RUFDQSxZQUFBO0FDREo7O0FESUE7RUFDSSxrQkFBQTtBQ0RKOztBRElBO0VBQ0ksWUFBQTtBQ0RKIiwiZmlsZSI6InNyYy9hcHAvbW9kYWxzL2FwcHQtbW9kYWwvYXBwdC1tb2RhbC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuXG4uZXJyLWNvbnRlbnQge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBwYWRkaW5nOiA1cHg7XG59XG5cbi5idG4tY29udGFpbmVyIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7O1xufVxuXG5pb24tYnV0dG9uIHtcbiAgICBjb2xvcjogYmxhY2s7XG59IiwiLmVyci1jb250ZW50IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBwYWRkaW5nOiA1cHg7XG59XG5cbi5idG4tY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5pb24tYnV0dG9uIHtcbiAgY29sb3I6IGJsYWNrO1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/modals/appt-modal/appt-modal.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/modals/appt-modal/appt-modal.component.ts ***!
+  \***********************************************************/
+/*! exports provided: ApptModalComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ApptModalComponent", function() { return ApptModalComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
+/* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
+/* harmony import */ var src_services_toaster_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/services/toaster.service */ "./src/services/toaster.service.ts");
+
+
+
+
+
+
+
+
+let ApptModalComponent = class ApptModalComponent {
+    constructor(modalController, actionSheetController, toastController, userService, apptService, toasterService) {
+        this.modalController = modalController;
+        this.actionSheetController = actionSheetController;
+        this.toastController = toastController;
+        this.userService = userService;
+        this.apptService = apptService;
+        this.toasterService = toasterService;
+        this.noData = false;
+        this.errMessage = "No schedule available";
+    }
+    ngOnInit() {
+        this.noAppointments(this.data);
+        this.user = this.userService.getUserInfo();
+    }
+    dismiss() {
+        this.modalController.dismiss();
+    }
+    bookAppointment(appt) {
+        var booking = {
+            name: appt.name,
+            date: appt.date,
+            duration: appt.duration,
+            price: appt.price,
+            address: appt.address,
+            counselor: appt.counselor,
+            candidateFirstName: this.user.firstName,
+            candidateLastName: this.user.lastName,
+            candidateEmail: this.user.email,
+            type: appt.type,
+            table: this.determineTable(appt)
+        };
+        this.apptService.bookAppointment(booking)
+            .subscribe(res => {
+        }, err => {
+            console.log("Error booking appointment");
+        });
+    }
+    confirm(appt) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const actionSheet = yield this.actionSheetController.create({
+                header: 'Are you sure you want to book this appointment?',
+                buttons: [{
+                        text: 'No',
+                        role: 'destructive',
+                        icon: 'clsoe',
+                        handler: () => {
+                            console.log('Appointment canceled');
+                        }
+                    },
+                    {
+                        text: 'Yes',
+                        icon: 'checkmark',
+                        role: 'close',
+                        handler: () => {
+                            console.log('Appointment booked');
+                            this.bookAppointment(appt);
+                            console.log(appt);
+                            this.toasterService.presentToast("Your appointment has been booked.", "success");
+                        }
+                    }]
+            });
+            yield actionSheet.present();
+        });
+    }
+    determineTable(appt) {
+        var tableName = "";
+        switch (appt.name) {
+            case "Licensed Level Clinician":
+                tableName = "Licensed_Appointments";
+                break;
+            case "Masters Level Clinician":
+                tableName = "Masters_Appointments";
+                break;
+            case "Adolescent Group Counseling":
+                tableName = "Adolescent";
+                break;
+        }
+        return tableName;
+    }
+    noAppointments(data) {
+        if (data.length == 0) {
+            this.noData = true;
+        }
+    }
+};
+ApptModalComponent.ctorParameters = () => [
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ActionSheetController"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"] },
+    { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
+    { type: src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"] },
+    { type: src_services_toaster_service__WEBPACK_IMPORTED_MODULE_5__["ToasterService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Array)
+], ApptModalComponent.prototype, "data", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Number)
+], ApptModalComponent.prototype, "count", void 0);
+ApptModalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-appt-modal',
+        template: __webpack_require__(/*! raw-loader!./appt-modal.component.html */ "./node_modules/raw-loader/index.js!./src/app/modals/appt-modal/appt-modal.component.html"),
+        styles: [__webpack_require__(/*! ./appt-modal.component.scss */ "./src/app/modals/appt-modal/appt-modal.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ActionSheetController"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"],
+        src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"],
+        src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"],
+        src_services_toaster_service__WEBPACK_IMPORTED_MODULE_5__["ToasterService"]])
+], ApptModalComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/modals/calendar-modal/calendar-modal.component.scss":
+/*!*********************************************************************!*\
+  !*** ./src/app/modals/calendar-modal/calendar-modal.component.scss ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21vZGFscy9jYWxlbmRhci1tb2RhbC9jYWxlbmRhci1tb2RhbC5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/modals/calendar-modal/calendar-modal.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/modals/calendar-modal/calendar-modal.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: CalendarModalComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarModalComponent", function() { return CalendarModalComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
+/* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var src_services_toaster_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/services/toaster.service */ "./src/services/toaster.service.ts");
+
+
+
+
+
+
+
+
+let CalendarModalComponent = class CalendarModalComponent {
+    constructor(formBuilder, apptService, userService, modalController, toasterService) {
+        this.formBuilder = formBuilder;
+        this.apptService = apptService;
+        this.userService = userService;
+        this.modalController = modalController;
+        this.toasterService = toasterService;
+        this.location = "Bldg. A. Suites 122-124 2175 Highpoint Road, Snellville, GA, USA";
+        this.date = "";
+    }
+    ngOnInit() {
+        this.calendarForm = this.formBuilder.group({
+            name: "",
+            type: "",
+            duration: "",
+            price: "",
+            location: "",
+            date: "",
+        });
+    }
+    addToCalendar() {
+        var schedule = {
+            name: this.calendarForm.get("name").value,
+            date: this.formDate(this.calendarForm.get("date").value),
+            duration: this.calendarForm.get("duration").value,
+            price: this.calendarForm.get("price").value,
+            address: this.calendarForm.get("location").value,
+            counselor: this.userService.getUserInfo().name + " " + this.userService.getUserInfo().family_name,
+            type: this.calendarForm.get("type").value,
+            expires: moment__WEBPACK_IMPORTED_MODULE_5__(this.calendarForm.get("date").value).unix().toString()
+        };
+        console.log(schedule);
+        this.appointmentExists(schedule);
+    }
+    formDate(date) {
+        let newDate = moment__WEBPACK_IMPORTED_MODULE_5__(date).format('LLL');
+        // let newDate = moment(date).utc().format('LLL');
+        return newDate;
+    }
+    cancel() {
+        this.modalController.dismiss();
+    }
+    appointmentExists(appt) {
+        var exists = this.apptService.schedule.find(x => x.date == appt.date && x.name == appt.name);
+        if (exists) {
+            this.toasterService.presentToast("This appointment has already been added", "warning");
+        }
+        else {
+            this.apptService.schedule.push(appt);
+            this.modalController.dismiss();
+        }
+    }
+};
+CalendarModalComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+    { type: src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"] },
+    { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_6__["ModalController"] },
+    { type: src_services_toaster_service__WEBPACK_IMPORTED_MODULE_7__["ToasterService"] }
+];
+CalendarModalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-calendar-modal',
+        template: __webpack_require__(/*! raw-loader!./calendar-modal.component.html */ "./node_modules/raw-loader/index.js!./src/app/modals/calendar-modal/calendar-modal.component.html"),
+        styles: [__webpack_require__(/*! ./calendar-modal.component.scss */ "./src/app/modals/calendar-modal/calendar-modal.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
+        src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__["AppointmentService"],
+        src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_6__["ModalController"],
+        src_services_toaster_service__WEBPACK_IMPORTED_MODULE_7__["ToasterService"]])
+], CalendarModalComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/modals/confirmation-modal/confirmation-modal.component.scss":
+/*!*****************************************************************************!*\
+  !*** ./src/app/modals/confirmation-modal/confirmation-modal.component.scss ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".text-container {\n  text-align: center;\n}\n\n.text {\n  padding: 10px;\n}\n\n.button-container {\n  margin-top: 30px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9tb2RhbHMvY29uZmlybWF0aW9uLW1vZGFsL2NvbmZpcm1hdGlvbi1tb2RhbC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvbW9kYWxzL2NvbmZpcm1hdGlvbi1tb2RhbC9jb25maXJtYXRpb24tbW9kYWwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxrQkFBQTtBQ0NKOztBREVBO0VBQ0ksYUFBQTtBQ0NKOztBREVBO0VBQ0ksZ0JBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL21vZGFscy9jb25maXJtYXRpb24tbW9kYWwvY29uZmlybWF0aW9uLW1vZGFsLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnRleHQtY29udGFpbmVyIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi50ZXh0IHtcbiAgICBwYWRkaW5nOiAxMHB4O1xufVxuXG4uYnV0dG9uLWNvbnRhaW5lciB7XG4gICAgbWFyZ2luLXRvcDogMzBweDtcbn0iLCIudGV4dC1jb250YWluZXIge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi50ZXh0IHtcbiAgcGFkZGluZzogMTBweDtcbn1cblxuLmJ1dHRvbi1jb250YWluZXIge1xuICBtYXJnaW4tdG9wOiAzMHB4O1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/modals/confirmation-modal/confirmation-modal.component.ts":
+/*!***************************************************************************!*\
+  !*** ./src/app/modals/confirmation-modal/confirmation-modal.component.ts ***!
+  \***************************************************************************/
+/*! exports provided: ConfirmationModalComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmationModalComponent", function() { return ConfirmationModalComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var aws_amplify__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! aws-amplify */ "./node_modules/aws-amplify/lib-esm/index.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var src_services_toaster_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/services/toaster.service */ "./src/services/toaster.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
+
+
+
+
+
+let ConfirmationModalComponent = class ConfirmationModalComponent {
+    constructor(formBuilder, modalController, toasterService, router) {
+        this.formBuilder = formBuilder;
+        this.modalController = modalController;
+        this.toasterService = toasterService;
+        this.router = router;
+    }
+    ngOnInit() {
+        this.confirmationForm = this.formBuilder.group({
+            email: "",
+            code: ""
+        });
+    }
+    confirmSignUp() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            console.log("type:" + typeof (this.confirmationForm.get("code").value));
+            try {
+                yield aws_amplify__WEBPACK_IMPORTED_MODULE_2__["Auth"].confirmSignUp(this.confirmationForm.get("email").value, this.confirmationForm.get("code").value);
+                this.toasterService.presentToast("Your profile has been created.", "success");
+                this.modalController.dismiss();
+                this.router.navigateByUrl("login");
+            }
+            catch (error) {
+                console.log('error confirming sign up', error);
+                this.toasterService.presentToast("There was an error confirming your profile.", "danger");
+            }
+        });
+    }
+    cancel() {
+        this.modalController.dismiss();
+    }
+};
+ConfirmationModalComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ModalController"] },
+    { type: src_services_toaster_service__WEBPACK_IMPORTED_MODULE_5__["ToasterService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] }
+];
+ConfirmationModalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-confirmation-modal',
+        template: __webpack_require__(/*! raw-loader!./confirmation-modal.component.html */ "./node_modules/raw-loader/index.js!./src/app/modals/confirmation-modal/confirmation-modal.component.html"),
+        styles: [__webpack_require__(/*! ./confirmation-modal.component.scss */ "./src/app/modals/confirmation-modal/confirmation-modal.component.scss")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ModalController"],
+        src_services_toaster_service__WEBPACK_IMPORTED_MODULE_5__["ToasterService"],
+        _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]])
+], ConfirmationModalComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/modules/material.module.ts":
+/*!********************************************!*\
+  !*** ./src/app/modules/material.module.ts ***!
+  \********************************************/
+/*! exports provided: MaterialModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaterialModule", function() { return MaterialModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/expansion */ "./node_modules/@angular/material/esm2015/expansion.js");
+
+
+
+let MaterialModule = class MaterialModule {
+};
+MaterialModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [
+            _angular_material_expansion__WEBPACK_IMPORTED_MODULE_2__["MatExpansionModule"]
+        ],
+        exports: [
+            _angular_material_expansion__WEBPACK_IMPORTED_MODULE_2__["MatExpansionModule"]
+        ]
+    })
+], MaterialModule);
+
+
+
+/***/ }),
+
 /***/ "./src/app/outreach/outreach.component.scss":
 /*!**************************************************!*\
   !*** ./src/app/outreach/outreach.component.scss ***!
@@ -2884,7 +3225,7 @@ MenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "img {\n  width: 100%;\n  height: 400px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9vdXRyZWFjaC9vdXRyZWFjaC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvb3V0cmVhY2gvb3V0cmVhY2guY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0E7RUFDSSxXQUFBO0VBQ0EsYUFBQTtBQ0ZKIiwiZmlsZSI6InNyYy9hcHAvb3V0cmVhY2gvb3V0cmVhY2guY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi90aGVtZS9jb2xvcnMuc2Nzcyc7XG5cblxuaW1nIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDQwMHB4O1xufSIsImltZyB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDQwMHB4O1xufSJdfQ== */"
+module.exports = "p {\n  margin: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9vdXRyZWFjaC9vdXRyZWFjaC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvb3V0cmVhY2gvb3V0cmVhY2guY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0E7RUFDSSxZQUFBO0FDRkoiLCJmaWxlIjoic3JjL2FwcC9vdXRyZWFjaC9vdXRyZWFjaC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgJy4uLy4uL3RoZW1lL2NvbG9ycy5zY3NzJztcblxuXG5wIHtcbiAgICBtYXJnaW46IDEwcHg7XG59XG4iLCJwIHtcbiAgbWFyZ2luOiAxMHB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -2900,45 +3241,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OutreachComponent", function() { return OutreachComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/js/swiper.esm.bundle.js");
+/* harmony import */ var src_services_picture_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/services/picture.service */ "./src/services/picture.service.ts");
 
 
 
 // import * as fs from 'fs';
 let OutreachComponent = class OutreachComponent {
-    constructor() {
-        this.testFolder = '/assets';
-        this.mySwiper = new swiper__WEBPACK_IMPORTED_MODULE_2__["default"]('.swiper-container', {
-            speed: 400,
-            spaceBetween: 100,
-            grabCursor: true,
-            iOSEdgeSwipeDetection: true,
-            preloadImages: true
-        });
+    constructor(pictureService) {
+        this.pictureService = pictureService;
+        this.photos = [];
         this.slideOpts = {
-            init: true
+            initialSlide: this.photos.length,
+            init: true,
+            pager: true,
+            mode: "ios"
         };
     }
     ngOnInit() {
         this.getPhotos();
     }
     getPhotos() {
-        // fs.readdir(this.testFolder, (err, files) => {
-        //   files.forEach(file => {
-        //     console.log(file);
-        //   });
-        // });
-    }
-    next() {
+        this.photos = this.pictureService.getPhotos();
     }
 };
+OutreachComponent.ctorParameters = () => [
+    { type: src_services_picture_service__WEBPACK_IMPORTED_MODULE_2__["PictureService"] }
+];
 OutreachComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-outreach',
         template: __webpack_require__(/*! raw-loader!./outreach.component.html */ "./node_modules/raw-loader/index.js!./src/app/outreach/outreach.component.html"),
         styles: [__webpack_require__(/*! ./outreach.component.scss */ "./src/app/outreach/outreach.component.scss"), __webpack_require__(/*! ../../theme/font.scss */ "./src/theme/font.scss"), __webpack_require__(/*! ../../../node_modules/swiper/css/swiper.min.css */ "./node_modules/swiper/css/swiper.min.css")]
     }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_services_picture_service__WEBPACK_IMPORTED_MODULE_2__["PictureService"]])
 ], OutreachComponent);
 
 
@@ -2973,6 +3308,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
 /* harmony import */ var src_services_auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/services/auth.service */ "./src/services/auth.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var src_services_toaster_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/services/toaster.service */ "./src/services/toaster.service.ts");
+
 
 
 
@@ -2981,12 +3318,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let ProfileComponent = class ProfileComponent {
-    constructor(userService, apptService, loadingController, authService, router) {
+    constructor(userService, apptService, loadingController, authService, toasterService, router) {
         this.userService = userService;
         this.apptService = apptService;
         this.loadingController = loadingController;
         this.authService = authService;
+        this.toasterService = toasterService;
         this.router = router;
+        this.user = {};
         this.role = "";
         this.userInfoLoaded = false;
         this.apptInfoLoaded = false;
@@ -2994,25 +3333,33 @@ let ProfileComponent = class ProfileComponent {
     ngOnInit() {
         this.presentLoading();
         this.user = this.userService.getUserInfo();
-        this.role = this.user.role.toLowerCase();
-        if (this.user.role.toLowerCase() == "admin") {
+        // this.apptService.getMyAppointments(this.user.email)
+        //   .subscribe(res => {
+        //     this.appts = this.transformData(res.Items)
+        //     this.loadingController.dismiss();
+        //   },
+        //   err => {
+        //     console.log(err, err.message);
+        //     this.toasterService.presentToast("Error getting user appointements", "danger")
+        //   })
+        if (this.isAdmin()) {
             this.apptService.getAppointmentsByCounselor(this.user.firstName + " " + this.user.lastName)
                 .subscribe(res => {
                 this.appts = this.transformData(res.Items);
                 this.loadingController.dismiss();
             }, err => {
                 console.log(err, err.message);
-                alert("Error getting user info");
+                this.toasterService.presentToast("Error getting user appointements", "danger");
             });
         }
-        else if (this.user.role.toLowerCase() == "user") {
+        else if (!this.isAdmin()) {
             this.apptService.getMyAppointments(this.user.email)
                 .subscribe(res => {
                 this.appts = this.transformData(res.Items);
                 this.loadingController.dismiss();
             }, err => {
                 console.log(err, err.message);
-                alert("Error getting user info");
+                this.toasterService.presentToast("Error getting user appointements", "danger");
             });
         }
     }
@@ -3027,7 +3374,7 @@ let ProfileComponent = class ProfileComponent {
                 date: item.Date.S,
                 duration: item.Duration.S,
                 price: item.Price.S,
-                location: item.Location.S,
+                address: item.Location.S,
                 counselor: item.Counselor.S,
                 candidateFirstName: item.CandidateFirstName.S,
                 candidateLastName: item.CandidateLastName.S,
@@ -3054,12 +3401,22 @@ let ProfileComponent = class ProfileComponent {
             console.log('Loading dismissed!');
         });
     }
+    isAdmin() {
+        if (this.user['cognito:groups'][0] == "Admin") {
+            // console.log("true");
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 };
 ProfileComponent.ctorParameters = () => [
     { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_2__["UserService"] },
     { type: src_services_appointment_service__WEBPACK_IMPORTED_MODULE_3__["AppointmentService"] },
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"] },
     { type: src_services_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"] },
+    { type: src_services_toaster_service__WEBPACK_IMPORTED_MODULE_7__["ToasterService"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] }
 ];
 ProfileComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -3072,6 +3429,7 @@ ProfileComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         src_services_appointment_service__WEBPACK_IMPORTED_MODULE_3__["AppointmentService"],
         _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"],
         src_services_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"],
+        src_services_toaster_service__WEBPACK_IMPORTED_MODULE_7__["ToasterService"],
         _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]])
 ], ProfileComponent);
 
@@ -3104,8 +3462,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var src_services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/user.service */ "./src/services/user.service.ts");
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var aws_amplify__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! aws-amplify */ "./node_modules/aws-amplify/lib-esm/index.js");
+/* harmony import */ var _modals_confirmation_modal_confirmation_modal_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../modals/confirmation-modal/confirmation-modal.component */ "./src/app/modals/confirmation-modal/confirmation-modal.component.ts");
+/* harmony import */ var src_services_toaster_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/services/toaster.service */ "./src/services/toaster.service.ts");
+
+
+
 
 
 
@@ -3114,11 +3478,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let RegisterComponent = class RegisterComponent {
-    constructor(formBuilder, userService, toastController, loadingController, router) {
+    constructor(formBuilder, userService, loadingController, modalController, toasterService, router) {
         this.formBuilder = formBuilder;
         this.userService = userService;
-        this.toastController = toastController;
         this.loadingController = loadingController;
+        this.modalController = modalController;
+        this.toasterService = toasterService;
         this.router = router;
     }
     ngOnInit() {
@@ -3131,6 +3496,37 @@ let RegisterComponent = class RegisterComponent {
             phone: ''
         });
     }
+    signUp() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.presentLoading();
+            try {
+                const user = yield aws_amplify__WEBPACK_IMPORTED_MODULE_6__["Auth"].signUp({
+                    username: this.registerForm.get("email").value,
+                    password: this.registerForm.get("password").value,
+                    attributes: {
+                        name: this.registerForm.get("firstName").value,
+                        family_name: this.registerForm.get("lastName").value,
+                        phone_number: "+1" + this.registerForm.get("phone").value,
+                        profile: 'User'
+                    }
+                });
+                this.loadingController.dismiss();
+                this.presentConfirmationModal();
+            }
+            catch (error) {
+                console.log('error signing up:', error);
+                this.toasterService.presentToast("There was an error completing your registration.", "danger");
+            }
+        });
+    }
+    presentConfirmationModal() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const modal = yield this.modalController.create({
+                component: _modals_confirmation_modal_confirmation_modal_component__WEBPACK_IMPORTED_MODULE_7__["ConfirmationModalComponent"]
+            });
+            return yield modal.present();
+        });
+    }
     registerUser() {
         this.presentLoading();
         var user = {
@@ -3139,7 +3535,7 @@ let RegisterComponent = class RegisterComponent {
             email: this.registerForm.get('email').value,
             password: this.registerForm.get('password').value,
             phone: this.registerForm.get('phone').value,
-            role: "User"
+            profile: "User"
         };
         this.userService.addUser(user)
             .subscribe(res => {
@@ -3176,24 +3572,15 @@ let RegisterComponent = class RegisterComponent {
     }
     handleError(err, errMessage) {
         console.log(err + err.message);
-        alert(errMessage);
-    }
-    presentToast() {
-        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
-            const toast = yield this.toastController.create({
-                message: 'Your profile has been created.',
-                duration: 2000
-            });
-            toast.present();
-        });
     }
 };
 RegisterComponent.ctorParameters = () => [
     { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
     { type: src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
-    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"] },
-    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"] }
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["LoadingController"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["ModalController"] },
+    { type: src_services_toaster_service__WEBPACK_IMPORTED_MODULE_8__["ToasterService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] }
 ];
 RegisterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -3203,9 +3590,10 @@ RegisterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
         src_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"],
-        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"],
-        _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"],
-        _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]])
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["LoadingController"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["ModalController"],
+        src_services_toaster_service__WEBPACK_IMPORTED_MODULE_8__["ToasterService"],
+        _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
 ], RegisterComponent);
 
 
@@ -3320,15 +3708,11 @@ __webpack_require__.r(__webpack_exports__);
 
 const awsmobile = {
     "aws_project_region": "us-east-1",
-    "aws_cognito_identity_pool_id": "us-east-1:f25f4324-135a-43aa-97a4-dd174ec67b6b",
+    "aws_cognito_identity_pool_id": "us-east-1:6be3b950-2fc8-4cd9-a43a-60deea65fcbf",
     "aws_cognito_region": "us-east-1",
-    "aws_user_pools_id": "us-east-1_xbNj7KYCb",
-    "aws_user_pools_web_client_id": "2mi2o6qk1kd65c45t1m8tjf1o4",
-    "oauth": {
-        "redirectSignIn": "http://localhost:8100/home",
-        "redirectSignOut": "http://localhost:8100/login",
-        "responseType": "code"
-    }
+    "aws_user_pools_id": "us-east-1_iGA6qMrVo",
+    "aws_user_pools_web_client_id": "5jtgdop70456h9gsdnllhlq82l",
+    "oauth": {}
 };
 
 
@@ -3374,23 +3758,26 @@ const environment = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
-/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
-/* harmony import */ var aws_amplify__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! aws-amplify */ "./node_modules/aws-amplify/lib-esm/index.js");
-/* harmony import */ var _aws_exports__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./aws-exports */ "./src/aws-exports.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var aws_amplify__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! aws-amplify */ "./node_modules/aws-amplify/lib-esm/index.js");
+/* harmony import */ var _aws_exports__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./aws-exports */ "./src/aws-exports.js");
 
 
 
 
 
 
-aws_amplify__WEBPACK_IMPORTED_MODULE_4__["default"].configure(_aws_exports__WEBPACK_IMPORTED_MODULE_5__["default"]);
-if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].production) {
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
+
+aws_amplify__WEBPACK_IMPORTED_MODULE_5__["default"].configure(_aws_exports__WEBPACK_IMPORTED_MODULE_6__["default"]);
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["enableProdMode"])();
 }
-Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_3__["AppModule"])
     .catch(err => console.log(err));
 
 
@@ -3408,12 +3795,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppointmentService", function() { return AppointmentService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./auth.service */ "./src/services/auth.service.ts");
+
 
 
 Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])();
 class AppointmentService {
-    constructor(http) {
+    constructor(http, authService) {
         this.http = http;
+        this.authService = authService;
+        this.schedule = [];
     }
     getLicensedLevelFirstSession() {
         const url = "https://gg11vbof64.execute-api.us-east-1.amazonaws.com/default/getLicenseLevelFirstSessionSchedule";
@@ -3504,6 +3895,7 @@ class AppointmentService {
         const httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
+                "Authorization": this.authService.getToken()
             })
         };
         return this.http.get(url, httpOptions);
@@ -3517,9 +3909,13 @@ class AppointmentService {
         };
         return this.http.get(url, httpOptions);
     }
+    clearSchedule() {
+        this.schedule = [];
+    }
 }
 AppointmentService.ctorParameters = () => [
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] },
+    { type: _auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] }
 ];
 
 
@@ -3593,18 +3989,22 @@ let AuthService = class AuthService {
     constructor() {
         this.authenticated = false;
     }
-    setToken(token) {
-        sessionStorage.setItem("token", token);
+    setAccessToken(token) {
+        sessionStorage.setItem("accessToken", token);
+    }
+    setRefreshToken(token) {
+        sessionStorage.setItem("refreshToken", token);
     }
     getToken() {
-        return sessionStorage.getItem('token');
+        return sessionStorage.getItem("accessToken");
     }
-    setAuthorization(token) {
-        this.setToken(token);
+    setAuthorization(accessToken, refreshToken) {
+        this.setAccessToken(accessToken);
+        this.setRefreshToken(refreshToken);
         this.authenticated = true;
     }
     logOut() {
-        sessionStorage.removeItem("token");
+        sessionStorage.removeItem("accessToken");
         this.authenticated = false;
     }
 };
@@ -3692,6 +4092,57 @@ FormService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], FormService);
+
+
+
+/***/ }),
+
+/***/ "./src/services/loading.service.ts":
+/*!*****************************************!*\
+  !*** ./src/services/loading.service.ts ***!
+  \*****************************************/
+/*! exports provided: LoadingService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoadingService", function() { return LoadingService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+
+
+
+let LoadingService = class LoadingService {
+    constructor(loadingController) {
+        this.loadingController = loadingController;
+    }
+    presentLoading() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const loading = yield this.loadingController.create({
+                message: 'Please wait...',
+                duration: 2000,
+                mode: "ios",
+                spinner: "circular"
+            });
+            yield loading.present();
+            const { role, data } = yield loading.onDidDismiss();
+            console.log('Loading dismissed!');
+        });
+    }
+    dismissLoading() {
+        this.loadingController.dismiss();
+    }
+};
+LoadingService.ctorParameters = () => [
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["LoadingController"] }
+];
+LoadingService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["LoadingController"]])
+], LoadingService);
 
 
 
@@ -3828,6 +4279,94 @@ MenuService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/services/picture.service.ts":
+/*!*****************************************!*\
+  !*** ./src/services/picture.service.ts ***!
+  \*****************************************/
+/*! exports provided: PictureService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PictureService", function() { return PictureService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let PictureService = class PictureService {
+    constructor() {
+        this.photos = [
+            "/assets/img/outreach1.png",
+            "/assets/img/outreach2.png",
+            "/assets/img/outreach3.png",
+            "/assets/img/outreach4.png",
+            "/assets/img/outreach5.png",
+            "/assets/img/outreach6.png",
+            "/assets/img/outreach7.png",
+            "/assets/img/outreach8.png",
+            "/assets/img/outreach9.png",
+            "/assets/img/outreach10.png",
+            "/assets/img/outreach11.png",
+            "/assets/img/outreach12.png"
+        ];
+    }
+    getPhotos() {
+        return this.photos;
+    }
+};
+PictureService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+], PictureService);
+
+
+
+/***/ }),
+
+/***/ "./src/services/toaster.service.ts":
+/*!*****************************************!*\
+  !*** ./src/services/toaster.service.ts ***!
+  \*****************************************/
+/*! exports provided: ToasterService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ToasterService", function() { return ToasterService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+
+
+
+let ToasterService = class ToasterService {
+    constructor(toastController) {
+        this.toastController = toastController;
+    }
+    presentToast(message, color) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const toast = yield this.toastController.create({
+                message: message,
+                duration: 4000,
+                color: color
+            });
+            toast.present();
+        });
+    }
+};
+ToasterService.ctorParameters = () => [
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"] }
+];
+ToasterService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"]])
+], ToasterService);
+
+
+
+/***/ }),
+
 /***/ "./src/services/user.service.ts":
 /*!**************************************!*\
   !*** ./src/services/user.service.ts ***!
@@ -3847,13 +4386,8 @@ __webpack_require__.r(__webpack_exports__);
 let UserService = class UserService {
     constructor(http) {
         this.http = http;
-        this.user = {
-            firstName: "",
-            lastName: "",
-            email: "",
-            phone: "",
-            role: ""
-        };
+        this.user = {};
+        this.groups = [];
     }
     getUser(email) {
         const url = "https://au8x6x3ue1.execute-api.us-east-1.amazonaws.com/default/getUserInfo?email=" + email;
@@ -3895,14 +4429,27 @@ let UserService = class UserService {
         return this.user;
     }
     setUserInfo(userInfo) {
-        var user = {
-            firstName: userInfo.Items[0].first_name.S,
-            lastName: userInfo.Items[0].last_name.S,
-            email: userInfo.Items[0].email.S,
-            phone: userInfo.Items[0].phone.S,
-            role: userInfo.Items[0].role.S
-        };
-        this.user = user;
+        // var user: User = {
+        //   firstName: userInfo.Items[0].first_name.S,
+        //   lastName: userInfo.Items[0].last_name.S,
+        //   email: userInfo.Items[0].email.S,
+        //   phone: userInfo.Items[0].phone.S,
+        //   role: userInfo.Items[0].role.S
+        // }
+        // var user: User = {
+        //   firstName: userInfo.name,
+        //   lastName: userInfo.family_name,
+        //   email: userInfo.email,
+        //   phone: userInfo.phone_number,
+        //   role: userInfo.role
+        // }
+        this.user = userInfo;
+    }
+    setUserGroups(group) {
+        this.groups = group;
+    }
+    getUserGroups() {
+        return this.groups;
     }
 };
 UserService.ctorParameters = () => [

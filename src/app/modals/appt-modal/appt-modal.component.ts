@@ -49,7 +49,7 @@ export class ApptModalComponent implements OnInit {
       date: appt.date,
       duration: appt.duration,
       price: appt.price,
-      location: appt.location,
+      address: appt.address,
       counselor: appt.counselor,
       candidateFirstName: this.user.firstName,
       candidateLastName: this.user.lastName,
@@ -71,9 +71,17 @@ export class ApptModalComponent implements OnInit {
     const actionSheet = await this.actionSheetController.create({
       header: 'Are you sure you want to book this appointment?',
       buttons: [{
-        text: 'Yes',
+        text: 'No',
         role: 'destructive',
+        icon: 'clsoe',
+        handler: () => {
+          console.log('Appointment canceled');
+        }
+      },
+      {
+        text: 'Yes',
         icon: 'checkmark',
+        role: 'close',
         handler: () => {
           console.log('Appointment booked');
           this.bookAppointment(appt);
@@ -82,14 +90,6 @@ export class ApptModalComponent implements OnInit {
             "Your appointment has been booked.",
             "success"
           )
-        }
-      },
-      {
-        text: 'Cancel',
-        icon: 'close',
-        role: 'cancel',
-        handler: () => {
-          console.log('Appointment canceled');
         }
       }]
     });

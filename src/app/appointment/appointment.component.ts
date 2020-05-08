@@ -114,7 +114,7 @@ export class AppointmentComponent implements OnInit {
         date: x.Date.S,
         duration: x.Duration.S,
         price: x.Price.S,
-        location: x.Location.S,
+        address: x.Location.S,
         counselor: x.Counselor.S,
         type: x.Type.S
       };

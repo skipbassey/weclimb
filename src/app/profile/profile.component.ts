@@ -37,9 +37,18 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     this.presentLoading();
     this.user = this.userService.getUserInfo();
-    this.isAdmin();
+
+    // this.apptService.getMyAppointments(this.user.email)
+    //   .subscribe(res => {
+    //     this.appts = this.transformData(res.Items)
+    //     this.loadingController.dismiss();
+    //   },
+    //   err => {
+    //     console.log(err, err.message);
+    //     this.toasterService.presentToast("Error getting user appointements", "danger")
+    //   })
      
-    if(this.user.profile == "Admin") {
+    if(this.isAdmin()) {
       this.apptService.getAppointmentsByCounselor(this.user.firstName + " " + this.user.lastName)
         .subscribe(res => {
           this.appts = this.transformData(res.Items);
@@ -50,7 +59,7 @@ export class ProfileComponent implements OnInit {
           this.toasterService.presentToast("Error getting user appointements", "danger")
         })
     }
-    else if (this.user.profile == "User") {
+    else if (!this.isAdmin()) {
       this.apptService.getMyAppointments(this.user.email)
       .subscribe(res => {
         this.appts = this.transformData(res.Items)
@@ -76,7 +85,7 @@ export class ProfileComponent implements OnInit {
         date: item.Date.S,
         duration: item.Duration.S,
         price: item.Price.S,
-        location: item.Location.S,
+        address: item.Location.S,
         counselor: item.Counselor.S,
         candidateFirstName: item.CandidateFirstName.S,
         candidateLastName: item.CandidateLastName.S,
@@ -109,7 +118,7 @@ export class ProfileComponent implements OnInit {
 
   private isAdmin(): boolean {
     if(this.user['cognito:groups'][0] == "Admin"){
-      console.log("true");
+      // console.log("true");
       return true
     }
     else{

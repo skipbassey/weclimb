@@ -13,20 +13,18 @@
           barriers that limit their full potential by meeting each client where they are. 
       </p>
       </div>
+      <div class="services-container">
         <mat-accordion>
           <mat-expansion-panel *ngFor="let service of services">
             <mat-expansion-panel-header>
               <mat-panel-title>
                 {{service.title}}
               </mat-panel-title>
-              <!-- <mat-panel-description>
-              </mat-panel-description> -->
             </mat-expansion-panel-header>
             <ul *ngFor="let opt of service.data">
               <li>{{opt}}</li>
             </ul>
           </mat-expansion-panel>
-
         </mat-accordion>
-        <!-- <ion-item button (click)="navigate(service)">{{service.title}}</ion-item> -->
+      </div>   
     </ion-content>

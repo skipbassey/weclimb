@@ -1,14 +1,18 @@
 import { Injectable } from "@angular/core";
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Appointment } from 'src/models/Appointment';
 import { HttpClient, HttpHeaders  } from '@angular/common/http';
+import { AuthService } from './auth.service';
 
 Injectable()
 export class AppointmentService {
 
   schedule: Appointment[] = [];
 
-    constructor(private http: HttpClient) { }
+    constructor(
+      private http: HttpClient,
+      private authService: AuthService,
+      ) { }
 
     getLicensedLevelFirstSession(): Observable<any> {
         const url = "https://gg11vbof64.execute-api.us-east-1.amazonaws.com/default/getLicenseLevelFirstSessionSchedule";
@@ -128,6 +132,7 @@ export class AppointmentService {
       const httpOptions = {
         headers: new HttpHeaders({
           'Content-Type':  'application/json',
+          "Authorization": this.authService.getToken()
         })
       };
 

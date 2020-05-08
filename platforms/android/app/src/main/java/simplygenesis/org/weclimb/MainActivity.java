@@ -17,7 +17,7 @@
        under the License.
  */
 
-package org.weclimb.cc;
+package simplygenesis.org.weclimb;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

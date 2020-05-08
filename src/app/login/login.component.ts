@@ -68,11 +68,10 @@ export class LoginComponent implements OnInit {
         if(res) {
           console.log(res);
           this.authService.setAuthorization(
-            res.signInUserSession.accessToken.jwtToken,
+            res.signInUserSession.idToken.jwtToken,
             res.signInUserSession.refreshToken.token
           )
           this.userService.setUserInfo(res.signInUserSession.idToken.payload);
-          // this.userService.setUserGroups(res.signInUserSession.idToken.payload)
           this.navigateToHome();
         }
       }
@@ -149,6 +148,9 @@ export class LoginComponent implements OnInit {
         window.localStorage.setItem ("email", "");
         window.localStorage.setItem ("password", "");
         window.localStorage.setItem("checked", "false");
+
+        this.loginForm.controls["email"].setValue(window.localStorage.getItem("email"));
+        this.loginForm.controls["password"].setValue(window.localStorage.getItem("password"));
         break;
     }
   }
