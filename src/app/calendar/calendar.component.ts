@@ -5,6 +5,7 @@ import { Appointment } from 'src/models/Appointment';
 import { AppointmentService } from 'src/services/appointment.service';
 import { ToasterService } from 'src/services/toaster.service';
 import { Router } from '@angular/router';
+import { AlertController } from '@ionic/angular';
 
 
 @Component({
@@ -20,6 +21,7 @@ export class CalendarComponent implements OnInit, DoCheck {
     private modalController: ModalController,
     private apptService: AppointmentService,
     private toasterService: ToasterService,
+    private alertController: AlertController,
     private router: Router
   ) { }
 
@@ -63,6 +65,30 @@ export class CalendarComponent implements OnInit, DoCheck {
             })
     }
 
+  }
+
+  async removeAppointment(apt: Appointment) {
+    const alert = await this.alertController.create({
+      header: 'Cancel',
+      message: 'Are you sure you want to cancel?',
+      mode: "ios",
+      buttons: [
+        {
+          text: 'Yes',
+          role: 'cancel',
+          handler: (blah) => {
+            this.apptService.removeAppointment(apt);
+            this.appts = this.apptService.schedule;
+          }
+        }, {
+          text: 'No',
+          handler: () => {
+          }
+        }
+      ]
+    });
+
+    await alert.present();
   }
 
 }

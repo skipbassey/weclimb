@@ -7,21 +7,26 @@
         </ion-button>
       </ion-buttons>
       <ion-title>Add to Calendar</ion-title>
-      <ion-buttons slot="end">
-        <ion-button (click)="openCalendarModal()"> 
-          <ion-icon name="add"></ion-icon>
-        </ion-button>
-      </ion-buttons>
+
+
     </ion-toolbar>
   </ion-header>
-
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="openCalendarModal()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
   <div class="appt-container">
-    <ion-item *ngFor="let appt of appts">
+    <ion-item (click)="removeAppointment(appt)" *ngFor="let appt of appts">
       <p>{{appt.name}} {{appt.date}}</p>
     </ion-item>
   </div>
-  
+
   <div class="btn-container">
-    <ion-button shape="round" fill="solid" (click)="submit()">Submit</ion-button>
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+      <ion-fab-button (click)="submit()">
+        <ion-icon name="checkmark"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
   </div>
 </ion-content>

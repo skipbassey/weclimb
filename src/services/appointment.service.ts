@@ -154,4 +154,8 @@ export class AppointmentService {
     clearSchedule() {
       this.schedule = [];
     }
+
+    removeAppointment(appt: Appointment) {
+      this.schedule = this.schedule.filter(x => x.date !== appt.date);
+    }
 }
