@@ -3582,7 +3582,7 @@ let RegisterComponent = class RegisterComponent {
         });
     }
     cancel() {
-        this.router.navigateByUrl('login');
+        this.modalController.dismiss();
     }
     passwordMatch() {
         var password = this.registerForm.get('password').value;

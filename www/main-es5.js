@@ -3865,7 +3865,7 @@ var RegisterComponent = /** @class */ (function () {
         });
     };
     RegisterComponent.prototype.cancel = function () {
-        this.router.navigateByUrl('login');
+        this.modalController.dismiss();
     };
     RegisterComponent.prototype.passwordMatch = function () {
         var password = this.registerForm.get('password').value;
