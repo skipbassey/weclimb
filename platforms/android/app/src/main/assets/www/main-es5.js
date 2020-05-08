@@ -755,7 +755,7 @@ module.exports = "<ion-header translucent>\n  <ion-toolbar color=\"primary\">\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content fullscreen>\n  <ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-button>\n          <ion-back-button class=\"back-btn\" defaultHref=\"profile\"></ion-back-button>\n        </ion-button>\n      </ion-buttons>\n      <ion-title>Add to Calendar</ion-title>\n\n\n    </ion-toolbar>\n  </ion-header>\n  <ion-fab vertical=\"top\" horizontal=\"end\" slot=\"fixed\">\n    <ion-fab-button (click)=\"openCalendarModal()\">\n      <ion-icon name=\"add\"></ion-icon>\n    </ion-fab-button>\n  </ion-fab>\n  <div class=\"appt-container\">\n    <ion-item (click)=\"removeAppointment(appt)\" *ngFor=\"let appt of appts\">\n      <p>{{appt.name}} {{appt.date}}</p>\n    </ion-item>\n  </div>\n\n  <div class=\"btn-container\">\n    <ion-fab vertical=\"bottom\" horizontal=\"center\" slot=\"fixed\">\n      <ion-fab-button (click)=\"submit()\">\n        <ion-icon name=\"checkmark\"></ion-icon>\n      </ion-fab-button>\n    </ion-fab>\n  </div>\n</ion-content>"
+module.exports = "<ion-content fullscreen>\n  <ion-header>\n    <ion-toolbar color=\"primary\">\n      <ion-buttons slot=\"start\">\n        <ion-button>\n          <ion-back-button class=\"back-btn\" defaultHref=\"profile\"></ion-back-button>\n        </ion-button>\n      </ion-buttons>\n      <ion-title>Add to Calendar</ion-title>\n\n\n    </ion-toolbar>\n  </ion-header>\n  <ion-fab vertical=\"top\" horizontal=\"end\" slot=\"fixed\">\n    <ion-fab-button class=\"fab-btn\" (click)=\"openCalendarModal()\">\n      <ion-icon name=\"add\"></ion-icon>\n    </ion-fab-button>\n  </ion-fab>\n  <div class=\"appt-container\">\n    <ion-item (click)=\"removeAppointment(appt)\" *ngFor=\"let appt of appts\">\n      <p>{{appt.name}} {{appt.date}}</p>\n    </ion-item>\n  </div>\n\n  <div class=\"btn-container\">\n    <ion-fab vertical=\"bottom\" horizontal=\"center\" slot=\"fixed\">\n      <ion-fab-button class=\"fab-btn\" (click)=\"submit()\">\n        <ion-icon name=\"checkmark\"></ion-icon>\n      </ion-fab-button>\n    </ion-fab>\n  </div>\n</ion-content>"
 
 /***/ }),
 
@@ -1545,7 +1545,7 @@ var AppointmentComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".btn-container {\n  text-align: end;\n  margin: 15px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9jYWxlbmRhci9jYWxlbmRhci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvY2FsZW5kYXIvY2FsZW5kYXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxlQUFBO0VBQ0EsWUFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvY2FsZW5kYXIvY2FsZW5kYXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnRuLWNvbnRhaW5lciB7XG4gICAgdGV4dC1hbGlnbjogZW5kO1xuICAgIG1hcmdpbjogMTVweDtcbn0iLCIuYnRuLWNvbnRhaW5lciB7XG4gIHRleHQtYWxpZ246IGVuZDtcbiAgbWFyZ2luOiAxNXB4O1xufSJdfQ== */"
+module.exports = ".btn-container {\n  text-align: end;\n  margin: 15px;\n}\n\n.fab-btn {\n  --background-hover: rgb(85, 197, 85);\n  --background-activated: rgb(85, 197, 85);\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9jYWxlbmRhci9jYWxlbmRhci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvY2FsZW5kYXIvY2FsZW5kYXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxlQUFBO0VBQ0EsWUFBQTtBQ0NKOztBREVBO0VBQ0ksb0NBQUE7RUFDQSx3Q0FBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvY2FsZW5kYXIvY2FsZW5kYXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnRuLWNvbnRhaW5lciB7XG4gICAgdGV4dC1hbGlnbjogZW5kO1xuICAgIG1hcmdpbjogMTVweDtcbn1cblxuLmZhYi1idG4ge1xuICAgIC0tYmFja2dyb3VuZC1ob3ZlcjogcmdiKDg1LCAxOTcsIDg1KTtcbiAgICAtLWJhY2tncm91bmQtYWN0aXZhdGVkOiByZ2IoODUsIDE5NywgODUpO1xufSIsIi5idG4tY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogZW5kO1xuICBtYXJnaW46IDE1cHg7XG59XG5cbi5mYWItYnRuIHtcbiAgLS1iYWNrZ3JvdW5kLWhvdmVyOiByZ2IoODUsIDE5NywgODUpO1xuICAtLWJhY2tncm91bmQtYWN0aXZhdGVkOiByZ2IoODUsIDE5NywgODUpO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -4142,10 +4142,11 @@ var AppointmentService = /** @class */ (function () {
         this.schedule = [];
     }
     AppointmentService.prototype.getLicensedLevelFirstSession = function () {
-        var url = "https://gg11vbof64.execute-api.us-east-1.amazonaws.com/default/getLicenseLevelFirstSessionSchedule";
+        var url = "https://gg11vbof64.execute-api.us-east-1.amazonaws.com/dev/getLicenseLevelFirstSessionSchedule";
         var httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
+                "Authorization": this.authService.getToken()
             })
         };
         return this.http.get(url, httpOptions);
@@ -4155,6 +4156,7 @@ var AppointmentService = /** @class */ (function () {
         var httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
+                "Authorization": this.authService.getToken()
             })
         };
         return this.http.get(url, httpOptions);
@@ -4164,6 +4166,7 @@ var AppointmentService = /** @class */ (function () {
         var httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
+                "Authorization": this.authService.getToken()
             })
         };
         return this.http.get(url, httpOptions);
@@ -4173,6 +4176,7 @@ var AppointmentService = /** @class */ (function () {
         var httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
+                "Authorization": this.authService.getToken()
             })
         };
         return this.http.get(url, httpOptions);
@@ -4182,6 +4186,7 @@ var AppointmentService = /** @class */ (function () {
         var httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
+                "Authorization": this.authService.getToken()
             })
         };
         return this.http.get(url, httpOptions);
@@ -4194,6 +4199,7 @@ var AppointmentService = /** @class */ (function () {
         var httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
+                "Authorization": this.authService.getToken()
             })
         };
         return this.http.post(url, appointments, httpOptions);
@@ -4203,6 +4209,7 @@ var AppointmentService = /** @class */ (function () {
         var httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
+                "Authorization": this.authService.getToken()
             })
         };
         return this.http.post(url, appointments, httpOptions);
@@ -4212,6 +4219,7 @@ var AppointmentService = /** @class */ (function () {
         var httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
+                "Authorization": this.authService.getToken()
             })
         };
         return this.http.post(url, appointments, httpOptions);
@@ -4221,6 +4229,7 @@ var AppointmentService = /** @class */ (function () {
         var httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
+                "Authorization": this.authService.getToken()
             })
         };
         return this.http.post(url, appt, httpOptions);
@@ -4240,6 +4249,7 @@ var AppointmentService = /** @class */ (function () {
         var httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
+                "Authorization": this.authService.getToken()
             })
         };
         return this.http.get(url, httpOptions);

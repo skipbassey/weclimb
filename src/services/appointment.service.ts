@@ -15,11 +15,12 @@ export class AppointmentService {
       ) { }
 
     getLicensedLevelFirstSession(): Observable<any> {
-        const url = "https://gg11vbof64.execute-api.us-east-1.amazonaws.com/default/getLicenseLevelFirstSessionSchedule";
+        const url = "https://gg11vbof64.execute-api.us-east-1.amazonaws.com/dev/getLicenseLevelFirstSessionSchedule";
 
         const httpOptions = {
             headers: new HttpHeaders({
               'Content-Type':  'application/json',
+              "Authorization": this.authService.getToken()
             })
           };
 
@@ -32,6 +33,7 @@ export class AppointmentService {
         const httpOptions = {
             headers: new HttpHeaders({
               'Content-Type':  'application/json',
+              "Authorization": this.authService.getToken()
             })
           };
 
@@ -44,6 +46,7 @@ export class AppointmentService {
         const httpOptions = {
             headers: new HttpHeaders({
               'Content-Type':  'application/json',
+              "Authorization": this.authService.getToken()
             })
           };
 
@@ -56,6 +59,7 @@ export class AppointmentService {
         const httpOptions = {
             headers: new HttpHeaders({
               'Content-Type':  'application/json',
+              "Authorization": this.authService.getToken()
             })
           };
 
@@ -68,6 +72,7 @@ export class AppointmentService {
         const httpOptions = {
             headers: new HttpHeaders({
               'Content-Type':  'application/json',
+              "Authorization": this.authService.getToken()
             })
           };
 
@@ -84,6 +89,7 @@ export class AppointmentService {
         const httpOptions = {
             headers: new HttpHeaders({
               'Content-Type':  'application/json',
+              "Authorization": this.authService.getToken()
             })
           };
           
@@ -96,6 +102,7 @@ export class AppointmentService {
       const httpOptions = {
         headers: new HttpHeaders({
           'Content-Type':  'application/json',
+          "Authorization": this.authService.getToken()
         })
       };
 
@@ -108,6 +115,7 @@ export class AppointmentService {
         const httpOptions = {
             headers: new HttpHeaders({
               'Content-Type':  'application/json',
+              "Authorization": this.authService.getToken()
             })
           };
 
@@ -120,6 +128,7 @@ export class AppointmentService {
       const httpOptions = {
         headers: new HttpHeaders({
           'Content-Type':  'application/json',
+          "Authorization": this.authService.getToken()
         })
       };
 
@@ -145,6 +154,7 @@ export class AppointmentService {
       const httpOptions = {
         headers: new HttpHeaders({
           'Content-Type':  'application/json',
+          "Authorization": this.authService.getToken()
         })
       };
 
