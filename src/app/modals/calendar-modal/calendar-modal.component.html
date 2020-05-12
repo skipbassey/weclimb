@@ -1,4 +1,5 @@
-<form [formGroup]="calendarForm" (ngSubmit)="addToCalendar()">
+<ion-content class="content" fullscreen class="ion-padding">
+  <form [formGroup]="calendarForm" (ngSubmit)="addToCalendar()">
     <ion-list>
       <ion-item>
         <ion-label>Title</ion-label>
@@ -34,7 +35,6 @@
         <ion-datetime formControlName="date" mode="ios" displayFormat="MMM DD, YYYY h:mm A" placeholder="Select Date"></ion-datetime>
       </ion-item>
      
-      <!-- <ion-item-divider></ion-item-divider> -->
       <div class="action-btn-container">
         <ion-button type="submit" class="btn" fill="solid">Add</ion-button>
         <ion-button type="button" class="btn" fill="solid" (click)="cancel()">Cancel</ion-button>
@@ -43,3 +43,4 @@
     </ion-list>
   </form>
   
+</ion-content>

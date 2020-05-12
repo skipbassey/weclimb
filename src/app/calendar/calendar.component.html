@@ -11,11 +11,7 @@
 
     </ion-toolbar>
   </ion-header>
-  <ion-fab vertical="top" horizontal="end" slot="fixed">
-    <ion-fab-button class="fab-btn" (click)="openCalendarModal()">
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+ 
   <div class="appt-container">
     <ion-item (click)="removeAppointment(appt)" *ngFor="let appt of appts">
       <p>{{appt.name}} {{appt.date}}</p>
@@ -23,7 +19,12 @@
   </div>
 
   <div class="btn-container">
-    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+      <ion-fab-button class="fab-btn" (click)="openCalendarModal()">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
       <ion-fab-button class="fab-btn" (click)="submit()">
         <ion-icon name="checkmark"></ion-icon>
       </ion-fab-button>

@@ -22,7 +22,9 @@ export class ProfileComponent implements OnInit {
   userInfoLoaded = false;
   apptInfoLoaded = false;
 
-  appts: Appointment[]
+  appts: Appointment[];
+
+  admin = false;
   
 
   constructor(
@@ -37,18 +39,9 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     this.presentLoading();
     this.user = this.userService.getUserInfo();
-
-    // this.apptService.getMyAppointments(this.user.email)
-    //   .subscribe(res => {
-    //     this.appts = this.transformData(res.Items)
-    //     this.loadingController.dismiss();
-    //   },
-    //   err => {
-    //     console.log(err, err.message);
-    //     this.toasterService.presentToast("Error getting user appointements", "danger")
-    //   })
+    this.isAdmin();
      
-    if(this.isAdmin()) {
+    if(this.admin) {
       this.apptService.getAppointmentsByCounselor(this.user.firstName + " " + this.user.lastName)
         .subscribe(res => {
           this.appts = this.transformData(res.Items);
@@ -59,7 +52,7 @@ export class ProfileComponent implements OnInit {
           this.toasterService.presentToast("Error getting user appointements", "danger")
         })
     }
-    else if (!this.isAdmin()) {
+    else if (!this.admin) {
       this.apptService.getMyAppointments(this.user.email)
       .subscribe(res => {
         this.appts = this.transformData(res.Items)
@@ -116,13 +109,11 @@ export class ProfileComponent implements OnInit {
     console.log('Loading dismissed!');
   }
 
-  private isAdmin(): boolean {
-    if(this.user['cognito:groups'][0] == "Admin"){
-      // console.log("true");
-      return true
+  private isAdmin() {
+    if(this.user['cognito:groups']) {
+      if(this.user['cognito:groups'][0] == "Admin"){
+         this.admin = true;
+      }
     }
-    else{
-      return false
-    } 
   }
 }
