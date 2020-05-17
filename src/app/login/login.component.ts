@@ -14,6 +14,8 @@ import { ForgotUsernameComponent } from '../forgot-username/forgot-username.comp
 import { LoadingService } from 'src/services/loading.service';
 import { ToasterService } from 'src/services/toaster.service';
 import { Auth } from 'aws-amplify';
+import { RegisterComponent } from '../register/register.component';
+import { PlatformService } from 'src/services/platform.service';
 
 
 @Component({
@@ -24,6 +26,10 @@ import { Auth } from 'aws-amplify';
 export class LoginComponent implements OnInit {
 
   loginForm: any;
+
+  checked = false;
+
+  mode = ""
 
   constructor(
     public events: Events,
@@ -37,14 +43,20 @@ export class LoginComponent implements OnInit {
     private modalController: ModalController,
     private loadingService: LoadingService,
     private toasterService: ToasterService,
+    private platformService: PlatformService
   
   ) { }
 
     ngOnInit() { 
       this.loginForm = this.formBuilder.group({
         email: '',
-        password: ''
+        password: '',
+        toggle: ''
       });
+
+      this.getRememberMeCredentials();
+
+      this.mode = this.platformService.getPlatform();
     }
 
     navigateToHome() {
@@ -59,13 +71,14 @@ export class LoginComponent implements OnInit {
           this.loginForm.get("email").value,
           this.loginForm.get("password").value
         )
+        console.log(Auth.currentUserInfo());
         if(res) {
           console.log(res);
           this.authService.setAuthorization(
-            res.signInUserSession.accessToken.jwtToken,
+            res.signInUserSession.idToken.jwtToken,
             res.signInUserSession.refreshToken.token
           )
-          this.userService.setUserInfo(res.attributes);
+          this.userService.setUserInfo(res.signInUserSession.idToken.payload);
           this.navigateToHome();
         }
       }
@@ -84,7 +97,6 @@ export class LoginComponent implements OnInit {
       this.loginService.login(email, password)
         .pipe(
           tap(data => {
-            // this.authService.setAuthorization(data.token);
           }),
           switchMap( () => {
             return this.userService.getUser(email)
@@ -102,8 +114,11 @@ export class LoginComponent implements OnInit {
         })
     }
 
-  register() {
-    this.router.navigateByUrl('register');
+  async presentRegisterModal() {
+    const modal = await this.modalController.create({
+      component: RegisterComponent
+    });
+    return await modal.present();
   }
 
   async presentLoading() {
@@ -130,5 +145,37 @@ export class LoginComponent implements OnInit {
       component: ForgotUsernameComponent
     });
     return await modal.present();
+  }
+
+  rememberMe(event: any) {
+    switch(event.detail.checked) {
+      case true:
+        window.localStorage.setItem ("email", this.loginForm.get("email").value);
+        window.localStorage.setItem ("password", this.loginForm.get("password").value);
+        window.localStorage.setItem("checked", "true");
+        break;
+      case false:
+        window.localStorage.setItem ("email", "");
+        window.localStorage.setItem ("password", "");
+        window.localStorage.setItem("checked", "false");
+
+        this.loginForm.controls["email"].setValue(window.localStorage.getItem("email"));
+        this.loginForm.controls["password"].setValue(window.localStorage.getItem("password"));
+        break;
+    }
+  }
+
+  private getRememberMeCredentials() {
+    this.loginForm.controls["email"].setValue(window.localStorage.getItem("email"));
+    this.loginForm.controls["password"].setValue(window.localStorage.getItem("password"));
+
+    switch(window.localStorage.getItem("checked")) {
+      case "true":
+        this.checked = true;
+        break;
+      case "false":
+        this.checked = false;
+        break;
+    }  
   }
 }

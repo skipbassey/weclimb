@@ -1,7 +1,7 @@
-<ion-header translucent>
-  <ion-toolbar color="primary">
+<ion-header [mode]="mode" translucent>
+  <ion-toolbar [mode]="mode" color="primary">
     <ion-buttons slot="start">
-      <ion-back-button class="back-btn" defaultHref="home"></ion-back-button>
+      <ion-back-button [mode]="mode" class="back-btn" defaultHref="home"></ion-back-button>
     </ion-buttons>
     <ion-title class="title-text">Profile</ion-title>
   </ion-toolbar>
@@ -13,12 +13,11 @@
       <p>Name: {{user?.name}} {{user?.family_name}}</p>
       <p>Phone Number: {{user?.phone_number}}</p>
       <p>Email: {{user?.email}}</p>
-      <p>Role: {{user?.profile}}</p>
     </div>
     <div  class="appointment-container">
-      <div class="user-container" *ngIf="user.profile == 'User'">
+      <div class="user-container" *ngIf="admin == false">
         <h1>My Appointment</h1>
-        <ion-item *ngFor="let appt of appts">
+        <ion-item [mode]="mode" *ngFor="let appt of appts">
           <div>
             <p>Name: {{appt?.name}}</p>
             <p>Date: {{appt?.date}}</p>
@@ -31,10 +30,10 @@
       </div>
 
       <!-- admin -->
-      <div class="admin-container" *ngIf="user.profile == 'Admin'">
+      <div class="admin-container" *ngIf="admin">
         <h1>My Schedule</h1>
-        <ion-list >
-          <ion-item *ngFor="let appt of appts">
+        <ion-list [mode]="mode" >
+          <ion-item [mode]="mode" *ngFor="let appt of appts">
             <div class="candidate-info-container">
               <p>Date: {{appt.date}}</p>
               <p>Client Name: {{appt?.candidateFirstName}} {{appt?.candidateLastName}}</p>
@@ -47,8 +46,8 @@
   </div>
 
   <div class="button-container">
-    <ion-button *ngIf="role == 'admin'" shape="round" fill="outline" (click)="setCalendar()">Set Calendar</ion-button>
+    <ion-button [mode]="mode" *ngIf="admin" shape="round" fill="outline" (click)="setCalendar()">Set Calendar</ion-button>
     <!-- <ion-button *ngIf="role == 'admin'" shape="round" fill="outline" (click)="logOut()">Add Admin</ion-button> -->
-    <ion-button shape="round" fill="outline" (click)="logOut()">Signout</ion-button>
+    <ion-button [mode]="mode" shape="round" fill="outline" (click)="logOut()">Signout</ion-button>
   </div>
 </ion-content>

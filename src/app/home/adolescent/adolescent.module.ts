@@ -1,8 +1,9 @@
-import {NgModule} from '@angular/core';
+import {NgModule, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { AdolescentComponent } from '../adolescent/adolescent.component'
+import { PlatformService } from 'src/services/platform.service';
 
 @NgModule({
     declarations: [AdolescentComponent],
@@ -13,4 +14,14 @@ import { AdolescentComponent } from '../adolescent/adolescent.component'
     ]
 })
 
-export class AdolescentModule {}
+export class AdolescentModule implements OnInit {
+  mode = "";
+
+  constructor(
+    private platformService: PlatformService
+  ) {}
+
+  ngOnInit() {
+    this.mode = this.platformService.getPlatform();
+  }
+}

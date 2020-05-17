@@ -6,6 +6,8 @@ import { AppointmentService } from 'src/services/appointment.service';
 import { LoadingController } from '@ionic/angular';
 import { AuthService } from 'src/services/auth.service';
 import { Router } from '@angular/router';
+import { ToasterService } from 'src/services/toaster.service';
+import { PlatformService } from 'src/services/platform.service';
 
 @Component({
   selector: 'app-profile',
@@ -14,29 +16,36 @@ import { Router } from '@angular/router';
 })
 export class ProfileComponent implements OnInit {
 
-  user: any = {} ;
+  user: any = {};
 
   role = ""
 
   userInfoLoaded = false;
   apptInfoLoaded = false;
 
-  appts: Appointment[]
-  
+  appts: Appointment[];
+
+  admin = false;
+
+  mode = "";
 
   constructor(
     private userService: UserService,
     private apptService: AppointmentService,
     private loadingController: LoadingController,
     private authService: AuthService,
-    private router: Router
+    private toasterService: ToasterService,
+    private router: Router,
+    private platformService: PlatformService,
   ) { }
 
   ngOnInit() {
     this.presentLoading();
-    this.user = this.userService.getUserInfo()
+    this.user = this.userService.getUserInfo();
+    this.isAdmin();
+    this.mode = this.platformService.getPlatform();
      
-    if(this.user.profile == "Admin") {
+    if(this.admin) {
       this.apptService.getAppointmentsByCounselor(this.user.firstName + " " + this.user.lastName)
         .subscribe(res => {
           this.appts = this.transformData(res.Items);
@@ -44,10 +53,10 @@ export class ProfileComponent implements OnInit {
         },
         err => {
           console.log(err, err.message);
-          alert("Error getting user info");
+          this.toasterService.presentToast("Error getting user appointements", "danger")
         })
     }
-    else if (this.user.profile == "User") {
+    else if (!this.admin) {
       this.apptService.getMyAppointments(this.user.email)
       .subscribe(res => {
         this.appts = this.transformData(res.Items)
@@ -55,7 +64,7 @@ export class ProfileComponent implements OnInit {
       },
       err => {
         console.log(err, err.message);
-          alert("Error getting user info");
+        this.toasterService.presentToast("Error getting user appointements", "danger")
       })
     }
    
@@ -73,7 +82,7 @@ export class ProfileComponent implements OnInit {
         date: item.Date.S,
         duration: item.Duration.S,
         price: item.Price.S,
-        location: item.Location.S,
+        address: item.Location.S,
         counselor: item.Counselor.S,
         candidateFirstName: item.CandidateFirstName.S,
         candidateLastName: item.CandidateLastName.S,
@@ -102,5 +111,13 @@ export class ProfileComponent implements OnInit {
 
     const { role, data } = await loading.onDidDismiss();
     console.log('Loading dismissed!');
+  }
+
+  private isAdmin() {
+    if(this.user['cognito:groups']) {
+      if(this.user['cognito:groups'][0] == "Admin"){
+         this.admin = true;
+      }
+    }
   }
 }

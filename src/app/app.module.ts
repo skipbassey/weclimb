@@ -23,7 +23,7 @@ import { OutreachComponent } from './outreach/outreach.component';
 import { FeesComponent } from './fees/fees.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { FormsComponent } from './forms/forms.component';
-import { ApptModalComponent } from './appt-modal/appt-modal.component';
+import { ApptModalComponent } from './modals/appt-modal/appt-modal.component';
 import { AppointmentService } from 'src/services/appointment.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
@@ -40,9 +40,13 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { ForgotUsernameComponent } from './forgot-username/forgot-username.component';
 import { FormService } from 'src/services/form.service';
 import { PictureService } from 'src/services/picture.service';
-import { ConfirmationModalComponent } from './confirmation-modal/confirmation-modal.component';
+import { ConfirmationModalComponent } from './modals/confirmation-modal/confirmation-modal.component';
 import { ToasterService } from 'src/services/toaster.service';
 import { LoadingService } from 'src/services/loading.service';
+import { CalendarModalComponent } from './modals/calendar-modal/calendar-modal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './modules/material.module';
+import { PlatformService } from 'src/services/platform.service';
 
 @NgModule({
   declarations: [
@@ -62,13 +66,16 @@ import { LoadingService } from 'src/services/loading.service';
     CalendarComponent,
     ForgotPasswordComponent,
     ForgotUsernameComponent,
-    ConfirmationModalComponent
+    ConfirmationModalComponent,
+    CalendarModalComponent
   ],
   entryComponents: [
     ApptModalComponent,
     ForgotPasswordComponent,
     ForgotUsernameComponent,
-    ConfirmationModalComponent
+    ConfirmationModalComponent,
+    CalendarModalComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -83,7 +90,9 @@ import { LoadingService } from 'src/services/loading.service';
     AmplifyAngularModule,
     AmplifyIonicModule,
     FormsModule,
-    ReactiveFormsModule    
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MaterialModule    
   ],
   providers: [
     StatusBar,
@@ -98,6 +107,7 @@ import { LoadingService } from 'src/services/loading.service';
     PictureService,
     ToasterService,
     LoadingService,
+    PlatformService,
     // File,
     // FileTransfer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }

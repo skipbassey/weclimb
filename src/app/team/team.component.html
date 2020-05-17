@@ -1,21 +1,21 @@
-<ion-header>
-    <ion-toolbar color="primary">
+<ion-header [mode]="mode">
+    <ion-toolbar [mode]="mode" color="primary">
       <ion-buttons slot="start">
-        <ion-back-button defaultHref="home"></ion-back-button>
+        <ion-back-button [mode]="mode" defaultHref="home"></ion-back-button>
         <!-- <button (click)="back()">back</button> -->
       </ion-buttons>
       <ion-title class="title-text">Team</ion-title>
     </ion-toolbar>
   </ion-header>
 <ion-content>
-  <ion-card >
+  <ion-card [mode]="mode">
     <div class="img-container">
-        <img src="/assets/photo1.jpeg" alt="">
+        <img src="/assets/img/Avery.png" alt="">
     </div>
-    <ion-card-header>
-        <ion-card-title class="img-title">Avery Rosser, LPC</ion-card-title>
+    <ion-card-header [mode]="mode">
+        <ion-card-title [mode]="mode" class="img-title">Avery Rosser, LPC</ion-card-title>
       </ion-card-header>
-      <ion-card-content color="primary">
+      <ion-card-content [mode]="mode" color="primary">
         <p>
             Founder, We Climb Counseling and Consulting LLC. Avery earned a Master of 
             Science degree in Community Counseling as well as a Post Masters of School 
@@ -44,14 +44,14 @@
       </ion-card-content>
   </ion-card>
 
-  <ion-card>
+  <ion-card [mode]="mode">
     <div class="img-container">
-        <img src="/assets/photo2.jpeg" alt="">
+        <img src="/assets/img/Keshara.png" alt="">
     </div>
-      <ion-card-header class="span">
-          <ion-card-title class="img-title">Keshara Rosser, MSW</ion-card-title>
+      <ion-card-header [mode]="mode" class="span">
+          <ion-card-title [mode]="mode" class="img-title">Keshara Rosser, MSW</ion-card-title>
         </ion-card-header>
-        <ion-card-content>
+        <ion-card-content [mode]="mode">
           <p>
               Co-Founder, We Climb Counseling & Consulting LLC. Keshara earned a Master of 
               Social Work from the University of Alabama. Keshara completed her internship 
@@ -65,14 +65,14 @@
         </ion-card-content>
     </ion-card>
 
-    <ion-card>
+    <ion-card [mode]="mode">
       <div class="img-container">
-          <img src="/assets/photo1.jpeg" alt="">
+          <img src="/assets/img/Bryan.png" alt="">
       </div>
-        <ion-card-header class="span">
-            <ion-card-title class="img-title">Bryan Armstead Jr., BA </ion-card-title>
+        <ion-card-header [mode]="mode" class="span">
+            <ion-card-title [mode]="mode" class="img-title">Bryan Armstead Jr., BA </ion-card-title>
           </ion-card-header>
-          <ion-card-content>
+          <ion-card-content [mode]="mode">
             <p>
                 Intern, We Climb Counseling & Consulting LLC. Bryan earned a Bachelor of Art 
                 in Spanish from Morehouse College and is currently pursing a Master of Social 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { PlatformService } from 'src/services/platform.service';
 
 @Component({
   selector: 'app-team',
@@ -10,11 +11,16 @@ import { NavController } from '@ionic/angular';
 })
 export class TeamComponent implements OnInit {
 
+  mode = "";
+
   constructor(
-    private navController: NavController
+    private navController: NavController,
+    private platformService: PlatformService
   ) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.mode = this.platformService.getPlatform();
+  }
 
   back() {
     this.navController.pop();

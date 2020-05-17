@@ -18,7 +18,7 @@ export class AuthService {
     }
 
     getToken(): string {
-        return sessionStorage.getItem('token')
+        return sessionStorage.getItem("accessToken")
     }
 
     setAuthorization(accessToken: any, refreshToken: any) {
@@ -28,7 +28,7 @@ export class AuthService {
     }
 
     logOut() {
-        sessionStorage.removeItem("token");
+        sessionStorage.removeItem("accessToken");
         this.authenticated = false;
     }
 }

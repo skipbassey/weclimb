@@ -1,0 +1,23 @@
+<ion-content>
+  <div class="text-container">
+    <h1>Confirmation</h1>
+    <p class="text">A confirmation code was sent to your email. 
+      Please enter the code below to complete your registration.
+    </p>
+  </div>
+
+  <form [formGroup]="confirmationForm">
+    <ion-item [mode]="mode">
+      <ion-label [mode]="mode" position="floating">Email</ion-label>
+      <ion-input [mode]="mode" placeholder="example@gmail.com" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item [mode]="mode">
+      <ion-label [mode]="mode" position="floating">Code</ion-label>
+      <ion-input [mode]="mode" formControlName="code"></ion-input>
+    </ion-item>
+    <div class="button-container">
+      <ion-button [mode]="mode" class="btn" type="submit" expand="block" fill="solid" (click)="confirmSignUp()">Confirm</ion-button>
+      <ion-button [mode]="mode" class="btn" type="submit" expand="block" fill="solid" (click)="cancel()">Cancel</ion-button>
+    </div>
+  </form>
+</ion-content>
