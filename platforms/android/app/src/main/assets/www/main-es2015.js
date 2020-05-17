@@ -892,7 +892,7 @@ module.exports = "<ion-content class=\"ion-padding\">\n  \n\n        <!-- option
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content>\n  <ion-toolbar [mode]=\"mode\" color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button [mode]=\"mode\" class=\"back-btn\" (click)=\"dismiss()\" defaultHref=\"/appointments\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Booking</ion-title>\n  </ion-toolbar>\n  <!-- no schedule -->\n  <div class=\"err-content\" *ngIf=\"noData\">\n    <p>No schedule available at this time.</p>\n  </div>\n  <ion-list [mode]=\"mode\" *ngFor=\"let item of data\">\n    <ion-item [mode]=\"mode\" button (click)=\"confirm(item)\">\n      <div class=\"list-item\">\n        <p>{{item.date}}</p>\n        <p>{{item.address}}</p>\n      </div>\n    </ion-item>\n  </ion-list>\n</ion-content>"
+module.exports = "<ion-toolbar [mode]=\"mode\" color=\"primary\">\n  <ion-buttons slot=\"start\">\n    <ion-back-button [mode]=\"mode\" class=\"back-btn\" (click)=\"dismiss()\" defaultHref=\"/appointments\"></ion-back-button>\n  </ion-buttons>\n  <ion-title class=\"title-text\">Booking</ion-title>\n</ion-toolbar>\n<ion-content>\n  <!-- no schedule -->\n  <div class=\"err-content\" *ngIf=\"noData\">\n    <p>No schedule available at this time.</p>\n  </div>\n  <ion-list [mode]=\"mode\" *ngFor=\"let item of data\">\n    <ion-item [mode]=\"mode\" button (click)=\"confirm(item)\">\n      <div class=\"list-item\">\n        <p>{{item.date}}</p>\n        <p>{{item.address}}</p>\n      </div>\n    </ion-item>\n  </ion-list>\n</ion-content>"
 
 /***/ }),
 

@@ -1,9 +1,11 @@
-<ion-toolbar [mode]="mode" color="primary">
-  <ion-buttons slot="start">
-    <ion-back-button [mode]="mode" class="back-btn" (click)="dismiss()" defaultHref="/appointments"></ion-back-button>
-  </ion-buttons>
-  <ion-title class="title-text">Booking</ion-title>
-</ion-toolbar>
+<ion-header [mode]="mode" translucent>
+  <ion-toolbar [mode]="mode" color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button [mode]="mode" class="back-btn" (click)="dismiss()" defaultHref="/appointments"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="title-text">Booking</ion-title>
+  </ion-toolbar>
+</ion-header>
 <ion-content>
   <!-- no schedule -->
   <div class="err-content" *ngIf="noData">
