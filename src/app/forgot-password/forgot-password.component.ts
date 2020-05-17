@@ -42,7 +42,7 @@ export class ForgotPasswordComponent implements OnInit {
   async forgotPasswordRequest() {
     this.loadingService.presentLoading();
     try {
-      const res = await Auth.forgotPassword(this.passwordForm.get("email"));
+      const res = await Auth.forgotPassword(this.passwordForm.get("email").value);
       if(res) {
         this.codeSent = true;
       }

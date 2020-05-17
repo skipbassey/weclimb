@@ -1774,7 +1774,7 @@ let ForgotPasswordComponent = class ForgotPasswordComponent {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
             this.loadingService.presentLoading();
             try {
-                const res = yield aws_amplify__WEBPACK_IMPORTED_MODULE_5__["Auth"].forgotPassword("skipbassey@gmail.com");
+                const res = yield aws_amplify__WEBPACK_IMPORTED_MODULE_5__["Auth"].forgotPassword(this.passwordForm.get("email"));
                 if (res) {
                     this.codeSent = true;
                 }
@@ -1801,20 +1801,21 @@ let ForgotPasswordComponent = class ForgotPasswordComponent {
             this.loadingService.dismissLoading();
         });
     }
-    forgotPassword() {
-        var body = {
-            email: this.passwordForm.get("email").value,
-            lastName: this.passwordForm.get("lastName").value,
-            password: this.passwordForm.get("password").value
-        };
-        this.userService.forgotPassword(body)
-            .subscribe(res => {
-            this.toasterService.presentToast("Password has been reset.", "success");
-            this.modalController.dismiss();
-        }, err => {
-            this.toasterService.presentToast("Error resetting password.", "danger");
-        });
-    }
+    // forgotPassword() {
+    //   var body = {
+    //     email: this.passwordForm.get("email").value,
+    //     lastName: this.passwordForm.get("lastName").value,
+    //     password: this.passwordForm.get("password").value
+    //   };
+    //   this.userService.forgotPassword(body)
+    //     .subscribe(res => {
+    //       this.toasterService.presentToast("Password has been reset.", "success");
+    //       this.modalController.dismiss();
+    //     },
+    //     err => {
+    //       this.toasterService.presentToast("Error resetting password.", "danger");
+    //     })
+    // }
     cancel() {
         this.modalController.dismiss();
     }

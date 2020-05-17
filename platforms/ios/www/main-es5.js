@@ -1838,7 +1838,7 @@ var ForgotPasswordComponent = /** @class */ (function () {
                         _a.label = 1;
                     case 1:
                         _a.trys.push([1, 3, , 4]);
-                        return [4 /*yield*/, aws_amplify__WEBPACK_IMPORTED_MODULE_5__["Auth"].forgotPassword("skipbassey@gmail.com")];
+                        return [4 /*yield*/, aws_amplify__WEBPACK_IMPORTED_MODULE_5__["Auth"].forgotPassword(this.passwordForm.get("email"))];
                     case 2:
                         res = _a.sent();
                         if (res) {
@@ -1885,21 +1885,21 @@ var ForgotPasswordComponent = /** @class */ (function () {
             });
         });
     };
-    ForgotPasswordComponent.prototype.forgotPassword = function () {
-        var _this = this;
-        var body = {
-            email: this.passwordForm.get("email").value,
-            lastName: this.passwordForm.get("lastName").value,
-            password: this.passwordForm.get("password").value
-        };
-        this.userService.forgotPassword(body)
-            .subscribe(function (res) {
-            _this.toasterService.presentToast("Password has been reset.", "success");
-            _this.modalController.dismiss();
-        }, function (err) {
-            _this.toasterService.presentToast("Error resetting password.", "danger");
-        });
-    };
+    // forgotPassword() {
+    //   var body = {
+    //     email: this.passwordForm.get("email").value,
+    //     lastName: this.passwordForm.get("lastName").value,
+    //     password: this.passwordForm.get("password").value
+    //   };
+    //   this.userService.forgotPassword(body)
+    //     .subscribe(res => {
+    //       this.toasterService.presentToast("Password has been reset.", "success");
+    //       this.modalController.dismiss();
+    //     },
+    //     err => {
+    //       this.toasterService.presentToast("Error resetting password.", "danger");
+    //     })
+    // }
     ForgotPasswordComponent.prototype.cancel = function () {
         this.modalController.dismiss();
     };

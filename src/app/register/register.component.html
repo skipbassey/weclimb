@@ -28,7 +28,9 @@
       <ion-label [mode]="mode" position="floating">Confirm Password</ion-label>
       <ion-input [mode]="mode" type="password" formControlName="confirmPassword"></ion-input>
     </ion-item>
-    <ion-button [mode]="mode" type="submit" class="btn" fill="solid" [disabled]="!passwordMatch()" (click)="signUp()">Submit</ion-button>
-    <ion-button  [mode]="mode" type="submit" class="btn" fill="solid" (click)="cancel()">Cancel</ion-button>
+    <div class="btn-container">
+      <ion-button [mode]="mode" type="submit" class="btn" fill="solid" [disabled]="!passwordMatch()" (click)="signUp()">Submit</ion-button>
+      <ion-button [mode]="mode" type="submit" class="btn" fill="solid" [disabled]="!passwordMatch()" (click)="signUp()">Submit</ion-button>
+    </div>
   </form>
 </div>
