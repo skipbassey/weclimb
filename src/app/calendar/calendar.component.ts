@@ -1,85 +1,109 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
-import { UserService } from 'src/services/user.service';
+import { Component, OnInit, DoCheck } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { CalendarModalComponent } from '../modals/calendar-modal/calendar-modal.component';
 import { Appointment } from 'src/models/Appointment';
 import { AppointmentService } from 'src/services/appointment.service';
-import * as moment from 'moment';
+import { ToasterService } from 'src/services/toaster.service';
 import { Router } from '@angular/router';
+import { AlertController } from '@ionic/angular';
+import { PlatformService } from 'src/services/platform.service';
+
 
 @Component({
   selector: 'app-calendar',
   templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.scss'],
 })
-export class CalendarComponent implements OnInit {
+export class CalendarComponent implements OnInit, DoCheck {
 
-  location = "Bldg. A. Suites 122-124 2175 Highpoint Road, Snellville, GA, USA";
-  date = "";
+  appts: Appointment[] = [];
 
-  calendarForm: any;
+  mode = ""
 
   constructor(
-    private formBuilder: FormBuilder,
-    private userService: UserService,
+    private modalController: ModalController,
     private apptService: AppointmentService,
+    private toasterService: ToasterService,
+    private alertController: AlertController,
+    private platformService: PlatformService,
     private router: Router
   ) { }
 
   ngOnInit() {
-    this.calendarForm = this.formBuilder.group({
-      name: "",
-      type: "",
-      duration: "",
-      price: "",
-      location: "",
-      date: "",
-    })
+    this.mode = this.platformService.getPlatform();
   }
 
-  addToCalendar() {
-    var appts: Appointment[] = [];
-    var schedule: Appointment = {
-      name: this.calendarForm.get("name").value,
-      date: this.formDate(this.calendarForm.get("date").value),
-      duration: this.calendarForm.get("duration").value,
-      price: this.calendarForm.get("price").value,
-      location: this.calendarForm.get("location").value,
-      counselor: this.userService.getUserInfo().firstName + " " + this.userService.getUserInfo().lastName,
-      type: this.calendarForm.get("type").value,
-    }
+  ngDoCheck() {
+    this.appts = this.apptService.schedule;
+  }
 
-    appts.push(schedule)
-    switch (schedule.name) {
+  async openCalendarModal() {
+    const modal = await this.modalController.create({
+      component: CalendarModalComponent
+    });
+    return await modal.present();
+  }
+
+  submit() {
+    switch (this.apptService.schedule[0].name) {
       case "Licensed Level Clinician":
-        this.apptService.setLicenseLevelSchedule(appts)
+        this.apptService.setLicenseLevelSchedule(this.apptService.schedule)
           .subscribe(res => {
-            alert("Schedule added");
+            this.toasterService.presentToast("Schedule added", "success")
+            this.apptService.clearSchedule();
+            this.router.navigateByUrl("profile");
           },
-          err => {
-            alert("error adding schedule")
-          })
-          break;
-      case "Master Level Clinician":
-        this.apptService.setMastersLevelSchedule(appts)
+            err => {
+              this.toasterService.presentToast("Error adding schedule", "danger")
+            })
+        break;
+      case "Masters Level Clinician":
+        this.apptService.setMastersLevelSchedule(this.apptService.schedule)
           .subscribe(res => {
-            alert("Schedule added");
+            this.toasterService.presentToast("Schedule added", "success");
+            this.apptService.clearSchedule();
+            this.router.navigateByUrl("profile");
           },
-          err => {
-            alert("error adding schedule")
-          })
+            err => {
+              this.toasterService.presentToast("Error adding schedule", "danger")
+            })
+      case "Adolescent":
+        this.apptService.setAdolescentSchedule(this.apptService.schedule)
+            .subscribe(res => {
+              this.toasterService.presentToast("Schedule added", "success");
+              this.apptService.clearSchedule();
+              this.router.navigateByUrl("profile");
+            },
+            err => {
+              this.toasterService.presentToast("Error adding schedule", "danger")
+            })
+            break;
     }
-    
-    console.log(schedule);
+
   }
 
-  formDate(date: string): string {
-    let newDate = moment(date).format('LLL');
-    console.log(newDate);
-    return newDate;
-  }
+  async removeAppointment(apt: Appointment) {
+    const alert = await this.alertController.create({
+      header: 'Cancel',
+      message: 'Are you sure you want to cancel?',
+      mode: "ios",
+      buttons: [
+        {
+          text: 'Yes',
+          role: 'cancel',
+          handler: (blah) => {
+            this.apptService.removeAppointment(apt);
+            this.appts = this.apptService.schedule;
+          }
+        }, {
+          text: 'No',
+          handler: () => {
+          }
+        }
+      ]
+    });
 
-  cancel() {
-    this.router.navigateByUrl("profile");
+    await alert.present();
   }
 
 }

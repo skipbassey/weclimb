@@ -3,6 +3,7 @@ import { FormBuilder } from '@angular/forms';
 import { UserService } from 'src/services/user.service';
 import { ToastController, ModalController } from '@ionic/angular';
 import { LoadingController } from '@ionic/angular';
+import { PlatformService } from 'src/services/platform.service';
 
 
 @Component({
@@ -16,12 +17,15 @@ export class ForgotUsernameComponent implements OnInit {
 
   loaded = false;
 
+  mode = "";
+
   constructor(
     private formBuilder: FormBuilder,
     private userService: UserService,
     private toastController: ToastController,
     private loadingController: LoadingController,
-    private modalController: ModalController
+    private modalController: ModalController,
+    private platformService: PlatformService
   ) { }
 
   ngOnInit() {
@@ -29,6 +33,8 @@ export class ForgotUsernameComponent implements OnInit {
       phone: "",
       lastName: "",
     })
+
+    this.mode = this.platformService.getPlatform();
   }
 
   forgotUsername() {

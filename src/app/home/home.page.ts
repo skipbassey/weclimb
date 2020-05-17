@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 
 export interface Option {
   title: string;
-  route: string;
+  data: string[]
 }
 @Component({
   selector: 'app-home',
@@ -15,33 +15,68 @@ export class HomePage {
   services: Option[] = [
     {
       title: 'Relationship Counseling',
-      route: 'counseling/relationship'
+      data: [
+        "Blending Family Adjustments",
+        "Behavioral Issues",
+        "Academic Concerns in Children",
+        "Divorce & Divorce Adjustments",
+        "Grief Counseling"
+      ]
     },
     {
       title: 'Family Counseling',
-      route: 'counseling/family'
+      data: [
+        "Blending Family Adjustments",
+        "Behavioral Issues",
+        "Academic Concerns in Children",
+        "Divorce & Divorce Adjustments",
+        "Grief Counseling"
+      ]
     },
     {
       title: 'Adolescent Counseling',
-      route: 'counseling/adolescent'
+      data: [
+        "Anger Management",
+        "Self-Harming & Suicidal Behaviors",
+        "Oppositional Defiant Behaviors",
+        "ADD & ADHD",
+        "Bullying",
+        "Individualized Educational Plan (IEP)",
+        "504 Plan",
+        "Trauma",
+        "Coping Skills"
+      ]
     },
     {
       title: 'Individual Counseling',
-      route: 'counseling/individual'
+      data: [
+        "Depression",
+        "Anxiety & Stress Management",
+        "Self-Esteem Issues",
+        "Underachievement",
+        "Anger Management",
+        "Spiritual Issues",
+        "Crisis Intervention",
+        "Trauma/PTSD",
+        "Grief",
+        "Divorce Adjustment",
+        "Coping Skills"
+      ]
     },
     {
       title: 'Career Counseling',
-      route: 'counseling/career'
+      data: [
+          "Career Counseling & Guidance",
+          "Career Interest Assessment",
+          "Choosing/Changing Majors",
+          "Changing Career Paths",
+          "Resume & Cover Letter Writing"
+      ]
     } 
   ]
 
   constructor(
     private router: Router,
   ) {}
-
-  navigate(service: Option) {
-    this.router.navigateByUrl(service.route)
-    
-  }
 
 }

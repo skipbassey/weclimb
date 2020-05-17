@@ -5,6 +5,7 @@ import { NavController } from '@ionic/angular';
 import { MenuController } from '@ionic/angular';
 import { AmplifyService } from 'aws-amplify-angular';
 import { AuthService } from 'src/services/auth.service';
+import { PlatformService } from 'src/services/platform.service';
 
 @Component({
   selector: 'app-menu',
@@ -21,7 +22,7 @@ export class MenuComponent implements OnInit {
 
   title = '';
 
-  authState: any;
+  mode = "";
 
   constructor(
     private menuService: MenuService,
@@ -29,14 +30,16 @@ export class MenuComponent implements OnInit {
     private navController: NavController,
     private menuController: MenuController,
     public amplifyService: AmplifyService,
-    private authService: AuthService
-
+    private authService: AuthService,
+    private platformService: PlatformService
     ) { 
       
     }
 
   ngOnInit() {
     this.options = this.menuService.getOptions();
+
+    this.mode = this.platformService.getPlatform();
   }
 
   navigate(route: string): void {

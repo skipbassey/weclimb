@@ -1,21 +1,30 @@
-    <ion-card class="card">
-        <ion-card-header>
-          <ion-card-header class="menu-text text">
-            Services Provided
-          </ion-card-header>
-        </ion-card-header>
-        <ion-card-content class="services">
-            <p>
-                We offer services that equip our clients with tools for success. During your counseling sessions, 
-                no matter if it’s Relationship Counseling, Family/Individual Counseling, Group Counseling, Anger 
-                Management Classes, Adolescent Counseling or Career Coaching, we  always provide personalized 
-                attention to help each client identify their personal values, strengths, and abilities in support 
-                of their personal and professional goals. The goal of We Climb Counseling and Consulting, is to 
-                create a supportive environment in which clients can explore their own emotional needs and overcome 
-                barriers that limit their full potential by meeting each client where they are. 
-            </p>
-        </ion-card-content>
-      </ion-card>
-      <ion-list *ngFor="let service of services">
-        <ion-item button (click)="navigate(service)">{{service.title}}</ion-item>
-      </ion-list>
+    <ion-content>
+      <div class="header-container">
+        <h1 class="menu-text text">Services Provided</h1>
+      </div>
+      <div class="services-container">
+        <p>
+          We offer services that equip our clients with tools for success. During your counseling sessions, 
+          no matter if it’s Relationship Counseling, Family/Individual Counseling, Group Counseling, Anger 
+          Management Classes, Adolescent Counseling or Career Coaching, we  always provide personalized 
+          attention to help each client identify their personal values, strengths, and abilities in support 
+          of their personal and professional goals. The goal of We Climb Counseling and Consulting, is to 
+          create a supportive environment in which clients can explore their own emotional needs and overcome 
+          barriers that limit their full potential by meeting each client where they are. 
+      </p>
+      </div>
+      <div class="services-container">
+        <mat-accordion>
+          <mat-expansion-panel *ngFor="let service of services">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                {{service.title}}
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul *ngFor="let opt of service.data">
+              <li>{{opt}}</li>
+            </ul>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>   
+    </ion-content>

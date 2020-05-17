@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { User } from 'src/models/user';
 import { UserService } from 'src/services/user.service';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { LoadingController } from '@ionic/angular';
 import { Auth } from 'aws-amplify';
 import { ModalController } from '@ionic/angular';
-import { ConfirmationModalComponent } from '../confirmation-modal/confirmation-modal.component';
+import { ConfirmationModalComponent } from '../modals/confirmation-modal/confirmation-modal.component';
 import { ToasterService } from 'src/services/toaster.service';
+import { PlatformService } from 'src/services/platform.service';
 
 @Component({
   selector: 'app-register',
@@ -19,13 +19,16 @@ export class RegisterComponent implements OnInit {
 
   registerForm: any;
 
+  mode = "";
+
   constructor(
     private formBuilder: FormBuilder,
     private userService: UserService,
     public loadingController: LoadingController,
     private modalController: ModalController,
     private toasterService: ToasterService,
-    private router: Router
+    private router: Router,
+    private platformService: PlatformService
   ) { }
 
   ngOnInit() {
@@ -37,6 +40,8 @@ export class RegisterComponent implements OnInit {
       confirmPassword: '',
       phone: ''
     });
+
+    this.mode = this.platformService.getPlatform();
   }
 
   async signUp() {
@@ -94,7 +99,7 @@ export class RegisterComponent implements OnInit {
   }
 
   cancel() {
-    this.router.navigateByUrl('login');
+    this.modalController.dismiss();
   }
 
   passwordMatch(): boolean {
