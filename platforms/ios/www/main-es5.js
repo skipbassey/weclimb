@@ -876,7 +876,7 @@ module.exports = "<ion-header [mode]=\"mode\">\n  <ion-toolbar [mode]=\"mode\" c
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-content padding>\n\t<ion-grid>\n\t\t<ion-row>\n\t\t\t<ion-col col-12 col-md-6 col-lg-4 col-xl-3>\n\t\t\t\t<div class=\"logo-container\">\n\t\t\t\t\t<img src=\"/assets/img/logo.png\" alt=\"\">\n\t\t\t\t</div>\n\n\t\t\t\t<form [formGroup]=\"loginForm\" (ngSubmit)=\"signIn()\">\n\t\t\t\t\t<div class=\"credential-container\">\n\t\t\t\t\t\t<ion-item [mode]=\"mode\">\n\t\t\t\t\t\t\t<ion-label position=\"floating\">Username</ion-label>\n\t\t\t\t\t\t\t<ion-input [mode]=\"mode\" formControlName=\"email\" placeholder=\"example@gmail.com\"\n\t\t\t\t\t\t\t\ttype=\"email\"></ion-input>\n\t\t\t\t\t\t</ion-item>\n\t\t\t\t\t\t<ion-item>\n\t\t\t\t\t\t\t<ion-label position=\"floating\">Password</ion-label>\n\t\t\t\t\t\t\t<ion-input [mode]=\"mode\" formControlName=\"password\" placeholder=\"password\" type=\"password\">\n\t\t\t\t\t\t\t</ion-input>\n\t\t\t\t\t\t</ion-item>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"button-container\">\n\t\t\t\t\t\t<div class=\"remember-me-container\">\n\t\t\t\t\t\t\t<ion-item [mode]=\"mode\" (click)=\"rememberMe()\">\n\t\t\t\t\t\t\t\t<ion-label>Remember Me</ion-label>\n\t\t\t\t\t\t\t\t<ion-toggle [mode]=\"mode\" slot=\"start\" value [checked]=\"checked\"\n\t\t\t\t\t\t\t\t\t(ionChange)=\"rememberMe($event)\"></ion-toggle>\n\t\t\t\t\t\t\t</ion-item>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"action-btn-container\">\n\t\t\t\t\t\t\t<ion-button [mode]=\"mode\" class=\"btn\" type=\"submit\" fill=\"solid\">Login</ion-button>\n\t\t\t\t\t\t\t<ion-button [mode]=\"mode\" class=\"btn\" fill=\"solid\" (click)=\"presentRegisterModal()\">Register\n\t\t\t\t\t\t\t</ion-button>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"reset-container\">\n\t\t\t\t\t\t\t<a class=\"reset\" (click)=\"presentForgotUsernameModal()\">Forgot Username?</a>\n\t\t\t\t\t\t\t<a class=\"reset\" (click)=\"presentForgotPasswordModal()\">Forgot Password?</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</form>\n\t\t\t</ion-col>\n\t\t</ion-row>\n\t</ion-grid>\n\n</ion-content>"
+module.exports = "<ion-content padding>\n\t<ion-grid>\n\t\t<ion-row>\n\t\t\t<ion-col col-12 col-md-6 col-lg-4 col-xl-3>\n\t\t\t\t<div class=\"logo-container\">\n\t\t\t\t\t<img src=\"/assets/img/logo.png\" alt=\"\">\n\t\t\t\t</div>\n\n\t\t\t\t<form [formGroup]=\"loginForm\" (ngSubmit)=\"signIn()\">\n\t\t\t\t\t<div class=\"credential-container\">\n\t\t\t\t\t\t<ion-item [mode]=\"mode\">\n\t\t\t\t\t\t\t<ion-label position=\"floating\">Username</ion-label>\n\t\t\t\t\t\t\t<ion-input [mode]=\"mode\" formControlName=\"email\" placeholder=\"example@gmail.com\"\n\t\t\t\t\t\t\t\ttype=\"email\"></ion-input>\n\t\t\t\t\t\t</ion-item>\n\t\t\t\t\t\t<ion-item>\n\t\t\t\t\t\t\t<ion-label position=\"floating\">Password</ion-label>\n\t\t\t\t\t\t\t<ion-input [mode]=\"mode\" formControlName=\"password\" placeholder=\"password\" type=\"password\">\n\t\t\t\t\t\t\t</ion-input>\n\t\t\t\t\t\t</ion-item>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"button-container\">\n\t\t\t\t\t\t<div class=\"remember-me-container\">\n\t\t\t\t\t\t\t<ion-item [mode]=\"mode\" (click)=\"rememberMe()\">\n\t\t\t\t\t\t\t\t<ion-label>Remember Me</ion-label>\n\t\t\t\t\t\t\t\t<ion-toggle [mode]=\"mode\" slot=\"start\" value [checked]=\"checked\"\n\t\t\t\t\t\t\t\t\t(ionChange)=\"rememberMe($event)\"></ion-toggle>\n\t\t\t\t\t\t\t</ion-item>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"action-btn-container\">\n\t\t\t\t\t\t\t<ion-button [mode]=\"mode\" class=\"btn\" type=\"submit\" fill=\"solid\">Login</ion-button>\n\t\t\t\t\t\t\t<ion-button [mode]=\"mode\" class=\"btn\" fill=\"solid\" (click)=\"presentRegisterModal()\">Register\n\t\t\t\t\t\t\t</ion-button>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"reset-container\">\n\t\t\t\t\t\t\t<!-- <a class=\"reset\" (click)=\"presentForgotUsernameModal()\">Forgot Username?</a> -->\n\t\t\t\t\t\t\t<a class=\"reset\" (click)=\"presentForgotPasswordModal()\">Forgot Password?</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</form>\n\t\t\t</ion-col>\n\t\t</ion-row>\n\t</ion-grid>\n\n</ion-content>"
 
 /***/ }),
 
@@ -953,7 +953,7 @@ module.exports = "<ion-header [mode]=\"mode\" translucent>\n  <ion-toolbar [mode
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"header-container\">\n    <h1>Registration</h1>\n  </div>\n\n  <form [formGroup]=\"registerForm\">\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">First Name</ion-label>\n      <ion-input [mode]=\"mode\" type=\"string\" placeholder=\"John\" formControlName=\"firstName\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Last Name</ion-label>\n      <ion-input [mode]=\"mode\" type=\"string\" placeholder=\"Doe\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Email</ion-label>\n      <ion-input [mode]=\"mode\" type=\"email\" placeholder=\"example@gmail.com\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Phone</ion-label>\n      <ion-input [mode]=\"mode\" type=\"tel\" placeholder=\"xxxxxxxxxx\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Password</ion-label>\n      <ion-input [mode]=\"mode\" type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Confirm Password</ion-label>\n      <ion-input [mode]=\"mode\" type=\"password\" formControlName=\"confirmPassword\"></ion-input>\n    </ion-item>\n    <ion-button [mode]=\"mode\" type=\"submit\" class=\"btn\" fill=\"solid\" [disabled]=\"!passwordMatch()\" (click)=\"signUp()\">Submit</ion-button>\n    <ion-button  [mode]=\"mode\" type=\"submit\" class=\"btn\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n  </form>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"header-container\">\n    <h1>Registration</h1>\n  </div>\n\n  <form [formGroup]=\"registerForm\">\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">First Name</ion-label>\n      <ion-input [mode]=\"mode\" type=\"string\" placeholder=\"John\" formControlName=\"firstName\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Last Name</ion-label>\n      <ion-input [mode]=\"mode\" type=\"string\" placeholder=\"Doe\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Email</ion-label>\n      <ion-input [mode]=\"mode\" type=\"email\" placeholder=\"example@gmail.com\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Phone</ion-label>\n      <ion-input [mode]=\"mode\" type=\"tel\" placeholder=\"xxxxxxxxxx\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Password</ion-label>\n      <ion-input [mode]=\"mode\" type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Confirm Password</ion-label>\n      <ion-input [mode]=\"mode\" type=\"password\" formControlName=\"confirmPassword\"></ion-input>\n    </ion-item>\n    <div class=\"btn-container\">\n      <ion-button [mode]=\"mode\" type=\"submit\" class=\"btn\" fill=\"solid\" [disabled]=\"!passwordMatch()\" (click)=\"signUp()\">Submit</ion-button>\n      <ion-button [mode]=\"mode\" type=\"submit\" class=\"btn\" fill=\"solid\" [disabled]=\"!passwordMatch()\" (click)=\"signUp()\">Submit</ion-button>\n    </div>\n  </form>\n</div>\n"
 
 /***/ }),
 
@@ -1259,6 +1259,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
 /* harmony import */ var _modules_material_module__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./modules/material.module */ "./src/app/modules/material.module.ts");
 /* harmony import */ var src_services_platform_service__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! src/services/platform.service */ "./src/services/platform.service.ts");
+/* harmony import */ var _ionic_native_keyboard_ngx__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! @ionic-native/keyboard/ngx */ "./node_modules/@ionic-native/keyboard/ngx/index.js");
+
 
 
 
@@ -1369,6 +1371,7 @@ var AppModule = /** @class */ (function () {
                 src_services_toaster_service__WEBPACK_IMPORTED_MODULE_40__["ToasterService"],
                 src_services_loading_service__WEBPACK_IMPORTED_MODULE_41__["LoadingService"],
                 src_services_platform_service__WEBPACK_IMPORTED_MODULE_45__["PlatformService"],
+                _ionic_native_keyboard_ngx__WEBPACK_IMPORTED_MODULE_46__["Keyboard"],
                 // File,
                 // FileTransfer,
                 { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }
@@ -1777,7 +1780,7 @@ var FeesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header-container {\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9mb3Jnb3QtcGFzc3dvcmQvZm9yZ290LXBhc3N3b3JkLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9mb3Jnb3QtcGFzc3dvcmQvZm9yZ290LXBhc3N3b3JkLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL2ZvcmdvdC1wYXNzd29yZC9mb3Jnb3QtcGFzc3dvcmQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaGVhZGVyLWNvbnRhaW5lciB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufSIsIi5oZWFkZXItY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdfQ== */"
+module.exports = ".header-container {\n  text-align: center;\n}\n\n.button-container {\n  text-align: center;\n  display: -webkit-box;\n  display: flex;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9mb3Jnb3QtcGFzc3dvcmQvZm9yZ290LXBhc3N3b3JkLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9mb3Jnb3QtcGFzc3dvcmQvZm9yZ290LXBhc3N3b3JkLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQUE7QUNDSjs7QURFQTtFQUNJLGtCQUFBO0VBQ0Esb0JBQUE7RUFBQSxhQUFBO0FDQ0oiLCJmaWxlIjoic3JjL2FwcC9mb3Jnb3QtcGFzc3dvcmQvZm9yZ290LXBhc3N3b3JkLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmhlYWRlci1jb250YWluZXIge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmJ1dHRvbi1jb250YWluZXIge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBkaXNwbGF5OiBmbGV4O1xufSIsIi5oZWFkZXItY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uYnV0dG9uLWNvbnRhaW5lciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZGlzcGxheTogZmxleDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -1838,7 +1841,7 @@ var ForgotPasswordComponent = /** @class */ (function () {
                         _a.label = 1;
                     case 1:
                         _a.trys.push([1, 3, , 4]);
-                        return [4 /*yield*/, aws_amplify__WEBPACK_IMPORTED_MODULE_5__["Auth"].forgotPassword(this.passwordForm.get("email"))];
+                        return [4 /*yield*/, aws_amplify__WEBPACK_IMPORTED_MODULE_5__["Auth"].forgotPassword(this.passwordForm.get("email").value)];
                     case 2:
                         res = _a.sent();
                         if (res) {
@@ -3888,7 +3891,7 @@ var ProfileComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header-container {\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9yZWdpc3Rlci9yZWdpc3Rlci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxrQkFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaGVhZGVyLWNvbnRhaW5lciB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufSIsIi5oZWFkZXItY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdfQ== */"
+module.exports = ".header-container {\n  text-align: center;\n}\n\n.btn-container {\n  text-align: center;\n  display: -webkit-box;\n  display: flex;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9yZWdpc3Rlci9yZWdpc3Rlci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxrQkFBQTtBQ0NKOztBREVBO0VBQ0ksa0JBQUE7RUFDQSxvQkFBQTtFQUFBLGFBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL3JlZ2lzdGVyL3JlZ2lzdGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmhlYWRlci1jb250YWluZXIge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmJ0bi1jb250YWluZXIge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBkaXNwbGF5OiBmbGV4O1xufSIsIi5oZWFkZXItY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uYnRuLWNvbnRhaW5lciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZGlzcGxheTogZmxleDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -3912,6 +3915,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modals_confirmation_modal_confirmation_modal_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../modals/confirmation-modal/confirmation-modal.component */ "./src/app/modals/confirmation-modal/confirmation-modal.component.ts");
 /* harmony import */ var src_services_toaster_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/services/toaster.service */ "./src/services/toaster.service.ts");
 /* harmony import */ var src_services_platform_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! src/services/platform.service */ "./src/services/platform.service.ts");
+/* harmony import */ var _ionic_native_keyboard_ngx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @ionic-native/keyboard/ngx */ "./node_modules/@ionic-native/keyboard/ngx/index.js");
+
 
 
 
@@ -3924,7 +3929,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var RegisterComponent = /** @class */ (function () {
-    function RegisterComponent(formBuilder, userService, loadingController, modalController, toasterService, router, platformService) {
+    function RegisterComponent(formBuilder, userService, loadingController, modalController, toasterService, router, platformService, keyboard) {
         this.formBuilder = formBuilder;
         this.userService = userService;
         this.loadingController = loadingController;
@@ -3932,6 +3937,7 @@ var RegisterComponent = /** @class */ (function () {
         this.toasterService = toasterService;
         this.router = router;
         this.platformService = platformService;
+        this.keyboard = keyboard;
         this.mode = "";
     }
     RegisterComponent.prototype.ngOnInit = function () {
@@ -3944,6 +3950,9 @@ var RegisterComponent = /** @class */ (function () {
             phone: ''
         });
         this.mode = this.platformService.getPlatform();
+    };
+    RegisterComponent.prototype.ngDoCheck = function () {
+        this.keyboard.hideFormAccessoryBar(true);
     };
     RegisterComponent.prototype.signUp = function () {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
@@ -4062,7 +4071,8 @@ var RegisterComponent = /** @class */ (function () {
         { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["ModalController"] },
         { type: src_services_toaster_service__WEBPACK_IMPORTED_MODULE_8__["ToasterService"] },
         { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
-        { type: src_services_platform_service__WEBPACK_IMPORTED_MODULE_9__["PlatformService"] }
+        { type: src_services_platform_service__WEBPACK_IMPORTED_MODULE_9__["PlatformService"] },
+        { type: _ionic_native_keyboard_ngx__WEBPACK_IMPORTED_MODULE_10__["Keyboard"] }
     ]; };
     RegisterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -4076,7 +4086,8 @@ var RegisterComponent = /** @class */ (function () {
             _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["ModalController"],
             src_services_toaster_service__WEBPACK_IMPORTED_MODULE_8__["ToasterService"],
             _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"],
-            src_services_platform_service__WEBPACK_IMPORTED_MODULE_9__["PlatformService"]])
+            src_services_platform_service__WEBPACK_IMPORTED_MODULE_9__["PlatformService"],
+            _ionic_native_keyboard_ngx__WEBPACK_IMPORTED_MODULE_10__["Keyboard"]])
     ], RegisterComponent);
     return RegisterComponent;
 }());

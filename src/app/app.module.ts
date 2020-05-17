@@ -47,6 +47,7 @@ import { CalendarModalComponent } from './modals/calendar-modal/calendar-modal.c
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material.module';
 import { PlatformService } from 'src/services/platform.service';
+import { Keyboard } from '@ionic-native/keyboard/ngx';
 
 @NgModule({
   declarations: [
@@ -108,6 +109,7 @@ import { PlatformService } from 'src/services/platform.service';
     ToasterService,
     LoadingService,
     PlatformService,
+    Keyboard,
     // File,
     // FileTransfer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }

@@ -48,7 +48,7 @@ export class RegisterComponent implements OnInit, DoCheck {
   }
 
   ngDoCheck() {
-    this.keyboard.hideFormAccessoryBar(true);
+    this.keyboard.hideFormAccessoryBar(false);
   }
 
   async signUp() {
