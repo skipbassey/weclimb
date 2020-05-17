@@ -236,6 +236,20 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "window.StatusBar"
       ]
+    },
+    {
+      "id": "cordova-plugin-ionic.common",
+      "file": "plugins/cordova-plugin-ionic/dist/common.js",
+      "pluginId": "cordova-plugin-ionic",
+      "clobbers": [
+        "IonicCordova"
+      ]
+    },
+    {
+      "id": "cordova-plugin-ionic.guards",
+      "file": "plugins/cordova-plugin-ionic/dist/guards.js",
+      "pluginId": "cordova-plugin-ionic",
+      "runs": true
     }
   ];
   module.exports.metadata = {
@@ -246,6 +260,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-ionic-webview": "4.1.3",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "2.4.2",
-    "cordova-plugin-whitelist": "1.3.3"
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-ionic": "5.4.7"
   };
 });

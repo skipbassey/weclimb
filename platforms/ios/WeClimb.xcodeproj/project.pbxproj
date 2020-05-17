@@ -28,6 +28,7 @@
 		E31336392A6B42A2A40C56A9 /* CDVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = AC128CE0E85F47EDB3A22064 /* CDVFile.m */; };
 		E98A16D655BF4523970ABF10 /* CDVWKWebViewEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9277275B69544C1F84AB99AB /* CDVWKWebViewEngine.m */; };
 		EE3AF1A83FD9490AAD80BEBD /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F991CDCC00419FB2575187 /* CDVDevice.m */; };
+		83DE5CE1E8DC402A95F00A34 /* IonicCordovaCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3036958D347745B5B8319072 /* IonicCordovaCommon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,8 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = WeClimb/config.xml; sourceTree = "<group>"; };
+		3036958D347745B5B8319072 /* IonicCordovaCommon.m */ = {isa = PBXFileReference; name = "IonicCordovaCommon.m"; path = "cordova-plugin-ionic/IonicCordovaCommon.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		57BF673310424011B4E1790E /* IonicCordovaCommon.h */ = {isa = PBXFileReference; name = "IonicCordovaCommon.h"; path = "cordova-plugin-ionic/IonicCordovaCommon.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +237,8 @@
 				885B3DF4DACA4833BB138A75 /* CDVViewController+SplashScreen.h */,
 				C4D9F199D96A48EF9F741323 /* CDVStatusBar.m */,
 				5E0FFC0EE90B422E960CD59A /* CDVStatusBar.h */,
+				3036958D347745B5B8319072 /* IonicCordovaCommon.m */,
+				57BF673310424011B4E1790E /* IonicCordovaCommon.h */,
 			);
 			name = Plugins;
 			path = WeClimb/Plugins;
@@ -377,6 +382,7 @@
 				1BF3AF514DC14FF2B2B2A703 /* CDVSplashScreen.m in Sources */,
 				4AFF16280B414CD98C953C41 /* CDVViewController+SplashScreen.m in Sources */,
 				D4C593E7F9CA42D8AE293D1F /* CDVStatusBar.m in Sources */,
+				83DE5CE1E8DC402A95F00A34 /* IonicCordovaCommon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
