@@ -42,7 +42,7 @@ export class ForgotPasswordComponent implements OnInit {
   async forgotPasswordRequest() {
     this.loadingService.presentLoading();
     try {
-      const res = await Auth.forgotPassword("skipbassey@gmail.com");
+      const res = await Auth.forgotPassword(this.passwordForm.get("email"));
       if(res) {
         this.codeSent = true;
       }
@@ -72,22 +72,22 @@ export class ForgotPasswordComponent implements OnInit {
     this.loadingService.dismissLoading();
   }
 
-  forgotPassword() {
-    var body = {
-      email: this.passwordForm.get("email").value,
-      lastName: this.passwordForm.get("lastName").value,
-      password: this.passwordForm.get("password").value
-    };
+  // forgotPassword() {
+  //   var body = {
+  //     email: this.passwordForm.get("email").value,
+  //     lastName: this.passwordForm.get("lastName").value,
+  //     password: this.passwordForm.get("password").value
+  //   };
 
-    this.userService.forgotPassword(body)
-      .subscribe(res => {
-        this.toasterService.presentToast("Password has been reset.", "success");
-        this.modalController.dismiss();
-      },
-      err => {
-        this.toasterService.presentToast("Error resetting password.", "danger");
-      })
-  }
+  //   this.userService.forgotPassword(body)
+  //     .subscribe(res => {
+  //       this.toasterService.presentToast("Password has been reset.", "success");
+  //       this.modalController.dismiss();
+  //     },
+  //     err => {
+  //       this.toasterService.presentToast("Error resetting password.", "danger");
+  //     })
+  // }
 
   cancel() {
     this.modalController.dismiss();
