@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PlatformService } from 'src/services/platform.service';
 
 @Component({
   selector: 'app-relationship',
@@ -11,8 +12,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RelationshipComponent implements OnInit {
 
-  constructor() { }
+  mode = "";
 
-  ngOnInit() {}
+  constructor(
+    private platformService: PlatformService
+  ) { }
+
+  ngOnInit() {
+    this.mode = this.platformService.getPlatform();
+  }
 
 }

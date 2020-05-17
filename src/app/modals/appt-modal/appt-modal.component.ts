@@ -7,6 +7,7 @@ import { UserService } from 'src/services/user.service';
 import { User } from 'src/models/user';
 import { AppointmentService } from 'src/services/appointment.service';
 import { ToasterService } from 'src/services/toaster.service';
+import { PlatformService } from 'src/services/platform.service';
 
 
 @Component({
@@ -25,18 +26,22 @@ export class ApptModalComponent implements OnInit {
 
   user: User;
 
+  mode =  "";
+
   constructor(
     private modalController: ModalController,
     private actionSheetController: ActionSheetController,
     private toastController: ToastController,
     private userService: UserService,
     private apptService: AppointmentService,
-    private toasterService: ToasterService
+    private toasterService: ToasterService,
+    private platformService: PlatformService
   ) { }
 
   ngOnInit() {
     this.noAppointments(this.data)    
     this.user = this.userService.getUserInfo();
+    this.mode = this.platformService.getPlatform();
   }
 
   dismiss() {

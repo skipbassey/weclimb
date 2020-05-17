@@ -8,6 +8,7 @@ import { Auth } from 'aws-amplify';
 import { ModalController } from '@ionic/angular';
 import { ConfirmationModalComponent } from '../modals/confirmation-modal/confirmation-modal.component';
 import { ToasterService } from 'src/services/toaster.service';
+import { PlatformService } from 'src/services/platform.service';
 
 @Component({
   selector: 'app-register',
@@ -18,13 +19,16 @@ export class RegisterComponent implements OnInit {
 
   registerForm: any;
 
+  mode = "";
+
   constructor(
     private formBuilder: FormBuilder,
     private userService: UserService,
     public loadingController: LoadingController,
     private modalController: ModalController,
     private toasterService: ToasterService,
-    private router: Router
+    private router: Router,
+    private platformService: PlatformService
   ) { }
 
   ngOnInit() {
@@ -36,6 +40,8 @@ export class RegisterComponent implements OnInit {
       confirmPassword: '',
       phone: ''
     });
+
+    this.mode = this.platformService.getPlatform();
   }
 
   async signUp() {

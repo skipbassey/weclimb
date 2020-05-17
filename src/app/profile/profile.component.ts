@@ -7,6 +7,7 @@ import { LoadingController } from '@ionic/angular';
 import { AuthService } from 'src/services/auth.service';
 import { Router } from '@angular/router';
 import { ToasterService } from 'src/services/toaster.service';
+import { PlatformService } from 'src/services/platform.service';
 
 @Component({
   selector: 'app-profile',
@@ -25,7 +26,8 @@ export class ProfileComponent implements OnInit {
   appts: Appointment[];
 
   admin = false;
-  
+
+  mode = "";
 
   constructor(
     private userService: UserService,
@@ -33,13 +35,15 @@ export class ProfileComponent implements OnInit {
     private loadingController: LoadingController,
     private authService: AuthService,
     private toasterService: ToasterService,
-    private router: Router
+    private router: Router,
+    private platformService: PlatformService,
   ) { }
 
   ngOnInit() {
     this.presentLoading();
     this.user = this.userService.getUserInfo();
     this.isAdmin();
+    this.mode = this.platformService.getPlatform();
      
     if(this.admin) {
       this.apptService.getAppointmentsByCounselor(this.user.firstName + " " + this.user.lastName)

@@ -1,35 +1,46 @@
-<ion-content>
-	<div class="logo-container">
-		<img src="/assets/img/logo.png" alt="">
-	</div>
+<ion-content padding>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-12 col-md-6 col-lg-4 col-xl-3>
+				<div class="logo-container">
+					<img src="/assets/img/logo.png" alt="">
+				</div>
 
-	<form [formGroup]="loginForm" (ngSubmit)="signIn()">
-		<div class="credential-container">
-			<ion-item>
-				<ion-label position="floating">Username</ion-label>
-				<ion-input formControlName="email" placeholder="example@gmail.com" type="email"></ion-input>
-			  </ion-item>
-			  <ion-item>
-				<ion-label position="floating">Password</ion-label>
-				<ion-input formControlName="password" placeholder="password" type="password"></ion-input>
-			  </ion-item>
-		</div>
-		  <div class="button-container">
-			  <div class="remember-me-container">
-				<ion-item (click)="rememberMe()">
-					<ion-label>Remember Me</ion-label>
-					<ion-toggle mode="ios" slot="start" value [checked]="checked" (ionChange)="rememberMe($event)"></ion-toggle>
-				  </ion-item>	
-			  </div>
-			  <div class="action-btn-container">
-				<ion-button class="btn" type="submit" fill="solid" >Login</ion-button>
-				<ion-button class="btn" fill="solid" (click)="presentRegisterModal()">Register</ion-button>
-			  </div>
-					
-			<div class="reset-container">
-				<a class="reset" (click)="presentForgotUsernameModal()">Forgot Username?</a>
-				<a class="reset" (click)="presentForgotPasswordModal()">Forgot Password?</a>
-			</div>
-		  </div>
-	</form>
+				<form [formGroup]="loginForm" (ngSubmit)="signIn()">
+					<div class="credential-container">
+						<ion-item [mode]="mode">
+							<ion-label position="floating">Username</ion-label>
+							<ion-input [mode]="mode" formControlName="email" placeholder="example@gmail.com"
+								type="email"></ion-input>
+						</ion-item>
+						<ion-item>
+							<ion-label position="floating">Password</ion-label>
+							<ion-input [mode]="mode" formControlName="password" placeholder="password" type="password">
+							</ion-input>
+						</ion-item>
+					</div>
+					<div class="button-container">
+						<div class="remember-me-container">
+							<ion-item [mode]="mode" (click)="rememberMe()">
+								<ion-label>Remember Me</ion-label>
+								<ion-toggle [mode]="mode" slot="start" value [checked]="checked"
+									(ionChange)="rememberMe($event)"></ion-toggle>
+							</ion-item>
+						</div>
+						<div class="action-btn-container">
+							<ion-button [mode]="mode" class="btn" type="submit" fill="solid">Login</ion-button>
+							<ion-button [mode]="mode" class="btn" fill="solid" (click)="presentRegisterModal()">Register
+							</ion-button>
+						</div>
+
+						<div class="reset-container">
+							<a class="reset" (click)="presentForgotUsernameModal()">Forgot Username?</a>
+							<a class="reset" (click)="presentForgotPasswordModal()">Forgot Password?</a>
+						</div>
+					</div>
+				</form>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
 </ion-content>

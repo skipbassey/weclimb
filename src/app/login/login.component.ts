@@ -15,6 +15,7 @@ import { LoadingService } from 'src/services/loading.service';
 import { ToasterService } from 'src/services/toaster.service';
 import { Auth } from 'aws-amplify';
 import { RegisterComponent } from '../register/register.component';
+import { PlatformService } from 'src/services/platform.service';
 
 
 @Component({
@@ -28,6 +29,8 @@ export class LoginComponent implements OnInit {
 
   checked = false;
 
+  mode = ""
+
   constructor(
     public events: Events,
     public amplifyService: AmplifyService,
@@ -40,6 +43,7 @@ export class LoginComponent implements OnInit {
     private modalController: ModalController,
     private loadingService: LoadingService,
     private toasterService: ToasterService,
+    private platformService: PlatformService
   
   ) { }
 
@@ -51,6 +55,8 @@ export class LoginComponent implements OnInit {
       });
 
       this.getRememberMeCredentials();
+
+      this.mode = this.platformService.getPlatform();
     }
 
     navigateToHome() {

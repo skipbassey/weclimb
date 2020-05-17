@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Swiper from 'swiper';
 import { PictureService } from 'src/services/picture.service';
+import { PlatformService } from 'src/services/platform.service';
 // import * as fs from 'fs';
 
 @Component({
@@ -16,6 +17,8 @@ export class OutreachComponent implements OnInit {
 
   photos: string[] = [];
 
+  mode = "";
+
   slideOpts = {
 
     initialSlide: this.photos.length,
@@ -25,11 +28,13 @@ export class OutreachComponent implements OnInit {
   };
 
   constructor(
-    private pictureService: PictureService
+    private pictureService: PictureService,
+    private platoformService: PlatformService
     ) { }
 
   ngOnInit() {
-    this.getPhotos()
+    this.getPhotos();
+    this.mode = this.platoformService.getPlatform();
   }
 
   getPhotos(): void {

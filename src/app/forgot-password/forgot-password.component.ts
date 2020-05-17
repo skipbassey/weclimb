@@ -5,6 +5,7 @@ import { UserService } from 'src/services/user.service';
 import { Auth } from 'aws-amplify';
 import { ToasterService } from 'src/services/toaster.service';
 import { LoadingService } from 'src/services/loading.service';
+import { PlatformService } from 'src/services/platform.service';
 
 @Component({
   selector: 'app-forgot-password',
@@ -17,12 +18,15 @@ export class ForgotPasswordComponent implements OnInit {
 
   codeSent = false;
 
+  mode = "";
+
   constructor(
     private formBuilder: FormBuilder,
     private modalController: ModalController,
     private userService: UserService,
     private toasterService: ToasterService,
-    private loadingService: LoadingService
+    private loadingService: LoadingService,
+    private platformService: PlatformService
   ) { }
 
   ngOnInit() {
@@ -31,6 +35,8 @@ export class ForgotPasswordComponent implements OnInit {
       code: "",
       password: ""
     })
+
+    this.mode = this.platformService.getPlatform();
   }
 
   async forgotPasswordRequest() {

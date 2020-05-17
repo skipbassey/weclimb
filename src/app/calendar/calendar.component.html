@@ -1,19 +1,17 @@
 <ion-content fullscreen>
-  <ion-header>
-    <ion-toolbar color="primary">
+  <ion-header [mode]="mode">
+    <ion-toolbar [mode]="mode" color="primary">
       <ion-buttons slot="start">
         <ion-button>
-          <ion-back-button class="back-btn" defaultHref="profile"></ion-back-button>
+          <ion-back-button [mode]="mode" class="back-btn" defaultHref="profile"></ion-back-button>
         </ion-button>
       </ion-buttons>
       <ion-title>Add to Calendar</ion-title>
-
-
     </ion-toolbar>
   </ion-header>
  
   <div class="appt-container">
-    <ion-item (click)="removeAppointment(appt)" *ngFor="let appt of appts">
+    <ion-item [mode]="mode" (click)="removeAppointment(appt)" *ngFor="let appt of appts">
       <p>{{appt.name}} {{appt.date}}</p>
     </ion-item>
   </div>

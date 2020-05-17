@@ -6,6 +6,7 @@ import { AppointmentService } from 'src/services/appointment.service';
 import { ToasterService } from 'src/services/toaster.service';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
+import { PlatformService } from 'src/services/platform.service';
 
 
 @Component({
@@ -17,16 +18,19 @@ export class CalendarComponent implements OnInit, DoCheck {
 
   appts: Appointment[] = [];
 
+  mode = ""
+
   constructor(
     private modalController: ModalController,
     private apptService: AppointmentService,
     private toasterService: ToasterService,
     private alertController: AlertController,
+    private platformService: PlatformService,
     private router: Router
   ) { }
 
   ngOnInit() {
-
+    this.mode = this.platformService.getPlatform();
   }
 
   ngDoCheck() {
@@ -53,7 +57,7 @@ export class CalendarComponent implements OnInit, DoCheck {
               this.toasterService.presentToast("Error adding schedule", "danger")
             })
         break;
-      case "Master Level Clinician":
+      case "Masters Level Clinician":
         this.apptService.setMastersLevelSchedule(this.apptService.schedule)
           .subscribe(res => {
             this.toasterService.presentToast("Schedule added", "success");
@@ -63,6 +67,17 @@ export class CalendarComponent implements OnInit, DoCheck {
             err => {
               this.toasterService.presentToast("Error adding schedule", "danger")
             })
+      case "Adolescent":
+        this.apptService.setAdolescentSchedule(this.apptService.schedule)
+            .subscribe(res => {
+              this.toasterService.presentToast("Schedule added", "success");
+              this.apptService.clearSchedule();
+              this.router.navigateByUrl("profile");
+            },
+            err => {
+              this.toasterService.presentToast("Error adding schedule", "danger")
+            })
+            break;
     }
 
   }

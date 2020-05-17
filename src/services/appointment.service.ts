@@ -80,7 +80,30 @@ export class AppointmentService {
     }
 
     getAdolescentGroupSelfPay(): Observable<any> {
-        return null;
+        const url = "https://e1nqo2h2la.execute-api.us-east-1.amazonaws.com/default/getAdolescentSchedule";
+
+        const httpOptions = {
+          headers: new HttpHeaders({
+            'Content-Type':  'application/json',
+            "Authorization": this.authService.getToken()
+          })
+        };
+
+        return this.http.get(url, httpOptions);
+    }
+
+    setAdolescentSchedule(appointments: Appointment[]): Observable<any> {
+      const url = "https://wv80t6hee8.execute-api.us-east-1.amazonaws.com/default/setAdolescentSchedule";
+
+      const httpOptions = {
+        headers: new HttpHeaders({
+          'Content-Type':  'application/json',
+          "Authorization": this.authService.getToken()
+        })
+      };
+
+      return this.http.post(url, appointments, httpOptions);
+
     }
 
     setLicensedLevelFirstSession(appointments: Appointment[]): Observable<any> {

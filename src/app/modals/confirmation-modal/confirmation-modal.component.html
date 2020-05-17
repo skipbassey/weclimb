@@ -7,17 +7,17 @@
   </div>
 
   <form [formGroup]="confirmationForm">
-    <ion-item>
-      <ion-label position="floating">Email</ion-label>
-      <ion-input placeholder="example@gmail.com" formControlName="email"></ion-input>
+    <ion-item [mode]="mode">
+      <ion-label [mode]="mode" position="floating">Email</ion-label>
+      <ion-input [mode]="mode" placeholder="example@gmail.com" formControlName="email"></ion-input>
     </ion-item>
-    <ion-item>
-      <ion-label position="floating">Code</ion-label>
-      <ion-input formControlName="code"></ion-input>
+    <ion-item [mode]="mode">
+      <ion-label [mode]="mode" position="floating">Code</ion-label>
+      <ion-input [mode]="mode" formControlName="code"></ion-input>
     </ion-item>
     <div class="button-container">
-      <ion-button class="btn" type="submit" expand="block" fill="solid" (click)="confirmSignUp()">Confirm</ion-button>
-      <ion-button class="btn" type="submit" expand="block" fill="solid" (click)="cancel()">Cancel</ion-button>
+      <ion-button [mode]="mode" class="btn" type="submit" expand="block" fill="solid" (click)="confirmSignUp()">Confirm</ion-button>
+      <ion-button [mode]="mode" class="btn" type="submit" expand="block" fill="solid" (click)="cancel()">Cancel</ion-button>
     </div>
   </form>
 </ion-content>

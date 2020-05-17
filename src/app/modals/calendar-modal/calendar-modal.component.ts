@@ -6,6 +6,7 @@ import { AppointmentService } from 'src/services/appointment.service';
 import * as moment from 'moment';
 import { ModalController } from '@ionic/angular';
 import { ToasterService } from 'src/services/toaster.service';
+import { PlatformService } from 'src/services/platform.service';
 
 @Component({
   selector: 'app-calendar-modal',
@@ -18,12 +19,15 @@ export class CalendarModalComponent implements OnInit {
   location = "Bldg. A. Suites 122-124 2175 Highpoint Road, Snellville, GA, USA";
   date = "";
 
+  mode = "";
+
   constructor(
     private formBuilder: FormBuilder,
     private apptService: AppointmentService,
     private userService: UserService,
     private modalController: ModalController,   
     private toasterService: ToasterService, 
+    private platformService: PlatformService
   ) { }
 
   ngOnInit() {
@@ -35,6 +39,8 @@ export class CalendarModalComponent implements OnInit {
       location: "",
       date: "",
     })
+
+    this.mode = this.platformService.getPlatform();
   }
 
   addToCalendar() {

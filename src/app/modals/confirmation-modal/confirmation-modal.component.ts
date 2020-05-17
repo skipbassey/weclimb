@@ -4,6 +4,7 @@ import { FormBuilder } from '@angular/forms';
 import { ModalController } from '@ionic/angular';
 import { ToasterService } from 'src/services/toaster.service';
 import { Router } from '@angular/router';
+import { PlatformService } from 'src/services/platform.service';
 
 @Component({
   selector: 'app-confirmation-modal',
@@ -14,11 +15,14 @@ export class ConfirmationModalComponent implements OnInit {
 
   confirmationForm: any
 
+  mode = "";
+
   constructor(
     private formBuilder: FormBuilder,
     private modalController: ModalController,
     private toasterService: ToasterService,
-    private router: Router
+    private router: Router,
+    private platformService: PlatformService
   ) { }
 
   ngOnInit() {
@@ -26,6 +30,8 @@ export class ConfirmationModalComponent implements OnInit {
       email: "",
       code: ""
     })
+
+    this.mode = this.platformService.getPlatform();
   }
 
   async confirmSignUp() {

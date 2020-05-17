@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormService } from 'src/services/form.service';
+import { PlatformService } from 'src/services/platform.service';
 
 @Component({
   selector: 'app-forms',
@@ -13,11 +14,16 @@ export class FormsComponent implements OnInit {
 
   adultIntakeUrl = 'https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3408979cc10a44ce9a67d840a7a89a85.pdf'
 
+  mode = "";
+
   constructor(
-    private formService: FormService
+    private formService: FormService,
+    private platformService: PlatformService
   ) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.mode = this.platformService.getPlatform();
+  }
 
   openAdultIntake() {
     window.open(this.formService.getAdultIntakeForm(), "_blank")

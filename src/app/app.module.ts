@@ -46,6 +46,7 @@ import { LoadingService } from 'src/services/loading.service';
 import { CalendarModalComponent } from './modals/calendar-modal/calendar-modal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material.module';
+import { PlatformService } from 'src/services/platform.service';
 
 @NgModule({
   declarations: [
@@ -106,6 +107,7 @@ import { MaterialModule } from './modules/material.module';
     PictureService,
     ToasterService,
     LoadingService,
+    PlatformService,
     // File,
     // FileTransfer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }

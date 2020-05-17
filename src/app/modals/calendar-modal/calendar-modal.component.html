@@ -1,43 +1,50 @@
-<ion-content class="content" fullscreen class="ion-padding">
+<ion-header [mode]="mode" translucent>
+  <ion-toolbar [mode]="mode" color="primary">
+    <ion-title>Appointment</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="content" class="ion-padding" fullscreen>
+  
   <form [formGroup]="calendarForm" (ngSubmit)="addToCalendar()">
-    <ion-list>
-      <ion-item>
-        <ion-label>Title</ion-label>
-        <ion-select formControlName="name" placeholder="Select One">
+    <ion-list [mode]="mode">
+      <ion-item [mode]="mode">
+        <ion-label [mode]="mode">Title</ion-label>
+        <ion-select [mode]="mode" formControlName="name" placeholder="Select One">
           <ion-select-option value="Licensed Level Clinician">Licensed Level Clinician</ion-select-option>
           <ion-select-option value="Masters Level Clinician">Masters Level Clinician</ion-select-option>
+          <ion-select-option value="Adolescent">Adolescent</ion-select-option>
         </ion-select>
       </ion-item>
-      <ion-item>
-        <ion-label>Type</ion-label>
-        <ion-select formControlName="type" placeholder="Select One">
+      <ion-item [mode]="mode">
+        <ion-label [mode]="mode">Type</ion-label>
+        <ion-select [mode]="mode" formControlName="type" placeholder="Select One">
           <ion-select-option value="First Session">First Session</ion-select-option>
           <ion-select-option value="Insurance">Insurance</ion-select-option>
           <ion-select-option value="Self Pay">Self Pay</ion-select-option>
         </ion-select>
       </ion-item>
-      <ion-item>
-        <ion-label position="floating">Duration</ion-label>
-        <ion-input formControlName="duration" placeholder="1 hr"></ion-input>
+      <ion-item [mode]="mode">
+        <ion-label [mode]="mode" position="floating">Duration</ion-label>
+        <ion-input [mode]="mode" formControlName="duration" placeholder="1 hr"></ion-input>
       </ion-item>
-      <ion-item>
-        <ion-label position="floating">Price</ion-label>
-        <ion-input formControlName="price" placeholder="$100"></ion-input>
+      <ion-item [mode]="mode">
+        <ion-label [mode]="mode" position="floating">Price</ion-label>
+        <ion-input [mode]="mode" formControlName="price" placeholder="$100"></ion-input>
       </ion-item>
-      <ion-item>
-        <ion-label>Location</ion-label>
-        <ion-select formControlName="location" placeholder="Select One">
+      <ion-item [mode]="mode">
+        <ion-label [mode]="mode">Location</ion-label>
+        <ion-select [mode]="mode" formControlName="location" placeholder="Select One">
           <ion-select-option [value]="location">Bldg. A. Suites 122-124 2175 Highpoint Road, Snellville, GA, USA</ion-select-option>
         </ion-select>
       </ion-item>
-      <ion-item>
-        <ion-label>Start Date</ion-label>
-        <ion-datetime formControlName="date" mode="ios" displayFormat="MMM DD, YYYY h:mm A" placeholder="Select Date"></ion-datetime>
+      <ion-item [mode]="mode">
+        <ion-label [mode]="mode">Start Date</ion-label>
+        <ion-datetime formControlName="date" [mode]="mode" displayFormat="MMM DD, YYYY h:mm A" placeholder="Select Date"></ion-datetime>
       </ion-item>
      
       <div class="action-btn-container">
-        <ion-button type="submit" class="btn" fill="solid">Add</ion-button>
-        <ion-button type="button" class="btn" fill="solid" (click)="cancel()">Cancel</ion-button>
+        <ion-button [mode]="mode" type="submit" class="btn" fill="solid">Add</ion-button>
+        <ion-button [mode]="mode" type="button" class="btn" fill="solid" (click)="cancel()">Cancel</ion-button>
       </div>
       
     </ion-list>
