@@ -1,7 +1,7 @@
-<ion-header translucent>
-  <ion-toolbar color="primary">
+<ion-header [mode]="mode" translucent>
+  <ion-toolbar [mode]="mode" color="primary">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="home"></ion-back-button>
+      <ion-back-button [mode]="mode" defaultHref="home"></ion-back-button>
     </ion-buttons>
     <ion-title class="title-text">Forms</ion-title>
   </ion-toolbar>
@@ -57,17 +57,17 @@
     </p>
     <ul>
       <li>
-        <a href="https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3408979cc10a44ce9a67d840a7a89a85.pdf" target="_blank">
+        <a (click)="openAdultIntake()">
         Adult Intake Form
       </a>
     </li>
-      <li><a href="">New Client Form</a></li>
-      <li><a href="">Child/Adolescent Intake Form</a></li>
-      <li><a href="">Consent & Confidentiality Agreement </a></li>
-      <li><a href="">Couples Intake Form</a></li>
-      <li><a href="">Authorization to Release Information Form</a></li>
-      <li><a href="">Credit Card Authorization Form </a></li>
-      <li><a href="">Communication Agreement</a></li>
+      <li><a (click)="openNewClient()">New Client Form</a></li>
+      <li><a (click)="openChild()">Child/Adolescent Intake Form</a></li>
+      <li><a (click)="openConsentAgreement()">Consent & Confidentiality Agreement </a></li>
+      <li><a (click)="openCoupleIntake()">Couples Intake Form</a></li>
+      <li><a (click)="openReleaseInfo()">Authorization to Release Information Form</a></li>
+      <li><a (click)="openCreditCard()">Credit Card Authorization Form </a></li>
+      <li><a (click)="openCommunicationAgreement()">Communication Agreement</a></li>
     </ul>
   </div>
 
@@ -79,15 +79,15 @@
        your progress in therapy.
     </p>
     <ul>
-      <li><a href="">Late Cancellation/Missed Appointment Policy</a></li>
+      <li><a (click)="openLateCancellation()">Late Cancellation/Missed Appointment Policy</a></li>
     </ul>
   </div>
 
   <div>
     <h2>Download for your Reference</h2>
     <ul>
-      <li><a href="">HIPAA/Privacy Notice</a></li>
-      <li><a href="">Social Media Policy </a></li>
+      <li><a (click)="openHippa()">HIPAA/Privacy Notice</a></li>
+      <li><a (click)="openSocialMedia()">Social Media Policy </a></li>
     </ul>
   </div>
 
@@ -98,8 +98,8 @@
       to the client's school for their records.
     </p>
     <ul>
-      <li><a href="">Authorization to Exchange Confidential Information</a></li>
-      <li><a href="">School Collaboration Consent Form</a></li>
+      <li><a (click)="openExchangeConfidential()">Authorization to Exchange Confidential Information</a></li>
+      <li><a (click)="openSchoolColab()">School Collaboration Consent Form</a></li>
     </ul>
   </div>
 </ion-content>

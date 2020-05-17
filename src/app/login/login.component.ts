@@ -6,7 +6,17 @@ import { FormBuilder } from '@angular/forms';
 import { UserService } from 'src/services/user.service';
 import { LoginService } from 'src/services/login.service';
 import { AuthService } from '../../services/auth.service';
-import { mergeMap, tap, switchMap } from 'rxjs/operators';
+import { tap, switchMap } from 'rxjs/operators';
+import { LoadingController } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
+import { ForgotPasswordComponent } from '../forgot-password/forgot-password.component';
+import { ForgotUsernameComponent } from '../forgot-username/forgot-username.component';
+import { LoadingService } from 'src/services/loading.service';
+import { ToasterService } from 'src/services/toaster.service';
+import { Auth } from 'aws-amplify';
+import { RegisterComponent } from '../register/register.component';
+import { PlatformService } from 'src/services/platform.service';
+
 
 @Component({
   selector: 'app-login',
@@ -15,60 +25,11 @@ import { mergeMap, tap, switchMap } from 'rxjs/operators';
 })
 export class LoginComponent implements OnInit {
 
-
-  signUpConfig = {
-    header: 'Sign Up',
-    hideAllDefaults: true,
-    defaultCountryCode: '1',
-    signUpFields: [
-      {
-        label: 'Username',
-        key: 'username',
-        required: true,
-        displayOrder: 1,
-        type: 'string',
-      },
-      {
-        label: 'Email',
-        key: 'email',
-        required: true,
-        displayOrder: 2,
-        type: 'string',
-      },
-      {
-        label: 'Password',
-        key: 'password',
-        required: true,
-        displayOrder: 3,
-        type: 'password'
-      },
-      {
-        label: 'Phone Number',
-        key: 'phone_number',
-        required: true,
-        displayOrder: 4,
-        type: 'string'
-      },
-      {
-        label: 'First Name',
-        key: 'name',
-        required: true,
-        displayOrder: 5,
-        type: 'string',
-      },
-      {
-        label: 'Last Name',
-        key: 'family_name',
-        required: true,
-        displayOrder: 6,
-        type: 'string',
-      }
-    ]
-  }
-
-  authState: any;
-
   loginForm: any;
+
+  checked = false;
+
+  mode = ""
 
   constructor(
     public events: Events,
@@ -77,46 +38,144 @@ export class LoginComponent implements OnInit {
     public router: Router,
     private userService: UserService,
     private loginService: LoginService,
-    private authService: AuthService
-  ) {
-    this.authState = { signedIn: false };
-
-    // this.amplifyService.authStateChange$
-    //   .subscribe(authState => {
-    //     this.authState.signedIn = authState.state === 'signedIn';
-    //     this.events.publish('data:AuthState', this.authState);
-    //     this.redirectSignIn();
-    //   });
-    }
+    private authService: AuthService,
+    private loadingController: LoadingController,
+    private modalController: ModalController,
+    private loadingService: LoadingService,
+    private toasterService: ToasterService,
+    private platformService: PlatformService
+  
+  ) { }
 
     ngOnInit() { 
       this.loginForm = this.formBuilder.group({
         email: '',
-        password: ''
+        password: '',
+        toggle: ''
       });
+
+      this.getRememberMeCredentials();
+
+      this.mode = this.platformService.getPlatform();
     }
 
-    navigate() {
+    navigateToHome() {
       this.router.navigateByUrl('home');
     }
 
+    async signIn() {
+      this.loadingService.presentLoading();
+
+      try {
+        const res = await Auth.signIn(
+          this.loginForm.get("email").value,
+          this.loginForm.get("password").value
+        )
+        console.log(Auth.currentUserInfo());
+        if(res) {
+          console.log(res);
+          this.authService.setAuthorization(
+            res.signInUserSession.idToken.jwtToken,
+            res.signInUserSession.refreshToken.token
+          )
+          this.userService.setUserInfo(res.signInUserSession.idToken.payload);
+          this.navigateToHome();
+        }
+      }
+      catch(err) {
+        console.log(err);
+        this.toasterService.presentToast(err.message, "danger")
+      }
+      
+    }
+
     login() {
+      this.loadingService.presentLoading();
       var email = this.loginForm.get('email').value;
       var password = this.loginForm.get('password').value;
       
       this.loginService.login(email, password)
         .pipe(
           tap(data => {
-            this.authService.setAuthorization(data.token);
           }),
           switchMap( () => {
             return this.userService.getUser(email)
           }),
           tap(data => {
             this.userService.setUserInfo(data);
-            this.navigate()
+            this.navigateToHome();
           })
         )
-        .subscribe()
+        .subscribe(res => {
+          this.loadingController.dismiss();
+        },
+        err => {
+          this.toasterService.presentToast(err.message, "danger")
+        })
     }
+
+  async presentRegisterModal() {
+    const modal = await this.modalController.create({
+      component: RegisterComponent
+    });
+    return await modal.present();
+  }
+
+  async presentLoading() {
+    const loading = await this.loadingController.create({
+      message: 'Please wait...',
+      mode: "ios",
+      duration: 2000
+    });
+    await loading.present();
+
+    const { role, data } = await loading.onDidDismiss();
+    console.log('Loading dismissed!');
+  }
+
+  async presentForgotPasswordModal() {
+    const modal = await this.modalController.create({
+      component: ForgotPasswordComponent
+    });
+    return await modal.present();
+  }
+
+  async presentForgotUsernameModal() {
+    const modal = await this.modalController.create({
+      component: ForgotUsernameComponent
+    });
+    return await modal.present();
+  }
+
+  rememberMe(event: any) {
+    switch(event.detail.checked) {
+      case true:
+        window.localStorage.setItem ("email", this.loginForm.get("email").value);
+        window.localStorage.setItem ("password", this.loginForm.get("password").value);
+        window.localStorage.setItem("checked", "true");
+        break;
+      case false:
+        window.localStorage.setItem ("email", "");
+        window.localStorage.setItem ("password", "");
+        window.localStorage.setItem("checked", "false");
+
+        this.loginForm.controls["email"].setValue(window.localStorage.getItem("email"));
+        this.loginForm.controls["password"].setValue(window.localStorage.getItem("password"));
+        break;
+    }
+  }
+
+  private getRememberMeCredentials() {
+    this.loginForm.controls["email"].setValue(window.localStorage.getItem("email"));
+    this.loginForm.controls["password"].setValue(window.localStorage.getItem("password"));
+
+    switch(window.localStorage.getItem("checked")) {
+      case "true":
+        this.checked = true;
+        break;
+      case "false":
+        this.checked = false;
+        break;
+    }  
+  }
 }

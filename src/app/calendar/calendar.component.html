@@ -1,0 +1,31 @@
+<ion-content fullscreen>
+  <ion-header [mode]="mode">
+    <ion-toolbar [mode]="mode" color="primary">
+      <ion-buttons slot="start">
+        <ion-button>
+          <ion-back-button [mode]="mode" class="back-btn" defaultHref="profile"></ion-back-button>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Add to Calendar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+ 
+  <div class="appt-container">
+    <ion-item [mode]="mode" (click)="removeAppointment(appt)" *ngFor="let appt of appts">
+      <p>{{appt.name}} {{appt.date}}</p>
+    </ion-item>
+  </div>
+
+  <div class="btn-container">
+    <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+      <ion-fab-button class="fab-btn" (click)="openCalendarModal()">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button class="fab-btn" (click)="submit()">
+        <ion-icon name="checkmark"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+</ion-content>

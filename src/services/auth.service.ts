@@ -9,21 +9,26 @@ export class AuthService {
 
     authenticated = false;
 
-    setToken(token: any) {
-        sessionStorage.setItem("token", token)
+    setAccessToken(token: any) {
+        sessionStorage.setItem("accessToken", token)
+    }
+
+    setRefreshToken(token: any) {
+        sessionStorage.setItem("refreshToken", token)
     }
 
     getToken(): string {
-        return sessionStorage.getItem('token')
+        return sessionStorage.getItem("accessToken")
     }
 
-    setAuthorization(token: any) {
-        this.setToken(token);
+    setAuthorization(accessToken: any, refreshToken: any) {
+        this.setAccessToken(accessToken);
+        this.setRefreshToken(refreshToken)
         this.authenticated = true
     }
 
     logOut() {
-        sessionStorage.removeItem("token");
+        sessionStorage.removeItem("accessToken");
         this.authenticated = false;
     }
 }

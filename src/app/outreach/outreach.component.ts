@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Swiper from 'swiper';
+import { PictureService } from 'src/services/picture.service';
+import { PlatformService } from 'src/services/platform.service';
 // import * as fs from 'fs';
 
 @Component({
@@ -13,35 +15,30 @@ import Swiper from 'swiper';
 })
 export class OutreachComponent implements OnInit {
 
-  testFolder = '/assets'
+  photos: string[] = [];
 
-   mySwiper = new Swiper('.swiper-container', {
-      speed: 400,
-      spaceBetween: 100,
-      grabCursor: true,
-      iOSEdgeSwipeDetection: true,
-      preloadImages: true
-    });
+  mode = "";
 
   slideOpts = {
+
+    initialSlide: this.photos.length,
+    init: true,
     pager: true,
+    mode: "ios"
   };
 
-  constructor() { }
+  constructor(
+    private pictureService: PictureService,
+    private platoformService: PlatformService
+    ) { }
 
   ngOnInit() {
-    this.getPhotos()
+    this.getPhotos();
+    this.mode = this.platoformService.getPlatform();
   }
 
   getPhotos(): void {
-    // fs.readdir(this.testFolder, (err, files) => {
-    //   files.forEach(file => {
-    //     console.log(file);
-    //   });
-    // });
+    this.photos = this.pictureService.getPhotos();
   }
 
-  next() {
-    
-  }
 }

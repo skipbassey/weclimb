@@ -1,7 +1,7 @@
-<ion-header>
-  <ion-toolbar color="secondary">
+<ion-header [mode]="mode">
+  <ion-toolbar [mode]="mode" color="primary">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="menu"></ion-back-button>
+      <ion-back-button [mode]="mode" defaultHref="menu"></ion-back-button>
     </ion-buttons>
     <ion-title class="title-text">Relationship Counseling</ion-title>
   </ion-toolbar>
@@ -14,7 +14,7 @@
     sessions, you’ll learn about acceptance and how to exert your power of choice over whatever
     life may throw at you.
   </p>
-  <ion-list>
+  <ion-list [mode]="mode">
     <ul>
       <li>Blending Family Adjustments</li>
       <li>Behavioral Issues</li>

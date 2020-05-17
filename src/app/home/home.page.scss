@@ -6,13 +6,16 @@
 }
 
 .card {
-  height: 75%;
+  height: 90%;
 }
 
 .primary {
   background-color: color(dark)
 }
 
+.services-container {
+  padding: 10px;
+  text-align: center;}
 
 
 .text {
@@ -23,6 +26,11 @@
 .title{
   text-align: center;
   font-weight: bold;
+}
+
+.services-container {
+  margin-top: 15px;
+  margin-bottom: 0px;
 }
 
 // ion-card-content {

@@ -5,18 +5,34 @@ img {
 }
 
 .logo-container {
+    margin: 30px;
     padding: 15px;
     text-align: center;
 }
 
-.amplify-form-button {
-    background-color: color(secondary);
-}
-
 .button-container {
-    margin: 20px;
+    margin: 25px;
+    text-align: center;
 }
 
 a {
     margin: 10px;
+}
+
+.credential-container {
+    margin: 20px;
+}
+
+.action-btn-container {
+    display: flex;
+    text-align: center;
+}
+
+.reset {
+    display: block;
+}
+
+.reset-container {
+    margin: 15px;
+    display: inline-block;
 }

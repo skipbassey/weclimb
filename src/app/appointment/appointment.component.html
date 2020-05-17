@@ -1,7 +1,7 @@
-<ion-header translucent>
-  <ion-toolbar color="primary">
+<ion-header [mode]="mode" translucent>
+  <ion-toolbar [mode]="mode" color="primary">
     <ion-buttons slot="start">
-      <ion-back-button class="back-btn" defaultHref="home"></ion-back-button>
+      <ion-back-button [mode]="mode" class="back-btn" defaultHref="home"></ion-back-button>
     </ion-buttons>
     <ion-title class="title-text">Appointments</ion-title>
   </ion-toolbar>
@@ -14,34 +14,28 @@
     your appointment.
   </p>
 
-  <ion-list>
-    <ion-item button (click)="selectAppointment('ll-intake')">
-      <img src="assets/photo1.jpeg" alt="">
+  <ion-list [mode]="mode">
+    <ion-item [mode]="mode" button (click)="selectAppointment('ll-intake')">
       <p><b>Licensed Level Clinician: </b>1hr</p>
       <p><b>Intake Session: </b>$125</p>
     </ion-item>
-    <ion-item button (click)="selectAppointment('ll-insurance')">
-      <img src="assets/photo1.jpeg" alt="">
+    <ion-item [mode]="mode" button (click)="selectAppointment('ll-insurance')">
       <p><b>Licensed Level Clinician: </b>45min</p>
       <p><b>Insurance: </b>$110</p>
     </ion-item>
-    <ion-item button (click)="selectAppointment('ll-selfpay')">
-      <img src="assets/photo1.jpeg" alt="">
+    <ion-item [mode]="mode" button (click)="selectAppointment('ll-selfpay')">
       <p><b>Licensed Level Clinician: </b>45min</p>
       <p><b>Self Pay: </b>$80</p>
     </ion-item>
-    <ion-item button (click)="selectAppointment('ml-intake')">
-      <img src="assets/photo2.jpeg" alt="">
+    <ion-item [mode]="mode" button (click)="selectAppointment('ml-intake')">
       <p><b>Masters Level Clinician: </b>1hr</p>
       <p><b>Intake Session: </b>$100</p>
     </ion-item>
-    <ion-item button (click)="selectAppointment('ml-selfpay')">
-      <img src="assets/photo2.jpeg" alt="">
+    <ion-item [mode]="mode" button (click)="selectAppointment('ml-selfpay')">
       <p><b>Masters Level Clinician: </b>45min</p>
       <p><b>Self Pay: </b>$65</p>
     </ion-item>
-    <ion-item button (click)="selectAppointment('youth')">
-      <img src="assets/photo1.jpeg" alt="">
+    <ion-item [mode]="mode" button (click)="selectAppointment('youth')">
       <p><b>Adolescent Group Counseling: </b>1hr</p>
       <p><b>Self Pay: </b>$$35</p>
       <p>Apollo Sports Counseling Inc.</p>

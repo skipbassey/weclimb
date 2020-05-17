@@ -3,7 +3,8 @@ import { ModalController } from '@ionic/angular';
 import { AppointmentService } from 'src/services/appointment.service';
 import { Appointment } from 'src/models/Appointment';
 import { HttpErrorResponse } from '@angular/common/http';
-import { ApptModalComponent } from '../appt-modal/appt-modal.component';
+import { ApptModalComponent } from '../modals/appt-modal/appt-modal.component';
+import { PlatformService } from 'src/services/platform.service';
 
 @Component({
   selector: 'app-appointment',
@@ -19,11 +20,17 @@ export class AppointmentComponent implements OnInit {
 
   appointments: Appointment[] = [];
 
+  mode = "";
+
   constructor(
     private modalController: ModalController,
-    private appointmentService: AppointmentService) { }
+    private appointmentService: AppointmentService,
+    private platformService: PlatformService
+    ) { }
 
-  ngOnInit() { }
+  ngOnInit() { 
+    this.mode = this.platformService.getPlatform();
+  }
 
   async presentModal(data: any) {
     this.modal = await this.modalController.create({
@@ -54,7 +61,7 @@ export class AppointmentComponent implements OnInit {
       case 'll-insurance':
         this.appointmentService.getLicensedLevelInsurance()
           .subscribe(res => {
-            this.presentModal(res);
+            this.presentModal(this.parseAppointments(res));
           },
             err => {
               this.handleError(err, 'Error retrieving schedule')
@@ -63,7 +70,7 @@ export class AppointmentComponent implements OnInit {
       case 'll-selfpay':
         this.appointmentService.getLicensedLevelSelfPay()
           .subscribe(res => {
-            this.presentModal(res);
+            this.presentModal(this.parseAppointments(res));
           },
             err => {
               this.handleError(err, 'Error retrieving schedule');
@@ -72,7 +79,7 @@ export class AppointmentComponent implements OnInit {
       case 'ml-intake':
         this.appointmentService.getMastersLevelIntake()
           .subscribe(res => {
-            this.presentModal(res);
+            this.presentModal(this.parseAppointments(res));
           },
             err => {
               this.handleError(err, 'Error retrieving schedule');
@@ -81,7 +88,7 @@ export class AppointmentComponent implements OnInit {
       case 'ml-selfpay':
         this.appointmentService.getMastersLevelSelfPay()
           .subscribe(res => {
-            this.presentModal(res);
+            this.presentModal(this.parseAppointments(res));
           },
             err => {
               this.handleError(err, 'Error retrieving schedule')
@@ -90,7 +97,7 @@ export class AppointmentComponent implements OnInit {
       case 'youth':
         this.appointmentService.getAdolescentGroupSelfPay()
           .subscribe(res => {
-            this.presentModal(res);
+            this.presentModal(this.parseAppointments(res));
           },
             err => {
               this.handleError(err, 'Error retrieving schedule')
@@ -114,7 +121,7 @@ export class AppointmentComponent implements OnInit {
         date: x.Date.S,
         duration: x.Duration.S,
         price: x.Price.S,
-        location: x.Location.S,
+        address: x.Location.S,
         counselor: x.Counselor.S,
         type: x.Type.S
       };
