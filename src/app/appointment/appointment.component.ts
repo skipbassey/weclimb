@@ -46,11 +46,11 @@ export class AppointmentComponent implements OnInit {
     return await this.modal.present();
   }
 
-  selectAppointment(appointment: string): void {
+  selectAppointment(level: string, type: string): void {
     //gets schedule and opend modal
-    switch (appointment) {
-      case 'll-intake':
-        this.appointmentService.getLicensedLevelFirstSession()
+    switch (level) {
+      case 'license':
+        this.appointmentService.getLicensedLevelSchedule(type)
           .subscribe(res => {
             this.presentModal(this.parseAppointments(res));
           },
@@ -58,8 +58,8 @@ export class AppointmentComponent implements OnInit {
               this.handleError(err, 'Error retrieving schedule');
             })
         break;
-      case 'll-insurance':
-        this.appointmentService.getLicensedLevelInsurance()
+      case 'master':
+        this.appointmentService.getMastersLevelSchedule(type)
           .subscribe(res => {
             this.presentModal(this.parseAppointments(res));
           },
@@ -67,33 +67,7 @@ export class AppointmentComponent implements OnInit {
               this.handleError(err, 'Error retrieving schedule')
             })
         break;
-      case 'll-selfpay':
-        this.appointmentService.getLicensedLevelSelfPay()
-          .subscribe(res => {
-            this.presentModal(this.parseAppointments(res));
-          },
-            err => {
-              this.handleError(err, 'Error retrieving schedule');
-            })
-        break;
-      case 'ml-intake':
-        this.appointmentService.getMastersLevelIntake()
-          .subscribe(res => {
-            this.presentModal(this.parseAppointments(res));
-          },
-            err => {
-              this.handleError(err, 'Error retrieving schedule');
-            })
-        break;
-      case 'ml-selfpay':
-        this.appointmentService.getMastersLevelSelfPay()
-          .subscribe(res => {
-            this.presentModal(this.parseAppointments(res));
-          },
-            err => {
-              this.handleError(err, 'Error retrieving schedule')
-            })
-        break;
+      
       case 'youth':
         this.appointmentService.getAdolescentGroupSelfPay()
           .subscribe(res => {
