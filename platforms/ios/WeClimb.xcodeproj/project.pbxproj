@@ -28,6 +28,12 @@
 		E31336392A6B42A2A40C56A9 /* CDVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = AC128CE0E85F47EDB3A22064 /* CDVFile.m */; };
 		E98A16D655BF4523970ABF10 /* CDVWKWebViewEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9277275B69544C1F84AB99AB /* CDVWKWebViewEngine.m */; };
 		EE3AF1A83FD9490AAD80BEBD /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F991CDCC00419FB2575187 /* CDVDevice.m */; };
+		55DD9755C73C456699A7A6C9 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E082E8D9D080409997AC4E81 /* CDVInAppBrowser.m */; };
+		2B8FEE0F049C44ED88AE48DE /* CDVInAppBrowserOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 722C10CD512346078EE58667 /* CDVInAppBrowserOptions.m */; };
+		9DCEF74637F24266988AA16E /* CDVInAppBrowserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B9A7F5A6484443B64B6D5F /* CDVInAppBrowserNavigationController.m */; };
+		D996351CC30348CA852B9827 /* CDVUIInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AEEC5F96244C8288699095 /* CDVUIInAppBrowser.m */; };
+		7D020454D1F7491E9518F260 /* CDVWKInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = F85208466C8D4DE2898917BF /* CDVWKInAppBrowser.m */; };
+		23EF013ADE6D42DC88D16671 /* CDVWKInAppBrowserUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E97B2416A14AF4ACE0BAD5 /* CDVWKInAppBrowserUIDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +108,18 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = WeClimb/config.xml; sourceTree = "<group>"; };
+		E082E8D9D080409997AC4E81 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		722C10CD512346078EE58667 /* CDVInAppBrowserOptions.m */ = {isa = PBXFileReference; name = "CDVInAppBrowserOptions.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		75B9A7F5A6484443B64B6D5F /* CDVInAppBrowserNavigationController.m */ = {isa = PBXFileReference; name = "CDVInAppBrowserNavigationController.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		00AEEC5F96244C8288699095 /* CDVUIInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVUIInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVUIInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		F85208466C8D4DE2898917BF /* CDVWKInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVWKInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		27E97B2416A14AF4ACE0BAD5 /* CDVWKInAppBrowserUIDelegate.m */ = {isa = PBXFileReference; name = "CDVWKInAppBrowserUIDelegate.m"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		F823F336E09E429AACEA8991 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		55236F7AB4084787891E6DAF /* CDVInAppBrowserOptions.h */ = {isa = PBXFileReference; name = "CDVInAppBrowserOptions.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B770C058EFFA415BBFC52140 /* CDVInAppBrowserNavigationController.h */ = {isa = PBXFileReference; name = "CDVInAppBrowserNavigationController.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		ABB73A89FFCC40CF82FAD664 /* CDVUIInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVUIInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVUIInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CBF169C283684B3CBE3C58D5 /* CDVWKInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVWKInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		470BA2CE6E36449ABF9103AB /* CDVWKInAppBrowserUIDelegate.h */ = {isa = PBXFileReference; name = "CDVWKInAppBrowserUIDelegate.h"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +252,18 @@
 				885B3DF4DACA4833BB138A75 /* CDVViewController+SplashScreen.h */,
 				C4D9F199D96A48EF9F741323 /* CDVStatusBar.m */,
 				5E0FFC0EE90B422E960CD59A /* CDVStatusBar.h */,
+				E082E8D9D080409997AC4E81 /* CDVInAppBrowser.m */,
+				722C10CD512346078EE58667 /* CDVInAppBrowserOptions.m */,
+				75B9A7F5A6484443B64B6D5F /* CDVInAppBrowserNavigationController.m */,
+				00AEEC5F96244C8288699095 /* CDVUIInAppBrowser.m */,
+				F85208466C8D4DE2898917BF /* CDVWKInAppBrowser.m */,
+				27E97B2416A14AF4ACE0BAD5 /* CDVWKInAppBrowserUIDelegate.m */,
+				F823F336E09E429AACEA8991 /* CDVInAppBrowser.h */,
+				55236F7AB4084787891E6DAF /* CDVInAppBrowserOptions.h */,
+				B770C058EFFA415BBFC52140 /* CDVInAppBrowserNavigationController.h */,
+				ABB73A89FFCC40CF82FAD664 /* CDVUIInAppBrowser.h */,
+				CBF169C283684B3CBE3C58D5 /* CDVWKInAppBrowser.h */,
+				470BA2CE6E36449ABF9103AB /* CDVWKInAppBrowserUIDelegate.h */,
 			);
 			name = Plugins;
 			path = WeClimb/Plugins;
@@ -377,6 +407,12 @@
 				1BF3AF514DC14FF2B2B2A703 /* CDVSplashScreen.m in Sources */,
 				4AFF16280B414CD98C953C41 /* CDVViewController+SplashScreen.m in Sources */,
 				D4C593E7F9CA42D8AE293D1F /* CDVStatusBar.m in Sources */,
+				55DD9755C73C456699A7A6C9 /* CDVInAppBrowser.m in Sources */,
+				2B8FEE0F049C44ED88AE48DE /* CDVInAppBrowserOptions.m in Sources */,
+				9DCEF74637F24266988AA16E /* CDVInAppBrowserNavigationController.m in Sources */,
+				D996351CC30348CA852B9827 /* CDVUIInAppBrowser.m in Sources */,
+				7D020454D1F7491E9518F260 /* CDVWKInAppBrowser.m in Sources */,
+				23EF013ADE6D42DC88D16671 /* CDVWKInAppBrowserUIDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +439,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 0.0.6;
+				CURRENT_PROJECT_VERSION = 0.0.7;
 				DEVELOPMENT_TEAM = LM7P4TYJDA;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -433,7 +469,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 0.0.6;
+				CURRENT_PROJECT_VERSION = 0.0.7;
 				DEVELOPMENT_TEAM = LM7P4TYJDA;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeClimb/WeClimb-Prefix.pch";

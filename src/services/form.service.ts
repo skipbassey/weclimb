@@ -16,6 +16,8 @@ export class FormService {
     socialMediaForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_4dee92300d0d459080461f2a2febc3ff.pdf";
     ateciForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_4075d96ff4264ad89219b5c76a9f808e.pdf";
     schoolColabForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_4075d96ff4264ad89219b5c76a9f808e.pdf";
+    consentTELEPSYCHOLOGY = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_2db01f0d99b446c8892be88813d4534f.pdf";
+    premaritalIntakeForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_26d01d6447314973b3c0d1d1ff692984.pdf";
 
     constructor() {}
 
@@ -69,5 +71,13 @@ export class FormService {
 
     getSchoolColabForm(): string {
         return this.schoolColabForm;
+    }
+
+    getconsentTELEPSYCHOLOGY(): string {
+        return this.consentTELEPSYCHOLOGY;
+    }
+
+    getPremaritalIntakeForm(): string {
+        return this.premaritalIntakeForm;
     }
 }
