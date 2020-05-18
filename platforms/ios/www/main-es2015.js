@@ -793,7 +793,7 @@ module.exports = "<ion-content class=\"ion-padding\">\n  <div class=\"header-con
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header [mode]=\"mode\" translucent>\n  <ion-toolbar [mode]=\"mode\" color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button [mode]=\"mode\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Forms</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1>New Patient Forms</h1>\n\n  <div>\n    <h2>Prior to your Appointment</h2>\n    <p>​\n      Be sure to call the toll free number on the back of your health insurance \n      card to find out if your plan includes mental health benefits. If mental \n      health benefits are covered, ask for the following information:\n    </p>\n    <ul>\n      <li>Number of sessions covered per benefit period</li>\n      <li>Amount of the deductible and co-pay</li>\n      <li>Authorization needed for your appointment</li>\n    </ul>\n    <p>After you’ve completed your New Intake Forms, please submit them in \n      order to schedule your appointment. You will need to bring your health \n      insurance card and photo identification as well.\n    </p>\n  </div>\n\n  <div>\n    <h2>What to Expect at Your First Appointment</h2>\n    <p>Regardless of the type of service, your first appointment is a time to \n      meet with your treatment provider and discuss your concerns. The first \n      appointment is a time for a thorough evaluation and you will likely be \n      asked a good deal of factual information about yourself. This might include \n      things like the reason you’re seeking treatment, what your symptoms are, \n      history of past problems and treatment, medical history, past use of drugs \n      and alcohol, and how some of the important areas in your life are going (\n      work, family, hobbies, etc.). This is also a time for you to evaluate your \n      treatment provider in order to ensure that you feel comfortable with the \n      person and the setting.\n    </p>\n  </div>\n\n  <div>\n    <h2>First Session Information & Important Paperwork</h2>\n    <p>Because counseling involves a professional relationship, we need to agree on the \n      terms of our work together.\n      <b class=\"alert\">Please complete a New Client Form, Child or Adult Intake Form \n        (if applicable), Communications Agreement, Consent & Confidentiality Agreement, \n        Credit Card Authorization Form & Late Cancellation/Missed Appointment Policy \n        and bring the forms in to our office at your first appointment or email the forms. \n      </b>\n      Please provide your photo identification and health insurance card when presenting \n      the forms. If you have any questions and/or require clarification, please be sure \n      to ask us.\n    </p>\n    <ul>\n      <li>\n        <a (click)=\"openAdultIntake()\">\n        Adult Intake Form\n      </a>\n    </li>\n      <li><a (click)=\"openNewClient()\">New Client Form</a></li>\n      <li><a (click)=\"openChild()\">Child/Adolescent Intake Form</a></li>\n      <li><a (click)=\"openConsentAgreement()\">Consent & Confidentiality Agreement </a></li>\n      <li><a (click)=\"openCoupleIntake()\">Couples Intake Form</a></li>\n      <li><a (click)=\"openReleaseInfo()\">Authorization to Release Information Form</a></li>\n      <li><a (click)=\"openCreditCard()\">Credit Card Authorization Form </a></li>\n      <li><a (click)=\"openCommunicationAgreement()\">Communication Agreement</a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>Late Cancellation/ Missed Appointment Policy</h2>\n    <p>Our current late cancellation/missed appointment policy is unique \n      to psychotherapy practices. We ask that you read it and consider it\n       carefully to reduce the chance of misunderstandings that may hinder \n       your progress in therapy.\n    </p>\n    <ul>\n      <li><a (click)=\"openLateCancellation()\">Late Cancellation/Missed Appointment Policy</a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>Download for your Reference</h2>\n    <ul>\n      <li><a (click)=\"openHippa()\">HIPAA/Privacy Notice</a></li>\n      <li><a (click)=\"openSocialMedia()\">Social Media Policy </a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>School-Based Services</h2>\n    <p>If you would like to participate in school-based counseling services, \n      complete both forms and submit a copy of the forms to our office and \n      to the client's school for their records.\n    </p>\n    <ul>\n      <li><a (click)=\"openExchangeConfidential()\">Authorization to Exchange Confidential Information</a></li>\n      <li><a (click)=\"openSchoolColab()\">School Collaboration Consent Form</a></li>\n    </ul>\n  </div>\n</ion-content>"
+module.exports = "<ion-header [mode]=\"mode\" translucent>\n  <ion-toolbar [mode]=\"mode\" color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button [mode]=\"mode\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Forms</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1>New Patient Forms</h1>\n\n  <div>\n    <h2>Prior to your Appointment</h2>\n    <p>​\n      Be sure to call the toll free number on the back of your health insurance \n      card to find out if your plan includes mental health benefits. If mental \n      health benefits are covered, ask for the following information:\n    </p>\n    <ul>\n      <li>Number of sessions covered per benefit period</li>\n      <li>Amount of the deductible and co-pay</li>\n      <li>Authorization needed for your appointment</li>\n    </ul>\n    <p>After you’ve completed your New Intake Forms, please submit them in \n      order to schedule your appointment. You will need to bring your health \n      insurance card and photo identification as well.\n    </p>\n  </div>\n\n  <div>\n    <h2>What to Expect at Your First Appointment</h2>\n    <p>Regardless of the type of service, your first appointment is a time to \n      meet with your treatment provider and discuss your concerns. The first \n      appointment is a time for a thorough evaluation and you will likely be \n      asked a good deal of factual information about yourself. This might include \n      things like the reason you’re seeking treatment, what your symptoms are, \n      history of past problems and treatment, medical history, past use of drugs \n      and alcohol, and how some of the important areas in your life are going (\n      work, family, hobbies, etc.). This is also a time for you to evaluate your \n      treatment provider in order to ensure that you feel comfortable with the \n      person and the setting.\n    </p>\n  </div>\n\n  <div>\n    <h2>First Session Information & Important Paperwork</h2>\n    <p>Because counseling involves a professional relationship, we need to agree on the \n      terms of our work together.\n      <b class=\"alert\">Please complete a New Client Form, Child or Adult Intake Form \n        (if applicable), Communications Agreement, Consent & Confidentiality Agreement, \n        Credit Card Authorization Form & Late Cancellation/Missed Appointment Policy \n        and bring the forms in to our office at your first appointment or email the forms. \n      </b>\n      Please provide your photo identification and health insurance card when presenting \n      the forms. If you have any questions and/or require clarification, please be sure \n      to ask us.\n    </p>\n    <ion-list [mode]=\"mode\">\n      <ion-item [mode]=\"mode\" (click)=\"openAdultIntake()\">Adult Intake Form</ion-item>\n      <ion-item [mode]=\"mode\" (click)=\"openNewClient()\">New Client Form</ion-item>\n      <ion-item [mode]=\"mode\" (click)=\"openChild()\">Child/Adolescent Intake Form</ion-item>\n    </ion-list>\n    <!-- <ul>\n      <li>\n        <a href=\"openAdultIntake()\" target=\"_blank\">\n        Adult Intake Form\n      </a>\n    </li>\n      <li><a (click)=\"openNewClient()\">New Client Form</a></li>\n      <li><a (click)=\"openChild()\">Child/Adolescent Intake Form</a></li>\n      <li><a (click)=\"openConsentAgreement()\">Consent & Confidentiality Agreement </a></li>\n      <li><a (click)=\"openCoupleIntake()\">Couples Intake Form</a></li>\n      <li><a (click)=\"openReleaseInfo()\">Authorization to Release Information Form</a></li>\n      <li><a (click)=\"openCreditCard()\">Credit Card Authorization Form </a></li>\n      <li><a (click)=\"openCommunicationAgreement()\">Communication Agreement</a></li>\n    </ul> -->\n  </div>\n\n  <div>\n    <h2>Late Cancellation/ Missed Appointment Policy</h2>\n    <p>Our current late cancellation/missed appointment policy is unique \n      to psychotherapy practices. We ask that you read it and consider it\n       carefully to reduce the chance of misunderstandings that may hinder \n       your progress in therapy.\n    </p>\n    <ul>\n      <li><a (click)=\"openLateCancellation()\">Late Cancellation/Missed Appointment Policy</a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>Download for your Reference</h2>\n    <ul>\n      <li><a (click)=\"openHippa()\">HIPAA/Privacy Notice</a></li>\n      <li><a (click)=\"openSocialMedia()\">Social Media Policy </a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>School-Based Services</h2>\n    <p>If you would like to participate in school-based counseling services, \n      complete both forms and submit a copy of the forms to our office and \n      to the client's school for their records.\n    </p>\n    <ul>\n      <li><a (click)=\"openExchangeConfidential()\">Authorization to Exchange Confidential Information</a></li>\n      <li><a (click)=\"openSchoolColab()\">School Collaboration Consent Form</a></li>\n    </ul>\n  </div>\n</ion-content>"
 
 /***/ }),
 
@@ -947,7 +947,7 @@ module.exports = "<ion-header [mode]=\"mode\" translucent>\n  <ion-toolbar [mode
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"header-container\">\n    <h1>Registration</h1>\n  </div>\n\n  <form [formGroup]=\"registerForm\">\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">First Name</ion-label>\n      <ion-input [mode]=\"mode\" type=\"string\" placeholder=\"John\" formControlName=\"firstName\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Last Name</ion-label>\n      <ion-input [mode]=\"mode\" type=\"string\" placeholder=\"Doe\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Email</ion-label>\n      <ion-input [mode]=\"mode\" type=\"email\" placeholder=\"example@gmail.com\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Phone</ion-label>\n      <ion-input [mode]=\"mode\" type=\"tel\" placeholder=\"xxxxxxxxxx\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Password</ion-label>\n      <ion-input [mode]=\"mode\" type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Confirm Password</ion-label>\n      <ion-input [mode]=\"mode\" type=\"password\" formControlName=\"confirmPassword\"></ion-input>\n    </ion-item>\n    <div class=\"btn-container\">\n      <ion-button [mode]=\"mode\" type=\"submit\" class=\"btn\" fill=\"solid\" [disabled]=\"!passwordMatch()\" (click)=\"signUp()\">Submit</ion-button>\n      <ion-button [mode]=\"mode\" type=\"submit\" class=\"btn\" fill=\"solid\" [disabled]=\"!passwordMatch()\" (click)=\"signUp()\">Submit</ion-button>\n    </div>\n  </form>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"header-container\">\n    <h1>Registration</h1>\n  </div>\n\n  <form [formGroup]=\"registerForm\">\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">First Name</ion-label>\n      <ion-input [mode]=\"mode\" type=\"string\" placeholder=\"John\" formControlName=\"firstName\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Last Name</ion-label>\n      <ion-input [mode]=\"mode\" type=\"string\" placeholder=\"Doe\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Email</ion-label>\n      <ion-input [mode]=\"mode\" type=\"email\" placeholder=\"example@gmail.com\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Phone</ion-label>\n      <ion-input [mode]=\"mode\" type=\"tel\" placeholder=\"xxxxxxxxxx\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Password</ion-label>\n      <ion-input [mode]=\"mode\" type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Confirm Password</ion-label>\n      <ion-input [mode]=\"mode\" type=\"password\" formControlName=\"confirmPassword\"></ion-input>\n    </ion-item>\n    <div class=\"btn-container\">\n      <ion-button [mode]=\"mode\" type=\"submit\" class=\"btn\" fill=\"solid\" [disabled]=\"!passwordMatch()\" (click)=\"signUp()\">Submit</ion-button>\n      <ion-button [mode]=\"mode\" type=\"submit\" class=\"btn\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n</div>\n"
 
 /***/ }),
 
@@ -1239,6 +1239,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_material_module__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./modules/material.module */ "./src/app/modules/material.module.ts");
 /* harmony import */ var src_services_platform_service__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! src/services/platform.service */ "./src/services/platform.service.ts");
 /* harmony import */ var _ionic_native_keyboard_ngx__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! @ionic-native/keyboard/ngx */ "./node_modules/@ionic-native/keyboard/ngx/index.js");
+/* harmony import */ var _ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! @ionic-native/in-app-browser/ngx */ "./node_modules/@ionic-native/in-app-browser/ngx/index.js");
+
 
 
 
@@ -1349,6 +1351,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             src_services_toaster_service__WEBPACK_IMPORTED_MODULE_40__["ToasterService"],
             src_services_loading_service__WEBPACK_IMPORTED_MODULE_41__["LoadingService"],
             src_services_platform_service__WEBPACK_IMPORTED_MODULE_45__["PlatformService"],
+            _ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_47__["InAppBrowser"],
             _ionic_native_keyboard_ngx__WEBPACK_IMPORTED_MODULE_46__["Keyboard"],
             // File,
             // FileTransfer,
@@ -2001,14 +2004,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var src_services_form_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/services/form.service */ "./src/services/form.service.ts");
 /* harmony import */ var src_services_platform_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/services/platform.service */ "./src/services/platform.service.ts");
+/* harmony import */ var _ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/in-app-browser/ngx */ "./node_modules/@ionic-native/in-app-browser/ngx/index.js");
+
 
 
 
 
 let FormsComponent = class FormsComponent {
-    constructor(formService, platformService) {
+    constructor(formService, platformService, iab) {
         this.formService = formService;
         this.platformService = platformService;
+        this.iab = iab;
         this.adultIntakeUrl = 'https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3408979cc10a44ce9a67d840a7a89a85.pdf';
         this.mode = "";
     }
@@ -2016,7 +2022,11 @@ let FormsComponent = class FormsComponent {
         this.mode = this.platformService.getPlatform();
     }
     openAdultIntake() {
-        window.open(this.formService.getAdultIntakeForm(), "_blank");
+        const options = {
+            zoom: 'no'
+        };
+        this.iab.create(this.formService.getAdultIntakeForm(), '_self', options);
+        // window.open(this.formService.getAdultIntakeForm(), "_blank")
     }
     openNewClient() {
         window.open(this.formService.getNewClientForm(), "_blank");
@@ -2057,7 +2067,8 @@ let FormsComponent = class FormsComponent {
 };
 FormsComponent.ctorParameters = () => [
     { type: src_services_form_service__WEBPACK_IMPORTED_MODULE_2__["FormService"] },
-    { type: src_services_platform_service__WEBPACK_IMPORTED_MODULE_3__["PlatformService"] }
+    { type: src_services_platform_service__WEBPACK_IMPORTED_MODULE_3__["PlatformService"] },
+    { type: _ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_4__["InAppBrowser"] }
 ];
 FormsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -2066,7 +2077,8 @@ FormsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [__webpack_require__(/*! ./forms.component.scss */ "./src/app/forms/forms.component.scss"), __webpack_require__(/*! ../../theme/font.scss */ "./src/theme/font.scss")]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_services_form_service__WEBPACK_IMPORTED_MODULE_2__["FormService"],
-        src_services_platform_service__WEBPACK_IMPORTED_MODULE_3__["PlatformService"]])
+        src_services_platform_service__WEBPACK_IMPORTED_MODULE_3__["PlatformService"],
+        _ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_4__["InAppBrowser"]])
 ], FormsComponent);
 
 
@@ -3698,7 +3710,7 @@ let RegisterComponent = class RegisterComponent {
         this.mode = this.platformService.getPlatform();
     }
     ngDoCheck() {
-        this.keyboard.hideFormAccessoryBar(true);
+        this.keyboard.hideFormAccessoryBar(false);
     }
     signUp() {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {

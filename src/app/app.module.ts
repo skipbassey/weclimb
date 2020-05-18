@@ -48,6 +48,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material.module';
 import { PlatformService } from 'src/services/platform.service';
 import { Keyboard } from '@ionic-native/keyboard/ngx';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
 @NgModule({
   declarations: [
@@ -109,6 +110,7 @@ import { Keyboard } from '@ionic-native/keyboard/ngx';
     ToasterService,
     LoadingService,
     PlatformService,
+    InAppBrowser,
     Keyboard,
     // File,
     // FileTransfer,
