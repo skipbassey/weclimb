@@ -42,7 +42,7 @@
   "cordova-plugin-ionic-keyboard": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-ionic-keyboard@^2.0.5"
+      "id": "cordova-plugin-ionic-keyboard@^2.2.0"
     },
     "is_top_level": true,
     "variables": {}
@@ -63,19 +63,12 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-ionic": {
+  "cordova-plugin-inappbrowser": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-ionic"
+      "id": "cordova-plugin-inappbrowser@3.2.0"
     },
     "is_top_level": true,
-    "variables": {
-      "APP_ID": "5b4c677f",
-      "CHANNEL_NAME": "Master",
-      "UPDATE_METHOD": "background",
-      "MAX_STORE": "2",
-      "MIN_BACKGROUND_DURATION": "30",
-      "UPDATE_API": "https://api.ionicjs.com"
-    }
+    "variables": {}
   }
 }

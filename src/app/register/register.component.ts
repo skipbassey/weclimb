@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { UserService } from 'src/services/user.service';
 import { HttpErrorResponse } from '@angular/common/http';
@@ -9,13 +9,14 @@ import { ModalController } from '@ionic/angular';
 import { ConfirmationModalComponent } from '../modals/confirmation-modal/confirmation-modal.component';
 import { ToasterService } from 'src/services/toaster.service';
 import { PlatformService } from 'src/services/platform.service';
+import { Keyboard } from '@ionic-native/keyboard/ngx';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent implements OnInit, DoCheck {
 
   registerForm: any;
 
@@ -28,10 +29,12 @@ export class RegisterComponent implements OnInit {
     private modalController: ModalController,
     private toasterService: ToasterService,
     private router: Router,
-    private platformService: PlatformService
+    private platformService: PlatformService,
+    private keyboard: Keyboard
   ) { }
 
   ngOnInit() {
+
     this.registerForm = this.formBuilder.group({
       firstName: '',
       lastName: '',
@@ -42,6 +45,10 @@ export class RegisterComponent implements OnInit {
     });
 
     this.mode = this.platformService.getPlatform();
+  }
+
+  ngDoCheck() {
+    this.keyboard.hideFormAccessoryBar(false);
   }
 
   async signUp() {

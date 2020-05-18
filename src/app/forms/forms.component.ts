@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormService } from 'src/services/form.service';
 import { PlatformService } from 'src/services/platform.service';
+import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser/ngx';
 
 @Component({
   selector: 'app-forms',
@@ -12,13 +13,16 @@ import { PlatformService } from 'src/services/platform.service';
 })
 export class FormsComponent implements OnInit {
 
-  adultIntakeUrl = 'https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3408979cc10a44ce9a67d840a7a89a85.pdf'
-
   mode = "";
+
+   options: InAppBrowserOptions = {
+    zoom: 'no'
+  }
 
   constructor(
     private formService: FormService,
-    private platformService: PlatformService
+    private platformService: PlatformService,
+    private iab: InAppBrowser
   ) { }
 
   ngOnInit() {
@@ -26,54 +30,63 @@ export class FormsComponent implements OnInit {
   }
 
   openAdultIntake() {
-    window.open(this.formService.getAdultIntakeForm(), "_blank")
+    this.iab.create(this.formService.getAdultIntakeForm(), '_self', this.options);
   }
 
   openNewClient() {
-    window.open(this.formService.getNewClientForm(), "_blank")
+    this.iab.create(this.formService.getNewClientForm(), '_self', this.options);
   }
 
   openChild() {
-    window.open(this.formService.getChildIntakeForm(), "_blank")
+    this.iab.create(this.formService.getChildIntakeForm(), '_self', this.options);
   }
 
   openConsentAgreement() {
-    window.open(this.formService.getConsentAgreementForm(), "_blank")
+    this.iab.create(this.formService.getConsentAgreementForm(), '_self', this.options);
   }
 
   openCoupleIntake() {
-    window.open(this.formService.getCoupleIntakeForm(), "_blank")
+    this.iab.create(this.formService.getCoupleIntakeForm(), '_self', this.options);
   }
 
   openReleaseInfo() {
-    window.open(this.formService.getatriForm(), "_blank")
+    this.iab.create(this.formService.getatriForm(), '_self', this.options);
   }
 
   openCreditCard() {
-    window.open(this.formService.getCreditCardForm(), "_blank")
+    this.iab.create(this.formService.getCreditCardForm(), '_self', this.options);
   }
 
   openCommunicationAgreement() {
-    window.open(this.formService.getCommunicationAgreementForm(), "_blank")
+
+    this.iab.create(this.formService.getCommunicationAgreementForm(), '_self', this.options);
   }
 
   openLateCancellation() {
-    window.open(this.formService.getLateAppointmentForm(), "_blank")
+    this.iab.create(this.formService.getLateAppointmentForm(), '_self', this.options);
   }
 
   openHippa() {
-    window.open(this.formService.getHippaForm(), "_blank")
+    this.iab.create(this.formService.getHippaForm(), '_self', this.options);
   }
 
   openSocialMedia() {
-    window.open(this.formService.getSocialMediaForm(), "_blank")
+    this.iab.create(this.formService.getSocialMediaForm(), '_self', this.options);
   }
 
   openExchangeConfidential() {
-    window.open(this.formService.getAteciForm(), "_blank")
+    this.iab.create(this.formService.getAteciForm(), '_self', this.options);
   }
 
   openSchoolColab() {
-    window.open(this.formService.getSchoolColabForm(), "_blank")
+    this.iab.create(this.formService.getSchoolColabForm(), '_self', this.options);
+  }
+
+  openConsentTELEPSYCHOLOGY() {
+    this.iab.create(this.formService.getconsentTELEPSYCHOLOGY(), '_self', this.options);
+  }
+
+  openPremaritalIntakeForm() {
+    this.iab.create(this.formService.getPremaritalIntakeForm(), '_self', this.options);
   }
 }
