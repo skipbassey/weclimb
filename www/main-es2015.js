@@ -738,7 +738,7 @@ module.exports = "\n<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header [mode]=\"mode\" translucent>\n  <ion-toolbar [mode]=\"mode\" color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button [mode]=\"mode\" class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Appointments</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content fullscreen>\n  <p class=\"text\">\n    If you are going through your insurance company for services, please provide\n    the client's name, date of birth and member ID number in the \"Add Your Message\"\n    section once you have selected your appointment. You will receive an email confirming\n    your appointment.\n  </p>\n\n  <ion-list [mode]=\"mode\">\n    <ion-item [mode]=\"mode\" button (click)=\"selectAppointment('ll-intake')\">\n      <p><b>Licensed Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$125</p>\n    </ion-item>\n    <ion-item [mode]=\"mode\" button (click)=\"selectAppointment('ll-insurance')\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Insurance: </b>$110</p>\n    </ion-item>\n    <ion-item [mode]=\"mode\" button (click)=\"selectAppointment('ll-selfpay')\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$80</p>\n    </ion-item>\n    <ion-item [mode]=\"mode\" button (click)=\"selectAppointment('ml-intake')\">\n      <p><b>Masters Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$100</p>\n    </ion-item>\n    <ion-item [mode]=\"mode\" button (click)=\"selectAppointment('ml-selfpay')\">\n      <p><b>Masters Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$65</p>\n    </ion-item>\n    <ion-item [mode]=\"mode\" button (click)=\"selectAppointment('youth')\">\n      <p><b>Adolescent Group Counseling: </b>1hr</p>\n      <p><b>Self Pay: </b>$$35</p>\n      <p>Apollo Sports Counseling Inc.</p>\n    </ion-item>\n  </ion-list>\n</ion-content>"
+module.exports = "<ion-header [mode]=\"mode\" translucent>\n  <ion-toolbar [mode]=\"mode\" color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button [mode]=\"mode\" class=\"back-btn\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Appointments</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content fullscreen>\n  <p class=\"text\">\n    If you are going through your insurance company for services, please provide\n    the client's name, date of birth and member ID number in the \"Add Your Message\"\n    section once you have selected your appointment. You will receive an email confirming\n    your appointment.\n  </p>\n\n  <ion-list [mode]=\"mode\">\n    <ion-item [mode]=\"mode\" button (click)=\"selectAppointment('license','First_Session')\">\n      <p><b>Licensed Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$125</p>\n    </ion-item>\n    <ion-item [mode]=\"mode\" button (click)=\"selectAppointment('license', 'Insurance')\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Insurance: </b>$110</p>\n    </ion-item>\n    <ion-item [mode]=\"mode\" button (click)=\"selectAppointment('license', 'Self_Pay')\">\n      <p><b>Licensed Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$80</p>\n    </ion-item>\n    <ion-item [mode]=\"mode\" button (click)=\"selectAppointment('master', 'First_Session')\">\n      <p><b>Masters Level Clinician: </b>1hr</p>\n      <p><b>Intake Session: </b>$100</p>\n    </ion-item>\n    <ion-item [mode]=\"mode\" button (click)=\"selectAppointment('master', 'Self_Pay')\">\n      <p><b>Masters Level Clinician: </b>45min</p>\n      <p><b>Self Pay: </b>$65</p>\n    </ion-item>\n    <ion-item [mode]=\"mode\" button (click)=\"selectAppointment('youth')\">\n      <p><b>Adolescent Group Counseling: </b>1hr</p>\n      <p><b>Self Pay: </b>$$35</p>\n      <p>Apollo Sports Counseling Inc.</p>\n    </ion-item>\n  </ion-list>\n</ion-content>"
 
 /***/ }),
 
@@ -793,7 +793,7 @@ module.exports = "<ion-content class=\"ion-padding\">\n  <div class=\"header-con
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header [mode]=\"mode\" translucent>\n  <ion-toolbar [mode]=\"mode\" color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button [mode]=\"mode\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Forms</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1>New Patient Forms</h1>\n\n  <div>\n    <h2>Prior to your Appointment</h2>\n    <p>​\n      Be sure to call the toll free number on the back of your health insurance \n      card to find out if your plan includes mental health benefits. If mental \n      health benefits are covered, ask for the following information:\n    </p>\n    <ul>\n      <li>Number of sessions covered per benefit period</li>\n      <li>Amount of the deductible and co-pay</li>\n      <li>Authorization needed for your appointment</li>\n    </ul>\n    <p>After you’ve completed your New Intake Forms, please submit them in \n      order to schedule your appointment. You will need to bring your health \n      insurance card and photo identification as well.\n    </p>\n  </div>\n\n  <div>\n    <h2>What to Expect at Your First Appointment</h2>\n    <p>Regardless of the type of service, your first appointment is a time to \n      meet with your treatment provider and discuss your concerns. The first \n      appointment is a time for a thorough evaluation and you will likely be \n      asked a good deal of factual information about yourself. This might include \n      things like the reason you’re seeking treatment, what your symptoms are, \n      history of past problems and treatment, medical history, past use of drugs \n      and alcohol, and how some of the important areas in your life are going (\n      work, family, hobbies, etc.). This is also a time for you to evaluate your \n      treatment provider in order to ensure that you feel comfortable with the \n      person and the setting.\n    </p>\n  </div>\n\n  <div>\n    <h2>First Session Information & Important Paperwork</h2>\n    <p>Because counseling involves a professional relationship, we need to agree on the \n      terms of our work together.\n      <b class=\"alert\">Please complete a New Client Form, Child or Adult Intake Form \n        (if applicable), Communications Agreement, Consent & Confidentiality Agreement, \n        Credit Card Authorization Form & Late Cancellation/Missed Appointment Policy \n        and bring the forms in to our office at your first appointment or email the forms. \n      </b>\n      Please provide your photo identification and health insurance card when presenting \n      the forms. If you have any questions and/or require clarification, please be sure \n      to ask us.\n    </p>\n    <ion-list [mode]=\"mode\">\n      <ion-item [mode]=\"mode\" (click)=\"openAdultIntake()\">Adult Intake Form</ion-item>\n      <ion-item [mode]=\"mode\" (click)=\"openNewClient()\">New Client Form</ion-item>\n      <ion-item [mode]=\"mode\" (click)=\"openChild()\">Child/Adolescent Intake Form</ion-item>\n    </ion-list>\n    <!-- <ul>\n      <li>\n        <a href=\"openAdultIntake()\" target=\"_blank\">\n        Adult Intake Form\n      </a>\n    </li>\n      <li><a (click)=\"openNewClient()\">New Client Form</a></li>\n      <li><a (click)=\"openChild()\">Child/Adolescent Intake Form</a></li>\n      <li><a (click)=\"openConsentAgreement()\">Consent & Confidentiality Agreement </a></li>\n      <li><a (click)=\"openCoupleIntake()\">Couples Intake Form</a></li>\n      <li><a (click)=\"openReleaseInfo()\">Authorization to Release Information Form</a></li>\n      <li><a (click)=\"openCreditCard()\">Credit Card Authorization Form </a></li>\n      <li><a (click)=\"openCommunicationAgreement()\">Communication Agreement</a></li>\n    </ul> -->\n  </div>\n\n  <div>\n    <h2>Late Cancellation/ Missed Appointment Policy</h2>\n    <p>Our current late cancellation/missed appointment policy is unique \n      to psychotherapy practices. We ask that you read it and consider it\n       carefully to reduce the chance of misunderstandings that may hinder \n       your progress in therapy.\n    </p>\n    <ul>\n      <li><a (click)=\"openLateCancellation()\">Late Cancellation/Missed Appointment Policy</a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>Download for your Reference</h2>\n    <ul>\n      <li><a (click)=\"openHippa()\">HIPAA/Privacy Notice</a></li>\n      <li><a (click)=\"openSocialMedia()\">Social Media Policy </a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>School-Based Services</h2>\n    <p>If you would like to participate in school-based counseling services, \n      complete both forms and submit a copy of the forms to our office and \n      to the client's school for their records.\n    </p>\n    <ul>\n      <li><a (click)=\"openExchangeConfidential()\">Authorization to Exchange Confidential Information</a></li>\n      <li><a (click)=\"openSchoolColab()\">School Collaboration Consent Form</a></li>\n    </ul>\n  </div>\n</ion-content>"
+module.exports = "<ion-header [mode]=\"mode\" translucent>\n  <ion-toolbar [mode]=\"mode\" color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button [mode]=\"mode\" defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title class=\"title-text\">Forms</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <h1>New Patient Forms</h1>\n\n  <div>\n    <h2>Prior to your Appointment</h2>\n    <p>​\n      Be sure to call the toll free number on the back of your health insurance \n      card to find out if your plan includes mental health benefits. If mental \n      health benefits are covered, ask for the following information:\n    </p>\n    <ul>\n      <li>Number of sessions covered per benefit period</li>\n      <li>Amount of the deductible and co-pay</li>\n      <li>Authorization needed for your appointment</li>\n    </ul>\n    <p>After you’ve completed your New Intake Forms, please submit them in \n      order to schedule your appointment. You will need to bring your health \n      insurance card and photo identification as well.\n    </p>\n  </div>\n\n  <div>\n    <h2>What to Expect at Your First Appointment</h2>\n    <p>Regardless of the type of service, your first appointment is a time to \n      meet with your treatment provider and discuss your concerns. The first \n      appointment is a time for a thorough evaluation and you will likely be \n      asked a good deal of factual information about yourself. This might include \n      things like the reason you’re seeking treatment, what your symptoms are, \n      history of past problems and treatment, medical history, past use of drugs \n      and alcohol, and how some of the important areas in your life are going (\n      work, family, hobbies, etc.). This is also a time for you to evaluate your \n      treatment provider in order to ensure that you feel comfortable with the \n      person and the setting.\n    </p>\n  </div>\n\n  <div>\n    <h2>First Session Information & Important Paperwork</h2>\n    <p>Because counseling involves a professional relationship, we need to agree on the \n      terms of our work together.\n      <b class=\"alert\">Please complete a New Client Form, Child or Adult Intake Form \n        (if applicable), Communications Agreement, Consent & Confidentiality Agreement, \n        Credit Card Authorization Form & Late Cancellation/Missed Appointment Policy \n        and bring the forms in to our office at your first appointment or email the forms. \n      </b>\n      Please provide your photo identification and health insurance card when presenting \n      the forms. If you have any questions and/or require clarification, please be sure \n      to ask us.\n    </p>\n    \n    <ul>\n      <li><a (click)=\"openAdultIntake()\">Adult Intake Form</a></li>\n      <li><a (click)=\"openNewClient()\">New Client Form</a></li>\n      <li><a (click)=\"openChild()\">Child/Adolescent Intake Form</a></li>\n      <li><a (click)=\"openConsentAgreement()\">Consent & Confidentiality Agreement </a></li>\n      <li><a (click)=\"openCoupleIntake()\">Couples Intake Form</a></li>\n      <li><a (click)=\"openReleaseInfo()\">Authorization to Release Information Form</a></li>\n      <li><a (click)=\"openCreditCard()\">Credit Card Authorization Form </a></li>\n      <li><a (click)=\"openCommunicationAgreement()\">Communication Agreement</a></li>\n      <li><a (click)=\"openConsentTELEPSYCHOLOGY()\">Consent for Telepsychology</a></li>\n      <li><a (click)=\"openPremaritalIntakeForm()\">Premarital Counseling </a></li>\n\n    </ul>\n  </div>\n\n  <div>\n    <h2>Late Cancellation/ Missed Appointment Policy</h2>\n    <p>Our current late cancellation/missed appointment policy is unique \n      to psychotherapy practices. We ask that you read it and consider it\n       carefully to reduce the chance of misunderstandings that may hinder \n       your progress in therapy.\n    </p>\n    <ul>\n      <li><a (click)=\"openLateCancellation()\">Late Cancellation/Missed Appointment Policy</a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>Download for your Reference</h2>\n    <ul>\n      <li><a (click)=\"openHippa()\">HIPAA/Privacy Notice</a></li>\n      <li><a (click)=\"openSocialMedia()\">Social Media Policy </a></li>\n    </ul>\n  </div>\n\n  <div>\n    <h2>School-Based Services</h2>\n    <p>If you would like to participate in school-based counseling services, \n      complete both forms and submit a copy of the forms to our office and \n      to the client's school for their records.\n    </p>\n    <ul>\n      <li><a (click)=\"openExchangeConfidential()\">Authorization to Exchange Confidential Information</a></li>\n      <li><a (click)=\"openSchoolColab()\">School Collaboration Consent Form</a></li>\n    </ul>\n  </div>\n</ion-content>"
 
 /***/ }),
 
@@ -1423,43 +1423,19 @@ let AppointmentComponent = class AppointmentComponent {
             return yield this.modal.present();
         });
     }
-    selectAppointment(appointment) {
+    selectAppointment(level, type) {
         //gets schedule and opend modal
-        switch (appointment) {
-            case 'll-intake':
-                this.appointmentService.getLicensedLevelFirstSession()
+        switch (level) {
+            case 'license':
+                this.appointmentService.getLicensedLevelSchedule(type)
                     .subscribe(res => {
                     this.presentModal(this.parseAppointments(res));
                 }, err => {
                     this.handleError(err, 'Error retrieving schedule');
                 });
                 break;
-            case 'll-insurance':
-                this.appointmentService.getLicensedLevelInsurance()
-                    .subscribe(res => {
-                    this.presentModal(this.parseAppointments(res));
-                }, err => {
-                    this.handleError(err, 'Error retrieving schedule');
-                });
-                break;
-            case 'll-selfpay':
-                this.appointmentService.getLicensedLevelSelfPay()
-                    .subscribe(res => {
-                    this.presentModal(this.parseAppointments(res));
-                }, err => {
-                    this.handleError(err, 'Error retrieving schedule');
-                });
-                break;
-            case 'ml-intake':
-                this.appointmentService.getMastersLevelIntake()
-                    .subscribe(res => {
-                    this.presentModal(this.parseAppointments(res));
-                }, err => {
-                    this.handleError(err, 'Error retrieving schedule');
-                });
-                break;
-            case 'ml-selfpay':
-                this.appointmentService.getMastersLevelSelfPay()
+            case 'master':
+                this.appointmentService.getMastersLevelSchedule(type)
                     .subscribe(res => {
                     this.presentModal(this.parseAppointments(res));
                 }, err => {
@@ -2015,54 +1991,58 @@ let FormsComponent = class FormsComponent {
         this.formService = formService;
         this.platformService = platformService;
         this.iab = iab;
-        this.adultIntakeUrl = 'https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_3408979cc10a44ce9a67d840a7a89a85.pdf';
         this.mode = "";
+        this.options = {
+            zoom: 'no'
+        };
     }
     ngOnInit() {
         this.mode = this.platformService.getPlatform();
     }
     openAdultIntake() {
-        const options = {
-            zoom: 'no'
-        };
-        this.iab.create(this.formService.getAdultIntakeForm(), '_self', options);
-        // window.open(this.formService.getAdultIntakeForm(), "_blank")
+        this.iab.create(this.formService.getAdultIntakeForm(), '_self', this.options);
     }
     openNewClient() {
-        window.open(this.formService.getNewClientForm(), "_blank");
+        this.iab.create(this.formService.getNewClientForm(), '_self', this.options);
     }
     openChild() {
-        window.open(this.formService.getChildIntakeForm(), "_blank");
+        this.iab.create(this.formService.getChildIntakeForm(), '_self', this.options);
     }
     openConsentAgreement() {
-        window.open(this.formService.getConsentAgreementForm(), "_blank");
+        this.iab.create(this.formService.getConsentAgreementForm(), '_self', this.options);
     }
     openCoupleIntake() {
-        window.open(this.formService.getCoupleIntakeForm(), "_blank");
+        this.iab.create(this.formService.getCoupleIntakeForm(), '_self', this.options);
     }
     openReleaseInfo() {
-        window.open(this.formService.getatriForm(), "_blank");
+        this.iab.create(this.formService.getatriForm(), '_self', this.options);
     }
     openCreditCard() {
-        window.open(this.formService.getCreditCardForm(), "_blank");
+        this.iab.create(this.formService.getCreditCardForm(), '_self', this.options);
     }
     openCommunicationAgreement() {
-        window.open(this.formService.getCommunicationAgreementForm(), "_blank");
+        this.iab.create(this.formService.getCommunicationAgreementForm(), '_self', this.options);
     }
     openLateCancellation() {
-        window.open(this.formService.getLateAppointmentForm(), "_blank");
+        this.iab.create(this.formService.getLateAppointmentForm(), '_self', this.options);
     }
     openHippa() {
-        window.open(this.formService.getHippaForm(), "_blank");
+        this.iab.create(this.formService.getHippaForm(), '_self', this.options);
     }
     openSocialMedia() {
-        window.open(this.formService.getSocialMediaForm(), "_blank");
+        this.iab.create(this.formService.getSocialMediaForm(), '_self', this.options);
     }
     openExchangeConfidential() {
-        window.open(this.formService.getAteciForm(), "_blank");
+        this.iab.create(this.formService.getAteciForm(), '_self', this.options);
     }
     openSchoolColab() {
-        window.open(this.formService.getSchoolColabForm(), "_blank");
+        this.iab.create(this.formService.getSchoolColabForm(), '_self', this.options);
+    }
+    openConsentTELEPSYCHOLOGY() {
+        this.iab.create(this.formService.getconsentTELEPSYCHOLOGY(), '_self', this.options);
+    }
+    openPremaritalIntakeForm() {
+        this.iab.create(this.formService.getPremaritalIntakeForm(), '_self', this.options);
     }
 };
 FormsComponent.ctorParameters = () => [
@@ -4044,8 +4024,8 @@ class AppointmentService {
         this.authService = authService;
         this.schedule = [];
     }
-    getLicensedLevelFirstSession() {
-        const url = "https://gg11vbof64.execute-api.us-east-1.amazonaws.com/dev/getLicenseLevelFirstSessionSchedule";
+    getLicensedLevelSchedule(type) {
+        const url = "https://bz0ouxaen3.execute-api.us-east-1.amazonaws.com/default/getLicenseLevelSchedule?type=" + type;
         const httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
@@ -4054,38 +4034,8 @@ class AppointmentService {
         };
         return this.http.get(url, httpOptions);
     }
-    getLicensedLevelInsurance() {
-        const url = "https://wk1co93jva.execute-api.us-east-1.amazonaws.com/default/getLicenseLevelInsuranceSchedule";
-        const httpOptions = {
-            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
-                'Content-Type': 'application/json',
-                "Authorization": this.authService.getToken()
-            })
-        };
-        return this.http.get(url, httpOptions);
-    }
-    getLicensedLevelSelfPay() {
-        const url = "https://17emam9dlh.execute-api.us-east-1.amazonaws.com/default/getLicenseLevelSelfPaySchedule";
-        const httpOptions = {
-            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
-                'Content-Type': 'application/json',
-                "Authorization": this.authService.getToken()
-            })
-        };
-        return this.http.get(url, httpOptions);
-    }
-    getMastersLevelIntake() {
-        const url = "https://hcarij2xh8.execute-api.us-east-1.amazonaws.com/default/getMastersLevelIntakeSchedule";
-        const httpOptions = {
-            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
-                'Content-Type': 'application/json',
-                "Authorization": this.authService.getToken()
-            })
-        };
-        return this.http.get(url, httpOptions);
-    }
-    getMastersLevelSelfPay() {
-        const url = "https://qrydefjkte.execute-api.us-east-1.amazonaws.com/default/getMastersLevelSelfPaySchedule";
+    getMastersLevelSchedule(type) {
+        const url = "https://lyc4b4weqi.execute-api.us-east-1.amazonaws.com/default/getMastersLevelSchedule?type=" + type;
         const httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
@@ -4106,16 +4056,6 @@ class AppointmentService {
     }
     setAdolescentSchedule(appointments) {
         const url = "https://wv80t6hee8.execute-api.us-east-1.amazonaws.com/default/setAdolescentSchedule";
-        const httpOptions = {
-            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
-                'Content-Type': 'application/json',
-                "Authorization": this.authService.getToken()
-            })
-        };
-        return this.http.post(url, appointments, httpOptions);
-    }
-    setLicensedLevelFirstSession(appointments) {
-        const url = "https://o18ov9ki32.execute-api.us-east-1.amazonaws.com/default/setLicenseLevelSchedule";
         const httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
                 'Content-Type': 'application/json',
@@ -4315,6 +4255,8 @@ let FormService = class FormService {
         this.socialMediaForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_4dee92300d0d459080461f2a2febc3ff.pdf";
         this.ateciForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_4075d96ff4264ad89219b5c76a9f808e.pdf";
         this.schoolColabForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_4075d96ff4264ad89219b5c76a9f808e.pdf";
+        this.consentTELEPSYCHOLOGY = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_2db01f0d99b446c8892be88813d4534f.pdf";
+        this.premaritalIntakeForm = "https://fbd77605-65f9-4422-9edf-096e90f4cb9a.filesusr.com/ugd/007d05_26d01d6447314973b3c0d1d1ff692984.pdf";
     }
     getAdultIntakeForm() {
         return this.adultIntakeForm;
@@ -4354,6 +4296,12 @@ let FormService = class FormService {
     }
     getSchoolColabForm() {
         return this.schoolColabForm;
+    }
+    getconsentTELEPSYCHOLOGY() {
+        return this.consentTELEPSYCHOLOGY;
+    }
+    getPremaritalIntakeForm() {
+        return this.premaritalIntakeForm;
     }
 };
 FormService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
