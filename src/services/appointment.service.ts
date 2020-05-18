@@ -14,8 +14,8 @@ export class AppointmentService {
       private authService: AuthService,
       ) { }
 
-    getLicensedLevelFirstSession(): Observable<any> {
-        const url = "https://gg11vbof64.execute-api.us-east-1.amazonaws.com/dev/getLicenseLevelFirstSessionSchedule";
+      getLicensedLevelSchedule(type: string): Observable<any> {
+        const url = "https://bz0ouxaen3.execute-api.us-east-1.amazonaws.com/default/getLicenseLevelSchedule?type=" + type;
 
         const httpOptions = {
             headers: new HttpHeaders({
@@ -27,56 +27,17 @@ export class AppointmentService {
         return this.http.get(url, httpOptions);
     }
 
-    getLicensedLevelInsurance(): Observable<any> {
-        const url = "https://wk1co93jva.execute-api.us-east-1.amazonaws.com/default/getLicenseLevelInsuranceSchedule"
-    
-        const httpOptions = {
-            headers: new HttpHeaders({
-              'Content-Type':  'application/json',
-              "Authorization": this.authService.getToken()
-            })
-          };
+    getMastersLevelSchedule(type: string): Observable<any> {
+      const url = "https://lyc4b4weqi.execute-api.us-east-1.amazonaws.com/default/getMastersLevelSchedule?type=" + type;
 
-        return this.http.get(url, httpOptions);
-    }
+      const httpOptions = {
+        headers: new HttpHeaders({
+          'Content-Type':  'application/json',
+          "Authorization": this.authService.getToken()
+        })
+      };
 
-    getLicensedLevelSelfPay(): Observable<any> {
-        const url = "https://17emam9dlh.execute-api.us-east-1.amazonaws.com/default/getLicenseLevelSelfPaySchedule";
-
-        const httpOptions = {
-            headers: new HttpHeaders({
-              'Content-Type':  'application/json',
-              "Authorization": this.authService.getToken()
-            })
-          };
-
-        return this.http.get(url, httpOptions);
-    }
-
-    getMastersLevelIntake(): Observable<any> {
-        const url = "https://hcarij2xh8.execute-api.us-east-1.amazonaws.com/default/getMastersLevelIntakeSchedule";
-
-        const httpOptions = {
-            headers: new HttpHeaders({
-              'Content-Type':  'application/json',
-              "Authorization": this.authService.getToken()
-            })
-          };
-
-        return this.http.get(url, httpOptions);
-    }
-
-    getMastersLevelSelfPay(): Observable<any> {
-        const url = "https://qrydefjkte.execute-api.us-east-1.amazonaws.com/default/getMastersLevelSelfPaySchedule";
-
-        const httpOptions = {
-            headers: new HttpHeaders({
-              'Content-Type':  'application/json',
-              "Authorization": this.authService.getToken()
-            })
-          };
-
-        return this.http.get(url, httpOptions);
+      return this.http.get(url, httpOptions);
     }
 
     getAdolescentGroupSelfPay(): Observable<any> {
@@ -104,19 +65,6 @@ export class AppointmentService {
 
       return this.http.post(url, appointments, httpOptions);
 
-    }
-
-    setLicensedLevelFirstSession(appointments: Appointment[]): Observable<any> {
-        const url = "https://o18ov9ki32.execute-api.us-east-1.amazonaws.com/default/setLicenseLevelSchedule";
-
-        const httpOptions = {
-            headers: new HttpHeaders({
-              'Content-Type':  'application/json',
-              "Authorization": this.authService.getToken()
-            })
-          };
-          
-        return this.http.post(url, appointments, httpOptions);
     }
 
     setLicenseLevelSchedule(appointments: Appointment[]): Observable<any> {
