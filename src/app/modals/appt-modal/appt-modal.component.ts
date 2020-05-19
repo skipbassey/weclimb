@@ -8,6 +8,7 @@ import { User } from 'src/models/user';
 import { AppointmentService } from 'src/services/appointment.service';
 import { ToasterService } from 'src/services/toaster.service';
 import { PlatformService } from 'src/services/platform.service';
+import * as moment from 'moment';
 
 
 @Component({
@@ -24,7 +25,7 @@ export class ApptModalComponent implements OnInit {
 
   errMessage = "No schedule available";
 
-  user: User;
+  user: any;
 
   mode =  "";
 
@@ -56,12 +57,14 @@ export class ApptModalComponent implements OnInit {
       price: appt.price,
       address: appt.address,
       counselor: appt.counselor,
-      candidateFirstName: this.user.firstName,
-      candidateLastName: this.user.lastName,
+      candidateFirstName: this.user.name,
+      candidateLastName: this.user.family_name,
       candidateEmail: this.user.email,
       type: appt.type,
-      table: this.determineTable(appt)
+      expires: moment().unix().toString()
     };
+
+    console.log(booking);
 
     this.apptService.bookAppointment(booking)
       .subscribe(res => {
