@@ -6,28 +6,29 @@
   <form [formGroup]="registerForm">
     <ion-item [mode]="mode">
       <ion-label [mode]="mode" position="floating">First Name</ion-label>
-      <ion-input [mode]="mode" type="string" placeholder="John" formControlName="firstName"></ion-input>
+      <ion-input [mode]="mode" type="string" placeholder="John" formControlName="firstName" required></ion-input>
     </ion-item>
     <ion-item [mode]="mode">
       <ion-label [mode]="mode" position="floating">Last Name</ion-label>
-      <ion-input [mode]="mode" type="string" placeholder="Doe" formControlName="lastName"></ion-input>
+      <ion-input [mode]="mode" type="string" placeholder="Doe" formControlName="lastName" required></ion-input>
     </ion-item>
     <ion-item [mode]="mode">
       <ion-label [mode]="mode" position="floating">Email</ion-label>
-      <ion-input [mode]="mode" type="email" placeholder="example@gmail.com" formControlName="email"></ion-input>
+      <ion-input [mode]="mode" type="email" placeholder="example@gmail.com" formControlName="email" required></ion-input>
     </ion-item>
     <ion-item [mode]="mode">
       <ion-label [mode]="mode" position="floating">Phone</ion-label>
-      <ion-input [mode]="mode" type="tel" placeholder="xxxxxxxxxx" formControlName="phone"></ion-input>
+      <ion-input [mode]="mode" type="tel" placeholder="xxxxxxxxxx" formControlName="phone" required></ion-input>
     </ion-item>
     <ion-item [mode]="mode">
       <ion-label [mode]="mode" position="floating" #tooltip="matTooltip" matTooltip="Password should be atleast 8 characters">Password</ion-label>
-      <ion-input [mode]="mode" type="password" formControlName="password"></ion-input>
+      <ion-input [mode]="mode" type="password" formControlName="password" required></ion-input>
     </ion-item>
     <ion-item [mode]="mode">
       <ion-label [mode]="mode" position="floating">Confirm Password</ion-label>
-      <ion-input [mode]="mode" type="password" formControlName="confirmPassword"></ion-input>
+      <ion-input [mode]="mode" type="password" formControlName="confirmPassword" required></ion-input>
     </ion-item>
+    <p>*Password must be atleast 8 characters.</p>
     <div class="btn-container">
       <ion-button [mode]="mode" type="submit" class="btn" fill="solid" [disabled]="!passwordMatch()" (click)="signUp()">Submit</ion-button>
       <ion-button [mode]="mode" type="submit" class="btn" fill="solid" (click)="cancel()">Cancel</ion-button>
