@@ -953,7 +953,7 @@ module.exports = "<ion-header [mode]=\"mode\" translucent>\n  <ion-toolbar [mode
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"header-container\">\n    <h1>Registration</h1>\n  </div>\n\n  <form [formGroup]=\"registerForm\">\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">First Name</ion-label>\n      <ion-input [mode]=\"mode\" type=\"string\" placeholder=\"John\" formControlName=\"firstName\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Last Name</ion-label>\n      <ion-input [mode]=\"mode\" type=\"string\" placeholder=\"Doe\" formControlName=\"lastName\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Email</ion-label>\n      <ion-input [mode]=\"mode\" type=\"email\" placeholder=\"example@gmail.com\" formControlName=\"email\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Phone</ion-label>\n      <ion-input [mode]=\"mode\" type=\"tel\" placeholder=\"xxxxxxxxxx\" formControlName=\"phone\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Password</ion-label>\n      <ion-input [mode]=\"mode\" type=\"password\" formControlName=\"password\"></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Confirm Password</ion-label>\n      <ion-input [mode]=\"mode\" type=\"password\" formControlName=\"confirmPassword\"></ion-input>\n    </ion-item>\n    <div class=\"btn-container\">\n      <ion-button [mode]=\"mode\" type=\"submit\" class=\"btn\" fill=\"solid\" [disabled]=\"!passwordMatch()\" (click)=\"signUp()\">Submit</ion-button>\n      <ion-button [mode]=\"mode\" type=\"submit\" class=\"btn\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"header-container\">\n    <h1>Registration</h1>\n  </div>\n\n  <form [formGroup]=\"registerForm\">\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">First Name</ion-label>\n      <ion-input [mode]=\"mode\" type=\"string\" placeholder=\"John\" formControlName=\"firstName\" required></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Last Name</ion-label>\n      <ion-input [mode]=\"mode\" type=\"string\" placeholder=\"Doe\" formControlName=\"lastName\" required></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Email</ion-label>\n      <ion-input [mode]=\"mode\" type=\"email\" placeholder=\"example@gmail.com\" formControlName=\"email\" required></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Phone</ion-label>\n      <ion-input [mode]=\"mode\" type=\"tel\" placeholder=\"xxxxxxxxxx\" formControlName=\"phone\" required></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\" #tooltip=\"matTooltip\" matTooltip=\"Password should be atleast 8 characters\">Password</ion-label>\n      <ion-input [mode]=\"mode\" type=\"password\" formControlName=\"password\" required></ion-input>\n    </ion-item>\n    <ion-item [mode]=\"mode\">\n      <ion-label [mode]=\"mode\" position=\"floating\">Confirm Password</ion-label>\n      <ion-input [mode]=\"mode\" type=\"password\" formControlName=\"confirmPassword\" required></ion-input>\n    </ion-item>\n    <p>*Password must be atleast 8 characters.</p>\n    <div class=\"btn-container\">\n      <ion-button [mode]=\"mode\" type=\"submit\" class=\"btn\" fill=\"solid\" [disabled]=\"!passwordMatch()\" (click)=\"signUp()\">Submit</ion-button>\n      <ion-button [mode]=\"mode\" type=\"submit\" class=\"btn\" fill=\"solid\" (click)=\"cancel()\">Cancel</ion-button>\n    </div>\n  </form>\n</div>\n"
 
 /***/ }),
 
@@ -3223,6 +3223,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_services_appointment_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/services/appointment.service */ "./src/services/appointment.service.ts");
 /* harmony import */ var src_services_toaster_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/services/toaster.service */ "./src/services/toaster.service.ts");
 /* harmony import */ var src_services_platform_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/services/platform.service */ "./src/services/platform.service.ts");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_7__);
+
 
 
 
@@ -3261,12 +3264,13 @@ var ApptModalComponent = /** @class */ (function () {
             price: appt.price,
             address: appt.address,
             counselor: appt.counselor,
-            candidateFirstName: this.user.firstName,
-            candidateLastName: this.user.lastName,
+            candidateFirstName: this.user.name,
+            candidateLastName: this.user.family_name,
             candidateEmail: this.user.email,
             type: appt.type,
-            table: this.determineTable(appt)
+            expires: moment__WEBPACK_IMPORTED_MODULE_7__().unix().toString()
         };
+        console.log(booking);
         this.apptService.bookAppointment(booking)
             .subscribe(function (res) {
         }, function (err) {
@@ -3614,6 +3618,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/expansion */ "./node_modules/@angular/material/esm5/expansion.es5.js");
+/* harmony import */ var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/tooltip */ "./node_modules/@angular/material/esm5/tooltip.es5.js");
+
 
 
 
@@ -3623,10 +3629,12 @@ var MaterialModule = /** @class */ (function () {
     MaterialModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             imports: [
-                _angular_material_expansion__WEBPACK_IMPORTED_MODULE_2__["MatExpansionModule"]
+                _angular_material_expansion__WEBPACK_IMPORTED_MODULE_2__["MatExpansionModule"],
+                _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_3__["MatTooltipModule"]
             ],
             exports: [
-                _angular_material_expansion__WEBPACK_IMPORTED_MODULE_2__["MatExpansionModule"]
+                _angular_material_expansion__WEBPACK_IMPORTED_MODULE_2__["MatExpansionModule"],
+                _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_3__["MatTooltipModule"]
             ]
         })
     ], MaterialModule);
@@ -3883,7 +3891,7 @@ var ProfileComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header-container {\n  text-align: center;\n}\n\n.btn-container {\n  text-align: center;\n  display: -webkit-box;\n  display: flex;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9yZWdpc3Rlci9yZWdpc3Rlci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxrQkFBQTtBQ0NKOztBREVBO0VBQ0ksa0JBQUE7RUFDQSxvQkFBQTtFQUFBLGFBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL3JlZ2lzdGVyL3JlZ2lzdGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmhlYWRlci1jb250YWluZXIge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmJ0bi1jb250YWluZXIge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBkaXNwbGF5OiBmbGV4O1xufSIsIi5oZWFkZXItY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uYnRuLWNvbnRhaW5lciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZGlzcGxheTogZmxleDtcbn0iXX0= */"
+module.exports = ".header-container {\n  text-align: center;\n}\n\n.btn-container {\n  text-align: center;\n  display: -webkit-box;\n  display: flex;\n}\n\np {\n  padding: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9va3dvbmdiYXNzZXkvRGVza3RvcC9hcHBzL3dlY2xpbWIvc3JjL2FwcC9yZWdpc3Rlci9yZWdpc3Rlci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxrQkFBQTtBQ0NKOztBREVBO0VBQ0ksa0JBQUE7RUFDQSxvQkFBQTtFQUFBLGFBQUE7QUNDSjs7QURFQTtFQUNJLFlBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL3JlZ2lzdGVyL3JlZ2lzdGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmhlYWRlci1jb250YWluZXIge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmJ0bi1jb250YWluZXIge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBkaXNwbGF5OiBmbGV4O1xufVxuXG5wIHtcbiAgICBwYWRkaW5nOiA1cHg7XG59IiwiLmhlYWRlci1jb250YWluZXIge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5idG4tY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBkaXNwbGF5OiBmbGV4O1xufVxuXG5wIHtcbiAgcGFkZGluZzogNXB4O1xufSJdfQ== */"
 
 /***/ }),
 

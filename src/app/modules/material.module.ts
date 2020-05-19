@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
 
   imports: [
-    MatExpansionModule
+    MatExpansionModule,
+    MatTooltipModule
   ],
   exports: [
-    MatExpansionModule
+    MatExpansionModule,
+    MatTooltipModule
   ]
  
 })
