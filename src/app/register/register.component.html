@@ -21,7 +21,7 @@
       <ion-input [mode]="mode" type="tel" placeholder="xxxxxxxxxx" formControlName="phone"></ion-input>
     </ion-item>
     <ion-item [mode]="mode">
-      <ion-label [mode]="mode" position="floating">Password</ion-label>
+      <ion-label [mode]="mode" position="floating" #tooltip="matTooltip" matTooltip="Password should be atleast 8 characters">Password</ion-label>
       <ion-input [mode]="mode" type="password" formControlName="password"></ion-input>
     </ion-item>
     <ion-item [mode]="mode">
