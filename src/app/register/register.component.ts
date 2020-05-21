@@ -66,6 +66,7 @@ export class RegisterComponent implements OnInit, DoCheck {
               }
         });
         this.loadingController.dismiss();
+        this.modalController.dismiss();
         this.presentConfirmationModal();
     } catch (error) {
         console.log('error signing up:', error);

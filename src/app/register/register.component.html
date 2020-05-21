@@ -1,8 +1,10 @@
 <div class="container">
-  <div class="header-container">
-    <h1>Registration</h1>
-  </div>
-
+  <ion-header [mode]="mode" translucent>
+    <ion-toolbar [mode]="mode" color="primary">
+      <ion-title class="title-text">Appointments</ion-title>
+    </ion-toolbar>
+  </ion-header>
+ 
   <form [formGroup]="registerForm">
     <ion-item [mode]="mode">
       <ion-label [mode]="mode" position="floating">First Name</ion-label>
