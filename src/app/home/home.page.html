@@ -21,9 +21,7 @@
                 {{service.title}}
               </mat-panel-title>
             </mat-expansion-panel-header>
-            <ul *ngFor="let opt of service.data">
-              <li>{{opt}}</li>
-            </ul>
+            <p *ngFor="let opt of service.data">{{opt}}</p>
           </mat-expansion-panel>
         </mat-accordion>
       </div>   
